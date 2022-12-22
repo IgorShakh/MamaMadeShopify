@@ -1,0 +1,673 @@
+{%- capture section_settings -%}
+{
+  "enableHistoryState": true,
+  "templateSuffix": {{ product.template_suffix | json }},
+  "showInventoryQuantity": {{ section.settings.show_inventory_quantity | json }},
+  "showSku": {{ section.settings.show_sku | json }},
+  "stackProductImages": {{ section.settings.stack_images | json }},
+  "showThumbnails": {{ section.settings.show_thumbnails | json }},
+  "inventoryQuantityThreshold": {{ section.settings.inventory_quantity_threshold }},
+  "showPriceInButton": {{ section.settings.show_price_in_button | json }},
+  "enableImageZoom": {{ section.settings.enable_image_zoom | json }},
+  "showPaymentButton": {{ section.settings.show_payment_button | json }},
+  "useAjaxCart": {% if settings.cart_type == 'drawer' %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+{% if product.id == 4503362764911 %} {%- comment -%} Variety Bundle - dev - 5157858410636 {%- endcomment -%}
+
+	{%- assign productName = 'Variety Bundle' -%}
+
+{% elsif product.id == 4503363551343 %} {%- comment -%} Starter Bundle - dev - 5157858377868 {%- endcomment -%}
+
+	{%- assign productName = 'Starter Bundle' -%}
+
+{% elsif product.id == 4503364305007 %} {%- comment -%} Baby-Led Weaning Bundle - dev - 5157858312332 {%- endcomment -%}
+
+	{%- assign productName = 'Baby-Led Weaning Bundle' -%}
+
+{% elsif product.id == 4503364927599 %} {%- comment -%} Finger Food Only Bundle - dev - 5157858279564 {%- endcomment -%}
+
+	{%- assign productName = 'Finger Food Only Bundle' -%}
+
+{% endif %}
+
+<div class="bundle">
+
+  <div class="container">
+
+    <h2 class="Heading Heading__h2 bundle__title">Choose your Baby's Meal plan</h2>
+    <p class="text-center w-100">4 options full of delicious, freshly frozen ingredients to choose from. Swap plan at any time.</p>
+
+    <!-- bundle 'tabs' -->
+    <div class="tabs">
+      <a class="tabs__item {% if productName == 'Variety Bundle' %}is--active{% endif %}" href="/products/variety-bundle" title="Variety Bundle">
+          Variety Bundle
+      </a>
+      <a class="tabs__item {% if productName == 'Starter Bundle' %}is--active{% endif %}" href="/products/starter-bundle" title="Starter Bundle">
+          Starter Bundle
+      </a>
+      <a class="tabs__item {% if productName == 'Baby-Led Weaning Bundle' %}is--active{% endif %}" href="/products/baby-led-weaning-bundle" title="Baby-Led Weaning Bundle">
+          Baby-Led Weaning Bundle
+      </a>
+      <a class="tabs__item {% if productName == 'Finger Food Only Bundle' %}is--active{% endif %}" href="/products/finger-food-only-bundle" title="Finger Food Only Bundle">
+          Finger Food Only Bundle
+      </a>
+    </div>
+
+
+    <div class="bundle__content">
+      <div class="bundle__image">
+          {%- assign initial_image_id = product.featured_image.id -%}
+          {%- assign image_count = 0 -%}
+
+            {%- for image in product.images -%}
+              {%- if image.alt == 'featured' or image.alt == 'featured mobile' -%}
+                {%- continue -%}
+              {%- endif -%}
+
+              {%- if image.id == product.selected_or_first_available_variant.image.id -%}
+                {%- assign initial_image_id = image.id -%}
+              {%- endif -%}
+
+              {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200,1400,1600', image: image -%}{%- endcapture -%}
+
+        	  {% assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+              <div id="Image{{ image.id }}" style="background-image:url('{{ image | img_url: '600x' }}')" class="Product__SlideItem Product__SlideItem--image Carousel__Cell {% if initial_image_id == image.id %}is-selected{% endif %}"
+                   data-image-position="{% increment image_position %}"
+                   data-image-id="{{ image.id }}">
+                <!-- <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: image.aspect_ratio }}%; --aspect-ratio: {{ image.aspect_ratio }};">
+                  {% assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+
+                  <img loading="lazy"class="Image--lazyLoad Image--fadeIn"
+                       {% if initial_image_id == image.id %}src="{{ image | img_url: '250x' }}"{% endif %}
+                       data-src="{{ image_url }}"
+                       data-widths="[{{ supported_sizes }}]"
+                       data-sizes="auto"
+                       data-expand="-100"
+                       alt="{{ image.alt | escape }}"
+                       data-max-width="{{ image.width }}"
+                       data-max-height="{{ image.height }}"
+                       data-original-src="{{ image | img_url: 'master' }}">
+
+                  <noscript>
+                      <img loading="lazy"src="{{ image | img_url: '800x' }}" alt="{{ image.alt | escape }}">
+                  </noscript>
+                </div>-->
+        	</div>
+
+            {%- assign image_count = image_count | plus: 1 -%}
+          {%- endfor -%}
+
+      </div>
+      <div class="bundle__body">
+
+        {%- render 'product-meta', product: product, show_description: true -%}
+
+
+        <div class="bundle__highlight">
+          <div class="bundle__price">
+            <h2 class="bundle__price--large">&pound;33.00</h2>
+            <h6 class="bundle__price--small">£2.75 PER MEAL</h6>
+          </div>
+          <div class="bundle__benefits">
+            <div class="bundle__benefits-item">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+              <p>All natural, all quick, all Mamamade</p>
+            </div>
+            <div class="bundle__benefits-item">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+              <p>Free from the big 8 allergens</p>
+            </div>
+            {% if productName != 'Variety Bundle' %}
+              <div class="bundle__benefits-item">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+                <p>Steamed, microwaved, mashed or pureed</p>
+              </div>
+            {% endif %}
+            <div class="bundle__benefits-item">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+              <p>Trusted by thousands of real mums</p>
+            </div>
+            <div class="bundle__benefits-item">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+              <p>24/7 access to a weaning coach FREE</p>
+            </div>
+            <div class="bundle__benefits-item">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+              <p>12 meals delivered</p>
+            </div>
+            <div class="bundle__benefits-item">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+              <p>Free delivery</p>
+            </div>
+            <div class="bundle__benefits-item">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><circle style="fill:#117094;" cx="25" cy="25" r="25"/><polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="38,15 22,33 12,25 "/></svg>
+              <p>Modify, skip or cancel anytime</p>
+            </div>
+          </div>
+        </div>
+
+        {%- if product.template_suffix != 'coming-soon' -%}
+        	{%- render 'product-form', product: product -%}
+        {%- endif -%}
+
+      </div>
+    </div>
+  </div>
+
+
+  {%- comment -%} what's included {%- endcomment -%}
+  <h2 class="Heading Heading__h3 bundle__title" style="font-size: 2em;">What to expect</h2>
+  <p class="text-center w-100">23 varieties, our menus change weekly. Here's an idea of what you can expect in your first box. Have a flavour preference? Just let us know!</p>
+  <br />
+
+  <div class="row">
+
+    {%- comment -%} Starter Bundle {%- endcomment -%}
+    {% if productName == 'Starter Bundle' %}
+    	{%- assign bundle_benefit_1 = "Gradually increasing textures and flavours with each box" -%}
+    	{%- assign bundle_benefit_2 = "Free, personalised weaning support" -%}
+    {% endif %}
+
+    {%- comment -%} Variety Bundle {%- endcomment -%}
+    {% if productName == 'Variety Bundle' %}
+    	{%- assign bundle_benefit_1 = "New varieties and textures introduced every week" -%}
+    	{%- assign bundle_benefit_2 = "Free, personalised weaning support" -%}
+    {% endif %}
+
+    {%- comment -%} Baby-Led Weaning Bundle {%- endcomment -%}
+    {% if productName == 'Baby-Led Weaning Bundle' %}
+    	{%- assign bundle_benefit_1 = "Made with your baby in mind (no added salt, sugar or rice)" -%}
+    	{%- assign bundle_benefit_2 = "Free, personalised weaning support" -%}
+    {% endif %}
+
+    {%- comment -%} Finger Food Only Bundle {%- endcomment -%}
+    {% if productName == 'Finger Food Only Bundle' %}
+    	{%- assign bundle_benefit_1 = "For babies and toddlers who are refusing that spoon entirely" -%}
+    	{%- assign bundle_benefit_2 = "Free, personalised weaning support" -%}
+    {% endif %}
+
+
+    <div class="col-xs-12 col-md-6 text-center" style="margin-bottom:2.5rem;">
+        <img loading="lazy"src="https://cdn.shopify.com/s/files/1/0321/1935/7580/files/baby-face.png?v=1593778979" alt="{{ bundle_benefit_1 }}" width="50" />
+        <p style="margin-top:1rem;">{{ bundle_benefit_1 }}</p>
+    </div>
+
+    <div class="col-xs-12 col-md-6 text-center" style="margin-bottom:2.5rem;">
+        <img loading="lazy"src="https://cdn.shopify.com/s/files/1/0321/1935/7580/files/phone-24hr.png?v=1593778752" alt="{{ bundle_benefit_2 }}" width="50" />
+        <p style="margin-top:1rem;">{{ bundle_benefit_2 }}</p>
+    </div>
+
+    {% if productName == 'Starter Bundle' %} {%- comment -%} Starter Bundle {%- endcomment -%}
+    	{%- render 'product-bundle-inc-starter' -%}
+    {% elsif productName == 'Variety Bundle' %} {%- comment -%} Variety Bundle {%- endcomment -%}
+    	{%- render 'product-bundle-inc-variety' -%}
+    {% elsif productName == 'Baby-Led Weaning Bundle' %} {%- comment -%} Baby-Led Weaning Bundle {%- endcomment -%}
+    	{%- render 'product-bundle-inc-baby-led' -%}
+    {% elsif productName == 'Finger Food Only Bundle' %} {%- comment -%} Finger Food Only Bundle {%- endcomment -%}
+    	{%- render 'product-bundle-inc-finger-food' -%}
+    {% endif %}
+
+    <div class="text-center w-100">
+    	<a href="/collections/mamacarte" title="See our full range" style="color:#f37596;font-size:16px;">For our full range please click here</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<br /><br />
+
+
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+QUICK LINKS
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+<div class="Product">
+
+  <div class="container-md">
+    <div class="row center-xs">
+      <div class="col-md-12">
+        <div class="about-us-blockquote-container blockquote-single text-center" role="blockquote">
+           <blockquote class="about-us-blockquote" style="margin-top:0;">“Don’t know what I'd do without this brand. Absolutely delicious flavour packs, so easy to prepare, easy to add to ANY meal, delivery is always on time, communication with the brand is unlike any other brand I’ve had deliveries from regularly, or at all...CANNOT rate Mamamade enough”</blockquote>
+           <h6 class="about-us-quote-author">Dymphna, mum of 1-year-old</h6>
+        </div>
+      </div>
+    </div>
+    <div id="choose-box"></div>
+    <div class="text-center">
+    	<img loading="lazy"src="https://cdn.shopify.com/s/files/1/0013/5489/1375/files/mamamade-comparison-table.png?v=1600435704" alt="Mamamade Comparison Table" style="margin:-20px auto 50px auto;max-width:270px;" />
+    </div>
+  </div>
+
+  <div class="flex-row">
+    <a href="/collections/mamacarte" title="Mamacarte" class="flex-column" style="background-image: url(https://cdn.shopify.com/s/files/1/0013/5489/1375/files/MamaMade_Purple_flatlay__3R8A1141_6456417f-7040-4969-83c3-9154064d5f89.jpg?v=1587938901);">
+      <h3>Mamacarte</h3>
+      <small>Learn more about our meals</small>
+    </a>
+    <a href="/collections/merchandise" title="Merch" class="flex-column" style="background-image: url(https://cdn.shopify.com/s/files/1/0013/5489/1375/files/custom_resized_caefdea2-7b28-4795-86d6-829482694bb9.jpg?v=1587938901);">
+      <h3>Merchandise</h3>
+      <small>Make parenting easier</small>
+    </a>
+    <div class="flex-column" style="background-image: url(https://cdn.shopify.com/s/files/1/0013/5489/1375/files/Sophie_dress_3R8A0100_4f682f1d-9823-4fb7-ba76-07125a566d96.jpg?v=1587938901);">
+      <h3>Recipes</h3>
+      <small>Coming soon</small>
+    </div>
+  </div>
+
+  <div id="shopify-section-1590686356620" class="shopify-section shopify-section--faq"><section class="Section Section--spacingNormal" id="section-1590686356620" data-section-id="1590686356620" data-section-type="faq">
+  <div class="container">
+    <h2 class="Heading Heading__h2 text-center">Your Questions Answered</h2>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-7" style="margin-left: auto;margin-right: auto;">
+        <div class="Faq"><div class="Faq__Item " aria-expanded="false">
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question">Can I try as a one-off without subscribing?</button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte">
+                  <p>Yes! You're in control! You can skip any delivery, or pause or cancel your plan at any time.</p>
+                </div>
+              </div>
+            </div>
+            <span class="Faq__Icon"><svg class="Icon Icon--select-arrow-right" role="presentation" viewBox="0 0 11 18">
+      <path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg></span>
+          </div><div class="Faq__Item " aria-expanded="false">
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question">How many meals come in a bundle?</button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte">
+                  <p>We'll send out 12 meals curated for your baby from our range of porridges, baby meals and finger foods.&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <span class="Faq__Icon"><svg class="Icon Icon--select-arrow-right" role="presentation" viewBox="0 0 11 18">
+      <path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg></span>
+          </div><div class="Faq__Item " aria-expanded="false">
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question">How do you design your plans?</button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte">
+                  <p>We usually build a box for you, based on your little one's age. With each box you'll get more variety and more of what your baby likes.&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <span class="Faq__Icon"><svg class="Icon Icon--select-arrow-right" role="presentation" viewBox="0 0 11 18">
+      <path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg></span>
+          </div><div class="Faq__Item " aria-expanded="false">
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question">Can I choose my meals?</button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte">
+                  <p>Absolutely! Once your first order's been placed, you'll be invited to set a password - then login and set your flavour preferences in the feedback&nbsp;section.&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <span class="Faq__Icon"><svg class="Icon Icon--select-arrow-right" role="presentation" viewBox="0 0 11 18">
+      <path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg></span>
+          </div><div class="Faq__Item " aria-expanded="false">
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question">What if my little one doesn't like the food?</button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte">
+                  <p>Babies aren't going to like everything you give them, and that's totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. So if there's something your baby truly doesn't like, we can change it up whilst keeping things interesting for both of you! For more tips on introducing new flavours, be sure to check out our <a href="https://blog.mamamadefood.com/" title="https://blog.mamamadefood.com/">blog</a></p>
+                </div>
+              </div>
+            </div>
+            <span class="Faq__Icon"><svg class="Icon Icon--select-arrow-right" role="presentation" viewBox="0 0 11 18">
+      <path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg></span>
+          </div><div class="Faq__Item Faq__Item--lastOfSection" aria-expanded="false">
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question">What makes Mamamade different?</button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte">
+                  <p>Our meals are all plant-based and free from the big-8 allergens and are designed to empower you, as the parent, to shape your little one's development. You choose the texture that's right for your little one with meals that are quick to microwave or steam, mash or puree in moments.&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <span class="Faq__Icon"><svg class="Icon Icon--select-arrow-right" role="presentation" viewBox="0 0 11 18">
+      <path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg></span>
+          </div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+</div>
+
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+FEATURED IMAGE
+
+We allow merchants to use one image as a "featured image" by adding the alt tag "featured"
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- for image in product.images -%}
+  {%- if image.alt == 'featured' -%}
+    {%- assign desk_featured_image = image -%}
+  {%- endif -%}
+
+  {%- if image.alt == 'featured mobile' -%}
+    {%- assign mobile_featured_image = image -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if desk_featured_image or mobile_featured_image -%}
+  {%- assign mobile_featured_image = mobile_featured_image | default: desk_featured_image -%}
+  {%- assign desk_featured_image = desk_featured_image | default: mobile_featured_image -%}
+
+  <div class="Product__FeatureImageWrapper" style="background: url({{ desk_featured_image | img_url: '1x1', format: 'jpg' }})">
+    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut hide-no-js" data-expand="-25" data-bgset="{{ mobile_featured_image | img_url: 'x850' }} [(max-width: 640px)] | {{ desk_featured_image | img_url: '1500x' }}"></div>
+
+    <noscript>
+      <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }}" style="background-image: url({{ desk_featured_image | img_url: '1500x' }})"></div>
+    </noscript>
+  </div>
+
+  <style>
+    #shopify-section-{{ section.id }} + .shopify-section--bordered {
+      border-top: 0;
+    }
+  </style>
+{%- else -%}
+  <style>
+    /* This is a bit hacky but allows to circumvent the complete independency of section (as next section included in the page does not know anything about this page) */
+
+    @media screen and (max-width: 640px) {
+      #shopify-section-{{ section.id }} + .shopify-section--bordered {
+        border-top: 0;
+      }
+
+      #shopify-section-{{ section.id }} + .shopify-section--bordered > .Section {
+        padding-top: 0;
+      }
+    }
+  </style>
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+MODALS
+
+If we have some videos, we implement them as modal
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- for image in product.images -%}
+  {%- if image.alt contains 'youtube.com/embed' or image.alt contains 'player.vimeo.com' -%}
+    <div id="modal-video-{{ image.id }}" class="Modal Modal--fullScreen Modal--videoContent" aria-hidden="true" role="dialog" data-scrollable>
+      <div class="Modal__Content">
+        <div class="Container Container--narrow">
+          <div class="VideoWrapper">
+            {% if image.alt contains 'youtube.com/embed' %}
+              <iframe class="Image--lazyLoad" data-src="{{ image.alt }}?autoplay=1&showinfo=0&controls=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            {% else %}
+              <iframe class="Image--lazyLoad" data-src="{{ image.alt }}?autoplay=1&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}" frameborder="0"></iframe>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <button class="Modal__Close Modal__Close--outside" data-animate-bottom data-action="close-modal">{% render 'icon' with 'close' %}</button>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+PHOTO SWIPE
+
+This is the root container for the zoom functionality. Must not be removed, as order element is important.
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- if section.settings.enable_image_zoom -%}
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. Do not remove as content is dynamically added -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Main UI bar -->
+      <div class="pswp__ui pswp__ui--hidden">
+        <button class="pswp__button pswp__button--prev RoundButton" data-animate-left title="{{ 'product.slideshow.previous' | t }}">{% render 'icon' with 'arrow-left' %}</button>
+        <button class="pswp__button pswp__button--close RoundButton RoundButton--large" data-animate-bottom title="{{ 'product.slideshow.close' | t }}">{% render 'icon' with 'close' %}</button>
+        <button class="pswp__button pswp__button--next RoundButton" data-animate-right title="{{ 'product.slideshow.next' | t }}">{% render 'icon' with 'arrow-right' %}</button>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product page",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_share_buttons",
+      "label": "Show social sharing buttons",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sku",
+      "label": "Show SKU",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "description_below_add_to_cart",
+      "label": "Description below add to cart",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "selector_mode",
+      "label": "Selector type",
+      "options": [
+        {
+          "value": "block",
+          "label": "Block"
+        },
+        {
+          "value": "dropdown",
+          "label": "Dropdown"
+        }
+      ],
+      "default": "dropdown"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_color_swatch",
+      "label": "Show color swatch",
+      "default": false,
+      "info": "Some colors appear white? [Learn more](http://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_color_carousel",
+      "label": "Show color carousel",
+      "info": "A pop-up selector with variant images for choosing colors. Only enables when color swatch is disabled.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quantity_selector",
+      "label": "Show quantity selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_inventory_quantity",
+      "label": "Show inventory quantity",
+      "info": "Make sure that your inventory is tracked. [Learn more](https://help.shopify.com/manual/products/inventory#set-up-inventory-tracking).",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "inventory_quantity_threshold",
+      "label": "Inventory quantity threshold",
+      "info": "Only show inventory quantity if below threshold. Choose 0 to always show.",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price_in_button",
+      "label": "Show price in add to cart button",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment_button",
+      "label": "Show dynamic checkout button",
+      "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Product images"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "fill",
+          "label": "Fill screen"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_images",
+      "label": "Stack images on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_thumbnails",
+      "label": "Show thumbnails on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_image_zoom",
+      "label": "Enable zoom",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Tabs"
+    },
+    {
+      "type": "page",
+      "id": "tab_page_1_handle",
+      "label": "First page"
+    },
+    {
+      "type": "page",
+      "id": "tab_page_2_handle",
+      "label": "Second page"
+    },
+    {
+      "type": "paragraph",
+      "content": "The theme also allows you to add specific tabs for a given product only. [Learn more about this feature](http://support.maestrooo.com/article/83-product-adding-different-tabs-per-product)."
+    },
+    {
+      "type": "header",
+      "content": "Reviews"
+    },
+    {
+      "type": "paragraph",
+      "content": "You need to install [Shopify's free Product Reviews](https://apps.shopify.com/product-reviews) app before enabling this option."
+    },
+    {
+      "type": "checkbox",
+      "id": "reviews_enabled",
+      "label": "Enable",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Featured image"
+    },
+    {
+      "type": "paragraph",
+      "content": "You can highlight an image after product tabs by adding the ALT tag \"featured\" to a given image. [Learn more](http://support.maestrooo.com/article/152-product-highlight-a-featured-image)."
+    },
+    {
+      "type": "select",
+      "id": "featured_image_size",
+      "label": "Section size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "large"
+    }
+  ]
+}
+{% endschema %}

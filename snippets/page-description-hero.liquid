@@ -1,0 +1,12 @@
+{{ 'css-description-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="page-description-hero">
+  <div class="page-description-hero__wrapper">
+    {% if title != blank %}
+      <h1 class="page-description-hero__title">{{ title }}</h1>
+    {% endif %}
+    {% if text != blank %}
+      <div class="page-description-hero__text">{{ text }}</div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,111 @@
+{%- render 'header-page', the_page: 'page' -%}
+
+{% schema %}
+{
+  "name": "Page header",
+  "class": "shopify-section--header-page",
+  "max_blocks": 25,
+  "settings": [
+  ],
+  "blocks": [
+    {
+    "type": "header",
+    "name": "Page header",
+    "settings": [
+        {
+            "type": "page",
+            "id": "page",
+            "label": "Page"
+        },
+        {
+            "type": "color",
+            "id": "header_background",
+            "label": "Header background",
+            "default": "#e380af"
+        },
+        {
+            "type": "checkbox",
+            "id": "short_header",
+            "label": "Short header?",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "show_curve",
+            "label": "Show curve?",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Tell your story"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Sub-heading",
+            "default": "Lorem ipsum et el dor"
+        },
+        {
+            "type": "textarea",
+            "id": "copy",
+            "label": "Copy",
+            "info": "Optional block of text",
+            "placeholder": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Link"
+        },
+        {
+            "type": "header",
+            "content": "Button colours"
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text",
+            "default": "#662480"
+        },
+        {
+            "type": "color",
+            "id": "button_color",
+            "label": "Button text",
+            "default": "#ffffff"
+        },
+        {
+            "type": "color",
+            "id": "button_background",
+            "label": "Button background",
+            "default": "#662480"
+        },
+        {
+            "type": "color",
+            "id": "button_background_hover",
+            "label": "Button background hover",
+            "default": "#9380BE"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Header",
+      "name": "Page header",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "header"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

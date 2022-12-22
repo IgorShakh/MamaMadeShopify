@@ -1,0 +1,110 @@
+<div class="ProductMeta">
+  <header class="ProductHeader">
+    {%- if section.settings.show_vendor and product.vendor != blank -%}
+      <h2 class="ProductMeta__Vendor Heading u-h6">
+        {%- assign vendor_handle = product.vendor | handle -%}
+        {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+        {%- unless collection_for_vendor.empty? -%}
+          <a href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
+        {%- else -%}
+          {{- product.vendor -}}
+        {%- endunless -%}
+      </h2>
+    {%- endif -%}
+
+    {% comment %}
+    {%- if product.id == 4505045172364 or product.id == 4505045926028 -%}
+      <h1 class="ProductMeta__Title Heading u-h2" style="text-transform: uppercase;font-size: 2.7em;line-height: 1.2;">
+    {%- else -%}
+      <h1 class="ProductMeta__Title Heading u-h2">
+    {%- endif -%}
+    {% endcomment %}
+
+    <div class="ProductHeader__Inner">
+      {%- if section.settings.show_loyalty -%}
+      <div class="LoyaltyRound">
+        <a href="{{ settings.loyalty_page }}" class="LoyaltyRound__Link" title="{{ settings.loyalty_page }}">
+          {%- render 'loyalty-points' with points: 100, modifier: 'inline', icon: 'more' -%}
+        </a>
+      </div>
+      {%- endif -%}
+      <h1 class="ProductMeta__Title Heading u-h2">
+        {%- if template.name == 'product' -%}
+          {{- product.title -}}
+        {%- else -%}
+          <a href="{{ product.url }}">{{ product.title }}</a>
+        {%- endif -%}
+      </h1>
+    </div>
+
+    {% if product.metafields.product.dietary_information[0] != blank %}
+      <div class="Product__USP">
+        <ul>
+          {% for i in (0..10) %}
+            {% if product.metafields.product.dietary_information[i] != blank %}
+            <li>
+              <span><img loading="lazy" src="{{product.metafields.accentuate.dietary_information_image[i]}}" /></span>
+              {{product.metafields.product.dietary_information[i]}}
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {%- if template == 'product.bundle-new' -%}
+      {%- render 'product-form-bundle', product: product -%}
+    {%- endif -%}
+
+    {%- if section.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
+      <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
+    {%- endif -%}
+  </header>
+
+  {%- if show_description and section.settings.description_below_add_to_cart == false -%}
+    <div class="ProductMeta__Description">
+      <div class="Rte">
+        {%- comment -%}
+        We have figured out that some merchants were copy-pasting huge chunk of code into the product description,
+        which can make the theme crashes if it contains some special attributes used by the theme. We therefore make sure to process this
+        {%- endcomment -%}
+
+        {%- capture tastes_like -%}
+          <div class="Icon__Wrap">
+          {%- for icon in product.metafields.charle.tastes_like -%}
+            <img loading="lazy"src="{{ icon }}" class="Icon">
+          {%- endfor -%}
+          </div>
+        {%- endcapture -%}
+
+        {%- if template != 'product.bundle-new' -%}
+          {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' | replace: '[tastes_like]', tastes_like }}
+        {%- endif -%}
+
+
+      </div>
+
+      {% comment %} {%- render 'product-footer' -%} {% endcomment %}
+
+      {%- if section.settings.show_share_buttons -%}
+        <div class="ProductMeta__ShareButtons hidden-pocket">
+          <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">{{ 'product.form.share' | t }}</span>
+
+          {%- assign share_url = shop.url | append: product.url -%}
+          {%- assign twitter_text = product.title -%}
+          {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+          {%- assign pinterest_image = product.featured_image | img_url: 'large' | prepend: 'https:' -%}
+
+          <div class="ProductMeta__ShareList Text--subdued">
+            <a class="ProductMeta__ShareItem" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" aria-label="Facebook">{%- render 'icon' with 'facebook' -%}</a>
+            <a class="ProductMeta__ShareItem" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="Twitter">{%- render 'icon' with 'twitter' -%}</a>
+            <a class="ProductMeta__ShareItem" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" aria-label="Pinterest">{%- render 'icon' with 'pinterest' -%}</a>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+
+

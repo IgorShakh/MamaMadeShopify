@@ -1,0 +1,51 @@
+{%- render 'loyalty-items' -%}
+
+{% schema %}
+{
+  "name": "Loyalty - Spend",
+	"class": "shopify-section--loyalty",
+	"max_blocks": 10,
+    "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background colour"
+    }
+  ],
+	"blocks": [
+	  {
+		"type": "Column",
+        "name": "Column",
+        "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            },
+            {
+              "type": "text",
+              "id": "points",
+              "label": "Points"
+            }
+          ]
+	   }
+  	],
+	"presets": [
+    {
+      "category": "Text",
+      "name": "Loyalty - Spend",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

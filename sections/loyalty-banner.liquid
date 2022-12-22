@@ -1,0 +1,39 @@
+{%- assign url = section.settings.url -%}
+
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="loyalty-banner">
+
+    <div class="LoyaltyBanner">
+        {%- if url != blank -%}<a href="{{ url }}" class="LoyaltyBanner__Link">{%- endif -%}
+        {%- render 'icon' with 'loyalty', classes: 'LoyaltyBanner__Image' -%}
+        {%- if url != blank -%}</a>{%- endif -%}
+    </div>
+
+</section>
+
+<style>
+    #section-{{ section.id }} {
+        background: url({{ section.settings.background_image | img_url: '1800x', format: 'jpg' }}) center no-repeat;
+        background-size: cover;
+    }
+</style>
+
+
+{% schema %}
+{
+  "name": "Loyalty banner",
+  "class": "shopify-section--loyalty-banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image",
+      "info": "1800 x 400px .jpg recommended."
+    },
+    {
+        "type": "url",
+        "id": "url",
+        "label": "Loyalty link"
+    }
+  ]
+}
+{% endschema %}

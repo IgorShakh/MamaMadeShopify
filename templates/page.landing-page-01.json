@@ -1,0 +1,179 @@
+{
+  "sections": {
+    "text-with-image": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Mamamates exclusive!",
+        "image": "shopify:\/\/shop_images\/MM-WeaningWebinar-Assets-June28_1.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Sign up for our Weaning 101 Workshop today for free (worth £20)!<br\/> <br\/>Hosted by Mamamade founder and mum of two, Sophie Baron, consider this as your complete support system - a detailed 45 minute workshop filled with expert guidance, practical advice and action points to help you on your weaning journey.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1656500743f630ef22": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"klaviyo-form-WS2SXR\"><\/div>"
+      }
+    },
+    "text-with-products": {
+      "type": "text-with-products",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "image-with-text-overlay-two": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "press": {
+      "type": "press",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    },
+    "featured-video": {
+      "type": "aside-with-video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "link_text": "Read our story",
+        "link_url": "",
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b",
+        "video_url": "",
+        "heading_icons": "",
+        "link_text_icons": "Get started",
+        "link_url_icons": ""
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "show_images": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": ""
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Weaning 101",
+        "image": "shopify:\/\/shop_images\/MM-WeanieWebinar-Carousel_3.png",
+        "image_remove_padding": true,
+        "image_position": "left",
+        "content": "<p>Whether you're planning ahead, just started or in the thick of it we aim to equip you with the confidence, skills and reassurance you need to take on the wild world of weaning. <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "how-it-works-programme": {
+      "type": "how-it-works-programme",
+      "disabled": true,
+      "blocks": {
+        "288a2656-c1dd-4989-b186-02e88435832b": {
+          "type": "Column",
+          "settings": {
+            "column-heading": "",
+            "column-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "288a2656-c1dd-4989-b186-02e88435832b"
+      ],
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    }
+  },
+  "order": [
+    "text-with-image",
+    "1656500743f630ef22",
+    "text-with-products",
+    "how-it-works",
+    "image-with-text-overlay-two",
+    "press",
+    "featured-video",
+    "product-testimonials",
+    "faq",
+    "blog-posts",
+    "image-with-text-overlay",
+    "text-with-image-two",
+    "how-it-works-programme"
+  ]
+}

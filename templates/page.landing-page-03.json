@@ -1,0 +1,212 @@
+{
+  "sections": {
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Thanks for signing up!",
+        "image": "shopify:\/\/shop_images\/Mamamade_organic_baby_and_toddler_food_delivered_50b4de32-a010-44e7-81c7-c0deb504f018.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Check your email for confirmation and for your copy of our Nutrition Cheat Sheet.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "text-with-image": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "text-with-products": {
+      "type": "text-with-products",
+      "blocks": {
+        "b48825a2-0129-4ec3-8700-e8c82bd339f3": {
+          "type": "product",
+          "settings": {
+            "product": "first-tastes-bundle"
+          }
+        },
+        "f0fc7eb3-5eb5-48b1-af25-d7fcbba5051c": {
+          "type": "product",
+          "settings": {
+            "product": "first-30-days-weaning-guide"
+          }
+        },
+        "0e45b68b-fefa-4789-bfce-5199c6cb3b4a": {
+          "type": "product",
+          "settings": {
+            "product": "getting-started-with-blw-bundle-6m"
+          }
+        },
+        "7e8dd9f7-85ea-4c46-93d1-12d0814ce493": {
+          "type": "product",
+          "settings": {
+            "product": "mamamade-silicone-plate-with-lid"
+          }
+        },
+        "c37da165-dd66-4cba-ad28-bc5424bf8976": {
+          "type": "product",
+          "settings": {
+            "product": "bestsellers-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "b48825a2-0129-4ec3-8700-e8c82bd339f3",
+        "f0fc7eb3-5eb5-48b1-af25-d7fcbba5051c",
+        "0e45b68b-fefa-4789-bfce-5199c6cb3b4a",
+        "7e8dd9f7-85ea-4c46-93d1-12d0814ce493",
+        "c37da165-dd66-4cba-ad28-bc5424bf8976"
+      ],
+      "settings": {
+        "heading": "Get started today!",
+        "copy": "Take the stress out of weaning with Mamamade. Think of us as your ultimate support system. Fuss-free, healthy + homemade meals delivered to your door.",
+        "button_link": "shopify:\/\/collections\/pre-made-bundles",
+        "button_text": "I'm ready to start weaning",
+        "color_bg": "#abe8b5"
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "image-with-text-overlay-two": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "press": {
+      "type": "press",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    },
+    "featured-video": {
+      "type": "aside-with-video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "link_text": "Read our story",
+        "link_url": "",
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b",
+        "video_url": "",
+        "heading_icons": "",
+        "link_text_icons": "Get started",
+        "link_url_icons": ""
+      }
+    },
+    "how-it-works-programme": {
+      "type": "how-it-works-programme",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "show_images": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": ""
+      }
+    },
+    "1660214825cffa67f0": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "subtitle": "Your subtitle",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
+      }
+    }
+  },
+  "order": [
+    "text-with-image-two",
+    "image-with-text-overlay",
+    "text-with-image",
+    "text-with-products",
+    "how-it-works",
+    "image-with-text-overlay-two",
+    "press",
+    "featured-video",
+    "how-it-works-programme",
+    "product-testimonials",
+    "faq",
+    "blog-posts",
+    "1660214825cffa67f0"
+  ]
+}

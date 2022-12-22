@@ -1,0 +1,284 @@
+{
+  "sections": {
+    "1644490080e91102e9": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/Mamamade_Podcast_DigitalAssetsHeroAsset_LandingPage_1500x800_V2.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#f88cc4",
+        "overlay_opacity": 0,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "podcast-sign-up": {
+      "type": "podcast-sign-up",
+      "settings": {
+        "bgColor": "#ffffff",
+        "title": "The Mamamade Podcast",
+        "subtitle": "NEVER MISS AN EPISODE!",
+        "leftColContent": "<p>Sign up here to receive an update every time a new podcast episode is available<\/p>",
+        "show_newsletter": true,
+        "rightColContent": "<p>We understand that parenting can be a whirlwind of emotions, situations and, most of the time, uncertainty. So, that's why The Mamamade Podcast is here to help! Think of each episode as a mini-guide to surviving parenthood on the go. Listen on <a href=\"https:\/\/podcasts.apple.com\/gb\/podcast\/the-mamamade-podcast\/id1615382390\" target=\"_blank\" title=\"Apple Podcasts - The Mamamade Podcast\"><strong>Apple Podcasts<\/strong><\/a>, <a href=\"https:\/\/open.spotify.com\/show\/7GmxaOMPyGGtF3E2ukZyji?si=5kVeDaKtTKSzHHa9fheHlA&nd=1\" target=\"_blank\" title=\"Spotify - The Mamamade Podcast\"><strong>Spotify<\/strong><\/a> or below!<\/p>"
+      }
+    },
+    "podcast-feed": {
+      "type": "podcast-feed",
+      "settings": {}
+    },
+    "1643712393c6e5810e": {
+      "type": "header-page",
+      "settings": {}
+    },
+    "1644490426e82ddfc7": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Hi, I'm Sophie!",
+        "image": "shopify:\/\/shop_images\/Mamamade_Founder_Sophie_Baron.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Mamamade came to life when I was introducing solids to my daughter in 2018. I wanted her to have the very best ‑ everything home‑cooked, organic, plant‑based, flavourful and healthy. But in reality, that’s easier said than done, not just for me but for most modern-day parents.<\/p><p>I was desperate for a bit of support; the juggling act of parenting can be challenging. Most days, I was out of time, overworked and lacked creativity during mealtimes, but I wasn't willing to compromise on my daughter's health or development. So, I set out to create a product for parents like me! And that's how Mamamade was born...<\/p>",
+        "link_text": "Read my story",
+        "link_url": "https:\/\/mamamadefood.com\/pages\/about"
+      }
+    },
+    "1647433661df8400cf": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Meal Bundles For Every Age + stage",
+        "image": "shopify:\/\/shop_images\/Eat_Your_Greens.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>A parent's checklist is long enough. We're here to support you for every mealtime and snack occasion by bundling down our organic and plant-based snacks, meals, finger foods and purées, so you can be sure you're offering the right food at the right time.<\/p><p>Whether your baby is about to enter the wild world of weaning, your little one a finger food fiend, or you have a toddler that's asking for a more 'grown-up' meal, we have the bundle perfect for your family. Take our quiz, and let's build a meal plan for your child!<\/p><p><\/p>",
+        "link_text": "TAKE THE QUIZ",
+        "link_url": ""
+      }
+    },
+    "1644404590aae3f463": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Ready To Order Mamamade?",
+        "image": "shopify:\/\/shop_images\/Mamamade_meals_in_freezer.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>At Mamamade we're all about convenience, which is why you can order our products on a weekly, fortnightly or monthly subscription, so you have one less thing to worry about. You can pause your subscription at any time, and have the option to change your meals or bundles via your account.<\/p><p><\/p><p>If you're not sure if a subscription is right for you, you can also order one-off box to get you started!<\/p><p><\/p><p><\/p>",
+        "link_text": "Get started",
+        "link_url": "https:\/\/mamamadefood.com\/pages\/mamamade-meals-delivered"
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Ready To Order Mamamade?",
+        "image": "shopify:\/\/shop_images\/Mamamade_meals_delivered.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>At Mamamade we're all about convenience, which is why all of our meals are delivered frozen to your door. You can order our products on a weekly, fortnightly or monthly subscription, so you have one less thing to worry about. You can pause your subscription at any time, and have the option to change your meals or bundles via your account.<\/p><p>If you're not sure if a subscription is right for you, you can also order one-off box to get you started! Either way, use code MAMAPODCAST25 to get 25% off your first three boxes.<\/p><p><\/p><p><\/p>",
+        "link_text": "Shop mamamade bundles",
+        "link_url": "https:\/\/mamamadefood.com\/collections\/pre-made-bundles"
+      }
+    },
+    "1643713061210bb7d6": {
+      "type": "featured-collections",
+      "blocks": {
+        "164371306110b051a0-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "fam-favourite-bundles",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "164371306110b051a0-0"
+      ],
+      "settings": {
+        "title": "",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_loyalty": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "blocks": {
+        "a7cc2ddf-01c5-473d-bd96-4e392aa6d3b8": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Just wanted to say thank you, my son is 10 months old and will barely eat anything and I was losing the will to live. But tonight he had your Banana Oat Pancakes and he ate all 5!!!!! I have never cried like that and I feel now that your meals will be our go to!  Thank you.<\/p>",
+            "cite": "- @hannahlu93",
+            "image": "shopify:\/\/shop_images\/Mamamade_banana_oat_pancakes.png"
+          }
+        },
+        "393b660e-eeab-4179-881c-f6727c2ccd80": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>We absolutely love the Mamamade pancakes in our household -  they’re so quick and easy to prepare, just a few minutes in the microwave and they’re ready to go! The Mango Oat Cakes are Eva's favourite.<\/p>",
+            "cite": "- @thelifelately",
+            "image": "shopify:\/\/shop_images\/Mamamade_Food_Review.png"
+          }
+        },
+        "23350832-6f93-409d-a3db-36cdcde60dce": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>...the wonderful people at Mamamade have got me covered, and  they're a bloody dream for when it comes to meal times and wanting something delicious, organic and nutritious when I don't have time to prep anything in advance. They’ve been a total godsend since weaning began.<\/p>",
+            "cite": "- @livpurvis",
+            "image": "shopify:\/\/shop_images\/Mamamade_Pancakes_Liv_Purvis.png"
+          }
+        }
+      },
+      "block_order": [
+        "a7cc2ddf-01c5-473d-bd96-4e392aa6d3b8",
+        "393b660e-eeab-4179-881c-f6727c2ccd80",
+        "23350832-6f93-409d-a3db-36cdcde60dce"
+      ],
+      "settings": {
+        "heading": "We Share The Load. You Share The Love.",
+        "sub-heading": "",
+        "show_images": true,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#f88cc4",
+        "text_color": "#ffffff"
+      }
+    },
+    "16474349845fa5989e": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Book A Free 1:1 Weaning Call",
+        "image": "shopify:\/\/shop_images\/Mamamade_Weaning_Call.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>We know just how overwhelming weaning can be, which is why we offer free 1:1 coach calls to answer all of your weaning, feeding and foodie questions. <\/p><p>Our calls are a judgment-free zone, and they take just 15 minutes (though we are always happy to chat for longer). No question is too small or silly, so book a call and we'll chat with you soon!<\/p>",
+        "link_text": "book your weaning call",
+        "link_url": "https:\/\/calendly.com\/mamamadefood\/mamamade-weaning-coach-call?month=2022-03"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "blocks": {
+        "feffdfbb-c864-48d1-bb55-35f4647d1319": {
+          "type": "article",
+          "settings": {
+            "article_1": "mamamadeblog\/weaning-at-4-months-here-s-what-you-need-to-know",
+            "article_2": "mamamadeblog\/how-to-teach-your-children-healthy-eating-habits",
+            "article_3": "mamamadeblog\/my-baby-isnt-eating-the-weaning-journey"
+          }
+        }
+      },
+      "block_order": [
+        "feffdfbb-c864-48d1-bb55-35f4647d1319"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Am I Doing It Right?",
+        "copy": "Ready to enter the wild world of weaning? It’s going to be a fun, sometimes frustrating, and likely messy ride, but we will be with you every step of the way...",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": "#fff8f3"
+      }
+    },
+    "16444108900a31b631": {
+      "type": "maestrooo-instagram",
+      "settings": {
+        "title": "Tag us on Instagram! #WeMamamadeIt",
+        "subheading": "",
+        "link_text": "",
+        "link_url": "",
+        "layout": "grid",
+        "image_size": "medium",
+        "full_width": false,
+        "add_spacing": true,
+        "rows_count": 1,
+        "show_author": false,
+        "show_caption": false,
+        "show_date": false,
+        "click_action": "open_instagram",
+        "heading_color": "#662480",
+        "subheading_color": "#662480",
+        "button_background": "#000000",
+        "button_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_text_color": "#ffffff",
+        "overlay_opacity": 65
+      }
+    },
+    "1644490048f3961e07": {
+      "type": "header-page",
+      "blocks": {
+        "16444900487bf466f4-0": {
+          "type": "header",
+          "settings": {
+            "page": "",
+            "header_background": "#e380af",
+            "short_header": false,
+            "show_curve": false,
+            "title": "Tell your story",
+            "subheading": "Lorem ipsum et el dor",
+            "copy": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#662480",
+            "button_color": "#ffffff",
+            "button_background": "#662480",
+            "button_background_hover": "#9380be"
+          }
+        },
+        "f57bf746-9c0c-404a-bf46-187005ec6c37": {
+          "type": "header",
+          "settings": {
+            "page": "",
+            "header_background": "#e380af",
+            "short_header": false,
+            "show_curve": false,
+            "title": "Tell your story",
+            "subheading": "Lorem ipsum et el dor",
+            "copy": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#662480",
+            "button_color": "#ffffff",
+            "button_background": "#662480",
+            "button_background_hover": "#9380be"
+          }
+        }
+      },
+      "block_order": [
+        "16444900487bf466f4-0",
+        "f57bf746-9c0c-404a-bf46-187005ec6c37"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "1644490080e91102e9",
+    "podcast-sign-up",
+    "podcast-feed",
+    "1643712393c6e5810e",
+    "1644490426e82ddfc7",
+    "1647433661df8400cf",
+    "1644404590aae3f463",
+    "text-with-image-two",
+    "1643713061210bb7d6",
+    "product-testimonials",
+    "16474349845fa5989e",
+    "blog-posts",
+    "16444108900a31b631",
+    "1644490048f3961e07"
+  ]
+}

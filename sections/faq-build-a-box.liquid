@@ -1,0 +1,66 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="faq">
+  <div class="container">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-md-6">
+        <h2 class="Heading Heading__h2">Frequently <br>asked questions</h2>
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-xs-12 col-md-7" style="margin-left: auto;margin-right: auto;">
+        <div class="Faq">
+          {%- for block in section.blocks -%}
+            <div class="Faq__Item {% if forloop.last %}Faq__Item--lastOfSection{% endif %}" aria-expanded="false" {{ block.shopify_attributes }}>
+              <div class="Faq__ItemWrapper">
+                <button class="Faq__Question">{{ block.settings.title | escape }}</button>
+
+                <div class="Faq__AnswerWrapper" aria-hidden="true">
+                  <div class="Faq__Answer Rte">
+                    {{ block.settings.answer }}
+                  </div>
+                </div>
+              </div>
+
+              <span class="Faq__Icon">
+                {%- render 'icon' with 'button-arrow', classes: 'Faq__Svg', fill: settings.color_brand_primary, stroke: '#fff' -%}
+              </span>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "FAQs (BAB)",
+    "class": "shopify-section--faq",
+    "settings": [],
+    "blocks": [
+      {
+      "type": "Question",
+        "name": "Question",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Text",
+        "name": "FAQs",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

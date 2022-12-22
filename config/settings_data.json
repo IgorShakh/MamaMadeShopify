@@ -1,0 +1,2354 @@
+{
+  "current": {
+    "account_login_image": "shopify:\/\/shop_images\/texture.png",
+    "account_register_image": "shopify:\/\/shop_images\/texture.png",
+    "show_page_transition": true,
+    "show_button_transition": true,
+    "show_image_zooming": true,
+    "show_element_staggering": true,
+    "12_items_box_price": "£2.75",
+    "24_items_box_price": "£2.50",
+    "cart_header_text": "",
+    "cart_terms_text": "I agree to your terms and conditions",
+    "cart_type": "drawer",
+    "cart_enable_notes": false,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "",
+    "cart_message": "",
+    "cart_button_text": "",
+    "color_brand_primary": "#662480",
+    "color_brand_secondary": "#a887d3",
+    "color_brand_tertiary": "#f88cc4",
+    "color_brand_quaternary": "#ffa15c",
+    "heading_color": "#662480",
+    "text_color": "#662480",
+    "text_light_color": "#662480",
+    "link_color": "#662480",
+    "background": "#ffffff",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#a887d3",
+    "button_background": "#662480",
+    "button_text_color": "#ffffff",
+    "button_accent": "#662480",
+    "button_secondary_background": "#f88cc4",
+    "button_secondary_text_color": "#ffffff",
+    "button_secondary_accent": "#662480",
+    "header_background": "#ffffff",
+    "header_logo_fill": "#662480",
+    "header_heading_color": "#662480",
+    "header_light_color": "#a887d3",
+    "footer_background": "#f88cc4",
+    "footer_heading_color": "#662480",
+    "footer_text_color": "#662480",
+    "footer_link_hover": "#a887d3",
+    "navigation_background": "#a887d3",
+    "navigation_text_color": "#ffffff",
+    "newsletter_popup_background": "#ffffff",
+    "newsletter_popup_text_color": "#662480",
+    "secondary_elements_background": "#1c1b1b",
+    "secondary_elements_text_color": "#ffffff",
+    "color_stage_1": "#f88cc4",
+    "color_stage_2": "#abe8b5",
+    "color_stage_3": "#f7d25d",
+    "color_stage_4": "#ffa15c",
+    "color_all": "#f88cc4",
+    "color_recipes": "#f7d25d",
+    "color_family": "#abe8b5",
+    "color_lifestyle": "#ffa15c",
+    "color_tier_1": "#abe8b5",
+    "color_tier_2": "#92a4ed",
+    "color_tier_3": "#f88cc4",
+    "cookie_background_colour": "#92a4ed",
+    "currency_conversion_enabled": false,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+    "currency_conversion_money_format": "money_format",
+    "product_show_price_on_hover": true,
+    "product_show_secondary_image": true,
+    "product_info_alignment": "center",
+    "product_image_size": "square",
+    "product_list_horizontal_spacing": "medium",
+    "product_list_vertical_spacing": "extra_small",
+    "charge_no_discount": "£2.75 PER MEAL, 1 BOX OF 12 MEALS DELIVERED EVERY 2 WEEKS, PAY £33 EVERY 2 WEEKS",
+    "charge_first_frequency": "PAY MONTHLY - 10% OFF",
+    "charge_first_discount": "ONLY £2.50 PER MEAL, 1 BOX OF 12 MEALS DELIVERED EVERY 2 WEEKS, PAY £60 MONTHLY",
+    "charge_second_frequency": "PAY 2 MONTHS UPFRONT - 15% OFF",
+    "charge_second_discount": "ONLY £2.33 PER MEAL, 1 BOX OF 12 MEALS DELIVERED EVERY 2 WEEKS, PAY £111.84 EVERY 2 MONTHS",
+    "charge_second": 8,
+    "search_mode": "product,article,page",
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/hellomamamade",
+    "social_twitter": "",
+    "social_pinterest": "https:\/\/www.pinterest.co.uk\/Hellomamamade\/",
+    "social_instagram": "https:\/\/www.instagram.com\/hellomamamade\/",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "",
+    "social_linkedin": "https:\/\/www.linkedin.com\/company\/hellomamamade",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "heading_font": "georgia_pro_n4",
+    "heading_size": "large",
+    "uppercase_heading": false,
+    "text_font": "neue_haas_unica_n4",
+    "base_text_font_size": 15,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-holding.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f5f5f5",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#662480",
+    "checkout_button_color": "#a887d3",
+    "checkout_error_color": "#e32c2b",
+    "color_tag_breakfast": "#f88cc4",
+    "color_tag_lunch": "#f7d25d",
+    "color_tag_dinner": "#abe8b5",
+    "color_tag_snacks": "#ffa15c",
+    "favicon": "",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "main-menu",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": true,
+          "background": "#f88cc4",
+          "text_color": "#ffffff",
+          "text_em_color": "#662480",
+          "content": "Free Delivery for All Subscribers - Cancel or Change Anytime. <em> Try Now! <\/em>",
+          "icon": "none",
+          "link": "shopify:\/\/collections\/pre-made-bundles"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "4ed6ec92-11c3-4019-9129-1d58031a00b1": {
+            "type": "mega_menu_shop",
+            "settings": {
+              "navigation_mega_menu": "Shop",
+              "list_1": "shop",
+              "list_2": "shop-by-age",
+              "list_3": "shop-by-type",
+              "list_4": "fam-favs",
+              "product_1": "shopify:\/\/collections\/build-a-box",
+              "product_image_1": "shopify:\/\/shop_images\/Build_a_box_menu_image.png",
+              "product_title_1": "Build Your Own Box",
+              "product_content_1": "You’re in control - create your own meal plan.",
+              "product_2": "shopify:\/\/collections\/4m",
+              "product_image_2": "shopify:\/\/shop_images\/First_tastes.png",
+              "product_title_2": "First Tastes",
+              "product_content_2": "Ready to start weaning? Try our veg + fruit purees.",
+              "product_3": "shopify:\/\/collections\/6-12m",
+              "product_image_3": "shopify:\/\/shop_images\/6m.png",
+              "product_title_3": "6m+",
+              "product_content_3": "Time to explore new flavours.",
+              "product_4": "shopify:\/\/collections\/12m",
+              "product_image_4": "shopify:\/\/shop_images\/12m.png",
+              "product_title_4": "12m+",
+              "product_content_4": "Eager to try new textures?",
+              "product_5": "shopify:\/\/collections\/toddlers",
+              "product_image_5": "shopify:\/\/shop_images\/Toddlers.png",
+              "product_title_5": "Toddlers",
+              "product_content_5": "Meals and finger foods for snack-happy toddlers.",
+              "product_6": "shopify:\/\/collections\/fam-favourite-bundles",
+              "product_image_6": "shopify:\/\/shop_images\/Fam-faves.png",
+              "product_title_6": "Fam-Faves",
+              "product_content_6": "Our most loved meals, snacks and finger foods."
+            }
+          },
+          "b3fb8613-2342-4480-b5f4-65a94f4e5995": {
+            "type": "mega_menu_thumbnail",
+            "settings": {
+              "navigation_mega_menu": "About",
+              "show_button": false,
+              "button_text": "Read More...",
+              "show_header": false,
+              "header_title": "Title Example",
+              "header_content": "Content Example",
+              "show_header_button": false,
+              "button_header_url": "",
+              "button_header_text": "View All",
+              "push_1_image": "shopify:\/\/shop_images\/Sophie_s_Story_776x556_ab2a0e59-5426-463f-9890-13044d1222f3.png",
+              "push_1_heading": "Sophie's Story",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/pages\/about",
+              "push_2_image": "shopify:\/\/shop_images\/MM-WhatsappGroup-02.png",
+              "push_2_heading": "Join us on WhatsApp",
+              "push_2_subheading": "",
+              "push_2_url": "https:\/\/chat.whatsapp.com\/CNBBbGyDnCG55U1jhL8v2c",
+              "push_3_image": "shopify:\/\/shop_images\/Podcast_-_776x556_f3405d9b-953d-4e5f-927a-3947ce20590a.png",
+              "push_3_heading": "Listen to our Podcast",
+              "push_3_subheading": "",
+              "push_3_url": "shopify:\/\/pages\/podcast",
+              "push_4_image": "shopify:\/\/shop_images\/Mamamade_DropdownMenu_Graphics_Help_Retina_Text.jpg",
+              "push_4_heading": "Help Centre",
+              "push_4_subheading": "",
+              "push_4_url": "https:\/\/help.mamamadefood.com\/en-US\/articles"
+            }
+          },
+          "41836062-c53f-4407-aa8e-a35750c46d91": {
+            "type": "mega_menu_thumbnail",
+            "settings": {
+              "navigation_mega_menu": "Blog",
+              "show_button": true,
+              "button_text": "Read More...",
+              "show_header": true,
+              "header_title": "What Happens Next - The Mamamade Blog",
+              "header_content": "Breaking down barriers and exploring the ins and outs of parenting",
+              "show_header_button": true,
+              "button_header_url": "shopify:\/\/blogs\/mamamadeblog",
+              "button_header_text": "View Blog",
+              "push_1_image": "shopify:\/\/shop_images\/Bottle_Aversion_1.png",
+              "push_1_heading": "Bottle Aversion: Why Does My Baby Refuse To Be Bottle-Fed?",
+              "push_1_subheading": "A baby bottle-feeding aversion is one of the most stressful situations a new parent can face, but it is common. Click to find out what you can do to help your baby, as Mamamade talks through understanding bottle aversion, how it can affect your daily lifestyle, the signs to look out for, causes and treatment.",
+              "push_1_url": "shopify:\/\/blogs\/mamamadeblog\/bottle-aversion-why-does-my-baby-refuse-to-be-bottle-fed",
+              "push_2_image": "shopify:\/\/shop_images\/Cut_Foods_Safely_1.png",
+              "push_2_heading": "How to Cut Foods Safely for Baby-Led Weaning",
+              "push_2_subheading": "Let's get into the basics of baby-led weaning! Let's talk about important topics, from weaning safety, how to cut food for babies around 6 to 10 months and ways that you can help develop your baby's fine motor skills. We help parents who wish to follow the baby-led weaning method understand how to do so safely.",
+              "push_2_url": "https:\/\/mamamadefood.com\/blogs\/mamamadeblog\/how-to-cut-foods-safely-for-baby-led-weaning",
+              "push_3_image": "shopify:\/\/shop_images\/114.png",
+              "push_3_heading": "Freeze The Day! Demystifying Stigmas Around Frozen Baby Food.",
+              "push_3_subheading": "When it's done right, frozen food can be more nutritious, delicious, convenient and sustainable",
+              "push_3_url": "https:\/\/mamamadefood.com\/blogs\/mamamadeblog\/freeze-the-day-demystifying-stigmas-around-frozen-food",
+              "push_4_image": "shopify:\/\/shop_images\/Mamamade_weaning_questions_answered_1024x1024_1.webp",
+              "push_4_heading": "Baby Weaning Questions We’re Always Asked",
+              "push_4_subheading": "From the best weaning foods to when to start, we answer the baby weaning questions on everybody's lips...",
+              "push_4_url": "https:\/\/mamamadefood.com\/blogs\/mamamadeblog\/our-frequently-asked-baby-weaning-questions"
+            }
+          }
+        },
+        "block_order": [
+          "4ed6ec92-11c3-4019-9129-1d58031a00b1",
+          "b3fb8613-2342-4480-b5f4-65a94f4e5995",
+          "41836062-c53f-4407-aa8e-a35750c46d91"
+        ],
+        "settings": {
+          "use_sticky_header": true,
+          "logo_max_width": 110,
+          "mobile_logo_max_width": 80,
+          "navigation_menu": "main-menu",
+          "navigation_style": "inline",
+          "show_icons": true,
+          "enable_transparent_header": true,
+          "enable_transparent_header_collection": true,
+          "show_transparent_header_border": false,
+          "transparent_text_color": "#662480"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "1580295937228": {
+            "type": "links",
+            "settings": {
+              "menu": "footer-two"
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Join the conversation, baby",
+              "content": ""
+            }
+          },
+          "1603460040338": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "content": "<p><a href=\"mailto:care@mamamadefood.com\" title=\"mailto:care@mamamadefood.com\">care@mamamadefood.com<\/a> <\/p><p>Unit 5E, Atlas Business Centre, Oxgate Lane, London NW2 7HJ<\/p>",
+              "show_social_media": true
+            }
+          },
+          "35b3d1e9-d274-4d84-a656-760b750f4c8f": {
+            "type": "links",
+            "disabled": true,
+            "settings": {
+              "menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "1580295937228",
+          "footer-2",
+          "1603460040338",
+          "35b3d1e9-d274-4d84-a656-760b750f4c8f"
+        ],
+        "settings": {
+          "show_payment_methods": false
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "8bbb80de-a110-4aff-acd5-ff7e1c0e53ad": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "slide_background": "#92a4ec",
+              "image": "shopify:\/\/shop_images\/Mamamade_x_Chilly_s_Food_Pot_3.png",
+              "title": "New Mamamerch!",
+              "subheading": "Check out our latest Mamamerch drop. Brand new sweatshirts and Chilly's food pots.",
+              "copy": "",
+              "button_1_text": "Tell me more",
+              "button_1_link": "shopify:\/\/collections\/merchandise",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "1581497264480": {
+            "type": "image",
+            "settings": {
+              "slide_background": "#ffe1ba",
+              "image": "shopify:\/\/shop_images\/test.png",
+              "title": "Stress-free mealtimes",
+              "subheading": "Take the stress out of prepping. Organic food for babies and toddlers, ready in minutes.",
+              "copy": "",
+              "button_1_text": "Get Started",
+              "button_1_link": "shopify:\/\/collections\/pre-made-bundles",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "76e5e98a-5ca4-48d6-8e6e-e762b9245dd2": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "slide_background": "#92a4ed",
+              "image": "shopify:\/\/shop_images\/contrast.png",
+              "title": "Right food, Right time",
+              "subheading": "No matter what stage of feeding, we've got a bundle for you",
+              "copy": "",
+              "button_1_text": "Find Your Bundle",
+              "button_1_link": "https:\/\/mamamadefood.com\/pages\/quiz",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "263f4b30-9439-4b51-adc6-03d08e79424f": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "slide_background": "#ff8dc7",
+              "image": "shopify:\/\/shop_images\/purees.png",
+              "title": "There for every stage",
+              "subheading": "The only child food brand with organic, plant-based mixes designed to let you choose your texture.",
+              "copy": "",
+              "button_1_text": "Learn More",
+              "button_1_link": "shopify:\/\/collections\/our-collection",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "b2374361-917f-450c-b9d5-c346e3dc864a": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "slide_background": "#e380af",
+              "title": "Tell your story",
+              "subheading": "Slide title",
+              "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dui efficitur neque aliquet egestas.",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "8bbb80de-a110-4aff-acd5-ff7e1c0e53ad",
+          "1581497264480",
+          "76e5e98a-5ca4-48d6-8e6e-e762b9245dd2",
+          "263f4b30-9439-4b51-adc6-03d08e79424f",
+          "b2374361-917f-450c-b9d5-c346e3dc864a"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#662480",
+          "button_color": "#ffffff",
+          "button_background": "#662480"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": false,
+          "show_collection_image": false,
+          "apply_overlay": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "show_loyalty": false,
+          "collection_image_size": "normal",
+          "show_sort_by": false,
+          "show_filters": false,
+          "show_layout_switch": false,
+          "toolbar_position": "top",
+          "filter_position": "drawer",
+          "filter_mode": "group",
+          "show_filter_color_swatch": false,
+          "filter_menu": "",
+          "grid_items_per_page": 16,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": false,
+          "title": "Recently viewed",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_loyalty": false,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": true,
+          "image": "shopify:\/\/shop_images\/footer_photo.png",
+          "text_color": "#662480",
+          "apply_overlay": false,
+          "title": "Got a fussy eater?",
+          "subtitle": "Got allergies or picky eaters to cater for? Create your own mix of meals.",
+          "button_link": "shopify:\/\/collections\/build-a-box",
+          "button_text": "Build my own box"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_share_buttons": false,
+          "show_vendor": false,
+          "show_loyalty": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "image_size": "small",
+          "stack_images": false,
+          "show_thumbnails": true,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Users also <br>bought these",
+          "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+          "button_link": "shopify:\/\/collections",
+          "button_text": "View full collection",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_loyalty": false,
+          "show_color_swatch": false,
+          "color_bg": "#e8cca8"
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Want 25% off?",
+          "content": "<p><strong>your first order*<\/strong><\/p><p>Access new products, tips, guides, promotions and more.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 12
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "United States"
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo-holding.png",
+          "logo_max_width": 260,
+          "mobile_logo_max_width": 130,
+          "text_color": "#662480",
+          "heading": "Re-opening soon",
+          "show_newsletter_signup": true,
+          "newsletter_text": "<p><strong>Our site is getting a little tune up and some love.<\/strong><\/p><p>We apologise for the inconvenience, but we&#x27;re performing some maintenance. <\/p><p>You can still contact us at <a href=\"mailto:care@mamamadefood.com\">care@mamamadefood.com<\/a>. <\/p><p>We&#x27;ll be back up soon!<\/p>",
+          "show_social_sharing": true,
+          "social_message": "Spread the word"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "collection-mama-box-template": {
+        "type": "collection-mama-box-template",
+        "settings": {
+          "show_collection_info": true,
+          "show_collection_image": false,
+          "apply_overlay": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "normal",
+          "show_sort_by": false,
+          "show_layout_switch": false,
+          "toolbar_position": "top",
+          "filter_position": "sidebar",
+          "filter_mode": "tag",
+          "show_filter_color_swatch": true,
+          "filter_menu": "",
+          "grid_items_per_page": 16,
+          "grid_mobile_items_per_row": "1",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_article_image": true,
+          "show_date": true,
+          "show_category": false,
+          "show_author": true,
+          "show_share_buttons": true
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": false,
+          "show_tags": true,
+          "show_featured_article": true,
+          "show_category": true
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {}
+      },
+      "1591192210733": {
+        "type": "press",
+        "blocks": {
+          "30274a16-e588-49fa-8a14-63c29a0ee532": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Untitled_1000_x_500_px_3000_x_1500_px.png",
+              "quote": ""
+            }
+          },
+          "1591192221030": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-dailymail.gif",
+              "quote": ""
+            }
+          },
+          "37e31f1c-52ca-4329-aa09-e66f19e82204": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-telegraph.gif",
+              "quote": ""
+            }
+          },
+          "1591192233423": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-baby.gif",
+              "quote": ""
+            }
+          },
+          "1591192242509": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-mama.gif",
+              "quote": ""
+            }
+          }
+        },
+        "block_order": [
+          "30274a16-e588-49fa-8a14-63c29a0ee532",
+          "1591192221030",
+          "37e31f1c-52ca-4329-aa09-e66f19e82204",
+          "1591192233423",
+          "1591192242509"
+        ],
+        "settings": {
+          "title": "as seen in",
+          "color_bg": ""
+        }
+      },
+      "1591192336557": {
+        "type": "how-it-works",
+        "blocks": {
+          "1591192342251": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/baby.png",
+              "column-heading": "You Choose",
+              "column-text": "Select the bundle that best suits your little one's preferences and stage of development"
+            }
+          },
+          "1591192416336": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Fresh_599ea136-5bc3-41b1-a09f-afb47ea4ee95.png",
+              "column-heading": "we create",
+              "column-text": "Once you've selected your bundle, our chefs will prep your meals and build your box."
+            }
+          },
+          "1591192431721": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Fresh_1ce54bd0-125a-4c52-a1bb-df53d6a672c9.png",
+              "column-heading": "they enjoy",
+              "column-text": "Yay - your box of fresh frozen meals is delivered! Change or pause your subscription at any time."
+            }
+          }
+        },
+        "block_order": [
+          "1591192342251",
+          "1591192416336",
+          "1591192431721"
+        ],
+        "settings": {
+          "heading": "Easy as 1, 2, 3...",
+          "sub-heading": "",
+          "button_link": "",
+          "button_text": "Read our story",
+          "color_bg": "#ffffff"
+        }
+      },
+      "1591192456084": {
+        "type": "featured-text-image",
+        "disabled": true,
+        "settings": {
+          "heading": "Right food. \nRight time.",
+          "text": "Packed with a wide variety of nutrient-rich ingredients, our food pouches can be steamed, microwaved, mashed or pureed in moments.",
+          "image": "shopify:\/\/shop_images\/image-box.jpg",
+          "button_text": "Get started",
+          "button_link": "shopify:\/\/collections",
+          "color_bg": "#96d3a0"
+        }
+      },
+      "1591192611433": {
+        "type": "faq",
+        "blocks": {
+          "1591780817768": {
+            "type": "Question",
+            "settings": {
+              "title": "Do you cater to allergies?",
+              "answer": "<p>Yes! Since the earliest days of Mamamade, we've worked so hard to offer families a wide range of meals that would suit the full spectrum of preferences and dietary requirements.<\/p><p>Today, our meals are made in a dedicated facility that is completely free from <strong>milk, eggs, peanuts, tree nuts, fish, shellfish, and soya.<\/strong><\/p><p>Please be aware that we have introduced <strong>gluten<\/strong> into a select number of our toddler meals to offer parents more choice. Our kitchen currently handles a spice mix that contains <strong>mustard <\/strong>- this spice mix is only used in our<strong> <\/strong>Veggie Millet Bites. We also use <strong>celery<\/strong> in some of our meals. Although our chefs take great care when preparing all of our meals, we don't have separate areas in our kitchen, so there is still a small risk of cross-contamination with these allergens.<\/p><p>You can find more information on our <a href=\"\/pages\/gluten-information\" title=\"Gluten Information\">gluten inclusion here<\/a>.<\/p><p>We are updating all Mamamade packaging to reflect the above, however, if you have a meal with old packaging, please rest assured that our meals have always been produced in a facility that is free from the allergens listed above.<\/p>"
+            }
+          },
+          "1591192638888": {
+            "type": "Question",
+            "settings": {
+              "title": "How long do the meals last?",
+              "answer": "<p>Our meals stay fresh in your freezer for up to 4 months. By flash-freezing all meals, we're able to keep your food fresh, safe and nutrient-dense.<\/p><p>Once cooked, they can be refrigerated and heated again once in 24 hours.<\/p>"
+            }
+          },
+          "1591192624546": {
+            "type": "Question",
+            "settings": {
+              "title": "What do the different stages mean?",
+              "answer": "<p>We know every baby is ready for different textures at different times, so these are simply guidelines - to make it easier for you to decide what's right for your child.<\/p><p>All of our meals are suitable from 6 months, and offering your baby a later stage meal is not unsafe for them if your child doesn't struggle with the texture.<\/p><p><strong>Stage 1:<\/strong> Smooth single and multi-ingredient purees. These are great for little ones just getting started with solids (4+ months)<\/p><p><strong>Stage 2: <\/strong>Textured<strong> <\/strong>mixes designed to be pureed, mashed or left whole (6+ months)<\/p><p><strong>Stage 3: <\/strong>Chunkier, more complex<strong> <\/strong>mixes designed to be pureed, mashed or left whole (7+ months)<\/p><p><strong>Finger Foods: <\/strong>Nutrient-dense bites and sticks (7+ months) <\/p>"
+            }
+          },
+          "1591192631405": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I select different meals for each delivery?",
+              "answer": "<p>With our 40 flavours using 80+ ingredients, we encourage you to work your way through our entire menu!<\/p><p>You'll be able to pick new bundles each time via Your Account section.<\/p><p>All changes must be made before 48 hours ahead of your delivery day. After this time your order is already in process and cannot be changed. <\/p><p>You can also build a custom box - just navigate to 'build a box' under 'SHOP'<\/p>"
+            }
+          },
+          "1591192616754": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I try as a one-off without subscribing?",
+              "answer": "<p>Yes, of course! You can skip any delivery, or pause or cancel your plan at any time by logging into Your Account. <\/p>"
+            }
+          },
+          "1591192655590": {
+            "type": "Question",
+            "settings": {
+              "title": "How will the food be delivered?",
+              "answer": "<p>Our meals are delivered in temperature-controlled boxes. We use liners made of denim offcuts and keep everything frozen with dry ice.  Our insulation is designed to keep your food frozen for up to 30 hours in transit, so don't worry if you're not at home to receive your box.<\/p><p>Once it arrives, you can return, compost or recycle all of our materials — all of our packaging is widely accepted by councils across the country.<\/p><p>We use dry ice, which evaporates en route - so don't be concerned if the pouches seem empty!<\/p>"
+            }
+          },
+          "1591192645762": {
+            "type": "Question",
+            "settings": {
+              "title": "What if my little one doesn't like the food?",
+              "answer": "<p>Babies aren&#x27;t going to like everything you give them, and that&#x27;s totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. So whilst we encourage repeated exposure and a bit of patience, if there&#x27;s something your baby truly doesn&#x27;t like, we can change it up whilst keeping things interesting for both of you! For more tips on introducing new flavours, be sure to check out our <a href=\"https:\/\/blog.mamamadefood.com\/\" title=\"https:\/\/blog.mamamadefood.com\/\">blog<\/a><\/p>"
+            }
+          },
+          "86b4a079-0762-4ee5-8b85-8210c246a9e7": {
+            "type": "Question",
+            "settings": {
+              "title": "Where do you deliver?",
+              "answer": "<p>We currently deliver across mainland UK - although unfortunately there are some postcodes in Scotland that we aren&#x27;t quite able to reach (we&#x27;re working on it!). Have a look at our shipping policy for the full list of excluded postcodes. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1591780817768",
+          "1591192638888",
+          "1591192624546",
+          "1591192631405",
+          "1591192616754",
+          "1591192655590",
+          "1591192645762",
+          "86b4a079-0762-4ee5-8b85-8210c246a9e7"
+        ],
+        "settings": {}
+      },
+      "product-bundle-template": {
+        "type": "product-bundle-template",
+        "settings": {
+          "show_share_buttons": false,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "image_size": "large",
+          "stack_images": false,
+          "show_thumbnails": false,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "header-page": {
+        "type": "header-page",
+        "blocks": {
+          "42581c7d-f4c4-4c27-8478-78da528a8361": {
+            "type": "header",
+            "settings": {
+              "page": "about",
+              "header_background": "#fff8f3",
+              "short_header": false,
+              "show_curve": false,
+              "title": "Our Mission",
+              "subheading": "",
+              "copy": "",
+              "button_text": "",
+              "button_link": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "13bad675-23e2-46d7-85f3-c8630d317791": {
+            "type": "header",
+            "settings": {
+              "page": "loyalty-scheme",
+              "header_background": "#fdf9f4",
+              "short_header": false,
+              "show_curve": false,
+              "title": "Rewards",
+              "subheading": "",
+              "copy": "Refer friends, join the community, and buy Mamamade meals - and earn points to spend on special treats like merch, bundles, and even designing a custom meal!",
+              "button_text": "Log In to Get Started",
+              "button_link": "https:\/\/mamamadefood.com\/account\/login?return_url=%2Faccount",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "b17dabf7-fabb-4d3b-b24b-1e4eb9c9ce4b": {
+            "type": "header",
+            "settings": {
+              "page": "rewards",
+              "header_background": "#ffffff",
+              "short_header": false,
+              "show_curve": false,
+              "title": "My rewards",
+              "subheading": "",
+              "copy": "",
+              "button_text": "",
+              "button_link": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "a5a5e8ee-19c3-4523-ac5b-1b385974d9c1": {
+            "type": "header",
+            "settings": {
+              "page": "build-a-box",
+              "header_background": "#ffffff",
+              "short_header": false,
+              "show_curve": false,
+              "title": "Build a box",
+              "subheading": "Lorem ipsum et el dor",
+              "copy": "",
+              "button_text": "OR CREATE A PROGRAMME",
+              "button_link": "shopify:\/\/pages\/join-program",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "ee475d24-068f-4faa-a74b-931d13cca21d": {
+            "type": "header",
+            "settings": {
+              "page": "join-program",
+              "header_background": "#ffffff",
+              "short_header": false,
+              "show_curve": false,
+              "title": "The Meal Plan",
+              "subheading": "fortnightly subscription",
+              "copy": "Let our expert nutritionists do the hard work for you. They'll create a baby meal plan dependant on age and weaning phases, updating it as your child grows. \n\nPerfect for parents who want the very best for their little ones but don't have the time to plan, shop and cook it all themselves.",
+              "button_text": "",
+              "button_link": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "682f1ba8-019b-4fcb-b953-aaab9435ac7c": {
+            "type": "header",
+            "settings": {
+              "page": "get-started",
+              "header_background": "#ffffff",
+              "short_header": true,
+              "show_curve": false,
+              "title": "Create your meal plan",
+              "subheading": "we just need a few details",
+              "copy": "",
+              "button_text": "",
+              "button_link": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          }
+        },
+        "block_order": [
+          "42581c7d-f4c4-4c27-8478-78da528a8361",
+          "13bad675-23e2-46d7-85f3-c8630d317791",
+          "b17dabf7-fabb-4d3b-b24b-1e4eb9c9ce4b",
+          "a5a5e8ee-19c3-4523-ac5b-1b385974d9c1",
+          "ee475d24-068f-4faa-a74b-931d13cca21d",
+          "682f1ba8-019b-4fcb-b953-aaab9435ac7c"
+        ],
+        "settings": {}
+      },
+      "press": {
+        "type": "press",
+        "blocks": {
+          "f9226539-ff62-4849-a7b2-4d3170fed4e3": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-dailymail.gif",
+              "quote": ""
+            }
+          },
+          "3f032520-cddb-4322-8715-df41476a2b0d": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-baby.gif",
+              "quote": ""
+            }
+          },
+          "70d75f5f-16fe-4faf-b532-aa066f9032ff": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-mama.gif",
+              "quote": ""
+            }
+          },
+          "ac150999-a3cd-4c3d-a4a2-44e81dfbf4a7": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-techround.gif",
+              "quote": ""
+            }
+          },
+          "c894435c-bdd0-4975-b307-f2e5ec5f9c3d": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-telegraph.gif",
+              "quote": ""
+            }
+          }
+        },
+        "block_order": [
+          "f9226539-ff62-4849-a7b2-4d3170fed4e3",
+          "3f032520-cddb-4322-8715-df41476a2b0d",
+          "70d75f5f-16fe-4faf-b532-aa066f9032ff",
+          "ac150999-a3cd-4c3d-a4a2-44e81dfbf4a7",
+          "c894435c-bdd0-4975-b307-f2e5ec5f9c3d"
+        ],
+        "settings": {
+          "title": "As seen in",
+          "color_bg": "rgba(0,0,0,0)"
+        }
+      },
+      "how-it-works": {
+        "type": "how-it-works",
+        "blocks": {
+          "5fd9a7d7-871b-42f1-b4e1-92cb7220a8ff": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-1.png",
+              "column-heading": "Made for your baby",
+              "column-text": "Tell us about your baby, we will create the best plan to suit your baby’s needs."
+            }
+          },
+          "545f5123-ac9b-4a11-b593-440d6633820d": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-2.png",
+              "column-heading": "A meal in minutes",
+              "column-text": "Get 12 meals designed to be steamed, microwaved, mashed or pureed in moments"
+            }
+          },
+          "345dfe22-1030-42c0-bae4-a6d76ec66329": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-3.png",
+              "column-heading": "Delivered freshly frozen",
+              "column-text": "Change, pause or cancel your delivery anytime!"
+            }
+          }
+        },
+        "block_order": [
+          "5fd9a7d7-871b-42f1-b4e1-92cb7220a8ff",
+          "545f5123-ac9b-4a11-b593-440d6633820d",
+          "345dfe22-1030-42c0-bae4-a6d76ec66329"
+        ],
+        "settings": {
+          "heading": "Our mission",
+          "sub-heading": "",
+          "button_link": "shopify:\/\/blogs\/mamamadeblog",
+          "button_text": "Read our blog",
+          "color_bg": "#e8cca8"
+        }
+      },
+      "featured-text-image-page": {
+        "type": "featured-text-image-page",
+        "blocks": {
+          "cf4ee4b3-7fc2-4eed-b0f0-9e49d2f5d0ca": {
+            "type": "featured-text-with-image",
+            "settings": {
+              "page": "about",
+              "heading": "Right food.\nRight time.",
+              "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+              "image": "shopify:\/\/shop_images\/image-box.jpg",
+              "button_text": "Get started",
+              "button_link": "shopify:\/\/pages\/build-a-box",
+              "color_bg": "#96d3a0"
+            }
+          }
+        },
+        "block_order": [
+          "cf4ee4b3-7fc2-4eed-b0f0-9e49d2f5d0ca"
+        ],
+        "settings": {}
+      },
+      "maestrooo-instagram": {
+        "type": "maestrooo-instagram",
+        "settings": {
+          "title": "#WeMamamadeIt",
+          "subheading": "",
+          "link_text": "",
+          "link_url": "",
+          "layout": "grid",
+          "image_size": "large",
+          "full_width": true,
+          "add_spacing": true,
+          "rows_count": 1,
+          "show_author": false,
+          "show_caption": false,
+          "show_date": false,
+          "click_action": "open_instagram",
+          "heading_color": "#662480",
+          "subheading_color": "#662480",
+          "button_background": "#662480",
+          "button_color": "#ffffff",
+          "overlay_color": "#9380be",
+          "overlay_text_color": "#ffffff",
+          "overlay_opacity": 65
+        }
+      },
+      "text-with-image-panel1": {
+        "type": "text-with-image-panel1",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "color_bg": "#fff8f3",
+          "image_remove_padding": false,
+          "image_position": "left",
+          "content": "",
+          "link_text": "",
+          "show_social": false
+        }
+      },
+      "text-with-image-panel2": {
+        "type": "text-with-image-panel2",
+        "settings": {
+          "subheading": "",
+          "title": "Bringing parents together",
+          "color_bg": "#f88cc4",
+          "image": "shopify:\/\/shop_images\/Join_the_family.png",
+          "image_remove_padding": false,
+          "image_position": "right",
+          "content": "<p>Parenting is an adventure, through conversations, resources, events and 1:1 chats, Mamamade&#x27;s experts and community are helping support and connect a diverse group of parents.<\/p><p>Let&#x27;s share the load and share the love.<\/p>",
+          "link_text": "Join the convo",
+          "link_url": "shopify:\/\/pages\/loyalty-scheme",
+          "show_social": true
+        }
+      },
+      "header-collection": {
+        "type": "header-collection",
+        "blocks": {
+          "e6642ca7-40b4-4732-84fa-ae07fff523f8": {
+            "type": "header",
+            "settings": {
+              "collection": "our-collection",
+              "header_background": "#ffffff",
+              "show_curve": false,
+              "title": "Our Meals",
+              "subheading": "",
+              "button_text": "Get started",
+              "button_link": "shopify:\/\/collections\/pre-made-bundles",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "1de831d5-c7f1-45db-8961-7ab9667b4523": {
+            "type": "header",
+            "settings": {
+              "collection": "merchandise",
+              "header_background": "#ffffff",
+              "show_curve": false,
+              "title": "Mamamerch",
+              "subheading": "Whether the food ends up in their mouths or the floor, we've got it covered!",
+              "button_text": "Show Me More",
+              "button_link": "shopify:\/\/products\/essential-accessories-bundle",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "a8efeb5c-7912-4e30-99a1-77ae1f112dec": {
+            "type": "header",
+            "settings": {
+              "collection": "build-a-box",
+              "header_background": "#ffffff",
+              "show_curve": false,
+              "title": "Build-a-box",
+              "subheading": "Create the perfect box of meals for your little one. <br> Subscription only - no obligation. Skip, Pause, or Cancel Anytime",
+              "button_text": "I'd prefer a meal plan",
+              "button_link": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          }
+        },
+        "block_order": [
+          "e6642ca7-40b4-4732-84fa-ae07fff523f8",
+          "1de831d5-c7f1-45db-8961-7ab9667b4523",
+          "a8efeb5c-7912-4e30-99a1-77ae1f112dec"
+        ],
+        "settings": {}
+      },
+      "text-with-image-collection": {
+        "type": "text-with-image-collection",
+        "settings": {
+          "subheading": "",
+          "title": "Parenting is easy. Said nobody, ever.",
+          "image": "shopify:\/\/shop_images\/6_18fbd834-6070-41e0-a18f-021ec353fcc7.png",
+          "image_remove_padding": true,
+          "image_position": "right",
+          "content": "<p>We're here to help with our fuss free, time-saving meals for babies and toddlers. That's one thing off your plate.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "2425e4ed-955f-4a4c-8c88-d746ae69c6b4": {
+            "type": "Question",
+            "settings": {
+              "title": "Do you cater for allergies?",
+              "answer": "<p>Yes! Since the earliest days of Mamamade, we've worked so hard to offer families a wide range of meals that would suit the full spectrum of preferences and dietary requirements.<\/p><p>Today, our meals are made in a dedicated facility that is completely free from <strong>milk, eggs, peanuts, tree nuts, fish, shellfish, and soya.<\/strong><\/p><p>Please be aware that we have introduced <strong>gluten<\/strong> into a select number of our toddler meals to offer parents more choice. Our kitchen currently handles a spice mix that contains <strong>mustard <\/strong>- this spice mix is only used in our<strong> <\/strong>Veggie Millet Bites. We also use <strong>celery<\/strong> in some of our meals. Although our chefs take great care when preparing all of our meals, we don't have separate areas in our kitchen, so there is still a small risk of cross-contamination with these allergens.<br\/><br\/>Find out more about our <a href=\"\/pages\/gluten-information\" target=\"_blank\" title=\"Gluten Information\">gluten inclusion here<\/a>.<\/p><p>We are updating all Mamamade packaging to reflect the above, however, if you have a meal with old packaging, please rest assured that our meals have always been produced in a facility that is free from the allergens listed above.<\/p>"
+            }
+          },
+          "2e741257-1e2b-4761-90f6-c06ad77c6057": {
+            "type": "Question",
+            "settings": {
+              "title": "Why should I subscribe?",
+              "answer": "<p>Our fully flexible subscriptions (yes, you really can cancel whenever!) offer exclusive access to our weaning coach - a 1:1 call where you can ask all the questions you have about baby and child feeding. Plus free DPD delivery every time :) <\/p>"
+            }
+          },
+          "e979924f-6e09-40f3-b390-90c9bc39c33b": {
+            "type": "Question",
+            "settings": {
+              "title": "How long do the meals last?",
+              "answer": "<p>Our meals stay fresh in your freezer for up to 4 months. By flash-freezing all meals, we're able to keep your food fresh, safe and nutrient-dense.<\/p><p>Once cooked, they can be refrigerated and heated again once in 24 hours. <\/p>"
+            }
+          },
+          "d4bf44ef-d9ac-4490-8a15-1f9e42b49113": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I select different meals for each delivery?",
+              "answer": "<p>With our 40 flavours using 80+ ingredients, we encourage you to work your way through our entire menu!<\/p><p>You'll be able to pick new bundles each time via Your Account section.<\/p><p>All changes must be made before 48 hours ahead of your delivery day. After this time your order is already in process and cannot be changed. <\/p><p>You can also build a custom box - just navigate to 'build a box' under 'SHOP'<\/p>"
+            }
+          },
+          "c8106236-273d-4415-8529-e32db8aaf7f4": {
+            "type": "Question",
+            "settings": {
+              "title": "What do the different stages mean?",
+              "answer": "<p>We know every baby is ready for different textures at different times, so these are simply guidelines - to make it easier for you to decide what&#x27;s right for your child.<\/p><p>All of our meals are suitable from 6 months, and offering your baby a later stage meal is not unsafe for them if your child doesn&#x27;t struggle with the texture.<\/p><p><strong>Stage 1:<\/strong> Smooth single and multi-ingredient purees. These are great for little ones just getting started with solids (4+ months)<\/p><p><strong>Stage 2: <\/strong>Textured<strong> <\/strong>mixes designed to be pureed, mashed or left whole (6+ months)<\/p><p><strong>Stage 3: <\/strong>Chunkier, more complex<strong> <\/strong>mixes designed to be pureed, mashed or left whole (7+ months)<\/p><p><strong>Finger Foods: <\/strong>Nutrient-dense bites and sticks (7+ months) <\/p><p><strong>Stage 4\/Toddler<\/strong>: Meals that have been designed for babies 12 months and older.<\/p>"
+            }
+          },
+          "1d86c614-24b5-4388-b49e-d014dc94116f": {
+            "type": "Question",
+            "settings": {
+              "title": "How will the food be delivered?",
+              "answer": "<p>Our meals are delivered in temperature-controlled boxes. We use liners made of denim offcuts and keep everything frozen with dry ice.  Our insulation is designed to keep your food frozen for up to 30 hours in transit, so don't worry if you're not at home to receive your box. <\/p><p>Once it arrives, you can return, compost or recycle all of our materials — all of our packaging is widely accepted by councils across the country.<\/p><p>We use dry ice, which evaporates en route - so don't be concerned if the pouches seem empty!<\/p>"
+            }
+          },
+          "0639d0fb-0a9c-466e-a84a-a092f71ad92b": {
+            "type": "Question",
+            "settings": {
+              "title": "What if my little one doesn't like the food?",
+              "answer": "<p>Babies aren't going to like everything you give them, and that's totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. <\/p><p><\/p><p>Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. <\/p><p>So if there's something your baby truly doesn't like, we can change it up whilst keeping things interesting for both of you! For more tips on introducing new flavours, be sure to check out our <a href=\"https:\/\/blog.mamamadefood.com\/\" title=\"https:\/\/blog.mamamadefood.com\/\">blog<\/a><\/p>"
+            }
+          },
+          "d03fe038-6771-45d2-a627-c1f9a8d57853": {
+            "type": "Question",
+            "settings": {
+              "title": "What kind of support can I expect?",
+              "answer": "<p>By signing up to a Mamamade subscription, you'll gain complimentary and regular access to our weaning coaches, guides and resources, and of course access to our Facebook Community, where you can share questions and concerns with other parents in the same boat. <\/p>"
+            }
+          },
+          "4fdcf03c-5079-4693-bb3c-e9f2b37f6450": {
+            "type": "Question",
+            "settings": {
+              "title": "Where do you deliver?",
+              "answer": "<p>We currently deliver across mainland UK - although unfortunately there are some postcodes in Scotland that we aren't quite able to reach (we're working on it!). Have a look at our shipping policy for the full list of excluded postcodes.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "2425e4ed-955f-4a4c-8c88-d746ae69c6b4",
+          "2e741257-1e2b-4761-90f6-c06ad77c6057",
+          "e979924f-6e09-40f3-b390-90c9bc39c33b",
+          "d4bf44ef-d9ac-4490-8a15-1f9e42b49113",
+          "c8106236-273d-4415-8529-e32db8aaf7f4",
+          "1d86c614-24b5-4388-b49e-d014dc94116f",
+          "0639d0fb-0a9c-466e-a84a-a092f71ad92b",
+          "d03fe038-6771-45d2-a627-c1f9a8d57853",
+          "4fdcf03c-5079-4693-bb3c-e9f2b37f6450"
+        ],
+        "settings": {}
+      },
+      "loyalty-banner": {
+        "type": "loyalty-banner",
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/temp-loyalty-banner.jpg",
+          "url": "shopify:\/\/pages\/loyalty-scheme"
+        }
+      },
+      "testimonials": {
+        "type": "testimonials",
+        "blocks": {
+          "40f3aed5-0d2b-4b82-82a5-07326d78b80e": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Cannot recommend enough! I’m absolutely in love with Mamamade! I’ve found weaning a chore on top of everything else - this has been a lifeline!<\/p>",
+              "cite": "Lori - yorkshire",
+              "image": "shopify:\/\/shop_images\/Screenshot_2021-02-11_at_19.00.38.png"
+            }
+          },
+          "d79563c4-bcb6-41d9-b59f-08bc2489dfcb": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Mamamade has absolutely made life so much easier. It’s alleviated a lot of stress and made meal time fun again!<\/p>",
+              "cite": "Emma - London",
+              "image": "shopify:\/\/shop_images\/lifestyle_1.png"
+            }
+          }
+        },
+        "block_order": [
+          "40f3aed5-0d2b-4b82-82a5-07326d78b80e",
+          "d79563c4-bcb6-41d9-b59f-08bc2489dfcb"
+        ],
+        "settings": {
+          "heading": "",
+          "sub-heading": "",
+          "show_images": true,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#fff8f3",
+          "text_color": "#662480"
+        }
+      },
+      "blog-posts": {
+        "type": "blog-posts",
+        "blocks": {
+          "d14ed366-d9cd-4491-89e4-f7043bf71139": {
+            "type": "blog",
+            "settings": {
+              "blog": "mamamadeblog"
+            }
+          }
+        },
+        "block_order": [
+          "d14ed366-d9cd-4491-89e4-f7043bf71139"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "Exploring the ins and outs<br> of parenting.",
+          "copy": "Not every problem can be solved with sweet merch'. Why not check out our blog for expert tips, handy advice and parenting insights you won't get anywhere else",
+          "show_category": false,
+          "button_link": "shopify:\/\/blogs\/mamamadeblog",
+          "button_text": "check our blog",
+          "color_bg": "#ffffff"
+        }
+      },
+      "1604408692f8fbbff2": {
+        "type": "image-with-text-block",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/footer_photo.png",
+          "background": "rgba(0,0,0,0)",
+          "text_color": "#662480",
+          "block_size": "small",
+          "title": "No time to cook?",
+          "subtitle": "No fuss, no mess. Healthy meals ready in minutes.",
+          "content": "",
+          "button_label": "Get started",
+          "button_link": "shopify:\/\/collections\/pre-made-bundles",
+          "show_parallax": false
+        }
+      },
+      "header-blog": {
+        "type": "header-blog",
+        "blocks": {
+          "4c8e5f13-22b9-44ec-8494-e5bfbc95c51b": {
+            "type": "header",
+            "settings": {
+              "blog": "mamamadeblog",
+              "header_background": "#ff8dc7",
+              "show_curve": false,
+              "title": "Welcome to Mamamates!",
+              "subheading": "here for all of the ups and the downs and everything in between",
+              "button_text": "",
+              "button_link": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          }
+        },
+        "block_order": [
+          "4c8e5f13-22b9-44ec-8494-e5bfbc95c51b"
+        ],
+        "settings": {}
+      },
+      "image-with-text-block": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/test_3b1b11f3-f7c3-4b1d-921f-1568d8e12d24.png",
+          "background": "rgba(0,0,0,0)",
+          "text_color": "#662480",
+          "block_size": "large",
+          "title": "Easy, delicious & nutritious",
+          "subtitle": "bundles built for you",
+          "content": "",
+          "button_label": "try mamamade",
+          "button_link": "shopify:\/\/collections\/pre-made-bundles",
+          "show_parallax": false
+        }
+      },
+      "featured-text-image-account": {
+        "type": "featured-text-image-account",
+        "settings": {
+          "heading": "Contact Us",
+          "text": "From weaning to account issues we are happy to help with any questions you have",
+          "image": "shopify:\/\/shop_images\/tester.png",
+          "button_text": "Get in touch",
+          "button_link": "shopify:\/\/pages\/contact",
+          "color_bg": "#ffe1ba"
+        }
+      },
+      "160445674179f3bc3b": {
+        "type": "aside-with-video",
+        "blocks": {
+          "160445674179f3bc3b-0": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Artboard_0a072ae2-c8a9-47a4-af31-f587291bba9f.png",
+              "title": "bespoke nutrition",
+              "copy": "Supporting your child's development at every stage with customised nutritional advice from leading experts."
+            }
+          },
+          "160445674179f3bc3b-1": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/speech.png",
+              "title": "1:1 COACHING SESSIONS",
+              "copy": "Life as a new parent can feel daunting and lonely sometimes. We’re here to offer you coaching that’s personal and relevant."
+            }
+          },
+          "160445674179f3bc3b-2": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2020-12-16_at_17.35.53.png",
+              "title": "mamamade community",
+              "copy": "A safe space to share stories and recipes, seek guidance, and connect with like-minded parents."
+            }
+          }
+        },
+        "block_order": [
+          "160445674179f3bc3b-0",
+          "160445674179f3bc3b-1",
+          "160445674179f3bc3b-2"
+        ],
+        "settings": {
+          "heading": "Peace of mind in a box",
+          "copy": "It's never been about the food alone. \n\nWhen you join the Mamamade community, we provide a judgement-free zone filled with helpful resources. Access information from top nutritionists, parenting experts, wellbeing professionals and your very own weaning coach.",
+          "link_text": "Read our story",
+          "link_url": "shopify:\/\/pages\/about",
+          "background": "#ffffff",
+          "text_color": "#662480",
+          "image": "shopify:\/\/shop_images\/Sophie_647f5a62-68c9-45cf-b5c1-a4411f4fd350.png",
+          "video_url": "https:\/\/vimeo.com\/491711113",
+          "heading_icons": "",
+          "link_text_icons": "Join Mamamates",
+          "link_url_icons": "https:\/\/chat.whatsapp.com\/CNBBbGyDnCG55U1jhL8v2c"
+        }
+      },
+      "16044767225b91633f": {
+        "type": "testimonials",
+        "blocks": {
+          "75e13f60-1c59-4b5f-977d-3b36a930120e": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>I’m obsessed. I’ve had a few boxes from Mamamade now and have never had a single fault with any. We’re so busy sometimes that the chore of cooking dinner is too much, so I grab a mamamade meaI and don’t have the guilt of it being a ready meal - because it’s all healthy! These meals have saved my sanity on many occasions.<\/p>",
+              "cite": "Shannon on Trustpilot",
+              "image": "shopify:\/\/shop_images\/Mamamade_customer_review_testimonial.png"
+            }
+          },
+          "d2794521-ac39-4ece-94c1-4e84eafb4b85": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Delicious, convenient and eco-friendly. Our daughter has loved the Mamamade boxes of late, especially the pasta meals. We love how convenient these meals are, and easily microwavable from frozen. I particularly love the sustainable\/recyclable packaging. Would love to see more options coming out in the near future!<\/p>",
+              "cite": "Dave on Trustpilot",
+              "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_0a90780e-9a92-438e-bec0-79dc1d25b940.png"
+            }
+          },
+          "16044767225b91633f-2": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Time saver, flavoursome, tastes fresh, healthy, reasonably priced and a flexible subscription - what’s not to love! I started my son’s weaning journey with Mamamade and we are loving it - it’s really encouraging his taste buds and ability to chew. I find the pots particularly good when I’m out and about with him.<\/p>",
+              "cite": "Nikki T on Trustpilot",
+              "image": "shopify:\/\/shop_images\/Mamamade_customer_review_purees.png"
+            }
+          },
+          "16044767225b91633f-1": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Life changer for a busy mum of 4! I have to say I’m so pleased with my order from Mamamade. I have 4 children and so time isn’t something I have in abundance, this makes life so much easier as I always have something tasty and nutritious I can grab from the freezer and quickly heat up for the baby on days when I’m running to and from school\/clubs\/play dates. So pleased I came across you guys!<\/p>",
+              "cite": "Kirsten on Trustpilot",
+              "image": "shopify:\/\/shop_images\/30.png"
+            }
+          }
+        },
+        "block_order": [
+          "75e13f60-1c59-4b5f-977d-3b36a930120e",
+          "d2794521-ac39-4ece-94c1-4e84eafb4b85",
+          "16044767225b91633f-2",
+          "16044767225b91633f-1"
+        ],
+        "settings": {
+          "heading": "Loved by parents",
+          "sub-heading": "",
+          "show_images": true,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#fff8f3",
+          "text_color": "#662480"
+        }
+      },
+      "loyalty-earn": {
+        "type": "loyalty-earn",
+        "blocks": {
+          "4c90e667-6d54-4a2e-a642-d999ae1c848e": {
+            "type": "Column",
+            "settings": {
+              "hide": false,
+              "image": "shopify:\/\/shop_images\/Join_72cd3057-f296-4de6-b9d2-0929a296f66f.png",
+              "title": "Join Mamamade",
+              "copy": "Sign up and immediately get rewarded. Easy."
+            }
+          },
+          "542441fc-6e3b-431f-af2e-cd392239cbd4": {
+            "type": "Column",
+            "settings": {
+              "hide": true,
+              "image": "shopify:\/\/shop_images\/Next_stage_9e8ecc5c-a413-4129-a099-1855df69a4a1.png",
+              "title": "Advance to next stage",
+              "copy": "Rewarding the movers & the shakers"
+            }
+          },
+          "47a6d548-2e43-4b37-b221-7c12cec29077": {
+            "type": "Column",
+            "settings": {
+              "hide": false,
+              "image": "shopify:\/\/shop_images\/facebook_f0eb6817-2b00-4bca-9f5d-b36964d22558.png",
+              "title": "Join FB community",
+              "copy": "Rewards for joining the conversation"
+            }
+          },
+          "7795c557-c2bd-4eef-9fbc-4251db48a104": {
+            "type": "Column",
+            "settings": {
+              "hide": false,
+              "image": "shopify:\/\/shop_images\/Refer_3862ad98-9aad-4798-b9a8-4937cd835ca0.png",
+              "title": "Refer a friend",
+              "copy": "Get rewarded for for sharing the load & the love"
+            }
+          },
+          "24f44c0b-ff33-4ce6-ae1f-9506153bea6a": {
+            "type": "Column",
+            "settings": {
+              "hide": false,
+              "image": "shopify:\/\/shop_images\/Birthday_f3f3050e-352c-4fb6-a095-ed41c22e8bea.png",
+              "title": "Celebrate birthday",
+              "copy": "Because we all deserve a celebration"
+            }
+          },
+          "712187a0-0d9e-4f12-8a97-29a57ebdf002": {
+            "type": "Column",
+            "settings": {
+              "hide": false,
+              "image": "shopify:\/\/shop_images\/Share_42b43b77-cbb1-4420-80af-ccf8c51fb942.png",
+              "title": "Share on social",
+              "copy": "Rewards for joining in and getting social"
+            }
+          }
+        },
+        "block_order": [
+          "4c90e667-6d54-4a2e-a642-d999ae1c848e",
+          "542441fc-6e3b-431f-af2e-cd392239cbd4",
+          "47a6d548-2e43-4b37-b221-7c12cec29077",
+          "7795c557-c2bd-4eef-9fbc-4251db48a104",
+          "24f44c0b-ff33-4ce6-ae1f-9506153bea6a",
+          "712187a0-0d9e-4f12-8a97-29a57ebdf002"
+        ],
+        "settings": {
+          "title": "Ways to earn",
+          "color_bg": "rgba(0,0,0,0)"
+        }
+      },
+      "loyalty-spend": {
+        "type": "loyalty-spend",
+        "blocks": {
+          "d11c24b7-a2b7-4709-b8df-9ffd5abf15e7": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/merch_be023aa9-4d52-4364-917f-9de4e6e4d6d3.png",
+              "title": "Merchandise",
+              "points": ""
+            }
+          },
+          "4e9a27fa-3238-40d1-b38f-5a028e03561b": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/discount_c4e83635-cbdd-4310-856f-474502f00429.png",
+              "title": "Discounts",
+              "points": ""
+            }
+          },
+          "5220980c-5457-4643-988a-1508d1435004": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cooking.png",
+              "title": "Create your own flavour",
+              "points": ""
+            }
+          },
+          "c44470e3-87b0-4da4-9e2c-1db120f9be1b": {
+            "type": "Column",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/founders.png",
+              "title": "1:1 chat with founders",
+              "points": ""
+            }
+          },
+          "cd8d03db-8382-4f91-b0b6-21b8db264181": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/join_now.png",
+              "title": "Gift to a parent",
+              "points": ""
+            }
+          }
+        },
+        "block_order": [
+          "d11c24b7-a2b7-4709-b8df-9ffd5abf15e7",
+          "4e9a27fa-3238-40d1-b38f-5a028e03561b",
+          "5220980c-5457-4643-988a-1508d1435004",
+          "c44470e3-87b0-4da4-9e2c-1db120f9be1b",
+          "cd8d03db-8382-4f91-b0b6-21b8db264181"
+        ],
+        "settings": {
+          "title": "Ways to spend",
+          "color_bg": "#ffffff"
+        }
+      },
+      "loyalty-tiers": {
+        "type": "loyalty-tiers",
+        "blocks": {
+          "ab6ec2ad-eb5c-4541-935f-c017a5ccac2d": {
+            "type": "line",
+            "settings": {
+              "line_item": "Make a purchase",
+              "tier_1_number": 5,
+              "tier_2_number": 7,
+              "tier_3_number": 10
+            }
+          },
+          "699c1ee2-ec0a-412d-8acf-89b2b3f3e8ad": {
+            "type": "line",
+            "settings": {
+              "line_item": "Refer a friend",
+              "tier_1_number": 250,
+              "tier_2_number": 350,
+              "tier_3_number": 500
+            }
+          },
+          "a21d9971-f622-4668-a575-97c56faf004a": {
+            "type": "line",
+            "settings": {
+              "line_item": "Birthday",
+              "tier_1_number": 500,
+              "tier_2_number": 700,
+              "tier_3_number": 1000
+            }
+          },
+          "166fa870-a96c-4788-a7e3-7d7cd7ccd843": {
+            "type": "line",
+            "settings": {
+              "line_item": "Create an account",
+              "tier_1_number": 350,
+              "tier_2_number": 350,
+              "tier_3_number": 350
+            }
+          },
+          "ce92b288-58c3-4d58-bed7-87ecdd35a10e": {
+            "type": "line",
+            "settings": {
+              "line_item": "Like us on Facebook",
+              "tier_1_number": 50,
+              "tier_2_number": 50,
+              "tier_3_number": 50
+            }
+          },
+          "ff9fb5d4-5f0d-4938-8c76-944c99e4f6fa": {
+            "type": "line",
+            "settings": {
+              "line_item": "Follow us on instagram",
+              "tier_1_number": 50,
+              "tier_2_number": 50,
+              "tier_3_number": 50
+            }
+          },
+          "4415528c-0a4d-4133-8b2f-8bf864200548": {
+            "type": "line",
+            "settings": {
+              "line_item": "Join Mamamates Community",
+              "tier_1_number": 25,
+              "tier_2_number": 25,
+              "tier_3_number": 25
+            }
+          }
+        },
+        "block_order": [
+          "ab6ec2ad-eb5c-4541-935f-c017a5ccac2d",
+          "699c1ee2-ec0a-412d-8acf-89b2b3f3e8ad",
+          "a21d9971-f622-4668-a575-97c56faf004a",
+          "166fa870-a96c-4788-a7e3-7d7cd7ccd843",
+          "ce92b288-58c3-4d58-bed7-87ecdd35a10e",
+          "ff9fb5d4-5f0d-4938-8c76-944c99e4f6fa",
+          "4415528c-0a4d-4133-8b2f-8bf864200548"
+        ],
+        "settings": {
+          "title": "Tiered Spending",
+          "color_bg": "#ffffff"
+        }
+      },
+      "1604666164822f1be5": {
+        "type": "text-with-products",
+        "blocks": {
+          "fd8ec308-60c2-49b3-840a-6c27236e27b4": {
+            "type": "product",
+            "settings": {
+              "product": "everything-you-need-bundle"
+            }
+          },
+          "28fe17fd-bbbb-4991-b9d4-48cf03c723e7": {
+            "type": "product",
+            "settings": {
+              "product": "bestsellers-bundle"
+            }
+          },
+          "8884c5f1-2892-4c20-889d-08f95e5d8957": {
+            "type": "product",
+            "settings": {
+              "product": "finger-foods-only-6m"
+            }
+          },
+          "22cbfba4-7320-4ac4-8231-086905f1936d": {
+            "type": "product",
+            "settings": {
+              "product": "toddler-meal-and-snack-bundle"
+            }
+          },
+          "3e57ee66-fc30-4f6b-ba38-a1e3069c984a": {
+            "type": "product",
+            "settings": {
+              "product": "essential-accessories-bundle"
+            }
+          }
+        },
+        "block_order": [
+          "fd8ec308-60c2-49b3-840a-6c27236e27b4",
+          "28fe17fd-bbbb-4991-b9d4-48cf03c723e7",
+          "8884c5f1-2892-4c20-889d-08f95e5d8957",
+          "22cbfba4-7320-4ac4-8231-086905f1936d",
+          "3e57ee66-fc30-4f6b-ba38-a1e3069c984a"
+        ],
+        "settings": {
+          "heading": "What's on the menu?",
+          "copy": "A parent's checklist is long enough. We'll take mealtime off your plate with our diverse range of 40 nutrient-rich meals, fabulous finger foods, and mega breakfast bowls for every stage.",
+          "button_link": "shopify:\/\/collections\/pre-made-bundles",
+          "button_text": "Get started",
+          "color_bg": "#f88cc4"
+        }
+      },
+      "text-with-image-intro": {
+        "type": "text-with-image-intro",
+        "settings": {
+          "subheading": "",
+          "title": "It all started when Mama made…",
+          "color_bg": "#fff8f3",
+          "image": "shopify:\/\/shop_images\/sophie_liba.png",
+          "image_remove_padding": false,
+          "reverse": true,
+          "stacked": true,
+          "content": "<p>Mamamade came to life when I started introducing solids to my daughter Liba. I wanted her to have the very best - everything home-cooked, organic, plant-based, flavourful and healthy - but the reality was that I struggled to keep up with the pace of mealtimes on top of milk feeds.<\/p><p><\/p><p>I was desperate for help that didn&#x27;t include breaking open the seal of a store-bought puree. Just a bit of help for those times I was out of creativity, out of time, but not willing to compromise on her health and development.<\/p><p><\/p><p>So I set to work creating a product to help parents like me.<\/p><p><\/p><p>The transition into parenthood can be hugely overwhelming. What Mamamade stands for has always been clear: to share the load and the love. <\/p><p>Think of us as your support system  - whatever your family might look like - recognising that when it comes to nutrition, wellbeing and beyond, there&#x27;s no one-size-fits-all . <\/p><p><\/p><p><\/p><p><strong>Mamamade is ready to cater to the new generation of parents. How can we help you next?<\/strong><br\/><\/p>",
+          "link_text": "",
+          "show_quote": false,
+          "quote_text": "",
+          "quote_author": "Sophie - Founder"
+        }
+      },
+      "text-with-products": {
+        "type": "text-with-products",
+        "blocks": {
+          "e71a2b7c-cff7-4490-af38-ae26aa4beb27": {
+            "type": "product",
+            "settings": {
+              "product": "kale-pesto-pasta"
+            }
+          },
+          "cc5a0173-3a78-450a-a343-7197abd54379": {
+            "type": "product",
+            "settings": {
+              "product": "five-spice-rice-bites"
+            }
+          },
+          "47b25eed-9d95-4456-910d-34c8c83d9dc7": {
+            "type": "product",
+            "settings": {
+              "product": "blueberry-banana-lemon-porridge"
+            }
+          },
+          "e051e41d-6c11-460b-884e-c23da68e4560": {
+            "type": "product",
+            "settings": {
+              "product": "lentil-shepherds-pie"
+            }
+          },
+          "12c84409-9b24-4ddc-9ca3-929c0b7c037b": {
+            "type": "product",
+            "settings": {
+              "product": "banana-oat-pancakes"
+            }
+          }
+        },
+        "block_order": [
+          "e71a2b7c-cff7-4490-af38-ae26aa4beb27",
+          "cc5a0173-3a78-450a-a343-7197abd54379",
+          "47b25eed-9d95-4456-910d-34c8c83d9dc7",
+          "e051e41d-6c11-460b-884e-c23da68e4560",
+          "12c84409-9b24-4ddc-9ca3-929c0b7c037b"
+        ],
+        "settings": {
+          "heading": "What's on the menu?",
+          "copy": "A parent's checklist is long enough. We'll take mealtime off your plate with our diverse range of over 30 nutrient-rich ready meals, mixes, fabulous finger foods and mega breakfast bowls for every stage.",
+          "button_link": "shopify:\/\/collections\/pre-made-bundles",
+          "button_text": "GET STARTED",
+          "color_bg": "#abe8b5"
+        }
+      },
+      "text-with-image-programme": {
+        "type": "text-with-image-programme",
+        "settings": {
+          "subheading": "",
+          "title": "Want more control?",
+          "color_bg": "#ffe1ba",
+          "image": "shopify:\/\/shop_images\/Artboard_2f1112b4-e60f-4440-b522-fbb25b33da5d.png",
+          "image_remove_padding": true,
+          "image_position": "right",
+          "content": "<p>We create weaning programmes which are perfectly designed for your little one’s stage of development. If you want more control or have a specific meal in mind, then you can build your own box from our range of 35 organic meals.<\/p>",
+          "link_text": "BUILD A BOX",
+          "link_url": "shopify:\/\/collections\/build-a-box",
+          "show_social": false
+        }
+      },
+      "text-with-image-programme-header": {
+        "type": "text-with-image-programme-header",
+        "settings": {
+          "subheading": "",
+          "title": "A little extra sleep,  lots of peace of mind",
+          "color_bg": "#ffffff",
+          "image": "shopify:\/\/shop_images\/mother_and_baby.png",
+          "image_remove_padding": false,
+          "image_position": "right",
+          "content": "<p>Once you&#x27;ve ordered your baby&#x27;s meal plan, we&#x27;ll deliver. You just steam, microwave, mash or purée them in moments, on arrival. <\/p><p>And you can pause, change or cancel at any time - amazing how far a little help can go. <\/p><p><br\/><\/p>",
+          "link_text": "",
+          "show_social": false
+        }
+      },
+      "how-it-works-programme": {
+        "type": "how-it-works-programme",
+        "blocks": {
+          "ddb419c0-ef55-455e-956a-caf951361922": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-1.png",
+              "column-heading": "Step 1",
+              "column-text": "Tell us a bit about your baby. Nothing too personal. Just their age and eating habits"
+            }
+          },
+          "cea470d5-e38d-4886-be94-cb31327f938f": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-2.png",
+              "column-heading": "Step 2",
+              "column-text": "Then we can create the ideal meal-plan to suit their ongoing development"
+            }
+          },
+          "5e16f70e-d174-487d-b401-71136019688c": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-3.png",
+              "column-heading": "Step 3",
+              "column-text": "Every 2 weeks we’ll deliver your baby's healthy, freshly-frozen meal plan"
+            }
+          }
+        },
+        "block_order": [
+          "ddb419c0-ef55-455e-956a-caf951361922",
+          "cea470d5-e38d-4886-be94-cb31327f938f",
+          "5e16f70e-d174-487d-b401-71136019688c"
+        ],
+        "settings": {
+          "heading": "How it works",
+          "sub-heading": "right food. right time",
+          "button_link": "shopify:\/\/pages\/get-started",
+          "button_text": "Get started",
+          "color_bg": "#ffffff"
+        }
+      },
+      "text-with-image-join": {
+        "type": "text-with-image-join",
+        "settings": {
+          "subheading": "",
+          "title": "Oh, and we reward loyalty",
+          "color_bg": "#ffe0b9",
+          "image": "shopify:\/\/shop_images\/Finger_foods_d077cfa1-bcea-4512-a13e-8e10406a3452.png",
+          "image_remove_padding": false,
+          "image_position": "right",
+          "content": "<p>Join our rewards scheme  and receive even more from your subscription. <\/p><p><\/p>",
+          "link_text": "I'm interested",
+          "link_url": "shopify:\/\/pages\/loyalty-scheme",
+          "show_social": true
+        }
+      },
+      "programme-scheme": {
+        "type": "programme-scheme",
+        "settings": {}
+      },
+      "faq-build-a-box": {
+        "type": "faq-build-a-box",
+        "blocks": {
+          "b49effe7-6789-433c-a631-08a82249a2c1": {
+            "type": "Question",
+            "settings": {
+              "title": "What do the different stages mean?",
+              "answer": "<p>We know every baby is ready for different textures at different times, so these are simply guidelines - to make it easier for you to decide what&#x27;s right for your child. <\/p><p>All of our meals are suitable from 6 months, and offering your baby a later stage meal is not unsafe for them if your child doesn&#x27;t struggle with the texture.<\/p><p><strong>Stage 1:<\/strong> Smooth single and multi-ingredient purees. These are great for little ones just getting started with solids (4+ months)<\/p><p><strong>Stage 2: <\/strong>Textured<strong> <\/strong>mixes designed to be pureed, mashed or left whole (6+ months)<\/p><p><strong>Stage 3: <\/strong>Chunkier, more complex<strong> <\/strong>mixes designed to be pureed, mashed or left whole (7+ months)<\/p><p><strong>Finger Foods: <\/strong>Nutrient-dense bites and sticks (7+ months) <\/p>"
+            }
+          },
+          "f7fddc9d-aa9f-4646-88af-06d171b8cf03": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I select different meals for each delivery?",
+              "answer": "<p>With our 35 flavours using 80+ ingredients, we encourage you to work your way through our entire menu!<\/p><p>You&#x27;ll be able to pick new meals via Your Account each week.<\/p><p>All changes must be made before 48 hours ahead of your delivery day. After this time your order is already in process and cannot be changed. <\/p>"
+            }
+          },
+          "e893b77b-e6a5-4214-ba18-9b90dbfa7894": {
+            "type": "Question",
+            "settings": {
+              "title": "How long do the meals last?",
+              "answer": "<p>Our meals stay fresh in your freezer for up to 4 months. By flash-freezing all meals, we&#x27;re able to keep your food fresh, safe and nutrient-dense.<\/p><p><\/p><p><\/p>"
+            }
+          },
+          "23da9023-6cba-4bf2-8dc3-421aff0c07b6": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I try as a one-off without subscribing?",
+              "answer": "<p>Yes, of course! You can skip any delivery, or pause or cancel your plan at any time by logging into Your Account.<\/p>"
+            }
+          },
+          "e382ac27-9e99-47fa-9f47-0beafec669ca": {
+            "type": "Question",
+            "settings": {
+              "title": "how will the food be delivered?",
+              "answer": "<p>Our meals are delivered frozen in temperature-controlled boxes. We use liners made of wool and keep everything frozen with dry ice.  Our insulation is designed to keep your food frozen for up to 30 hours in transit, so don&#x27;t worry if you&#x27;re not at home to receive your box. Once it arrives, you can return, compost or recycle all of our materials — all of our packaging is widely accepted by councils across the country.<\/p>"
+            }
+          },
+          "c6ee8b52-e69a-4c67-a187-e24328ebbf19": {
+            "type": "Question",
+            "settings": {
+              "title": "Where do you deliver?",
+              "answer": "<p>We currently deliver across mainland UK - although unfortunately there are some postcodes in Scotland that we aren&#x27;t quite able to reach (we&#x27;re working on it!). Have a look at our shipping policy for the full list of excluded postcodes.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "b49effe7-6789-433c-a631-08a82249a2c1",
+          "f7fddc9d-aa9f-4646-88af-06d171b8cf03",
+          "e893b77b-e6a5-4214-ba18-9b90dbfa7894",
+          "23da9023-6cba-4bf2-8dc3-421aff0c07b6",
+          "e382ac27-9e99-47fa-9f47-0beafec669ca",
+          "c6ee8b52-e69a-4c67-a187-e24328ebbf19"
+        ],
+        "settings": {}
+      },
+      "faq-loyalty": {
+        "type": "faq-loyalty",
+        "blocks": {
+          "983cd37f-c723-46b7-a59e-eeaf8cd12a49": {
+            "type": "Question",
+            "settings": {
+              "title": "What are Mamamade Rewards?",
+              "answer": "<p>Our loyalty program is designed to reward you for taking your weaning journey with us! Through the program, you will be eligible to earn points whenever you engage with the Mamamade community, such as making a purchase, referrals, reviews, and sharing your love for us on social media.<\/p>"
+            }
+          },
+          "c256b5f0-d0bd-44a5-b7d0-3ce466681c28": {
+            "type": "Question",
+            "settings": {
+              "title": "How do I earn points?",
+              "answer": "<p>You can earn points via the following activities:<\/p><p><br\/><strong>Sign Up<\/strong>: New customers who sign up for the program will get started with  points! If you have an existing account, no worries! Your points from past purchases will automatically be transferred.<br\/><br\/><strong>Purchases<\/strong>: All qualifying purchases earn points for every pound spent, depending on your tier. <br\/><br\/><strong>Birthday Points<\/strong>: Celebrate your birthday with additional points! <br\/><br\/><strong>Refer-a-Friend<\/strong>: Your friend will  receive a £10 voucher, and once your friend completes their purchase you&#x27;ll receive points in your account. You can refer as many friends as you like! <br\/><br\/><strong>Reviews<\/strong>: Leave a service review! <br\/><br\/><strong>Social Sharing<\/strong>: Follow us on Facebook or Instagram, or share us on Facebook or Instagram for  points. Join our community on Facebook for even more points<\/p>"
+            }
+          },
+          "c1ee3d59-41af-4c37-b7b1-8bb0d95d8f61": {
+            "type": "Question",
+            "settings": {
+              "title": "What do the tiers mean?",
+              "answer": "<p>The more you share your journey with us, the greater the rewards!<\/p><p>Please refer to the table above for a summary of additional benefits available to our most active members.<\/p>"
+            }
+          },
+          "8e241afa-ba37-4785-bffb-d86e330643ef": {
+            "type": "Question",
+            "settings": {
+              "title": "What if I already have a Mamamade account?",
+              "answer": "<p>Perfect! You have automatically been enrolled the Rewards program. We structured the program to be effective retroactively to February 2019. Any purchases made since that date will be automatically reflected in your account!<\/p>"
+            }
+          },
+          "2efe9960-1af7-46ed-bb95-c62dc90ed571": {
+            "type": "Question",
+            "settings": {
+              "title": "Who is eligible?",
+              "answer": "<p>Everyone! Just sign up for an account and start earning points! Please note that one account is allowed per customer.<\/p>"
+            }
+          },
+          "bc620017-e071-466e-bef6-8f1957062e39": {
+            "type": "Question",
+            "settings": {
+              "title": "How do I redeem my points?",
+              "answer": "<p>Login to your account to access your loyalty page! There, you can choose to redeem your points for vouchers, merch and other perks.<\/p>"
+            }
+          },
+          "eaae2019-3ef6-4c06-aca1-38f3a904d24d": {
+            "type": "Question",
+            "settings": {
+              "title": "I just ordered\/signed up\/engaged on social media and don't see the points on my account",
+              "answer": "<p>Not to worry! Sometimes it takes our system a few days to process and apply points to your account. If you don’t see the points in your account after 3 working days, please email us at <a href=\"mailto:care@mamamadefood.com\" title=\"mailto:care@mamamadefood.com\">care@mamamadefood.com<\/a> and we’ll take care of it for you!<\/p>"
+            }
+          },
+          "0b84a256-61d7-430d-a777-f0a78a0e80fc": {
+            "type": "Question",
+            "settings": {
+              "title": "What happens if I cancel my order?",
+              "answer": "<p>Any points associated with that order will be deducted from your account balance.<\/p>"
+            }
+          },
+          "58bc3884-727d-45f5-b8c7-7b02cd0b890a": {
+            "type": "Question",
+            "settings": {
+              "title": "Why has my balance gone down?",
+              "answer": "<p>If you or one of your referrals recently canceled a purchase, this could affect your account balance.<\/p>"
+            }
+          },
+          "abe9e12c-a32a-4082-bc1a-9b06c227963a": {
+            "type": "Question",
+            "settings": {
+              "title": "How do I leave the programme?",
+              "answer": "<p>We’re sorry to see you go! If you would like to leave the programme, please email us at <a href=\"mailto:care@mamamadefood.com\" title=\"mailto:care@mamamadefood.com\">care@mamamadefood.com<\/a> and we will deactivate your account. Please note that deactivating your account will cause you to lose any accrued points. You may re-enroll in the program at any time, however, your Rewards balance will reset to zero.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "983cd37f-c723-46b7-a59e-eeaf8cd12a49",
+          "c256b5f0-d0bd-44a5-b7d0-3ce466681c28",
+          "c1ee3d59-41af-4c37-b7b1-8bb0d95d8f61",
+          "8e241afa-ba37-4785-bffb-d86e330643ef",
+          "2efe9960-1af7-46ed-bb95-c62dc90ed571",
+          "bc620017-e071-466e-bef6-8f1957062e39",
+          "eaae2019-3ef6-4c06-aca1-38f3a904d24d",
+          "0b84a256-61d7-430d-a777-f0a78a0e80fc",
+          "58bc3884-727d-45f5-b8c7-7b02cd0b890a",
+          "abe9e12c-a32a-4082-bc1a-9b06c227963a"
+        ],
+        "settings": {}
+      },
+      "product-testimonials": {
+        "type": "product-testimonials",
+        "blocks": {
+          "e2995ba8-cb6a-45f2-a7bf-d0984386ad03": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>As much as I’d love to be that mum who makes every meal from scratch, between being back at work, juggling childcare with my husband, and well, life in general, sometimes I just want to grab something quick out of the freezer - and these are PERFECT. Mamamade meals are organic, plant-based and free from the big 8 allergens - which is really important for us as Sahithya has CMPA<\/p>",
+              "cite": "@_kavya_ on instagram",
+              "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_3.png"
+            }
+          },
+          "18d557a9-a8e9-48b8-8184-023cb099bb05": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Ordered a second box for my 9-month-old because she loves all the meals! I enjoyed making similar meals for her from scratch for the first few months of weaning, but now I’m back to work and don’t have as much time to cook. Mamamade meals allow me to feel guilt-free feeding her delicious healthy meals without spending hours in the kitchen. I’m a fan!<\/p>",
+              "cite": "Rebecca on Trustpilot",
+              "image": "shopify:\/\/shop_images\/4_0fc14383-edd6-4858-a3b4-56ab4c2b597e.png"
+            }
+          },
+          "3b8168db-acf5-4761-8168-87a599175266": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Lifesavers for older child with new arrival! Found this company on Insta and they have been perfect solution to getting my preschooler fed well in the early days of me taking care of our newborn. It’s taken a lot of guilt out of not being able to cook healthy meals from scratch for her and the online user experience for ordering\/ delivery have been super smooth<\/p>",
+              "cite": "Helen S on Trustpilot",
+              "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_2.png"
+            }
+          },
+          "cff51fcc-cf08-41ef-8616-30c61f48040a": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Just started weaning my 6 and a half month old she absolutely loves the purées. This has been a lifesaver with running around after my other little one, wish I had found this company when I was weaning my now 1 and a half year old as she has milk and wheat allergy and found it hard to find foods that were healthy, packed with nutrition and low in sugar. I will definitely be ordering more for both my little people.<\/p>",
+              "cite": "Leanne on Trustpilot",
+              "image": "shopify:\/\/shop_images\/Mamamade_Testimonials_1..png"
+            }
+          }
+        },
+        "block_order": [
+          "e2995ba8-cb6a-45f2-a7bf-d0984386ad03",
+          "18d557a9-a8e9-48b8-8184-023cb099bb05",
+          "3b8168db-acf5-4761-8168-87a599175266",
+          "cff51fcc-cf08-41ef-8616-30c61f48040a"
+        ],
+        "settings": {
+          "heading": "Loved by parents",
+          "sub-heading": "",
+          "show_images": true,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#fff8f3",
+          "text_color": "#662480"
+        }
+      },
+      "cart-collection": {
+        "type": "cart-collection",
+        "settings": {
+          "enable": true,
+          "collection": "merch-gift-cards",
+          "title": "You might like these...",
+          "background": "#fff8f3"
+        }
+      },
+      "register-collection": {
+        "type": "register-collection",
+        "settings": {
+          "enable": true,
+          "collection": "merch-gift-cards",
+          "title": "You might like these...",
+          "background": "#ffffff"
+        }
+      },
+      "drawer-collection": {
+        "type": "drawer-collection",
+        "settings": {
+          "collection": "merch-gift-cards",
+          "title": "How about something extra...?",
+          "background": "#ebebeb"
+        }
+      },
+      "1643203429de3037b9": {
+        "type": "maestrooo-instagram",
+        "settings": {
+          "title": "Meet us in the Wild",
+          "subheading": "<p>@hellomamamade<\/p>",
+          "link_text": "follow along!",
+          "link_url": "https:\/\/www.instagram.com\/hellomamamade\/",
+          "layout": "grid",
+          "image_size": "large",
+          "full_width": false,
+          "add_spacing": true,
+          "rows_count": 1,
+          "show_author": false,
+          "show_caption": true,
+          "show_date": true,
+          "click_action": "open_instagram",
+          "heading_color": "#662480",
+          "subheading_color": "#662480",
+          "button_background": "#a887d3",
+          "button_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_text_color": "#ffffff",
+          "overlay_opacity": 65
+        }
+      },
+      "1648135427ae49316f": {
+        "type": "image-with-text-block",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Mamamade_Podcast_DigitalAssets_Header_V3.jpg",
+          "background": "#f88cc4",
+          "text_color": "#1c1b1b",
+          "block_size": "small",
+          "title": "",
+          "subtitle": "",
+          "content": "",
+          "button_label": "",
+          "button_link": "",
+          "show_parallax": false
+        }
+      },
+      "1648543847285f7309": {
+        "type": "header-page",
+        "disabled": true,
+        "settings": {}
+      },
+      "build-a-box": {
+        "type": "build-a-box",
+        "settings": {
+          "header_image": "shopify:\/\/shop_images\/bundle-hero.jpg",
+          "stage_one_title": "Choose your Bundle Size",
+          "stage_one_text": "How many meals does my baby need?",
+          "image_12": "shopify:\/\/shop_images\/12.jpg",
+          "image_24": "shopify:\/\/shop_images\/24.jpg",
+          "stage_two_title": "Select your %count% from the collection below",
+          "stage_two_text": "You can update your meal selection within the your account section once you’ve joined the Mamamade community."
+        }
+      },
+      "1649848303f53d0ae0": {
+        "type": "image-with-text-block",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Untitled_design_1.png",
+          "background": "#f88cc4",
+          "text_color": "#1c1b1b",
+          "block_size": "small",
+          "title": "",
+          "subtitle": "",
+          "content": "",
+          "button_label": "Listen to the podcast",
+          "button_link": "shopify:\/\/pages\/podcast",
+          "show_parallax": true
+        }
+      },
+      "165599487960c7c4ee": {
+        "type": "index-slideshow",
+        "blocks": {
+          "fb903dbb-9fea-4ba3-804e-1d8d0e40ce86": {
+            "type": "image",
+            "settings": {
+              "title": "Time-Saving Nutritious Mealtimes",
+              "text": "<p>No more planning or prepping. Organic food for babies and toddlers, ready in minutes.<\/p>",
+              "button_label": "Get started",
+              "button_link": "shopify:\/\/collections\/pre-made-bundles",
+              "button_color": "Button Button--secondary",
+              "image_link": "",
+              "image": "shopify:\/\/shop_images\/Artboard_1.png",
+              "image_size": "cover",
+              "image_y_alignment": "50%",
+              "image_x_alignment": "50%",
+              "desktop_position_x": "home-slideshow--x-center",
+              "desktop_position_y": "home-slideshow--y-center",
+              "text_alignment": "text-center",
+              "mobile_image": "shopify:\/\/shop_images\/Artboard_2_40a641d3-44ee-40cc-a44f-ee5f4238af13.png",
+              "content_bg_colour": ""
+            }
+          },
+          "b7f107b4-1d73-4d63-a358-903f0701f5d9": {
+            "type": "image",
+            "settings": {
+              "title": "Big Flavours For Little Hands",
+              "text": "<p>Our baby line up offers bold flavours, a range of textures, and are packed with nutrients. Yum.<\/p>",
+              "button_label": "DISCOVER THE MENU",
+              "button_link": "shopify:\/\/products\/bestsellers-bundle",
+              "button_color": "Button",
+              "image_link": "",
+              "image": "shopify:\/\/shop_images\/new_meals_-_desktop.png",
+              "image_size": "cover",
+              "image_y_alignment": "50%",
+              "image_x_alignment": "50%",
+              "desktop_position_x": "home-slideshow--x-center",
+              "desktop_position_y": "home-slideshow--y-center",
+              "text_alignment": "text-center",
+              "mobile_image": "shopify:\/\/shop_images\/new_meals_-_mobile.png",
+              "content_bg_colour": ""
+            }
+          },
+          "953429e7-8f35-4f03-aca5-2f6d6633eb7a": {
+            "type": "image",
+            "settings": {
+              "title": "",
+              "text": "",
+              "button_label": "",
+              "button_link": "",
+              "button_color": "Button",
+              "image_link": "shopify:\/\/pages\/toddler-meals-reinvented",
+              "image": "shopify:\/\/shop_images\/CHILLI_LENTIL_MAC_hero2_05bcf373-9c2a-4293-b5d6-fa70ac5d0c84.png",
+              "image_size": "cover",
+              "image_y_alignment": "50%",
+              "image_x_alignment": "50%",
+              "desktop_position_x": "home-slideshow--x-start",
+              "desktop_position_y": "home-slideshow--y-center",
+              "text_alignment": "text-left",
+              "mobile_image": "shopify:\/\/shop_images\/MAC_LENTIL_CHILLI_heromobile2.png",
+              "content_bg_colour": ""
+            }
+          },
+          "00f971cd-4b03-4499-86fb-f8c2a8251740": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "text": "<p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p>",
+              "button_label": "",
+              "button_link": "",
+              "button_color": "Button Button--secondary",
+              "image_link": "shopify:\/\/pages\/toddler-meals-reinvented",
+              "image": "shopify:\/\/shop_images\/MM-NewMealHeroBanners-Website.png",
+              "image_size": "auto 100%",
+              "image_y_alignment": "50%",
+              "image_x_alignment": "100%",
+              "desktop_position_x": "home-slideshow--x-center",
+              "desktop_position_y": "home-slideshow--y-center",
+              "text_alignment": "text-left",
+              "mobile_image": "shopify:\/\/shop_images\/MM-NewMealHeroBanners-Mobile2.png",
+              "content_bg_colour": "#fce0bc"
+            }
+          },
+          "49011158-af6f-470d-9ae6-96e4d4699f28": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "text": "",
+              "button_label": "",
+              "button_link": "",
+              "button_color": "Button Button--secondary",
+              "image_link": "shopify:\/\/pages\/toddler-meals-reinvented",
+              "image": "shopify:\/\/shop_images\/MM-NewMealHeroBanners-Website12_copy.png",
+              "image_size": "cover",
+              "image_y_alignment": "50%",
+              "image_x_alignment": "50%",
+              "desktop_position_x": "home-slideshow--x-center",
+              "desktop_position_y": "home-slideshow--y-center",
+              "text_alignment": "text-center",
+              "mobile_image": "shopify:\/\/shop_images\/MM-NewMealHeroBanners-Mobile13.png",
+              "content_bg_colour": ""
+            }
+          },
+          "8a009620-7a42-46a3-ae11-8636fd6a1002": {
+            "type": "image",
+            "settings": {
+              "title": "Weaning Accessories",
+              "text": "<p>You've got enough on your plate, so we’re making mealtimes even easier with our bundles of mealtime accessories.<\/p>",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/products\/essential-accessories-bundle",
+              "button_color": "Button",
+              "image_link": "",
+              "image": "shopify:\/\/shop_images\/MM-NewPlates-Banner.png",
+              "image_size": "cover",
+              "image_y_alignment": "50%",
+              "image_x_alignment": "50%",
+              "desktop_position_x": "home-slideshow--x-start",
+              "desktop_position_y": "home-slideshow--y-center",
+              "text_alignment": "text-left",
+              "mobile_image": "shopify:\/\/shop_images\/MM-NewPlates-Banner_1.png",
+              "content_bg_colour": ""
+            }
+          }
+        },
+        "block_order": [
+          "fb903dbb-9fea-4ba3-804e-1d8d0e40ce86",
+          "b7f107b4-1d73-4d63-a358-903f0701f5d9",
+          "953429e7-8f35-4f03-aca5-2f6d6633eb7a",
+          "00f971cd-4b03-4499-86fb-f8c2a8251740",
+          "49011158-af6f-470d-9ae6-96e4d4699f28",
+          "8a009620-7a42-46a3-ae11-8636fd6a1002"
+        ],
+        "settings": {
+          "full-width": true
+        }
+      },
+      "1664879067b098c011": {
+        "type": "featured-text-image",
+        "settings": {
+          "heading": "No time to cook?",
+          "text": "No fuss. No mess. Healthy meals ready in minutes.",
+          "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_1.png",
+          "button_text": "Find Your Bundle",
+          "button_link": "shopify:\/\/pages\/quiz",
+          "color_bg": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "165599487960c7c4ee",
+      "slideshow",
+      "1591192210733",
+      "1664879067b098c011",
+      "1604408692f8fbbff2",
+      "1648135427ae49316f",
+      "1649848303f53d0ae0",
+      "1604666164822f1be5",
+      "1591192336557",
+      "1591192456084",
+      "160445674179f3bc3b",
+      "16044767225b91633f",
+      "1591192611433",
+      "1648543847285f7309",
+      "1643203429de3037b9"
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
+}

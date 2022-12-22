@@ -1,0 +1,122 @@
+<div class="probootstrap-text  probootstrap-text--account">
+  <div class="PageContent PageContent--fitScreen PageContent--extraNarrow">
+    {%- assign is_recover_active = false -%}
+
+    {%- form 'recover_customer_password' -%}
+      {%- if form.errors or form.posted_successfully? -%}
+        {%- assign is_recover_active = true -%}
+      {%- endif -%}
+    {%- endform -%}
+
+    {%- comment -%}
+    --------------------------------------------------------------------------------------------------------------------
+    CUSTOMER LOGIN FORM
+    --------------------------------------------------------------------------------------------------------------------
+    {%- endcomment -%}
+
+    {%- if is_recover_active -%}
+      {%- assign login_default_visibility = 'display: none' -%}
+    {%- else -%}
+      {%- assign login_default_visibility = 'display: block' -%}
+    {%- endif -%}
+
+    {%- form 'customer_login', name: 'login', class: 'Form Form--spacingTight', id: 'customer_login', style: login_default_visibility -%}
+      <header class="Form__Header">
+        <h1 class="Form__Title Heading u-h1 login-title">{{ 'customer.login.title' | t }}</h1>
+        {% comment %} <p class="check-list Form__Legend">
+          {%- render 'icon' with 'tick', classes: '', fill: '#add680', fill_tick: '#add680', fill_alt: '#fff' -%}
+          Modify your subscription
+        </p>
+        <p class="check-list Form__Legend">
+          {%- render 'icon' with 'tick', classes: '', fill: '#add680', fill_tick: '#add680', fill_alt: '#fff' -%}
+          Manage delivery schedule
+        </p>
+        <p class="check-list Form__Legend">
+          {%- render 'icon' with 'tick', classes: '', fill: '#add680', fill_tick: '#add680', fill_alt: '#fff' -%}
+          View order history
+        </p> {% endcomment %}
+      </header>
+
+      {%- if form.errors -%}
+        <p class="Form__Alert Alert Alert--error">
+          {{- form.errors.messages['form'] -}}
+        </p>
+      {%- endif -%}
+
+      <div class="Form__Item">
+        <input type="email" class="Form__Input" name="customer[email]" required="required" placeholder="{{ 'customer.login.email' | t }}" aria-label="{{ 'customer.login.email' | t }}" autofocus>
+        <label class="Form__FloatingLabel">{{ 'customer.login.email' | t }}</label>
+      </div>
+
+      <div class="Form__Item">
+        <input type="password" class="Form__Input" name="customer[password]" required="required" placeholder="{{ 'customer.login.password' | t }}" aria-label="{{ 'customer.login.password' | t }}">
+        <label class="Form__FloatingLabel">{{ 'customer.login.password' | t }}</label>
+        {% comment %} <button type="button" class="Form__ItemHelp Link Link--primary" data-action="toggle-recover-form">{{ 'customer.login.forgot' | t }}</button> {% endcomment %}
+      </div>
+
+
+      <input type="hidden" name="checkout_url" value="/tools/recurring/login">
+
+      <button type="submit" class="Button Button__large Button--secondary Button--full">{{ 'customer.login.submit' | t }}</button>
+
+      <div class="Form__Hint Form__Hint--center">
+
+        <p class="base-p">
+          <span>🤷‍♀️ Have you forgotten your password?  </span><span data-action="toggle-recover-form" class="link-underline">You can reset it here</span>
+        </p>
+
+        {% comment %} <span class="Text--subdued">:woman_shrugging: {{ 'customer.login.register_label' | t }}</span>
+        <a href="{{ routes.account_register_url }}" class="link-underline"><strong>{{ 'customer.login.register_link' | t }}</strong></a> {% endcomment %}
+      </div>
+    {%- endform -%}
+
+
+    {%- comment -%}
+    --------------------------------------------------------------------------------------------------------------------
+    CUSTOMER RECOVERY FORM
+    --------------------------------------------------------------------------------------------------------------------
+    {%- endcomment -%}
+
+    {%- if is_recover_active -%}
+      {%- assign recover_default_visibility = 'display: block' -%}
+    {%- else -%}
+      {%- assign recover_default_visibility = 'display: none' -%}
+    {%- endif -%}
+
+    {%- form 'recover_customer_password', name: 'recover', class: 'Form Form--spacingTight', id: 'recover_customer_password', style: recover_default_visibility -%}
+      <header class="Form__Header">
+        <h1 class="Form__Title Heading u-h1 login-title">{{ 'customer.recover_password.title' | t }}</h1>
+
+        {%- unless form.posted_successfully? -%}
+          <p class="base-p text-center">{{ 'customer.recover_password.description' | t }}</p>
+        {%- endunless -%}
+      </header>
+
+      {%- if form.errors -%}
+        <p class="Form__Alert Alert Alert--error">
+          {{- form.errors.messages['form'] -}}
+        </p>
+      {%- endif -%}
+
+      {%- if form.posted_successfully? -%}
+        <p class="Form__Alert Alert Alert--success">
+          {{- 'customer.recover_password.success' | t -}}
+        </p>
+      {%- endif -%}
+
+      <div class="Form__Item">
+        <input type="email" class="Form__Input" name="email" required="required" placeholder="{{ 'customer.recover_password.email' | t }}" aria-label="{{ 'customer.recover_password.email' | t }}" autofocus>
+        <label class="Form__FloatingLabel">{{ 'customer.recover_password.email' | t }}</label>
+      </div>
+
+      <button type="submit" class="Button Button__large Button--secondary Button--full">{{ 'customer.recover_password.submit' | t }}</button>
+
+      <div class="Form__Hint Form__Hint--center">
+        <p class="base-p">
+          <span>{{ 'customer.recover_password.login_label' | t }}</span>
+          <button type="button" class="link-underline" data-action="toggle-recover-form">{{ 'customer.recover_password.login_link' | t }}</button>
+        </p>
+      </div>
+    {%- endform -%}
+  </div>
+</div>

@@ -1,0 +1,128 @@
+{
+  "sections": {
+    "text-with-image": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Sign up to our newsletter",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Join the conversation. Sign up to our weekly newsletters for exclusive offers and content from the world of Mamamade. <\/p><p>Plus you'll get 10% off your first order when you sign up! <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "165340831620072e21": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"klaviyo-form-R6wk2C\"><\/div>"
+      }
+    },
+    "1653470986e2ca27c9": {
+      "type": "text-with-products",
+      "blocks": {
+        "7a382871-7286-4953-9d21-adaa1020e77e": {
+          "type": "product",
+          "settings": {
+            "product": "getting-started-with-blw-bundle-6m"
+          }
+        },
+        "86d1378f-3be1-4577-b956-4c1dbee7f23c": {
+          "type": "product",
+          "settings": {
+            "product": "the-getting-confident-variety-bundle-7-10m"
+          }
+        },
+        "e00439ed-946d-4716-a1cf-5d767db39a98": {
+          "type": "product",
+          "settings": {
+            "product": "everything-you-need-bundle"
+          }
+        },
+        "90a10bfd-3549-4a1b-81c2-9121ea2660fb": {
+          "type": "product",
+          "settings": {
+            "product": "first-tastes-bundle"
+          }
+        },
+        "0c5e0188-fdad-4899-beae-9effa7e557d1": {
+          "type": "product",
+          "settings": {
+            "product": "pancakes-only-bundle-6m"
+          }
+        }
+      },
+      "block_order": [
+        "7a382871-7286-4953-9d21-adaa1020e77e",
+        "86d1378f-3be1-4577-b956-4c1dbee7f23c",
+        "e00439ed-946d-4716-a1cf-5d767db39a98",
+        "90a10bfd-3549-4a1b-81c2-9121ea2660fb",
+        "0c5e0188-fdad-4899-beae-9effa7e557d1"
+      ],
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#9cd4d6"
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "blocks": {
+        "50488d93-e990-4440-84a5-a10ca41cead8": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Fantastic food, delicious flavours, great packaging, easy to follow cooking and storage instructions and the convenience of having 100% healthy meals readily available has been a lifesaver for me as a busy parent.<\/p>",
+            "cite": "⭐️⭐️⭐️⭐️⭐️   trustpilot review",
+            "image": "shopify:\/\/shop_images\/5_ba3b7f5b-870d-4c3d-b030-987c118f35b3.png"
+          }
+        }
+      },
+      "block_order": [
+        "50488d93-e990-4440-84a5-a10ca41cead8"
+      ],
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "show_images": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#f88cc4",
+        "text_color": "#662480"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "blocks": {
+        "fdfb84ec-eef7-4ffa-aaed-47c47173d805": {
+          "type": "blog",
+          "settings": {
+            "blog": "mamamadeblog"
+          }
+        }
+      },
+      "block_order": [
+        "fdfb84ec-eef7-4ffa-aaed-47c47173d805"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "The Mamamade Blog.",
+        "copy": "We're breaking down barriers and exploring the ins and outs of parenting...",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": "#a887d3"
+      }
+    }
+  },
+  "order": [
+    "text-with-image",
+    "165340831620072e21",
+    "1653470986e2ca27c9",
+    "product-testimonials",
+    "blog-posts"
+  ]
+}

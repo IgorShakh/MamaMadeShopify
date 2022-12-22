@@ -1,0 +1,112 @@
+{%- style -%}
+  #section-{{ section.id }} {
+    background-color: {{ section.settings.background_colour }};
+  }
+
+  #section-{{ section.id }} .SectionHeader__Heading {
+    color: {{ section.settings.title_colour }};
+  }
+
+  #section-{{ section.id }} .SectionHeader__SubHeading {
+    color: {{ section.settings.subtitle_colour }};
+  }
+
+  #section-{{ section.id }} .section-description {
+    color: {{ section.settings.text_colour }};
+  }
+{%- endstyle -%}
+
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
+  <div class="Container">
+    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        {%- if section.settings.subheading != blank -%}
+          <h3 class="SectionHeader__SubHeading Heading u-h6">
+            {{ section.settings.subheading | escape }}
+          </h3>
+        {%- endif -%}
+
+        {%- if section.settings.title != blank -%}
+          <h2 class="SectionHeader__Heading Heading u-h1">
+            {{ section.settings.title | escape }}
+          </h2>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+
+    {% if section.settings.content %}
+      <div class="Rte section-description" style="text-align: center">
+        {{ section.settings.content }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.content %}
+      <div class="Rte" style="text-align: center" style="color: {{ section.settings.text_colour }}">
+        {{ section.settings.html }}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom HTML",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_colour",
+      "label": "Background Colour",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_colour",
+      "label": "Sub-heading Colour",
+      "default": "#662480"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your HTML"
+    },
+    {
+      "type": "color",
+      "id": "title_colour",
+      "label": "Heading Colour",
+      "default": "#662480"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "color",
+      "id": "text_colour",
+      "label": "Content Colour",
+      "default": "#662480"
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "HTML content",
+      "default": "<p>Write your own custom HTML content.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom HTML",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

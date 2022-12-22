@@ -1,0 +1,47 @@
+<script>
+  var options =  {
+    permanent_domain: {{ shop.permanent_domain | json }},
+    checkout_domain: {{ shop.metafields.subscriptions.checkout_domain | default: 'checkout.rechargeapps.com' | json }},
+  };
+
+  function get_cart_token() {
+    // Build the cart_token param for the URL generator
+    try {
+      return ['cart_token=' + (document.cookie.match('(^|; )cart=([^;]*)')||0)[2]];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function get_ga_linker() {
+    // Build the ga_linker param for the URL generator
+    try {
+      return [ga.getAll()[0].get('linkerParam')];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function buildCheckoutUrl() {
+    var checkout_url = 'https://' + options.checkout_domain + '/r/checkout?',
+      url_params = [
+        'myshopify_domain=' + options.permanent_domain,
+      ];
+    url_params = url_params
+      .concat(get_cart_token())
+      .concat(get_ga_linker());
+
+    return checkout_url + url_params.join('&');
+  }
+
+  function checkoutUrlRedirect() {
+    var checkoutUrl = buildCheckoutUrl();
+    document.location.href = checkoutUrl;
+  }
+
+  function init() {
+    checkoutUrlRedirect()
+  }
+
+  init();
+</script>

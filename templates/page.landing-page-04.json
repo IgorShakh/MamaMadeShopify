@@ -1,0 +1,253 @@
+{
+  "sections": {
+    "1644490080e91102e9": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/Mamamade_Food_Pancake_Nation.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#a887d3",
+        "overlay_opacity": 0,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "1643712393c6e5810e": {
+      "type": "header-page",
+      "settings": {}
+    },
+    "text-with-image": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Flippin' Fantastic Pancakes!",
+        "image": "shopify:\/\/shop_images\/mamamade_pancake_bites.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Our Mamamade Pancakes aren't just for Pancake Day! With five delicious flavour combos to choose from, these versatile finger foods are ideal for baby led weaning and snack-hungry toddlers 😋 <\/p><p>And you're in for a treat... One-off and subscription orders delivered on the 18th and 22nd February will receive a FREE bonus pack* of pancakes - result! 🥞<\/p><p><\/p><p><em>*Free pack of 5 pancakes will be added to all 12 and 24-pack bundles.  14-pack bundles excluded. Pancake flavour will be chosen at random. Make sure to order by Sunday 20th to claim this offer.<\/em><\/p><p><\/p>",
+        "link_text": "shop now",
+        "link_url": "https:\/\/mamamadefood.com\/collections\/pre-made-bundles"
+      }
+    },
+    "1644490426e82ddfc7": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Stacks of Savings!",
+        "image": "shopify:\/\/shop_images\/mamamade_pancake_bundles_square.jpg",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Our Mamamade Pancakes aren't just for Pancake Day! With five delicious flavour combos to choose from, these versatile finger foods are ideal for baby led weaning and snack-hungry toddlers 😋  <\/p><p>We're inviting everyone to get involved in our Pancake Party, so between 21st February and 1st March, you can save 25% on our <strong>Pancake Only <\/strong>and <strong>Pancake + Purées Bundles<\/strong> 📦<\/p><p><em>The price will be automatically discounted, so if you already have a subscription, you'll still get to claim this sweet deal! <\/em><\/p>",
+        "link_text": "shop now",
+        "link_url": "https:\/\/mamamadefood.com\/collections\/pre-made-bundles"
+      }
+    },
+    "1644404590aae3f463": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Make the Perfect Pancake Platter",
+        "image": "shopify:\/\/shop_images\/Mamamade_Pancake_Platter.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>Planning a children's birthday party or need an entertaining half term activity? There's only one thing for it - make a pancake grazing board! 🥞<\/p><p>All you need is some fresh fruit, Mamamade pancakes and a whole host of creativity. Follow our guide and you'll be a pancake platter pro in no time.<\/p><p><\/p><p><\/p>",
+        "link_text": "show me how!",
+        "link_url": "shopify:\/\/blogs\/mamamadeblog\/how-to-make-a-pancake-platter-brilliant-children-s-party-idea"
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Pimp Your Pancakes, Earn Loyalty Points!",
+        "image": "shopify:\/\/shop_images\/Mamamade_Pancake_Breakfast_Board.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Share how you and your little ones enjoy Mamamade pancakes on your Instagram feed, tagging <a href=\"https:\/\/www.instagram.com\/hellomamamade\/\" target=\"_blank\" title=\"Mamamade Instagram\">@hellomamamade<\/a> + #WeMamamadeIt.<\/p><p>Post between now and Pancake Day (1st March), and we'll credit your Mamamade account with 250 loyalty points! Flipping fantastic ✨<\/p><p><\/p>",
+        "link_text": "find out more",
+        "link_url": "shopify:\/\/blogs\/mamamadeblog\/how-to-make-a-pancake-platter-brilliant-children-s-party-idea"
+      }
+    },
+    "1643713061210bb7d6": {
+      "type": "featured-collections",
+      "blocks": {
+        "164371306110b051a0-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "flippin-fantastic-pancake-bundles",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "164371306110b051a0-0"
+      ],
+      "settings": {
+        "title": "",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_loyalty": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "blocks": {
+        "a7cc2ddf-01c5-473d-bd96-4e392aa6d3b8": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Just wanted to say thank you, my son is 10 months old and will barely eat anything and I was losing the will to live. But tonight he had your Banana Oat Pancakes and he ate all 5!!!!! I have never cried like that and I feel now that your meals will be our go to!  Thank you.<\/p>",
+            "cite": "- @hannahlu93",
+            "image": "shopify:\/\/shop_images\/Mamamade_banana_oat_pancakes.png"
+          }
+        },
+        "393b660e-eeab-4179-881c-f6727c2ccd80": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>We absolutely love the Mamamade pancakes in our household -  they’re so quick and easy to prepare, just a few minutes in the microwave and they’re ready to go! The Mango Oat Cakes are Eva's favourite.<\/p>",
+            "cite": "- @thelifelately",
+            "image": "shopify:\/\/shop_images\/Mamamade_Food_Review.png"
+          }
+        },
+        "23350832-6f93-409d-a3db-36cdcde60dce": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>...the wonderful people at Mamamade have got me covered, and  they're a bloody dream for when it comes to meal times and wanting something delicious, organic and nutritious when I don't have time to prep anything in advance. They’ve been a total godsend since weaning began.<\/p>",
+            "cite": "- @livpurvis",
+            "image": "shopify:\/\/shop_images\/Mamamade_Pancakes_Liv_Purvis.png"
+          }
+        }
+      },
+      "block_order": [
+        "a7cc2ddf-01c5-473d-bd96-4e392aa6d3b8",
+        "393b660e-eeab-4179-881c-f6727c2ccd80",
+        "23350832-6f93-409d-a3db-36cdcde60dce"
+      ],
+      "settings": {
+        "heading": "Share the Pancake Love!",
+        "sub-heading": "",
+        "show_images": true,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#a887d3",
+        "text_color": "#ffffff"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "blocks": {
+        "feffdfbb-c864-48d1-bb55-35f4647d1319": {
+          "type": "article",
+          "settings": {
+            "article_1": "mamamadeblog\/how-to-make-a-pancake-platter-brilliant-children-s-party-idea",
+            "article_2": "mamamadeblog\/why-our-banana-oat-pancakes-are-weaning-favourites-for-so-many-families",
+            "article_3": "mamamadeblog\/want-to-know-more-about-our-new-pancakes-your-guide-to-the-pancake-launch"
+          }
+        }
+      },
+      "block_order": [
+        "feffdfbb-c864-48d1-bb55-35f4647d1319"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "All you need to know about our Pancakes...",
+        "copy": "",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": "#fff8f3"
+      }
+    },
+    "16444108900a31b631": {
+      "type": "maestrooo-instagram",
+      "settings": {
+        "title": "Tag us on Instagram! #WeMamamadeIt",
+        "subheading": "",
+        "link_text": "",
+        "link_url": "",
+        "layout": "grid",
+        "image_size": "medium",
+        "full_width": false,
+        "add_spacing": true,
+        "rows_count": 1,
+        "show_author": false,
+        "show_caption": false,
+        "show_date": false,
+        "click_action": "open_instagram",
+        "heading_color": "#662480",
+        "subheading_color": "#662480",
+        "button_background": "#000000",
+        "button_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_text_color": "#ffffff",
+        "overlay_opacity": 65
+      }
+    },
+    "1644490048f3961e07": {
+      "type": "header-page",
+      "blocks": {
+        "16444900487bf466f4-0": {
+          "type": "header",
+          "settings": {
+            "page": "",
+            "header_background": "#e380af",
+            "short_header": false,
+            "show_curve": false,
+            "title": "Tell your story",
+            "subheading": "Lorem ipsum et el dor",
+            "copy": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#662480",
+            "button_color": "#ffffff",
+            "button_background": "#662480",
+            "button_background_hover": "#9380be"
+          }
+        },
+        "f57bf746-9c0c-404a-bf46-187005ec6c37": {
+          "type": "header",
+          "settings": {
+            "page": "",
+            "header_background": "#e380af",
+            "short_header": false,
+            "show_curve": false,
+            "title": "Tell your story",
+            "subheading": "Lorem ipsum et el dor",
+            "copy": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#662480",
+            "button_color": "#ffffff",
+            "button_background": "#662480",
+            "button_background_hover": "#9380be"
+          }
+        }
+      },
+      "block_order": [
+        "16444900487bf466f4-0",
+        "f57bf746-9c0c-404a-bf46-187005ec6c37"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "1644490080e91102e9",
+    "1643712393c6e5810e",
+    "text-with-image",
+    "1644490426e82ddfc7",
+    "1644404590aae3f463",
+    "text-with-image-two",
+    "1643713061210bb7d6",
+    "product-testimonials",
+    "blog-posts",
+    "16444108900a31b631",
+    "1644490048f3961e07"
+  ]
+}

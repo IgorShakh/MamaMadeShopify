@@ -1,0 +1,47 @@
+{%- render 'featured-text-with-image' -%}
+
+{% schema %}
+{
+  "name": "Need help?",
+	"class": "shopify-section--featured",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background colour"
+      }
+	],
+	"presets": [
+    {
+      "category": "Text",
+      "name": "Need help?",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,175 @@
+{%- for block in section.blocks -%}
+  {%- assign downcased_mega_menu_name = block.settings.navigation_mega_menu | downcase -%}
+
+  {%- if downcased_mega_menu_name != downcased_link_title -%}
+    {%- continue -%}
+  {%- endif -%}
+
+  {% if block.type == 'mega_menu_thumbnail' %}
+    <div class="MegaMenu mobile-menu__submenu" data-mobile-id="{{ link_handle }}" aria-hidden="true" {{ block.shopify_attributes }}>
+
+      <div class="mobile-menu__back">
+        <div class="Linklist__Item__Arrow js-close-submenu" data-mobile="{{ link_handle }}"></div>
+      </div>
+
+      {% if block.settings.show_header %}
+        <div class="MegaMenu__Inner">
+          <div class="MegaMenu__Header">
+            <div class="MegaMenu__HeaderContainer">
+              {% if block.settings.header_title %}
+                <p class="MegaMenu__Header__Title">{{ block.settings.header_title | escape }}</p>
+              {% endif %}
+              {% if block.settings.header_content %}
+                <p class="MegaMenu__Header__Subtitle">{{ block.settings.header_content | escape }}</p>
+              {% endif %}
+            </div>
+            {% if block.settings.show_header_button and block.settings.button_header_text %}
+              <a class="Button Button--secondary" href="{{ block.settings.button_header_url }}">{{ block.settings.button_header_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="MegaMenu__Inner">
+        {% comment %}
+          {%- for sub_link in link.links -%}
+          <div class="MegaMenu__Item MegaMenu__Item--fit">
+            <a href="{{ sub_link.url }}" class="MegaMenu__Title Heading Text--subdued u-h7">{{ sub_link.title }}</a>
+
+            {%- if sub_link.links != blank -%}
+            <ul class="Linklist">
+              {%- for sub_sub_link in sub_link.links -%}
+              <li class="Linklist__Item">
+                <a href="{{ sub_sub_link.url }}" class="Link Link--secondary">{{ sub_sub_link.title | escape }}</a>
+              </li>
+              {%- endfor -%}
+            </ul>
+            {%- endif -%}
+          </div>
+          {%- endfor -%}
+        {% endcomment %}
+
+        <div class="MegaMenu__Item">
+
+          {% for i in (1..4) %}
+            {% assign menu_image_temp = 'push_' | append: i | append: '_image' %}
+            {% assign menu_image = block.settings[menu_image_temp] %}
+            {% assign menu_url_temp = 'push_' | append: i | append: '_url' %}
+            {% assign menu_url = block.settings[menu_url_temp] %}
+            {% assign menu_heading_temp = 'push_' | append: i | append: '_heading' %}
+            {% assign menu_heading = block.settings[menu_heading_temp] %}
+            {% assign menu_subheading_temp = 'push_' | append: i | append: '_subheading' %}
+            {% assign menu_subheading = block.settings[menu_subheading_temp] %}
+            {% assign menu_show_button = block.settings.show_button %}
+            {% assign menu_button_text = block.settings.button_text %}
+            {% assign max_width = 420 %}
+
+            {%- if menu_image -%}
+              <div class="MegaMenu__Push">
+                {%- if menu_url != blank -%}
+                  <a class="MegaMenu__PushLink" href="{{ menu_url }}">
+                {%- endif -%}
+
+                <div class="MegaMenu__PushImageWrapper AspectRatio" style="background: url({{ menu_image | img_url: '1x1', format: 'jpg' }}); max-width: {{ max_width }}px; --aspect-ratio: 1.4">
+                  <img loading="lazy"class="Image--lazyLoad Image--fadeIn"
+                        data-src="{{ menu_image | img_url: '370x230', scale: 2 }}"
+                        alt="{{ menu_image.alt | escape }}">
+
+                  <span class="Image__Loader"></span>
+                </div>
+
+                <div>
+                  {%- if menu_heading != blank -%}
+                    <p class="MegaMenu__PushHeading">{{ menu_heading | escape }}</p>
+                  {%- endif -%}
+
+                  {%- if menu_subheading != blank -%}
+                    <p class="MegaMenu__PushSubHeading">{{ menu_subheading | escape }}</p>
+                  {%- endif -%}
+
+                  {%- if menu_show_button == true and menu_button_text != blank -%}
+                    <p class="MegaMenu__PushButton">{{ menu_button_text | escape }}</p>
+                  {%- endif -%}
+
+                  {%- if menu_url != blank -%}
+                    </a>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endif -%}
+
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+  {% elsif block.type == 'mega_menu_shop' %}
+    <div class="MegaMenu MegaMenu--Split mobile-menu__submenu" data-mobile-id="{{ link_handle }}" aria-hidden="true" {{ block.shopify_attributes }}>
+
+      <div class="mobile-menu__back">
+        <div class="Linklist__Item__Arrow js-close-submenu" data-mobile="{{ link_handle }}"></div>
+      </div>
+
+      <div class="MegaMenu__Inner">
+        <div class="MegaMenu__ListContainer">
+          {% for i in (1..4) %}
+            {% assign menu_navigation_temp = 'list_' | append: i %}
+            {% assign menu_navigation = block.settings[menu_navigation_temp] %}
+            {% assign menu_link_list = linklists[menu_navigation] %}
+
+            <ul class="MegaMenu__List">
+              <li class="MegaMenu__List__Title">{{ menu_link_list.title }}</li>
+              {%- for link in menu_link_list.links -%}
+                <li class="{% if link.links == blank and link.active %}is-active{% endif %}">
+                  <a href="{{ link.url }}">
+                    {{- link.title | escape -}}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endfor -%}
+        </div>
+
+        <div class="MegaMenu__ProductsContainer">
+          <div class="MegaMenu__Products">
+            {% for i in (1..6) %}
+              {% assign menu_product_temp = 'product_' | append: i %}
+              {% assign menu_product = block.settings[menu_product_temp] %}
+              {% assign menu_image_temp = 'product_image_' | append: i %}
+              {% assign menu_image = block.settings[menu_image_temp] %}
+              {% assign menu_title_temp = 'product_title_' | append: i %}
+              {% assign menu_title = block.settings[menu_title_temp] %}
+              {% assign menu_content_temp = 'product_content_' | append: i %}
+              {% assign menu_content = block.settings[menu_content_temp] %}
+
+              {% if menu_product != blank %}
+                <div class="MegaMenu__Product">
+                  <a href="{{ menu_product.url }}" class="MegaMenu__ProductLink">
+                    <div class="MegaMenu__ProductImageWrapper AspectRatio" style="background: url({{ menu_image | img_url: '1x1', format: 'jpg' }}); max-width: 420px; --aspect-ratio: 1">
+                      <img loading="lazy"class="Image--lazyLoad Image--fadeIn"
+                            data-src="{{ menu_image | img_url: '88x88', scale: 2 }}"
+                            alt="{{ menu_image.alt | escape }}">
+                      <span class="Image__Loader"></span>
+                    </div>
+
+                    <div class="MegaMenu__ProductContent">
+                      {% if menu_title != blank %}
+                        <h3 class="MegaMenu__Product__Title">{{ menu_title | escape }}</h3>
+                      {% endif %}
+                      {% if menu_content != blank %}
+                        <p class="MegaMenu__Product__Content">{{ menu_content | escape }}</p>
+                      {% endif %}
+                    </div>
+                  </a>
+                </div>
+              {% endif %}
+
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+{%- endfor -%}

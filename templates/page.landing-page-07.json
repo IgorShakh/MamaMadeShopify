@@ -1,0 +1,235 @@
+{
+  "sections": {
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/Untitled_design_4.png",
+        "text_color": "#662480",
+        "overlay_color": "#abe8b5",
+        "overlay_opacity": 100,
+        "subheading": "",
+        "title": "Black Friday is here...",
+        "content": ""
+      }
+    },
+    "how-it-works-programme": {
+      "type": "how-it-works-programme",
+      "disabled": true,
+      "blocks": {
+        "7aec0bf1-8bb9-4c2d-89be-4da0411feb23": {
+          "type": "Column",
+          "disabled": true,
+          "settings": {
+            "column-heading": "",
+            "column-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "7aec0bf1-8bb9-4c2d-89be-4da0411feb23"
+      ],
+      "settings": {
+        "heading": "Your Black Friday Rewards...",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#abe8b5"
+      }
+    },
+    "text-with-image": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "...but we're thinking Green",
+        "image": "shopify:\/\/shop_images\/mamamade_green_friday.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>We want to take this time as an opportunity to reward our amazingly loyal community for their support, and give new customers a chance to try Mamamade at a time convenient to them, without driving anyone to shop impulsively. After all, we offer convenience without compromise, and we are here for you whenever you need support at mealtime.<\/p><p>Plus, there’s no better time than now to share what we are doing as a business to ensure that we’re being as green and sustainable as we can for you, your little ones and the planet. <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "163733282671224d29": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/Untitled_design_4.png",
+        "text_color": "#662480",
+        "overlay_color": "#abe8b5",
+        "overlay_opacity": 100,
+        "subheading": "",
+        "title": "Your Black Friday Rewards...",
+        "content": ""
+      }
+    },
+    "text-with-products": {
+      "type": "text-with-products",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "16373317036b42f1c3": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Free Credit For Existing Customers",
+        "image": "shopify:\/\/shop_images\/mamamade_green_friday_3_74cf1bbf-359b-4505-a28e-1d98063af718.jpg",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>As a thank you to our loyal customers, we’re giving 1000 points (worth £10!) to anyone who has ordered from us in the last six months. Ordered 6+ boxes from us? We're crediting your account with 2000 points (worth £20!).<\/p><p>There’s no rush, the credit is in your account whenever you need to support with mealtime.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "25% Off For New Customers",
+        "image": "shopify:\/\/shop_images\/Mamamade_green_friday_1.jpg",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>New customer? You can get 25% off your first Mamamade subscription box with the code <strong>BLACKFRIDAY25<\/strong><\/p><p>We don’t want to rush you, so this code is valid until the new year. So note it down, and we’re here whenever you need us. <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": ""
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "disabled": true,
+      "blocks": {
+        "34615186-d415-44c9-bf2b-d0616d76146e": {
+          "type": "Column",
+          "settings": {
+            "column-heading": "",
+            "column-text": ""
+          }
+        },
+        "7da7a9af-fcff-4366-a184-f7f8cd0a7293": {
+          "type": "Column",
+          "settings": {
+            "column-heading": "",
+            "column-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "34615186-d415-44c9-bf2b-d0616d76146e",
+        "7da7a9af-fcff-4366-a184-f7f8cd0a7293"
+      ],
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "1637332203296e3abf": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Double Refer-A-Friend Points",
+        "image": "shopify:\/\/shop_images\/Mamamade_green_friday_2.jpg",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>If you love us, tell your friends! They'll get £10 off their first Mamamade order, and you'll get double refer-a-friend points - worth £20! <\/p><p>This offer will run from the 23rd-29th of Nov, so refer to your heart's content; there's no limit to how many points you can receive.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "show_images": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "1637246731ac83561c": {
+      "type": "header-collection",
+      "disabled": true,
+      "blocks": {
+        "16372467310ad0d0b3-0": {
+          "type": "header",
+          "settings": {
+            "collection": "pre-made-bundles",
+            "header_background": "#abe8b5",
+            "show_curve": false,
+            "title": "Tell your story",
+            "subheading": "Lorem ipsum et el dor",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#662480",
+            "button_color": "#ffffff",
+            "button_background": "#662480",
+            "button_background_hover": "#9380be"
+          }
+        }
+      },
+      "block_order": [
+        "16372467310ad0d0b3-0"
+      ],
+      "settings": {}
+    },
+    "16373328688346159e": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/Untitled_design_4.png",
+        "text_color": "#662480",
+        "overlay_color": "#abe8b5",
+        "overlay_opacity": 100,
+        "subheading": "",
+        "title": "Our Sustainability Initiatives",
+        "content": "<p>Here xxx<\/p>"
+      }
+    }
+  },
+  "order": [
+    "image-with-text-overlay",
+    "how-it-works-programme",
+    "text-with-image",
+    "163733282671224d29",
+    "text-with-products",
+    "16373317036b42f1c3",
+    "text-with-image-two",
+    "blog-posts",
+    "how-it-works",
+    "1637332203296e3abf",
+    "product-testimonials",
+    "faq",
+    "1637246731ac83561c",
+    "16373328688346159e"
+  ]
+}

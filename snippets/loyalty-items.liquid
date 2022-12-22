@@ -1,0 +1,20 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="loyalty">
+  {%- if section.settings.title != blank -%}<h2 class="loyalty__title Heading u-h2">{{ section.settings.title }}</h2>{%- endif -%}
+
+  <div class="loyalty__items">
+    {%- for block in section.blocks -%}
+      <div class="loyalty__item"{% if block.settings.hide %} style="display: none"{% endif %}>
+        <img loading="lazy"src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt }}" width="auto">
+
+        {%- if block.settings.title != blank -%}<h2 class="loyalty__title u-h4">{{ block.settings.title }}</h2>{%- endif -%}
+        {%- if block.settings.copy != blank -%}<p class="loyalty__copy">{{ block.settings.copy }}</p>{%- endif -%}
+        {%- if block.settings.points != blank -%}<p class="loyalty__points">{{ block.settings.points }}</p>{%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.color_bg | default: '#fff' }};
+  }
+</style>

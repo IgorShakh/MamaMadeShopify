@@ -1,0 +1,47 @@
+{%- if section.settings.enable_section != blank -%}
+  <div id="section-{{ section.id }}" class="Section" data-section-id="{{ section.id }}" data-section-type="article-list">
+    <div class="Container">
+      <header class="PageHeader PageHeader--article">
+        <div class="SectionHeader">
+          <h2 class="SectionHeader__Heading Heading u-h1">Latest articles</h2>
+        </div>
+      </header>
+
+      <div class="ArticleListWrapper">
+        <div class="ArticleList Grid Grid--m">
+          {%- assign count = 0 -%}
+
+          {%- for article in blog.articles limit: 4 -%}
+            {%- assign article_handle = article.handle | replace: 'news/', '' -%}
+
+            {%- unless get_current_article_handle == article_handle -%}
+              {%- assign count = count | plus: 1 -%}
+
+              <div class="Grid__Cell 1/2--tablet 1/3--lap-and-up">
+                {%- render 'article-item', article: article -%}
+              </div>
+            {%- endunless -%}
+
+            {%- if count == 3 -%}
+              {% break %}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Latest articles",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_section",
+        "label": "Enable section",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

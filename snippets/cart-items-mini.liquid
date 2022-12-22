@@ -1,0 +1,166 @@
+{%- assign for_drawer = true -%}
+{%- assign box_id = false -%}
+{%- assign box_id_array = '' -%}
+{%- assign programme_id = false -%}
+{%- assign box_count = 0 -%}
+
+
+<div class="register-cart__cart-container">
+  <div class="register-cart__cart-header">
+    My Basket
+  </div>
+  {%- for line_item in cart.items -%}
+
+    {% assign build_a_box = false %}
+
+    {%- if line_item.properties != empty -%}
+
+        {%- for property in line_item.properties -%}
+
+          {% if property.first == 'box_id' %}
+            {% assign box_id = property.last %}
+
+            {% assign build_a_box = true %}
+
+            {% unless box_id_array contains box_id %}
+              {% assign box_id_array = box_id_array | append: ',' | append: box_id %}
+            {% endunless %}
+          {% endif %}
+
+      {% endfor %}
+    {% endif %}
+
+    {% if build_a_box != true %}
+      <div class="CartItem">
+        <div class="CartItem__ImageWrapper AspectRatio">
+          <div class="AspectRatio" style="--aspect-ratio: {{ line_item.image.aspect_ratio }}">
+            <img loading="lazy"class="CartItem__Image" src="{{ line_item.image | img_url: '240x' }}" alt="{{ line_item.image.alt | escape }}">
+          </div>
+        </div>
+
+        <div class="CartItem__Info">
+          <h2 class="CartItem__Title">
+            <a href="{{ line_item.url }}">{{ line_item.product.title }}</a>
+          </h2>
+
+          <div class="CartItem__ItemQuantity">
+            Quantity x {{ line_item.quantity }}</br>
+            {%- unless line_item.product.has_only_default_variant -%}
+              {{ line_item.variant.title }}
+            {%- endunless -%}
+          </div>
+
+          <div class="CartItem__Meta Text--subdued">
+
+
+            {%- if line_item.properties != empty -%}
+              <ul class="CartItem__PropertyList">
+                {%- for property in line_item.properties -%}
+                  {%- assign first_character_in_key = property.first | truncate: 1, '' -%}
+
+                  {% comment %}box id variables used to show/hide quantity adjusters{% endcomment %}
+                  {% if property.first == 'box_id' %}
+                    {% assign box_id = property.last %}
+                    {% assign box_count = box_count | plus: line_item.quantity %}
+
+                  {% endif %}
+
+                  {% if property.first == 'programme_id' %}
+                    {% assign programme_id = property.last %}
+
+                  {% endif %}
+
+                  {%- if property.last == blank or property.first == "programme_id" or property.first == "subscription_id" or property.first == "shipping_interval_frequency" or property.first == "shipping_interval_unit_type" or first_character_in_key == '_' -%}
+                    {% break %}
+                  {%- endif -%}
+
+                  <li class="CartItem__Property">{{ property.first }}: {{ property.last }}</li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+
+            <div class="CartItem__PriceList">
+              {%- if line_item.original_price != line_item.final_price -%}
+                <span class="CartItem__Price Price Price--highlight" data-money-convertible>{{ line_item.final_price | money_without_trailing_zeros }}</span>
+                <span class="CartItem__OriginalPrice Price Price--compareAt" data-money-convertible>{{ line_item.original_price | money_without_trailing_zeros }}</span>
+              {%- else -%}
+                <span class="CartItem__Price Price" data-money-convertible>{{ line_item.final_price | money_without_trailing_zeros }}</span>
+              {%- endif -%}
+
+              {%- if line_item.line_level_discount_allocations != blank -%}
+                <ul class="CartItem__DiscountList">
+                  {%- for discount_allocation in line_item.line_level_discount_allocations -%}
+                    <li class="CartItem__Discount">
+                      {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    {% endif %}
+
+
+    {% if forloop.last %}
+      {% if box_id_array != blank %}
+        {% assign box_id_array = box_id_array | split: ',' %}
+        {% assign box_size = box_id_array.size | minus: 1 %}
+        {% for box_item in (1..box_size) %}
+
+          <div class="CartItem">
+            <div class="CartItem__ImageWrapper AspectRatio">
+              <div class="AspectRatio" style="--aspect-ratio: {{ line_item.image.aspect_ratio }}">
+                {% render 'icon' with 'box', classes: 'Icon CartItem__Image', fill: settings.color_brand_primary %}
+              </div>
+            </div>
+
+            <div class="CartItem__Info">
+              <h2 class="CartItem__Title">
+                Build a Box
+              </h2>
+
+              <div class="CartItem__ItemQuantity">
+
+              </div>
+
+              <div class="CartItem__Meta Text--subdued">
+
+                {%- if line_item.properties != empty -%}
+                  <ul class="CartItem__PropertyList">
+
+                  </ul>
+                {%- endif -%}
+
+                <div class="CartItem__PriceList">
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {%- endfor -%}
+
+  <div class="register-cart__cart-footer">
+    <span class="register-cart__cart-subtotal">Subtotal</span>
+    <span class="register-cart__cart-price">{{ cart.total_price | money_without_trailing_zeros }}</span>
+  </div>
+</div>

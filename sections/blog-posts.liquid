@@ -1,0 +1,198 @@
+<section class="Section Section--spacingNormal BlogArticles" id="section-{{ section.id }}" data-section-type="article-list" data-section-id="{{ section.id }}">
+  <div class="Container">
+
+
+    <div class="row row--stack">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 SpacingSmall row__text">
+        <div class="BlogArticles__title">
+          {%- if section.settings.title != blank -%}
+          <h2 class="Heading Heading__h2">{{ section.settings.title | newline_to_br }}</h2>
+          {%- endif -%}
+          {%- if section.settings.subheading != blank -%}
+            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+          {%- endif -%}
+          {%- if section.settings.copy != blank -%}
+            <p class="hidden-phone hidden-tablet">{{ section.settings.copy }}</p>
+          {%- endif -%}
+          {%- if section.settings.button_link != blank -%}
+          <a href="{{ section.settings.button_link }}" class="Button Button--icon">{{ section.settings.button_text }} {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_accent, stroke: '#fff' -%}</a>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+
+      {%- assign show_placeholders = true -%}
+
+        <div class="ArticleListWrapper">
+          <div class="ArticleList ArticleList--snapshot Grid Grid--center">
+            {%- assign block = section.blocks.first -%}
+
+            {%- case block.type -%}
+              {%- when 'article' -%}
+                {%- for i in (1..3) -%}
+                  {% comment %}theme-check-disable{% endcomment %}
+                  {%- assign article_option = 'article_' | append: i -%}
+                  {%- assign article = articles[block.settings[article_option]] -%}
+                  {% comment %}theme-check-enable{% endcomment %}
+
+                  {%- unless article == empty -%}
+                    <div class="Grid__Cell 1/3--tablet 1/3--lap-and-up">
+                      {%- render 'article-item', block: block, article: article -%}
+                    </div>
+
+                    {%- assign show_placeholders = false -%}
+                  {%- endunless -%}
+                {%- endfor -%}
+
+              {%- when 'blog' -%}
+                {%- assign blog = blogs[block.settings.blog] -%}
+
+                {%- for article in blog.articles limit: 3 -%}
+                  <div class="Grid__Cell 1/3--tablet 1/3--lap-and-up">
+                    {%- render 'article-item', block: block, article: article -%}
+                  </div>
+
+                  {%- assign show_placeholders = false -%}
+                {%- endfor -%}
+            {%- endcase -%}
+
+            {%- if show_placeholders -%}
+              {%- for i in (1..3) -%}
+                <div class="Grid__Cell 1/3--tablet 1/3--lap-and-up">
+                  <article class="ArticleItem">
+                    {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
+
+                    <div class="ArticleItem__ImageWrapper AspectRatio" style="--aspect-ratio: 1.7">
+                      {{ placeholder | placeholder_svg_tag: 'ArticleItem__Image PlaceholderBackground PlaceholderSvg--dark' }}
+                    </div>
+
+                    <div class="ArticleItem__Content">
+                      {%- if section.settings.show_category -%}
+                        <span class="ArticleItem__Category Heading u-h6 Text--subdued">{{ 'home_page.onboarding.article_category' | t }}</span>
+                      {%- endif -%}
+
+                      <h2 class="ArticleItem__Title">
+                        <a href="#">{{ 'home_page.onboarding.article_name' | t }}</a>
+                      </h2>
+
+                      {%- comment -%}
+                      <p class="ArticleItem__Excerpt">{{ 'home_page.onboarding.article_excerpt' | t }}</p>
+                      <a href="#" class="ArticleItem__Link Link Link--underline">{{ 'blog.article.read_more' | t }}</a>
+                      {%- endcomment -%}
+                    </div>
+                  </article>
+                </div>
+              {%- endfor -%}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+#section-{{ section.id }} {
+  background-color: {{ section.settings.color_bg }};
+}
+</style>
+
+{% schema %}
+{
+  "name": "Blog posts",
+  "class": "shopify-section",
+  "max_blocks": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Heading",
+      "default": "Blog posts"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Copy",
+      "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_category",
+      "label": "Show article category",
+      "info": "The first article's tag is used as the main category.",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "View all articles"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background colour"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "Article",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article_1",
+          "label": "Article 1"
+        },
+        {
+          "type": "article",
+          "id": "article_2",
+          "label": "Article 2"
+        },
+        {
+          "type": "article",
+          "id": "article_3",
+          "label": "Article 3"
+        }
+      ]
+    },
+    {
+      "type": "blog",
+      "name": "Blog",
+      "settings": [
+        {
+          "type": "blog",
+          "id": "blog",
+          "label": "Blog"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blog",
+      "name": "Blog posts",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "blog",
+          "settings": {
+            "blog": "news"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

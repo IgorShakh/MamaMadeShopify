@@ -1,0 +1,10 @@
+{% if icon == blank %}
+    {% assign icon = 'points' %}
+{% endif %}
+
+{% capture icon_inc %}loyalty-{{ icon }}{% endcapture %}
+
+<div class="Loyalty Loyalty--{{ icon }}{% if modifier != blank %} Loyalty--{{ modifier }}{% endif %}">
+    {%- render 'icon' with icon_inc, classes: 'Icon Icon--loyalty' -%}
+    <span class="Loyalty__Text"><span class="Loyalty__Points">{{ points }}</span> {% if icon == 'more' %}loyalty <br>points{% else %}<br>points{% endif %}</span>
+</div>

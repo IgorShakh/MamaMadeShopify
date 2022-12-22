@@ -1,0 +1,129 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="loyalty">
+  {%- if section.settings.title != blank -%}<h2 class="loyalty__title Heading u-h2">{{ section.settings.title }}</h2>{%- endif -%}
+    <div class="Container">
+        <div class="TableWrapper">
+            <table class="TierTable Table Table--large">
+                <thead class="Text--subdued">
+                    <tr>
+                        <td></td>
+                        <th>
+                            <div class="TierTable__Title Tier--1">{{ 'loyalty.tiers.1' | t }}</div>
+                        </th>
+                        <th>
+                            <div class="TierTable__Title Tier--2">{{ 'loyalty.tiers.2' | t }}</div>
+                        </th>
+                        <th>
+                            <div class="TierTable__Title Tier--3">{{ 'loyalty.tiers.3' | t }}</div>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    {%- for block in section.blocks -%}
+                    <tr>
+                        <th>
+                            <div class="TierTable__Title">{{ block.settings.line_item }}</div>
+                        </th>
+                        <td>
+                            <div class="Tier Tier--1">{{ block.settings.tier_1_number }}</div>
+                        </td>
+                        <td>
+                            <div class="Tier Tier--2">{{ block.settings.tier_2_number }}</div>
+                        </td>
+                        <td>
+                            <div class="Tier Tier--3">{{ block.settings.tier_3_number }}</span></div>
+                        </td>
+                    </tr>
+                    {%- endfor -%}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.color_bg | default: '#fff' }};
+  }
+  .TierTable th,
+  .TierTable td {
+    border-left-color: {{ section.settings.color_bg | default: '#fff' }};
+    border-right-color: {{ section.settings.color_bg | default: '#fff' }};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Loyalty - Tiers",
+	"class": "shopify-section--loyalty",
+	"max_blocks": 10,
+    "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background colour"
+    }
+  ],
+	"blocks": [
+	  {
+		"type": "line",
+        "name": "Line",
+        "settings": [
+            {
+              "type": "text",
+              "id": "line_item",
+              "label": "Line"
+            },
+            {
+                "type": "number",
+                "id": "tier_1_number",
+                "label": "Tier 1"
+            },
+            {
+                "type": "number",
+                "id": "tier_2_number",
+                "label": "Tier 2"
+            },
+            {
+                "type": "number",
+                "id": "tier_3_number",
+                "label": "Tier 3"
+            }
+          ]
+	   }
+  	],
+	"presets": [
+    {
+      "category": "Text",
+      "name": "Loyalty - Tiers",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "line"
+        },
+        {
+          "type": "line"
+        },
+        {
+          "type": "line"
+        },
+        {
+          "type": "line"
+        },
+        {
+          "type": "line"
+        },
+        {
+          "type": "line"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

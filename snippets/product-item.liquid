@@ -1,0 +1,406 @@
+{%- comment -%}
+Added optional variable to show button, but negated to save adding to all includes
+{%- endcomment -%}
+{% unless hide_button %}
+  {% assign hide_button = false %}
+{% endunless %}
+
+{% assign found = false %}
+{% for c in product.collections %}
+  {% if c.handle == "our-collection" %}
+    {% assign found = true %}
+  {% endif %}
+{% endfor %}
+
+<div class="ProductItem{% if use_horizontal %}ProductItem--horizontal{% endif %}{% if found == false %} ProductItem--adjust{% endif %}">
+  <div class="ProductItem__Wrapper{% if product.featured_image.aspect_ratio > 1 %} ProductItem__Wrapper--shift{% endif %}">
+    {%- comment -%}
+    We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally LazySizes uses srcset, we need to make
+    sure that the image sizes we offer is not larger than the max size uploaded by the merchants.
+    {%- endcomment -%}
+
+    {%- if settings.product_image_size == 'natural' or use_horizontal -%}
+      {%- assign use_natural_size = true -%}
+    {%- else -%}
+      {%- assign use_natural_size = false -%}
+    {%- endif -%}
+
+    {%- if settings.product_show_secondary_image and product.images[1] != blank and use_horizontal != true -%}
+      {%- assign has_alternate_image = true -%}
+    {%- else -%}
+      {%- assign has_alternate_image = false -%}
+    {%- endif -%}
+
+    {%- unless hide_button -%}
+      <!-- data-micromodal-trigger="modal-{{ product.id }}" -->
+      <a href="{{ product.url | within: collection }}" class="ProductItem__ImageWrapper{% if has_alternate_image %} ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+    {%- else -%}
+      <div class="ProductItem__ImageWrapper{% if has_alternate_image %} ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+    {%- endunless -%}
+
+    {%- if use_horizontal -%}
+      {%- assign max_width = 125 -%}
+    {%- else -%}
+      {%- assign max_width = product.featured_image.width -%}
+    {%- endif -%}
+
+    <div class="AspectRatio AspectRatio--{% if use_natural_size %}withFallback{% else %}{{ settings.product_image_size }}{% endif %}" style="max-width: {{ max_width }}px; {% if use_natural_size %}padding-bottom: {{ 100.0 | divided_by: product.featured_image.aspect_ratio }}%;{% endif %} --aspect-ratio: {{ product.featured_image.aspect_ratio }}">
+      {%- comment -%}
+      IMPLEMENTATION NOTE: The alternate image (not visible by default) should be the first in the DOM, as the spinner (Image__Loader element) is
+      displayed based on the immediately previously shown image.
+      {%- endcomment -%}
+
+      {%- if has_alternate_image -%}
+        {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,800,900,1000,1200', image: product.images[1] -%}{%- endcapture -%}
+
+        {%- assign image_url = product.images[1] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        <img loading="lazy"class="ProductItem__Image ProductItem__Image--alternate Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.images[1].alt | escape }}" data-image-id="{{ product.images[1].id }}">
+      {%- endif -%}
+
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: product.featured_image -%}{%- endcapture -%}
+      {%- assign image_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+      <img loading="lazy"class="ProductItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_image.alt | escape }}" data-image-id="{{ product.featured_image.id }}">
+      <span class="Image__Loader"></span>
+
+      <noscript>
+        <img loading="lazy"class="ProductItem__Image ProductItem__Image--alternate" src="{{ product.images[1] | img_url: '600x' }}" alt="{{ product.images[1].alt | escape }}">
+        <img loading="lazy"class="ProductItem__Image" src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.featured_image.alt | escape }}">
+      </noscript>
+    </div>
+
+    {%- unless hide_button -%}
+      </a>
+    {%- else -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if show_labels -%}
+      {%- capture product_labels -%}
+        {%- for tag in product.tags -%}
+          {%- if tag contains '__label' -%}
+            <span class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if product.available -%}
+          {%- if product.compare_at_price > product.price -%}
+            <span class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.on_sale' | t }}</span>
+          {%- endif -%}
+        {%- else -%}
+          <span class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.sold_out' | t }}</span>
+        {%- endif -%}
+      {%- endcapture -%}
+
+      {%- if product_labels != blank -%}
+        <div class="ProductItem__LabelList">
+          {{ product_labels }}
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if show_product_info and build_a_box != true -%}
+      <div class="ProductItem__Info {% unless use_horizontal %}ProductItem__Info--{{ settings.product_info_alignment }}{% endunless %}">
+        {%- if show_vendor -%}
+          <p class="ProductItem__Vendor Heading">{{ product.vendor }}</p>
+        {%- endif -%}
+
+        <!-- #developer edit -->
+        <h2 class="ProductItem__Title u-sans-serif u-uppercase">
+          <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+        </h2>
+
+        <p class="ProductItem__Description">{{ product.description | strip_html | slice: 0, 120 }}...</p>
+
+        {%- unless hide_button -%}
+          <div class="ProductItem__Button">
+
+            <a href="{{ product.url | within: collection }}" class="ProductItem__Button Button Button--icon hidden-phone hidden-tablet">
+              {{- 'collection.general.learn_more' | t -}}
+              {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_background, stroke: '#fff' -%}
+            </a>
+          </div>
+        {%- endunless -%}
+
+        {% if upsells and product.first_available_variant.id != blank %}
+            <input type="hidden" name="programme[upsells]" value="{{ product.first_available_variant.id }}">
+            <input type="hidden" name="upsell[{{ product.first_available_variant.id }}][qty]" value="0">
+            <div class="ProductItem__Selectors">
+              <button class="ProductItem__Minus Button Button--only-icon"><span class="u-visually-hidden">Reduce item quantity</span> {%- render 'icon' with 'cart-minus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}</button>
+              <span class="ProductItem__Quantity">0</span>
+              <button class="ProductItem__Plus Button Button--only-icon"><span class="u-visually-hidden">Increase item quantity</span> {%- render 'icon' with 'cart-plus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}</button>
+            </div>
+        {% endif %}
+
+        {%- if show_color_swatch -%}
+          {%- assign color_swatch_list = '' -%}
+
+          {%- capture color_swatch -%}
+            {%- assign color_label = 'color,colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
+            {%- capture color_name -%}{{ section.id }}-{{ product.id }}{%- endcapture -%}
+
+            {%- for option in product.options_with_values -%}
+              {%- assign downcased_option = option.name | downcase -%}
+
+              {%- if color_label contains downcased_option -%}
+                {%- assign variant_option = 'option' | append: forloop.index -%}
+
+                {%- for value in option.values -%}
+                  {%- assign downcased_value = value | downcase -%}
+                  {%- capture color_id -%}{{ section.id }}-{{ product.id }}-{{ forloop.index }}{%- endcapture -%}
+
+                  {%- for variant in product.variants -%}
+                    {%- if variant[variant_option] == value -%}
+                      {%- assign variant_for_value = variant -%}
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+
+                  <div class="ProductItem__ColorSwatchItem">
+                    {%- if variant_for_value.image -%}
+                      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: variant_for_value.image -%}{%- endcapture -%}
+                      {%- assign variant_image_url = variant_for_value.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    {%- endif -%}
+
+                    {%- assign color_swatch_name = value | handle | append: '.png' -%}
+                    {%- assign color_swatch_image = images[color_swatch_name] -%}
+
+                    <input class="ColorSwatch__Radio" type="radio" name="{{ color_name }}" id="{{ color_id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked="checked"{% endif %} data-variant-url="{{ variant_for_value.url }}{% if variant_for_value.image %}#Image{{ variant_for_value.image.id }}{% endif %}" {% if variant_for_value.image %}data-image-id="{{ variant_for_value.image.id }}" data-image-url="{{ variant_image_url }}" data-image-widths="[{{ supported_sizes }}]" data-image-aspect-ratio="{{ variant_for_value.image.aspect_ratio }}"{% endif %} aria-hidden="true">
+                    <label class="ColorSwatch ColorSwatch--small {% if downcased_value == 'white' %}ColorSwatch--white{% endif %}" for="{{ color_id }}" style="background-color: {{ value | replace: ' ', '' | downcase }}; {% if color_swatch_image != blank %}background-image: url({{ color_swatch_image | img_url: '64x64' }}){% endif %}" title="{{ value | escape }}" data-tooltip="{{ value | escape }}"></label>
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endcapture -%}
+
+          {%- if color_swatch != blank -%}
+            {%- capture color_swatch_list -%}
+              <div class="ProductItem__ColorSwatchList">
+                {{- color_swatch -}}
+              </div>
+            {%- endcapture -%}
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if show_price_on_hover == nil -%}
+          {%- assign show_price_on_hover = settings.product_show_price_on_hover -%}
+        {%- endif -%}
+
+        {%- if show_price_on_hover and color_swatch_list != blank -%}
+          {{- color_swatch_list -}}
+        {%- endif -%}
+
+        {% if false %}
+          {%- if product.template_suffix != 'coming-soon' -%}
+            <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
+              {%- if product.compare_at_price > product.price -%}
+                <span class="ProductItem__Price u-sans-serif Price Price--highlight Text--subdued" data-money-convertible>{{ product.price | money_without_trailing_zeros }}</span>
+                <span class="ProductItem__Price u-sans-serif Price Price--compareAt Text--subdued" data-money-convertible>{{ product.compare_at_price | money_without_trailing_zeros }}</span>
+              {%- elsif product.price_varies -%}
+                {%- capture formatted_min_price -%}<span data-money-convertible>{{ product.price_min | money_without_trailing_zeros }}</span>{%- endcapture -%}
+                {%- capture formatted_max_price -%}<span data-money-convertible>{{ product.price_max | money_without_trailing_zeros }}</span>{%- endcapture -%}
+                <span class="ProductItem__Price u-sans-serif Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
+              {%- else -%}
+                <!-- #developer edit -->
+                {% for coll in product.collections %}
+                  {% if coll.title != "Mamacarte" %}
+                    <span class="ProductItem__Price u-sans-serif Price Text--subdued" data-money-convertible>{{ product.price | money_without_trailing_zeros }}</span>
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {% endif %}
+
+        {%- if show_price_on_hover == false and color_swatch_list != blank -%}
+          {{- color_swatch_list -}}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {% if programme_scheme %}
+      {% for variant in product.variants %}
+        {% comment %}Capture variant details for programme scheme{% endcomment %}
+        {% if variant.title contains '[12]' %}
+          {% assign programme_product_id = variant.id %}
+        {% endif %}
+
+        {%- comment -%}Bundle pricing, i.e pre-pay prices{%- endcomment -%}
+        {% if variant.title contains '[chargebundle1]' %}
+          {% capture chargebundle1 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+        {% if variant.title contains '[chargebundle2]' %}
+          {% capture chargebundle2 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+        {% if variant.title contains '[chargebundle3]' %}
+          {% capture chargebundle3 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+      {% endfor %}
+
+      {% if for_loop_first %}
+        {% assign subscription_product = product.metafields.subscriptions %}
+        {% assign subscription_id = subscription_product.subscription_id %}
+        {% assign shipping_interval_unit_type = subscription_product.shipping_interval_unit_type | default: 'Weeks' %}
+
+        <input type="hidden" id="rc_shipping_interval_frequency" value="2">
+        <input type="hidden" id="rc_subscription_id" value="{{ subscription_id }}">
+        <input type="hidden" id="rc_shipping_interval_unit_type" value="{{ shipping_interval_unit_type }}">
+      {% endif %}
+
+      {% assign chargebundle1 = chargebundle1 | split: '|' %}
+      {% assign chargebundle2 = chargebundle2 | split: '|' %}
+      {% assign chargebundle3 = chargebundle3 | split: '|' %}
+
+      <input type="hidden" name="programme[products]" value="{{ programme_product_id }}" data-chargebundle-1='{{ chargebundle1 | json }}' data-chargebundle-2='{{ chargebundle2 | json }}' data-chargebundle-3='{{ chargebundle3 | json }}'>
+    {% endif %}
+
+    {% if build_a_box %}
+      {% for variant in product.variants %}
+        {% if variant.title contains '[12]' %}
+          {% capture variant_12 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+        {% if variant.title contains '[24]' %}
+          {% capture variant_24 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+        {% if variant.title contains '[chargebundle1]' %}
+          {% capture chargebundle1 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+        {% if variant.title contains '[chargebundle2]' %}
+          {% capture chargebundle2 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+        {% if variant.title contains '[chargebundle3]' %}
+          {% capture chargebundle3 %}{{ variant.id }}|{{ variant.price }}{% endcapture %}
+        {% endif %}
+
+      {% endfor %}
+
+      {% assign variant_12 = variant_12 | split: '|' %}
+      {% assign variant_24 = variant_24 | split: '|' %}
+      {% assign chargebundle1 = chargebundle1 | split: '|' %}
+      {% assign chargebundle2 = chargebundle2 | split: '|' %}
+      {% assign chargebundle3 = chargebundle3 | split: '|' %}
+
+      <div class="ProductItem__Info BoxItem {% unless use_horizontal %}ProductItem__Info--{{ settings.product_info_alignment }}{% endunless %}" data-box-variant-12='{{ variant_12 | json }}' data-box-variant-24='{{ variant_24 | json }}' data-box-variant-charge1='{{ chargebundle1 | json }}' data-box-variant-charge2='{{ chargebundle2 | json }}' data-box-variant-charge3='{{ chargebundle3 | json }}' data-box-qty="0">
+        <h2 class="ProductItem__Title u-sans-serif u-uppercase">
+          <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+        </h2>
+
+        <div class="ProductItem__Selectors">
+          <button class="ProductItem__Minus Button Button--only-icon" disabled><span class="u-visually-hidden">Reduce box quantity</span> {%- render 'icon' with 'cart-minus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}</button>
+          <span class="ProductItem__Quantity">0</span>
+          <button class="ProductItem__Plus Button Button--only-icon"><span class="u-visually-hidden">Increase box quantity</span> {%- render 'icon' with 'cart-plus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}</button>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if show_loyalty %}
+      {%- render 'loyalty-points' with points: 100, modifier: 'position' -%}
+    {% endif %}
+  </div>
+
+  {%- if use_horizontal -%}
+    <a href="{{ product.url }}" class="ProductItem__ViewButton Button Button--secondary hidden-pocket">
+      {{ 'collection.product.view_product' | t }}
+    </a>
+  {%- endif -%}
+</div>
+
+
+
+{%- if show_quick_view_modal -%}
+<div class="modal micromodal-slide" id="modal-{{ product.id }}" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container modal__container--medium" role="dialog" aria-modal="true" aria-labelledby="modal-edit-title">
+      <header class="modal__header">
+        <span class="ProductItemModal_Close" data-micromodal-close>
+          {%- render 'icon' with 'cross', classes: 'Icon' fill: button_background, stroke: button_color -%}
+        </span>
+        <img loading="lazy"src="{{ 'icon-cross.svg' | asset_url }}" class="ProductItemModal_Close">
+      </header>
+      <main class="modal__content" id="modal-edit-content">
+        <!-- <div class="ProductItemModal">
+          <div class="ProductItemModal_Body">
+            <div class="ProductItemModal_Close">
+              <img loading="lazy"src="{{ 'icon-cross.svg' | asset_url }}" />
+            </div> -->
+            {%- comment -%}
+            // TODO revise CSS and add button above
+            {%- endcomment -%}
+
+            <div class="ProductItemModal_Columns">
+              <div class="ProductItemModal_Column ProductItemModal_Column-image">
+                <div class="ProductItemModal_ImageContainer">
+                  {% assign image = product.images.first %}
+                  <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: image.aspect_ratio }}%; --aspect-ratio: {{ image.aspect_ratio }};">
+                    {% assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+
+                    <img loading="lazy"class="Image--lazyLoad Image--fadeIn"
+                         {% if initial_image_id == image.id %}src="{{ image | img_url: '250x' }}"{% endif %}
+                         data-src="{{ image_url }}"
+                         data-widths="[{{ supported_sizes }}]"
+                         data-sizes="auto"
+                         data-expand="-100"
+                         alt="{{ image.alt | escape }}"
+                         data-max-width="{{ image.width }}"
+                         data-max-height="{{ image.height }}"
+                         data-original-src="{{ image | img_url: 'master' }}">
+
+                    <span class="Image__Loader"></span>
+
+                    <noscript>
+                      <img loading="lazy"src="{{ image | img_url: '800x' }}" alt="{{ image.alt | escape }}">
+                    </noscript>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ProductItemModal_Column ProductItemModal_Column-content">
+                <div class="ProductItemModal_Content">
+                  <h2 class="ProductItemModal_Title Heading u-h3">
+                    <a class="ProductItemModal_TtileLink" href="{{ product.url | within: collection }}">
+                      {{ product.title }}
+                    </a>
+                  </h2>
+
+                  <div class="Rte">
+                    {%- capture tastes_like -%}
+                      <div class="Icon__Wrap">
+                      {%- for icon in product.metafields.charle.tastes_like -%}
+                        <img loading="lazy"src="{{ icon }}" class="Icon">
+                      {%- endfor -%}
+                      </div>
+                    {%- endcapture -%}
+
+                    {{ product.description | replace: '[tastes_like]', tastes_like }}
+                  </div>
+
+                  <!-- <a class="ProductItemModal_Link Button Button--icon" href="{{ product.url | within: collection }}">
+                    View more details
+                    {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_background, stroke: '#fff' -%}
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+          <!-- </div>
+
+          <div class="ProductItemModal_Backdrop"></div>
+        </div> -->
+      </main>
+      <footer class="modal__footer">
+        <!-- <button class="Button Button--primary Button--small">Continue</button> -->
+        <!-- <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button> -->
+      </footer>
+    </div>
+  </div>
+</div>
+
+{%- endif -%}

@@ -1,0 +1,39 @@
+<div class="GroupPanel">
+    <h2 class="GroupPanel__Title Heading u-h2">How often would you like to receive your box? Every...</h2>
+    <div class="GroupPanel__Inner">
+
+        {% assign box_product = collections['build-a-box'].products.first %}
+        {% assign subscription_product = box_product.metafields.subscriptions %}
+        {% assign subscription_id = subscription_product.subscription_id %}
+        {% assign shipping_interval_unit_type = subscription_product.shipping_interval_unit_type | default: 'Weeks' %}
+        {% assign shipping_interval_frequency = subscription_product.shipping_interval_frequency | split: ',' | default: 30 %}
+        {% assign label_unit_type = subscription_product.label_unit_type | default: shipping_interval_unit_type %}
+
+        <input type="hidden" name="" id="rc_subscription_id" value="{{ subscription_id }}">
+        <input type="hidden" name="" id="rc_shipping_interval_unit_type" value="{{ shipping_interval_unit_type }}">
+
+        {% for frequency in shipping_interval_frequency %}
+            <div class="GroupPanel__Item">
+                <label class="Radio Radio--stacked" data-box-radio-frequency>
+                    <span class="Radio__Input">
+                        <span class="Radio__Label">
+                            {{ frequency }}
+
+                            {% assign frequcnyInt = frequency | times: 1 %}
+
+                            {% if frequency == "1" and label_unit_type == 'Months' or label_unit_type == 'Weeks' %}
+                                {{ label_unit_type | remove: 's' }}
+                            {% elsif frequcnyInt > 1 and label_unit_type == 'month' or label_unit_type == 'week' %}
+                                {{ label_unit_type }}s
+                            {% else %}
+                                {{ label_unit_type }}
+                            {% endif %}
+                        </span>
+                        <input type="radio" name="BoxFrequency" value="{{ frequency }}"{% if forloop.first %} checked{% endif %}>
+                        <span class="Radio__Control"></span>
+                    </span>
+                </label>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,1004 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Karmoon",
+    "theme_author": "Karmoon Agency",
+    "theme_version": "0.042",
+    "theme_documentation_url": "http:\/\/support.maestrooo.com\/",
+    "theme_support_url": "https:\/\/support.maestrooo.com\/article\/203-contact-us"
+  },
+  {
+    "name": "Account",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "account_login_image",
+        "label": "Login image",
+        "info": "Size: 750 x 900 px"
+      },
+      {
+        "type": "image_picker",
+        "id": "account_register_image",
+        "label": "Register image",
+        "info": "Size: 750 x 900 px"
+      }
+    ]
+  },
+  {
+    "name": "Animation",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_page_transition",
+        "label": "Show page transition",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_button_transition",
+        "label": "Show button transition",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_image_zooming",
+        "label": "Show image zoom effect",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_element_staggering",
+        "label": "Reveal elements one by one",
+        "info": "This setting displays blog post and product grid element one after the other.",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Buid a box",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Prices set here are purely decorational. Prices must be set on a product variant level too."
+      },
+      {
+        "type": "text",
+        "id": "12_items_box_price",
+        "label": "12 items Box price"
+      },
+      {
+        "type": "text",
+        "id": "24_items_box_price",
+        "label": "24 items Box price"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "textarea",
+        "id": "cart_header_text",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Terms"
+      },
+      {
+        "type": "textarea",
+        "id": "cart_terms_text",
+        "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_enable_terms",
+        "label": "Enable terms",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "General"
+      },
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "Cart type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ],
+        "default": "drawer"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_enable_notes",
+        "label": "Enable order notes",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_show_free_shipping_threshold",
+        "label": "Show free shipping minimum amount",
+        "info": "Make sure that you have properly configured your [shipping rates](\/admin\/settings\/shipping).",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_threshold",
+        "label": "Free shipping minimum amount",
+        "info": "Only write a number, no letters",
+        "default": "50"
+      },
+      {
+        "type": "textarea",
+        "id": "cart_message",
+        "label": "Cart message"
+      },
+      {
+        "type": "text",
+        "id": "cart_button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "cart_button_url",
+        "label": "Button link"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Brand colours"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_primary",
+        "label": "Brand primary",
+        "default": "#662480"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_secondary",
+        "label": "Brand secondary",
+        "default": "#9380be"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_tertiary",
+        "label": "Brand tertiary",
+        "default": "#e380af"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_quaternary",
+        "label": "Brand quaternary",
+        "default": "#ff8c5c"
+      },
+      {
+        "type": "header",
+        "content": "General"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Body text",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "text_light_color",
+        "label": "Body light text",
+        "default": "#6a6a6a"
+      },
+      {
+        "type": "color",
+        "id": "link_color",
+        "label": "Link color",
+        "default": "#6a6a6a"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#eaeaea"
+      },
+      {
+        "type": "color",
+        "id": "light_background",
+        "label": "Light background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "product_on_sale_color",
+        "label": "On sale accent",
+        "default": "#f94c43"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Background",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "button_accent",
+        "label": "Button accent",
+        "default": "#9380be"
+      },
+      {
+        "type": "color",
+        "id": "button_secondary_background",
+        "label": "Secondary background",
+        "default": "#ff8061"
+      },
+      {
+        "type": "color",
+        "id": "button_secondary_text_color",
+        "label": "Secondary text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "button_secondary_accent",
+        "label": "Secondary button accent",
+        "default": "#e8cca8"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "color",
+        "id": "header_background",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "header_logo_fill",
+        "label": "Logo fill",
+        "default": "#662480"
+      },
+      {
+        "type": "color",
+        "id": "header_heading_color",
+        "label": "Heading and icons",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "header_light_color",
+        "label": "Light text",
+        "default": "#6a6a6a"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "color",
+        "id": "footer_background",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "footer_heading_color",
+        "label": "Heading",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "footer_text_color",
+        "label": "Text",
+        "default": "#6a6a6a"
+      },
+      {
+        "type": "color",
+        "id": "footer_link_hover",
+        "label": "Link hover",
+        "default": "#9380be"
+      },
+      {
+        "type": "header",
+        "content": "Sidebar navigation"
+      },
+      {
+        "type": "color",
+        "id": "navigation_background",
+        "label": "Background",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "navigation_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Newsletter popup"
+      },
+      {
+        "type": "color",
+        "id": "newsletter_popup_background",
+        "label": "Background",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "newsletter_popup_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Secondary elements",
+        "info": "This is used in modals and other secondary elements."
+      },
+      {
+        "type": "color",
+        "id": "secondary_elements_background",
+        "label": "Background",
+        "default": "#1c1b1b"
+      },
+      {
+        "type": "color",
+        "id": "secondary_elements_text_color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Tags"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_all",
+        "label": "All",
+        "default": "#9cd4d6"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_breakfasts",
+        "label": "Breakfasts",
+        "default": "#ffa15c"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_finger_foods",
+        "label": "Finger foods",
+        "default": "#662480"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_first_tastes",
+        "label": "First tastes",
+        "default": "#92a4ed"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_mixes",
+        "label": "Mixes",
+        "default": "#f7d25d"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_stage_1",
+        "label": "Stage 1",
+        "default": "#abe8b5"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_stage_2",
+        "label": "Stage 2",
+        "default": "#a887d3"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_stage_3",
+        "label": "Stage 3",
+        "default": "#f88cc4"
+      },
+      {
+        "type": "color",
+        "id": "color_tag_stage_4",
+        "label": "Stage 4",
+        "default": "#fff8f3"
+      },
+      {
+        "type": "header",
+        "content": "Stages"
+      },
+      {
+        "type": "color",
+        "id": "color_stage_1",
+        "label": "Stage 1",
+        "default": "#e380af"
+      },
+      {
+        "type": "color",
+        "id": "color_stage_2",
+        "label": "Stage 2",
+        "default": "#96d3a0"
+      },
+      {
+        "type": "color",
+        "id": "color_stage_3",
+        "label": "Stage 3",
+        "default": "#e2bd5d"
+      },
+      {
+        "type": "color",
+        "id": "color_stage_4",
+        "label": "Stage 4",
+        "default": "#ff8c5c"
+      },
+      {
+        "type": "header",
+        "content": "Blog tags"
+      },
+      {
+        "type": "color",
+        "id": "color_all",
+        "label": "All",
+        "default": "#e380af"
+      },
+      {
+        "type": "color",
+        "id": "color_recipes",
+        "label": "Recipes",
+        "default": "#e2bd5d"
+      },
+      {
+        "type": "color",
+        "id": "color_family",
+        "label": "Family",
+        "default": "#96d3a0"
+      },
+      {
+        "type": "color",
+        "id": "color_lifestyle",
+        "label": "Lifestyle",
+        "default": "#ff8c5c"
+      },
+      {
+        "type": "color",
+        "id": "color_weaning_tips",
+        "label": "Weaning tips",
+        "default": "#92a4ec"
+      },
+      {
+        "type": "header",
+        "content": "Tiers"
+      },
+      {
+        "type": "color",
+        "id": "color_tier_1",
+        "label": "Tier 1",
+        "default": "#96d3a0"
+      },
+      {
+        "type": "color",
+        "id": "color_tier_2",
+        "label": "Tier 2",
+        "default": "#808fd8"
+      },
+      {
+        "type": "color",
+        "id": "color_tier_3",
+        "label": "Tier 2",
+        "default": "#e380af"
+      }
+    ]
+  },
+  {
+    "name": "Cookie announcement",
+    "settings": [
+      {
+        "type": "text",
+        "id": "cookie_tab_text",
+        "label": "Tab text",
+        "default": "Cookie policy"
+      },
+      {
+        "type": "textarea",
+        "id": "cookie_message",
+        "label": "Message",
+        "default": "This website uses cookies to ensure you get the best experience on our website."
+      },
+      {
+        "type": "text",
+        "id": "cookie_link_text",
+        "label": "Link text",
+        "default": "Privacy policy"
+      },
+      {
+        "type": "url",
+        "id": "cookie_link_url",
+        "label": "Link url"
+      },
+      {
+        "type": "text",
+        "id": "cookie_accept_text",
+        "label": "Accept text",
+        "default": "Allow cookies"
+      },
+      {
+        "type": "text",
+        "id": "cookie_decline_text",
+        "label": "Decline text",
+        "default": "Decline"
+      },
+      {
+        "type": "color",
+        "id": "cookie_background_colour",
+        "label": "Background colour",
+        "default": "#662480"
+      },
+      {
+        "type": "color",
+        "id": "cookie_button_colour",
+        "label": "Button colour",
+        "default": "#ffffff"
+      }
+    ]
+  },
+  {
+    "name": "Currency conversion",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "If native multi-currencies is configured on your store, the theme currency converter will be disabled."
+      },
+      {
+        "type": "checkbox",
+        "id": "currency_conversion_enabled",
+        "label": "Enable currency conversion",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "currency_conversion_round_amounts",
+        "label": "Round converted amounts",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "currency_conversion_supported_currencies",
+        "label": "Supported currencies",
+        "info": "List of currencies to display. You must separate each currencies by an empty space, and use the ISO 4217 3-letter code. Example: USD CAD EUR. All the possible values are [listed here](http:\/\/bit.ly\/1C4cZ3w).",
+        "default": "USD CAD EUR GBP"
+      },
+      {
+        "type": "select",
+        "id": "currency_conversion_money_format",
+        "label": "Money format",
+        "options": [
+          {
+            "value": "money_format",
+            "label": "Money ($10)"
+          },
+          {
+            "value": "money_with_currency_format",
+            "label": "Money with currency ($10 USD)"
+          }
+        ],
+        "default": "money_format"
+      }
+    ]
+  },
+  {
+    "name": "Products grid",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Grid"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_show_price_on_hover",
+        "label": "Show price on hover",
+        "info": "Prices will always be visible on touch devices.",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "product_show_secondary_image",
+        "label": "Show secondary image on hover",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "product_info_alignment",
+        "label": "Product info alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "product_image_size",
+        "label": "Product image size",
+        "options": [
+          {
+            "value": "natural",
+            "label": "Natural"
+          },
+          {
+            "value": "short",
+            "label": "Short (4:3)"
+          },
+          {
+            "value": "square",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "tall",
+            "label": "Tall (2:3)"
+          }
+        ],
+        "default": "natural"
+      },
+      {
+        "type": "select",
+        "id": "product_list_horizontal_spacing",
+        "label": "Horizontal spacing",
+        "options": [
+          {
+            "value": "extra_small",
+            "label": "Extra small"
+          },
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "extra_large",
+            "label": "Extra large"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "select",
+        "id": "product_list_vertical_spacing",
+        "label": "Vertical spacing",
+        "options": [
+          {
+            "value": "extra_small",
+            "label": "Extra small"
+          },
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "extra_large",
+            "label": "Extra large"
+          }
+        ],
+        "default": "medium"
+      }
+    ]
+  },
+  {
+    "name": "Programme scheme",
+    "settings": [
+      {
+        "type": "text",
+        "id": "charge_no_discount",
+        "label": "No discount info"
+      },
+      {
+        "type": "header",
+        "content": "1st charge frequency"
+      },
+      {
+        "type": "text",
+        "id": "charge_first_frequency",
+        "label": "1st charge frequency text"
+      },
+      {
+        "type": "text",
+        "id": "charge_first_discount",
+        "label": "1st charge discount info"
+      },
+      {
+        "type": "range",
+        "id": "charge_first",
+        "min": 1,
+        "max": 52,
+        "step": 1,
+        "unit": "wks",
+        "label": "1st charge frequency",
+        "default": 4
+      },
+      {
+        "type": "header",
+        "content": "2nd charge frequency"
+      },
+      {
+        "type": "text",
+        "id": "charge_second_frequency",
+        "label": "2nd charge frequency text"
+      },
+      {
+        "type": "text",
+        "id": "charge_second_discount",
+        "label": "2nd charge discount info"
+      },
+      {
+        "type": "range",
+        "id": "charge_second",
+        "min": 1,
+        "max": 52,
+        "step": 1,
+        "unit": "wks",
+        "label": "2nd charge frequency",
+        "default": 12
+      },
+      {
+        "type": "header",
+        "content": "3rd charge frequency"
+      },
+      {
+        "type": "text",
+        "id": "charge_third_frequency",
+        "label": "3rd charge frequency text"
+      },
+      {
+        "type": "checkbox",
+        "id": "charge_third_enabled",
+        "label": "Enable the 3rd bundle pricing",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "charge_third_discount",
+        "label": "3rd charge discount info"
+      },
+      {
+        "type": "range",
+        "id": "charge_third",
+        "min": 1,
+        "max": 52,
+        "step": 1,
+        "unit": "wks",
+        "label": "3rd charge frequency",
+        "default": 26
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "settings": [
+      {
+        "type": "select",
+        "id": "search_mode",
+        "label": "Search only...",
+        "options": [
+          {
+            "value": "product",
+            "label": "Products only"
+          },
+          {
+            "value": "product,page",
+            "label": "Products and pages"
+          },
+          {
+            "value": "product,article",
+            "label": "Products and articles"
+          },
+          {
+            "value": "product,article,page",
+            "label": "Products, articles and pages"
+          }
+        ],
+        "default": "product,article"
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "share_image",
+        "label": "Share image",
+        "info": "This image is used when you share pages such as home page. For product, collection or article pages, the featured image will be used instead."
+      },
+      {
+        "type": "header",
+        "content": "Accounts"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook",
+        "info": "https:\/\/www.facebook.com\/shopify",
+        "label": "Facebook"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok",
+        "info": "https:\/\/www.tiktok.com\/@mamamadefood",
+        "label": "Facebook",
+        "default": "https:\/\/www.tiktok.com\/@mamamadefood"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter",
+        "info": "https:\/\/twitter.com\/shopify",
+        "label": "Twitter"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest",
+        "info": "https:\/\/www.pinterest.com\/shopify",
+        "label": "Pinterest"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "info": "https:\/\/instagram.com\/shopify",
+        "label": "Instagram"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo",
+        "info": "https:\/\/vimeo.com\/shopify",
+        "label": "Vimeo"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr",
+        "info": "https:\/\/shopify.tumblr.com",
+        "label": "Tumblr"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube",
+        "info": "https:\/\/www.youtube.com\/user\/shopify",
+        "label": "YouTube"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin",
+        "info": "https:\/\/linkedin.com\/in\/shopify",
+        "label": "LinkedIn"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat",
+        "info": "https:\/\/snapchat.com\/add\/shopify",
+        "label": "Snapchat"
+      },
+      {
+        "type": "text",
+        "id": "social_fancy",
+        "info": "https:\/\/fancy.com\/Shopify",
+        "label": "Fancy"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "heading_font",
+        "label": "Font",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "label": "Size",
+        "info": "All headings (small and large) will be adjusted.",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ],
+        "default": "small"
+      },
+      {
+        "type": "checkbox",
+        "id": "uppercase_heading",
+        "label": "Display headings in uppercase",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Body text"
+      },
+      {
+        "type": "font_picker",
+        "id": "text_font",
+        "label": "Font",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "range",
+        "id": "base_text_font_size",
+        "label": "Base size",
+        "min": 13,
+        "max": 17,
+        "unit": "px",
+        "default": 14
+      }
+    ]
+  }
+]

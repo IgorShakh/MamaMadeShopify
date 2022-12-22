@@ -1,0 +1,21 @@
+{%- for tag in product.tags -%}
+
+    {%- if tag contains 'stage__' -%}
+        {%- assign the_stage = tag | split: 'stage__' -%}
+        {%- assign the_stage = the_stage[1] | append: ',' -%}
+        {%- assign stages = stages | append: the_stage -%}
+    {%- endif -%}
+
+{%- endfor -%}
+
+{%- assign stages = stages | split: ',' -%}
+{%- capture the_stages -%}
+    <div class="Tags__Wrap">
+    {% for stage in stages %}
+        {%- assign stage_number = stage | slice: 0 -%}
+        <span class="Tag Tag--stage-{{ stage_number }}">Stage {{ stage }}</span>
+    {% endfor %}
+    </div>
+{%- endcapture -%}
+
+{{ the_stages }}

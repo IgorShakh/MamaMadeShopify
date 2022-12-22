@@ -1,0 +1,65 @@
+<section class="Section Section--spacingTight" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="press">
+  {%- if section.settings.title != blank -%}
+    <h2 class="press__title Heading u-h3 u-sans-serif u-visually-hidden">{{ section.settings.title }}</h2>
+  {%- endif -%}
+
+  <div class="press__logos">
+    {%- for block in section.blocks -%}
+      <div class="press__logo">
+        <img loading="lazy"src="{{ block.settings.logo | img_url: '600x' }}" alt="{{ block.settings.quote }}" width="auto">
+      </div>
+      {%- if block.settings.quote != blank -%}<p class="press__quote">{{ block.settings.quote }}</p>{%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.color_bg | default: '#fff' }};
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Press",
+    "class": "shopify-section--press",
+    "max_blocks": 5,
+      "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background colour"
+      }
+    ],
+    "blocks": [
+      {
+      "type": "Column",
+          "name": "Column",
+          "settings": [
+              {
+                "type": "image_picker",
+                "id": "logo",
+                "label": "Logo"
+              },
+              {
+                "type": "text",
+                "id": "quote",
+                "label": "Quote"
+              }
+            ]
+      }
+      ],
+    "presets": [
+      {
+        "category": "Text",
+        "name": "Press",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

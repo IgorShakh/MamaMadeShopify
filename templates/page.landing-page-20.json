@@ -1,0 +1,367 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "index-slideshow",
+      "blocks": {
+        "5528cf03-f813-4152-ac8f-8dff34a9031f": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "Button Button--secondary",
+            "image_link": "",
+            "image": "shopify:\/\/shop_images\/MM_WebHeader_2000x800_1_7b928bb3-9959-48db-8e5a-794b77cf668d.png",
+            "image_size": "cover",
+            "image_y_alignment": "50%",
+            "image_x_alignment": "50%",
+            "desktop_position_x": "home-slideshow--x-center",
+            "desktop_position_y": "home-slideshow--y-center",
+            "text_alignment": "text-center",
+            "mobile_image": "shopify:\/\/shop_images\/MM_XmasSocialPostsMobile-Header.png",
+            "content_bg_colour": ""
+          }
+        }
+      },
+      "block_order": [
+        "5528cf03-f813-4152-ac8f-8dff34a9031f"
+      ],
+      "settings": {
+        "full-width": false
+      }
+    },
+    "c7b16119-2eec-4773-82c2-08ed6fb91039": {
+      "type": "text-with-image-programme-header",
+      "settings": {
+        "subheading": "",
+        "title": "Mamamade x Little Village",
+        "color_bg": "#abe8b5",
+        "image": "shopify:\/\/shop_images\/Screenshot_2022-11-25_at_15.22.11.png",
+        "image_remove_padding": true,
+        "image_position": "left",
+        "content": "<p>This festive period, we are partnering with Little Village. As one of the UK's biggest baby banks, Little Village support thousands of families every year with essential items they need to thrive. We felt Little Village were the perfect partner for us to share the load and the the love this winter. So, we've turned every one of our Mamamade boxes into Little Village donation boxes. Read on for how to support.<\/p>",
+        "link_text": "",
+        "link_url": "https:\/\/doddl.com\/",
+        "show_social": false
+      }
+    },
+    "8aac905e-6d96-4914-8e14-133fab735fe3": {
+      "type": "text-with-image-join",
+      "settings": {
+        "subheading": "",
+        "title": "How to get involved...",
+        "color_bg": "#a887d3",
+        "image": "shopify:\/\/shop_images\/image00009_2_fb0716ca-712f-4d1d-95dd-3f0c6ece71e5.jpg",
+        "image_remove_padding": true,
+        "image_position": "left",
+        "content": "<p>There has never been a more important time to support Little Village's mission. But, we need our community to get involved. Here's how to:<\/p><p>1. Fill your empty Mamamade food box with items in great condition: 0-5 yrs clothes, shoes, warm items and feeding kits. <\/p><p>2. Use the link below to receive your pre-paid Collect+ label. <\/p><p>3. Drop your filled Mamamade donation box at your local Collect+ location. <\/p><p>Your box will then be sent to Little Village directly, where they can sort your gifts and share the love with more families than ever over the coming months. <\/p><p>If you'd like to process a donation now, click the button below to get your pre-paid Collect+ label.<\/p>",
+        "link_text": "SEND YOUR BOX",
+        "link_url": "https:\/\/returns.sorted.com\/giftofgiving\/",
+        "show_social": false
+      }
+    },
+    "c3a83bc7-f64f-42ca-86c8-106cfe66d30e": {
+      "type": "text-with-image-join",
+      "settings": {
+        "subheading": "",
+        "title": "Who are Little Village?",
+        "color_bg": "#92a4ec",
+        "image": "shopify:\/\/shop_images\/IMG_1037-1.jpg",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Little Village are on a mission to support families with children living in poverty. They run a baby bank network - collecting, sorting and passing on great quality, pre-loved clothes and equipment. Families are supported by their dedicated guidance team and can either visit a Little Village hub have much needed items directly to their door.<\/p><p><\/p><p>Since launching in 2016, Little Village have supported over 25,000 children across London and receive thousands of requests every year. Plus, Little Village's focus on pre-loved means they promote a circular model – in 2021 alone they prevented £2.2m worth of items going to landfill. Leaving an impact rather than a trace.<\/p>",
+        "link_text": "read more",
+        "link_url": "https:\/\/littlevillagehq.org\/about-us\/",
+        "show_social": false
+      }
+    },
+    "90fe03d3-cf83-44f0-90b3-bb672c92bc2d": {
+      "type": "text-with-image-intro",
+      "settings": {
+        "subheading": "",
+        "title": "What to donate?",
+        "color_bg": "#abe8b5",
+        "image_remove_padding": false,
+        "reverse": true,
+        "stacked": false,
+        "content": "<p>The items Little Village pass on are a gift, given with love from one family to another. Please bear this in mind when preparing your donations and only donate items you would be happy to pass on to a family member or friend – so no stained, worn out or broken items please.<\/p><p><strong>CLOTHES + SHOES <\/strong><\/p><p>All pre-loved items in great condition for 0-5 years. <\/p><p><strong>WARM ITEMS<\/strong><\/p><p>Coats, scarves, gloves, hats and blankets in great condition. <\/p><p><strong>FEEDING KITS<\/strong><\/p><p>Any excellent condition feeding items - bottles, new teats, breast pumps, bibs, weaning plates, bowls, cups and cutlery. <\/p>",
+        "link_text": "FIND OUT MORE",
+        "link_url": "https:\/\/littlevillagehq.org\/donate-stuff\/",
+        "show_quote": false,
+        "quote_text": "",
+        "quote_author": ""
+      }
+    },
+    "4ebe9a93-d0d3-4940-91ae-db107b964ef2": {
+      "type": "text-with-image-panel1",
+      "settings": {
+        "subheading": "T&Cs",
+        "title": "",
+        "color_bg": "#ffffff",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p><em>Donation drive opens December 1st 2022. Last day to send Little Village donations is December 16th 2022. The Little Village donation centre will close before reopening January 1st 2023. Any items sent after December 16th 2022 and before January 1st 2023 may be returned. Charity number: 1169735 C 2022 Little Village. All Rights Reserved. <\/em><\/p>",
+        "link_text": "",
+        "link_url": "",
+        "show_social": false
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Delivered Frozen to Your Door.",
+        "image": "shopify:\/\/shop_images\/Mamamade_box_delivery.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>A parent's checklist is long enough. This is why we're here to support you and your family with nutritious, organic and plant-based (naturally free of the big-8 allergens!) meals and snacks delivered frozen to your door. <\/p><p>We handle the rest; all you have to do is pop the meals straight in your freezer, and heat them up when needed. Mealtime ready in minutes!<\/p><p><\/p><p><\/p>",
+        "link_text": "SHOP MAMAMADE BUNDLES",
+        "link_url": "https:\/\/mamamadefood.com\/collections\/pre-made-bundles"
+      }
+    },
+    "9f5db277-0be3-4caa-8a6a-9c060df1cfb1": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "background_colour": "#ffffff",
+        "subheading": "",
+        "subtitle_colour": "#662480",
+        "title": "Enter To Win!",
+        "title_colour": "#662480",
+        "content": "",
+        "text_colour": "#662480",
+        "html": "<div class=\"klaviyo-form-WUzqLK\"><\/div>"
+      }
+    },
+    "press": {
+      "type": "press",
+      "disabled": true,
+      "blocks": {
+        "a6a22ef6-a200-4ce4-955a-22643b274a69": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-dailymail_600x_41c53d6b-4934-4ac2-8c3b-970b5bc0d105.gif",
+            "quote": ""
+          }
+        },
+        "b2828a11-9f35-4317-be14-9de3c8170e25": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-baby_600x_423cff62-4933-4e19-ad1d-8177bb354100.gif",
+            "quote": ""
+          }
+        },
+        "893cd80f-c01d-46f6-9e12-653de5241b3a": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Screenshot_2022-01-13_at_11.09.39.png",
+            "quote": ""
+          }
+        },
+        "1c0a6d31-445a-4189-985c-e51bccc8b0cd": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Screenshot_2022-01-13_at_11.10.29.png",
+            "quote": ""
+          }
+        },
+        "f8a99f36-560c-46c2-91e8-b9371573d2bc": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Untitled_1000_x_500_px_3.png",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "a6a22ef6-a200-4ce4-955a-22643b274a69",
+        "b2828a11-9f35-4317-be14-9de3c8170e25",
+        "893cd80f-c01d-46f6-9e12-653de5241b3a",
+        "1c0a6d31-445a-4189-985c-e51bccc8b0cd",
+        "f8a99f36-560c-46c2-91e8-b9371573d2bc"
+      ],
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    },
+    "9d1772a0-1a55-461a-97ae-7707632945a7": {
+      "type": "featured-collections",
+      "disabled": true,
+      "blocks": {
+        "template--16716871860438__9d1772a0-1a55-461a-97ae-7707632945a7-1664985096b4eebbf7-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "toddler-meals-and-snacks",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--16716871860438__9d1772a0-1a55-461a-97ae-7707632945a7-1664985096b4eebbf7-0"
+      ],
+      "settings": {
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_loyalty": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "disabled": true,
+      "blocks": {
+        "5fa6d810-6bb1-4382-b249-564ab387cd02": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Having 2 under 2 has been a big adjustment for us, but Mamamade has made life SO much easier. Having a bank of healthy, yummy and organic meals and snacks that take minutes to make… YES, PLEASE!<\/p>",
+            "cite": "@katiexrosem on TikTok",
+            "image": "shopify:\/\/shop_images\/Untitled_3.png"
+          }
+        },
+        "1f5e6026-4981-4040-8245-c426972a99da": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>It’s so important to me that Lilah gets a nutritious, varied diet, but in reality I just don’t have time to make everything from scratch all the time. Which is why our Mamamade freezer stash has been a lifesaver! I get delicious, nutritious meals delivered straight to my door, pop them in the freezer then cook them in minutes in the microwave when I need them!  😍<\/p>",
+            "cite": "@LOZZIJ ON TIKTOK",
+            "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_950761a3-08a5-4c25-ab36-836048b11662.png"
+          }
+        },
+        "9e6e352d-c11c-4355-a031-fffb4cd126a2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Our weaning journey with Ottie is in full swing and Mamamade is taking the stress out of it. It wasn’t my favourite time with Eva, she had multiple allergies and I was worried the same would happen with Ottie. But thankfully so far she hasn’t had any reactions! Mamamade is free of the main 8 allergens so I was set up for worry free weaning<\/p>",
+            "cite": "@thelittlelifelately on tiktok",
+            "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "5fa6d810-6bb1-4382-b249-564ab387cd02",
+        "1f5e6026-4981-4040-8245-c426972a99da",
+        "9e6e352d-c11c-4355-a031-fffb4cd126a2"
+      ],
+      "settings": {
+        "heading": "Loved By Parents",
+        "sub-heading": "",
+        "show_images": true,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#fff8f3",
+        "text_color": "#662480"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "blocks": {
+        "354f9c69-5e43-4a7e-91bd-947b0adc659e": {
+          "type": "article",
+          "settings": {
+            "article_1": "mamamadeblog\/how-to-cut-foods-safely-for-baby-led-weaning",
+            "article_2": "mamamadeblog\/snack-round-up-how-many-snacks-are-too-many-snacks",
+            "article_3": "mamamadeblog\/lets-talk-picky-eaters"
+          }
+        }
+      },
+      "block_order": [
+        "354f9c69-5e43-4a7e-91bd-947b0adc659e"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "The Mamamade Blog.",
+        "copy": "We're breaking down barriers and exploring the ins and outs of parenting...",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#a887d3"
+      }
+    },
+    "5015687e-9fbd-453c-b010-bf609ec50543": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image": "{{ shop.brand.cover_image }}",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "0c51a021-5aa6-4fd4-8877-22ebf185e2a3": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "background_colour": "#ffffff",
+        "subheading": "Sub-heading",
+        "subtitle_colour": "#662480",
+        "title": "Your HTML",
+        "title_colour": "#662480",
+        "content": "",
+        "text_colour": "#662480",
+        "html": "<p>Write your own custom HTML content.<\/p>"
+      }
+    },
+    "20843192-552b-4fac-81fb-0777ffe91fb7": {
+      "type": "how-it-works-programme",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#f88cc4"
+      }
+    },
+    "f693bccb-a8ef-49fb-b4bc-ee923af502cf": {
+      "type": "featured-product",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Featured product",
+        "show_headings_on_mobile": true,
+        "product": "",
+        "show_vendor": true,
+        "show_sku": false,
+        "show_description": true,
+        "description_below_add_to_cart": false,
+        "selector_mode": "dropdown",
+        "show_color_swatch": false,
+        "show_color_carousel": false,
+        "show_quantity_selector": true,
+        "show_inventory_quantity": false,
+        "inventory_quantity_threshold": 0,
+        "show_price_in_button": false,
+        "show_payment_button": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "c7b16119-2eec-4773-82c2-08ed6fb91039",
+    "8aac905e-6d96-4914-8e14-133fab735fe3",
+    "c3a83bc7-f64f-42ca-86c8-106cfe66d30e",
+    "90fe03d3-cf83-44f0-90b3-bb672c92bc2d",
+    "4ebe9a93-d0d3-4940-91ae-db107b964ef2",
+    "text-with-image-two",
+    "9f5db277-0be3-4caa-8a6a-9c060df1cfb1",
+    "press",
+    "9d1772a0-1a55-461a-97ae-7707632945a7",
+    "product-testimonials",
+    "blog-posts",
+    "5015687e-9fbd-453c-b010-bf609ec50543",
+    "0c51a021-5aa6-4fd4-8877-22ebf185e2a3",
+    "20843192-552b-4fac-81fb-0777ffe91fb7",
+    "f693bccb-a8ef-49fb-b4bc-ee923af502cf"
+  ]
+}

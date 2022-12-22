@@ -1,0 +1,87 @@
+
+<script id="CartItemTemplate" type="text/template">
+  <div class="CartItem">
+    <div class="CartItem__ImageWrapper AspectRatio">
+      <div class="AspectRatio AspectRatio--crop" style="--aspect-ratio: 1" data-aspect-ratio="${ratio}">
+        <img loading="lazy"class="CartItem__Image" src="${image}" alt="">
+      </div>
+    </div>
+    <div class="CartItem__Info">
+      <h2 class="CartItem__Title">
+        <a href="${url}">${title}</a>
+      </h2>
+      <div class="CartItem__Meta Text--subdued">
+        <p class="CartItem__Variant">${variant}</p>
+        <ul class="CartItem__PropertyList">
+          <!-- <li class="CartItem__Property"></li> -->
+        </ul>
+        <div class="CartItem__PriceList"><span class="CartItem__Price Price" data-money-convertible>${price}</span></div>
+      </div>
+      <div class="CartItem__Actions Text--subdued" style="text-align: center">
+        <div class="QuantitySelector">
+          <a class="QuantitySelector__Button Button Button--only-icon" title="{{ 'cart.items.set_quantity' | t }} ${quantity_minus_one}" href="{{ routes.cart_change_url }}?quantity=${quantity_minus_one}&id=${key}" data-quantity="${quantity_minus_one}" data-line-id="${key}" data-action="update-item-quantity">
+            <span class="u-visually-hidden">Reduce item quantity</span>
+            {%- render 'icon' with 'cart-minus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}
+          </a>
+          <input type="text" name="updates[]" id="updates_${key}" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" data-line-id="${key}" value="${qty}">
+          <a class="QuantitySelector__Button Button Button--only-icon"  title="{{ 'cart.items.set_quantity' | t }} ${quantity_plus_one} " href="{{ routes.cart_change_url }}?quantity=${quantity_plus_one}&id=${key}" data-quantity="${quantity_plus_one}" data-line-id="${key}" data-action="update-item-quantity">
+            <span class="u-visually-hidden">Increase item quantity</span>
+            {%- render 'icon' with 'cart-plus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}
+          </a>
+        </div>
+        <a href="/cart/change?quantity=0&amp;id=${key}" class="CartItem__Remove Link Link--underline Link--underlineShort" data-quantity="0" data-line-id="${key}" data-action="remove-item">Remove</a>
+      </div>
+    </div>
+    <div class="CartItem__Actions Text--subdued" style="text-align: center">
+      <div class="QuantitySelector">
+        <a class="QuantitySelector__Button Button Button--only-icon" title="{{ 'cart.items.set_quantity' | t }} ${quantity_minus_one}" href="{{ routes.cart_change_url }}?quantity=${quantity_minus_one}&id=${key}" data-quantity="${quantity_minus_one}" data-line-id="${key}" data-action="update-item-quantity">
+          <span class="u-visually-hidden">Reduce item quantity</span>
+            {%- render 'icon' with 'cart-minus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}
+        </a>
+        <input type="text" name="updates[]" id="updates_${key}" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" data-line-id="${key}" value="${qty}">
+        <a class="QuantitySelector__Button Button Button--only-icon" title="{{ 'cart.items.set_quantity' | t }} ${quantity_plus_one}" href="{{ routes.cart_change_url }}?quantity=${quantity_plus_one}&id=${key}" data-quantity="${quantity_plus_one}" data-line-id="${key}" data-action="update-item-quantity">
+          <span class="u-visually-hidden">Increase item quantity</span>
+            {%- render 'icon' with 'cart-plus', classes: 'Button__Icon', fill: settings.color_brand_primary, stroke: '#fff' -%}
+        </a>
+      </div>
+      <span class="CartItem__Remove Link Link--underline Link--underlineShort" data-quantity="0" data-line-id="${key}" data-action="remove-item">Remove</span>
+    </div>
+    <div class="CartItem__LinePriceList Heading Text--subdued u-sans-serif u-h3" style="text-align: right"><span class="CartItem__Price Price" data-money-convertible>${price}</span></div>
+  </div>
+</script>
+
+<script id="CartItemTemplateGroup" type="text/template">
+  <div class="CartItem">
+    <div class="CartItem__ImageWrapper AspectRatio">
+      <div class="AspectRatio" style="--aspect-ratio: 1">
+        {% render 'icon' with 'box', classes: 'Icon CartItem__Image', fill: settings.color_brand_primary %}
+      </div>
+    </div>
+    <div class="CartItem__Info">
+      <h2 class="CartItem__Title">
+        ${title}
+      </h2>
+      <div class="CartItem__Meta Text--subdued">
+        <ul class="CartItem__PropertyList">
+          ${properties}
+        </ul>
+        <!-- <div class="CartItem__PriceList"><span class="CartItem__Price Price" data-money-convertible>${price}</span></div> -->
+      </div>
+      <div class="CartItem__Actions Text--subdued" style="text-align: center">
+        <div class="CartItem__QuantitySelector">
+          <span class="CartItem__Quantity">X ${qty}</span>
+          <!-- <input type="hidden" name="updates[]" disabled class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" data-line-ids="${keys}" value="${qty}"> -->
+          ${inputs}
+        </div>
+        <span class="CartItem__Remove Link Link--underline Link--underlineShort" data-uuid="${uuid}" data-line-ids="${keys}" data-action="remove-group">Remove</span>
+      </div>
+    </div>
+    <div class="CartItem__Actions Text--subdued" style="text-align: center">
+      <div class="CartItem__QuantitySelector">
+        <span class="CartItem__Quantity">X ${qty}</span>
+      </div>
+      <span class="CartItem__Remove Link Link--underline Link--underlineShort" data-uuid="${uuid}" data-line-ids="${keys}" data-action="remove-group">Remove</span>
+    </div>
+    <div class="CartItem__LinePriceList Heading Text--subdued u-sans-serif u-h3" style="text-align: right"><span class="CartItem__Price Price" data-money-convertible>${price}</span></div>
+  </div>
+</script>

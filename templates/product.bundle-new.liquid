@@ -1,0 +1,38 @@
+{% assign page_title_hero = product.metafields.product.description_title %}
+{% assign page_text_hero = product.metafields.product.description_text %}
+
+{% if page_title_hero != blank or page_text_hero != blank %}
+  {% render 'page-description-hero'
+    title: page_title_hero,
+    text: page_text_hero,
+  %}
+{% endif %}
+
+{% render "breadcrumbs" %}
+{% section 'product-template' %}
+
+{%- if template == 'product.bundle-new' -%}
+  <div class="product-bundle-text">
+    <div class="Container">
+      <div class="product-bundle-text__col">
+        {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' | replace: '[tastes_like]', tastes_like }}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% section 'product-testimonials' %}
+{% section 'text-with-products' %}
+
+{%- comment -%}
+{% section 'product-recommendations' %}
+{% section 'testimonials' %}
+{%- endcomment -%}
+
+{% comment %}
+{% section 'recently-viewed-products' %}
+{% endcomment %}
+
+{% section 'faq' %}
+{% section 'blog-posts' %}
+

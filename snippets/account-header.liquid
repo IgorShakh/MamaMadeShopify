@@ -1,0 +1,46 @@
+<div id="ReCharge" class="ReCharge--standard page-width">
+  <a href="/pages/rewards" class="rc-loyal">
+    <span class="rc-loyal__text">You've earned <span data-lion-points="approved"></span> points!</span>
+    <span class="rc-loyal__title link-underline">Loyalty Rewards</span>
+  </a>
+
+  <div class="grid">
+    <div class="grid__item medium-up--one-whole">
+      <div class="rc-header">
+        <h4 class="">
+          Hello {{ customer.first_name }} :wave:
+        </h4>
+        <a href="/pages/rewards" class="rc-loyal">
+          <span class="rc-loyal__text">You've earned <span data-lion-points="approved"></span> points!</span>
+          <span class="rc-loyal__title link-underline">Loyalty Rewards</span>
+        </a>
+      </div>
+
+      <div class="rc-nav">
+        <ul>
+
+          {% comment %} <li><a href="/tools/recurring/login">Subscriptions</a></li> {% endcomment %}
+
+          <li style="display: none"><a href="{{ schedule_url }}">Schedule</a></li>
+
+          {% if customer.metafields.subscriptions.customer_string %}
+            <li><a href="/tools/recurring/login">Subscriptions</a></li>
+          {% else %}
+            <li><a href="/account/orders">Order history</a></li>
+          {% endif %}
+
+          <li>
+            <a href="https://calendly.com/mamamadefood/mamamade-weaning-coach-call">
+              Weaning coach
+            </a>
+          </li>
+          <li><a href="/tools/recurring/login">Account</a></li>
+          <li><a href="/account/logout">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

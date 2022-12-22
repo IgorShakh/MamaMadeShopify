@@ -1,0 +1,35 @@
+{%- render 'programme-banner' -%}
+
+<div class="ProgrammeScheme">
+
+  {%- render 'programme-stages' -%}
+
+  <div class="ProgrammeStage ProgrammeStage--1">
+
+    <div class="Container">
+
+      {%- render 'programme-info' -%}
+      {%- render 'programme-food' -%}
+      {%- render 'programme-milestone' -%}
+
+      <div class="GroupCta">
+        <div class="Form__Item">
+          <div class="Form__CheckboxWrapper">
+            <input type="checkbox" class="Form__Checkbox" name="programme[signup]" id="programme[signup]" value="0">
+            {% render 'icon' with 'checkmark' %}
+            <label for="programme[signup]">Yes, I&apos;d like to receive my baby&apos;s results via email. <br>Sign me up for the latest parenting tips, news and advice from experts and the Mamamade community.</label>
+          </div>
+        </div>
+
+        <button type="submit" class="Form__Submit Button Button--tertiary Button--full" data-stage="products" disabled>{{ 'programme.form.submit' | t }}</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="ProgrammeStage ProgrammeStage--2" style="display: none;"></div>
+
+  <div class="ProgrammeStage ProgrammeStage--3" style="display: none;"></div>
+
+</div>

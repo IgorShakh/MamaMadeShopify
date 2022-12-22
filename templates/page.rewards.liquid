@@ -1,0 +1,11 @@
+{% if page.title != blank %}
+  {% render 'page-description-hero'
+    title: page.title,
+  %}
+{% endif %}
+
+<div class="Container">
+  <a href="/tools/recurring/login" class="Button Button--small Button--icon Button--icon-reverse">{%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_accent, stroke: '#fff' -%} Back to {{ 'header.navigation.account' | t }}</a>
+  <br><br>
+  <div data-lion-account></div>
+</div>

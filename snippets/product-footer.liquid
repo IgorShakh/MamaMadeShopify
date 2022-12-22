@@ -1,0 +1,18 @@
+<div class="ProductFooter">
+  <div class="ProductFooter__Column">
+    {%- render 'stage-tags' -%}
+  </div>
+
+  <div class="ProductFooter__Column">
+    <div class="ProductCta">
+      <!-- <a href="{{- 'product.general.join_programme_url' | t -}}" class="Button Button--icon">
+        {{- 'product.general.join_programme' | t -}}
+        {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_accent, stroke: '#fff' -%}
+      </a> -->
+      <a href="/collections/build-a-box" class="Button Button--icon">
+        {{- 'general.account.create' | t -}}
+        {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_accent, stroke: '#fff' -%}
+      </a>
+    </div>
+  </div>
+</div>

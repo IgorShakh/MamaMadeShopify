@@ -1,0 +1,81 @@
+{%- render 'text-with-image-panel' -%}
+
+{% schema %}
+{
+    "name": "Text with image",
+    "class": "shopify-section",
+    "settings": [{
+            "type": "text",
+            "id": "subheading",
+            "label": "Sub-heading",
+            "default": "Sub-heading"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Title"
+        },
+        {
+            "type": "color",
+            "id": "color_bg",
+            "label": "Background colour",
+            "default": "#fff"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "860 x 580px .jpg recommended"
+        },
+        {
+            "type": "checkbox",
+            "id": "image_remove_padding",
+            "label": "Remove image padding",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "image_position",
+            "label": "Image position",
+            "options": [{
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ],
+            "default": "right"
+        },
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text",
+            "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+        },
+        {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link text"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_social",
+            "label": "Show social icons",
+            "default": false
+        }
+    ],
+    "presets": [{
+        "category": "Text",
+        "name": "Text with image",
+        "settings": {}
+    }]
+}
+{% endschema %}

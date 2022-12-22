@@ -1,0 +1,70 @@
+{% if customer %}
+<div class="Container">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">Modify Subscription Request</h1>
+    </div>
+  </header>
+
+  <div class="PageContent PageContent--narrow Rte">
+    {{ page.content }}
+    
+    {{ customer.metafields.subscriptions | json }}
+    
+    
+    {{ customer.id }}
+    
+    {%- form 'contact', class: 'Form Form--spacingTight' -%}
+    {%- if form.posted_successfully? -%}
+    <p class="Alert Alert--success">{{ 'contact.form.successfully_sent' | t }}</p>
+    {%- endif -%}
+
+    {%- if form.errors -%}
+    <div class="Form__Alert Alert Alert--error">
+      <ul class="Alert__ErrorList">
+        {%- for field in form.errors -%}
+        {%- if field == 'form' -%}
+        <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
+        {%- else -%}
+        <li class="Alert__ErrorItem"><strong>{{ form.errors.translated_fields[field] }}</strong> {{ form.errors.messages[field] }}</li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
+
+    <input type="hidden" class="Form__Input" cols="30" rows="10" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" placeholder="{{ 'contact.form.name' | t }}" required {% if customer %}value="{{ customer.name }}"{% endif %}>
+    <input type="hidden" class="Form__Input" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" placeholder="{{ 'contact.form.email' | t }}" required {% if customer %}value="{{ customer.email }}"{% endif %}>
+
+    <div class="Form__Item">
+      <div class="Form__Select Select Select--primary">
+        {%- render 'icon' with 'select-arrow' -%}
+
+        <select name="contact[feedback_type]" title="Feedback Type" required>
+          <option value="" disabled selected>Select feedback type</option>
+          <option value="Product feedback">Product Feedback</option>
+          <option value="Account feedback">Account Feedback</option>
+          <option value="General feedback">Feature Suggestioon</option>
+          <option value="General feedback">General Feedback</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="Form__Item">
+      <textarea name="contact[feedback]" cols="30" rows="5" class="Form__Textarea" aria-label="Feedback" placeholder="Any comments or suggestions?" {% if block.settings.is_required %}required{% endif %}></textarea>
+      <label class="Form__FloatingLabel">Any comments or suggestions?</label>
+    </div>
+
+    <button type="submit" class="Form__Submit Button Button--primary Button--full">Send Feedback</button>
+    {%- endform -%}
+
+    <div style="text-align:center">
+      <a href="javascript:;" onclick="window.history.back();" class="Button Button--secondary">Back to account</a>
+    </div>
+  </div>
+</div>
+{% else %}
+	<script>
+      window.location.href = '/account/login';
+	</script>
+{% endif %}

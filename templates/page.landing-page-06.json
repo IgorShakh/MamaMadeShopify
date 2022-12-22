@@ -1,0 +1,380 @@
+{
+  "sections": {
+    "1642070016228db916": {
+      "type": "header-page",
+      "blocks": {
+        "1642070016604c6d9f-0": {
+          "type": "header",
+          "settings": {
+            "page": "mamamade-meals-delivered",
+            "header_background": "#f88cc4",
+            "short_header": true,
+            "show_curve": true,
+            "title": "We Are Mamamade",
+            "subheading": "Organic food for babies and toddlers, delivered.",
+            "copy": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#662480",
+            "button_color": "#ffffff",
+            "button_background": "#662480",
+            "button_background_hover": "#9380be"
+          }
+        }
+      },
+      "block_order": [
+        "1642070016604c6d9f-0"
+      ],
+      "settings": {}
+    },
+    "16420868073348202e": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Ready To Order?",
+        "image": "shopify:\/\/shop_images\/Mamamade_organic_baby_and_toddler_food_delivered_50b4de32-a010-44e7-81c7-c0deb504f018.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>At Mamamade, we're here to make mealtime and weaning easy with 100% organic, nutritious and delicious baby and toddler meals delivered frozen to your door. We're all about convenience, which is why you can order our meals on a weekly, fortnightly or monthly subscription, or even choose a one-off box!<\/p><p>Use code <strong>TIKTOK30 for 30%<\/strong> off your first Mamamade bundle. You're welcome 😉<\/p>",
+        "link_text": "ORDER YOUR FIRST MAMAMADE BOX",
+        "link_url": "https:\/\/mamamadefood.com\/collections\/pre-made-bundles"
+      }
+    },
+    "165642309068ad9e57": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "Be in with a chance to win a £500 Mamamade voucher",
+        "title": "Enter your e-mail below",
+        "html": "<div class=\"klaviyo-form-RdphmA\"><\/div>"
+      }
+    },
+    "text-with-image": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Hi, I'm Sophie!",
+        "image": "shopify:\/\/shop_images\/Mamamade_Founder_Sophie_Baron.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Mamamade came to life when I was introducing solids to my daughter in 2018. I wanted her to have the very best ‑ everything home‑cooked, organic, plant‑based, flavourful and healthy. But in reality, that’s easier said than done, not just for me but for most modern-day parents.<\/p><p>I was desperate for a bit of support; the juggling act of parenting can be challenging. Most days, I was out of time, overworked and lacked creativity during mealtimes, but I wasn't willing to compromise on my daughter's health or development. So, I set out to create a product for parents like me! And that's how Mamamade was born...<\/p>",
+        "link_text": "READ MY JOURNEY",
+        "link_url": "https:\/\/mamamadefood.com\/pages\/about"
+      }
+    },
+    "1642069294c59fd2ba": {
+      "type": "featured-collections",
+      "blocks": {
+        "164206929414729ce9-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "fam-favourite-bundles",
+            "title": "Mamamade Meal Bundles",
+            "grid_items_count": 28,
+            "button_text": "Discover our Fam-fave Mamamade bundles"
+          }
+        }
+      },
+      "block_order": [
+        "164206929414729ce9-0"
+      ],
+      "settings": {
+        "title": "",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_loyalty": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "blocks": {
+        "5fa6d810-6bb1-4382-b249-564ab387cd02": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Having 2 under 2 has been a big adjustment for us, but Mamamade has made life SO much easier. Having a bank of healthy, yummy and organic meals and snacks that take minutes to make… YES, PLEASE!<\/p>",
+            "cite": "@katiexrosem on TikTok",
+            "image": "shopify:\/\/shop_images\/Untitled_3.png"
+          }
+        },
+        "1f5e6026-4981-4040-8245-c426972a99da": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>It’s so important to me that Lilah gets a nutritious, varied diet, but in reality I just don’t have time to make everything from scratch all the time. Which is why our Mamamade freezer stash has been a lifesaver! I get delicious, nutritious meals delivered straight to my door, pop them in the freezer then cook them in minutes in the microwave when I need them!  😍<\/p>",
+            "cite": "@LOZZIJ ON TIKTOK",
+            "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_950761a3-08a5-4c25-ab36-836048b11662.png"
+          }
+        },
+        "9e6e352d-c11c-4355-a031-fffb4cd126a2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Our weaning journey with Ottie is in full swing and Mamamade is taking the stress out of it. It wasn’t my favourite time with Eva, she had multiple allergies and I was worried the same would happen with Ottie. But thankfully so far she hasn’t had any reactions! Mamamade is free of the main 8 allergens so I was set up for worry free weaning<\/p>",
+            "cite": "@thelittlelifelately on tiktok",
+            "image": "shopify:\/\/shop_images\/Crops_for_Website_Testimonials_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "5fa6d810-6bb1-4382-b249-564ab387cd02",
+        "1f5e6026-4981-4040-8245-c426972a99da",
+        "9e6e352d-c11c-4355-a031-fffb4cd126a2"
+      ],
+      "settings": {
+        "heading": "Loved By Parents",
+        "sub-heading": "",
+        "show_images": true,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#fff8f3",
+        "text_color": "#662480"
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Delivered Frozen to Your Door.",
+        "image": "shopify:\/\/shop_images\/Mamamade_box_delivery.png",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>A parent's checklist is long enough. This is why we're here to support you and your family with nutritious, organic and plant-based (naturally free of the big-8 allergens!) meals and snacks delivered frozen to your door. <\/p><p>We handle the rest; all you have to do is pop the meals straight in your freezer, and heat them up when needed. Mealtime ready in minutes!<\/p><p><\/p><p><\/p>",
+        "link_text": "SHOP MAMAMADE BUNDLES",
+        "link_url": "https:\/\/mamamadefood.com\/collections\/pre-made-bundles"
+      }
+    },
+    "164794172981ea9ae5": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "The Mamamade Podcast",
+        "image": "shopify:\/\/shop_images\/Podcast_hero_option_1.jpg",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>We understand that parenting can be a whirlwind of emotions, situations and, most of the time, uncertainty. So, that's why <strong>The Mamamade Podcast<\/strong> is here to help! 🎙<\/p><p>Think of each episode as a mini-guide to surviving parenthood on the go. With the addition of a few familiar voices, friends, influencers, experts and hopefully even some of you - our Mamamates! Just another way for us to help share the load and the love. <\/p><p><\/p><p><\/p><p><\/p>",
+        "link_text": "TUNE IN TO THE PODCAST",
+        "link_url": "https:\/\/mamamadefood.com\/pages\/podcast"
+      }
+    },
+    "16420687962bffcb54": {
+      "type": "featured-collections",
+      "disabled": true,
+      "blocks": {
+        "164206879691c8011c-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "merchandise",
+            "title": "Shop Mamamerch!",
+            "grid_items_count": 8,
+            "button_text": "stock up on mamamerch"
+          }
+        }
+      },
+      "block_order": [
+        "164206879691c8011c-0"
+      ],
+      "settings": {
+        "title": "",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_loyalty": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "16420703683ce9fc10": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Meal Bundles for Every Stage...",
+        "image": "shopify:\/\/shop_images\/5_9fa3fd15-013e-47a1-892c-94818e4fa53a.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Is your baby entering the wild world of weaning, your little one a finger food fiend, or you have a toddler that's asking for a more 'grown-up' meal? If these sound familiar, Mamamade has a bundle suited for every stage of your babies development. <\/p><p>Not sure which bundle is right for you? Take our quiz, and let's build a meal plan for your child!<\/p><p><\/p>",
+        "link_text": "TAKE OUR QUIZ",
+        "link_url": "https:\/\/mamamadefood.com\/pages\/tiktokquiz"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "blocks": {
+        "354f9c69-5e43-4a7e-91bd-947b0adc659e": {
+          "type": "article",
+          "settings": {
+            "article_1": "mamamadeblog\/how-to-cut-foods-safely-for-baby-led-weaning",
+            "article_2": "mamamadeblog\/snack-round-up-how-many-snacks-are-too-many-snacks",
+            "article_3": "mamamadeblog\/lets-talk-picky-eaters"
+          }
+        }
+      },
+      "block_order": [
+        "354f9c69-5e43-4a7e-91bd-947b0adc659e"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "The Mamamade Blog.",
+        "copy": "We're breaking down barriers and exploring the ins and outs of parenting...",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#a887d3"
+      }
+    },
+    "1642518162bd610d68": {
+      "type": "maestrooo-instagram",
+      "disabled": true,
+      "settings": {
+        "title": "@hellomamamade on Instagram",
+        "subheading": "",
+        "link_text": "",
+        "link_url": "",
+        "layout": "sliding_carousel",
+        "image_size": "small",
+        "full_width": false,
+        "add_spacing": true,
+        "rows_count": 2,
+        "show_author": false,
+        "show_caption": true,
+        "show_date": true,
+        "click_action": "open_instagram",
+        "heading_color": "#662480",
+        "subheading_color": "#000000",
+        "button_background": "#000000",
+        "button_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_text_color": "#ffffff",
+        "overlay_opacity": 65
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "2547ce52-9176-49cd-bd63-56c2d5fa9d1a": {
+          "type": "Question",
+          "settings": {
+            "title": "How will mamamade food be delivered?",
+            "answer": "<p>Our meals are delivered in temperature-controlled boxes. We use liners made of wool and keep everything frozen with dry ice.  Our insulation is designed to keep your food frozen for up to 30 hours in transit, so don't worry if you're not at home to receive your box. Once it arrives, you can return, compost or recycle all of our materials — all of our packaging is widely accepted by councils across the country.<\/p>"
+          }
+        },
+        "f8e6fec1-a1d1-4e43-9ad2-4daa930d5b51": {
+          "type": "Question",
+          "settings": {
+            "title": "CAN I TRY AS A ONE-OFF WITHOUT SUBSCRIBING?",
+            "answer": "<p>Yes, of course! You can skip any subscription delivery, or pause or cancel your plan at any time by logging into Your Account.<\/p>"
+          }
+        },
+        "371b2184-fc30-44cb-9f99-84a47d294d80": {
+          "type": "Question",
+          "settings": {
+            "title": "DO YOU CATER TO ALLERGIES?",
+            "answer": "<p><strong>Yes!<\/strong> Since the earliest days of Mamamade, we've worked so hard to offer families a wide range of meals that would suit the full spectrum of preferences and dietary requirements.<\/p><p>Today, <strong>all of our meals are made in a dedicated facility that is completely free from the big-8 allergens<\/strong>; milk, eggs, peanuts, tree nuts, fish, shellfish, wheat and soya.<\/p><p>Please be aware that our kitchen currently handles a spice mix that contains <strong>mustard <\/strong>- this spice mix is only used in our Veggie Millet Bites. Although our chefs take great care when preparing all of our meals, we don't have separate areas in our kitchen, so there is still a small risk of cross-contamination with this allergen.<\/p><p>We are updating all Mamamade packaging to reflect the above, however, if you have a meal with old packaging, please rest assured that our meals have always been produced in a facility that is free from the main eight allergens listed above.<\/p>"
+          }
+        },
+        "a2a260dc-6454-45ca-a3fc-ee7cd406202a": {
+          "type": "Question",
+          "settings": {
+            "title": "WHERE DO YOU DELIVER?",
+            "answer": "<p>We currently deliver across mainland UK - although unfortunately there are some postcodes in Scotland that we aren't quite able to reach (we're working on it!). Have a look at our shipping policy for the full list of excluded postcodes.<\/p>"
+          }
+        },
+        "97357780-dbe1-417e-8824-0d13453a8022": {
+          "type": "Question",
+          "settings": {
+            "title": "HOW LONG DO THE MEALS LAST?",
+            "answer": "<p>Our meals stay fresh in your freezer for up to 4 months. By flash-freezing all meals, we're able to keep your food fresh, safe and nutrient-dense.<\/p>"
+          }
+        },
+        "987516f9-2da9-4f30-ba4c-8c471e65f8a6": {
+          "type": "Question",
+          "settings": {
+            "title": "WHAT IF MY LITTLE ONE DOESN'T LIKE THE FOOD?",
+            "answer": "<p>Babies aren't going to like everything you give them, and that's totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. So whilst we encourage repeated exposure and a bit of patience, if there's something your baby truly doesn't like, we can change it up whilst keeping things interesting for both of you! <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2547ce52-9176-49cd-bd63-56c2d5fa9d1a",
+        "f8e6fec1-a1d1-4e43-9ad2-4daa930d5b51",
+        "371b2184-fc30-44cb-9f99-84a47d294d80",
+        "a2a260dc-6454-45ca-a3fc-ee7cd406202a",
+        "97357780-dbe1-417e-8824-0d13453a8022",
+        "987516f9-2da9-4f30-ba4c-8c471e65f8a6"
+      ],
+      "settings": {}
+    },
+    "press": {
+      "type": "press",
+      "blocks": {
+        "a6a22ef6-a200-4ce4-955a-22643b274a69": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-dailymail_600x_41c53d6b-4934-4ac2-8c3b-970b5bc0d105.gif",
+            "quote": ""
+          }
+        },
+        "b2828a11-9f35-4317-be14-9de3c8170e25": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-baby_600x_423cff62-4933-4e19-ad1d-8177bb354100.gif",
+            "quote": ""
+          }
+        },
+        "893cd80f-c01d-46f6-9e12-653de5241b3a": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Screenshot_2022-01-13_at_11.09.39.png",
+            "quote": ""
+          }
+        },
+        "1c0a6d31-445a-4189-985c-e51bccc8b0cd": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Screenshot_2022-01-13_at_11.10.29.png",
+            "quote": ""
+          }
+        },
+        "f8a99f36-560c-46c2-91e8-b9371573d2bc": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Untitled_1000_x_500_px_3.png",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "a6a22ef6-a200-4ce4-955a-22643b274a69",
+        "b2828a11-9f35-4317-be14-9de3c8170e25",
+        "893cd80f-c01d-46f6-9e12-653de5241b3a",
+        "1c0a6d31-445a-4189-985c-e51bccc8b0cd",
+        "f8a99f36-560c-46c2-91e8-b9371573d2bc"
+      ],
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    }
+  },
+  "order": [
+    "1642070016228db916",
+    "16420868073348202e",
+    "165642309068ad9e57",
+    "text-with-image",
+    "1642069294c59fd2ba",
+    "product-testimonials",
+    "text-with-image-two",
+    "164794172981ea9ae5",
+    "16420687962bffcb54",
+    "16420703683ce9fc10",
+    "blog-posts",
+    "1642518162bd610d68",
+    "faq",
+    "press"
+  ]
+}

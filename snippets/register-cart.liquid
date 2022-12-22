@@ -1,0 +1,95 @@
+<div
+  class="
+    probootstrap-text
+    probootstrap-text--register
+    probootstrap-text--register-full
+    {% if cart.item_count >= 1 %}
+      probootstrap-text--register-display-cart
+    {% endif %}
+  "
+>
+  <div class="PageContent">
+    <div class="register-cart">
+      <div class="register-cart__header">
+        <header class="Form__Header">
+          <h1 class="Form__Title Heading u-h1 login-title">Create an account</h1>
+          <p>Already have an account? <a href="/account/login" class="link-underline">Sign In</a></p>
+        </header>
+      </div>
+
+      <div class="register-cart__form-cart">
+        <div class="register-cart__form">
+          {%- form 'create_customer', name: 'create_customer', class: 'Form Form--spacingTight', id: 'create_customer' -%}
+            {%- if form.errors -%}
+              <div class="Form__Alert Alert Alert--error">
+                <ul class="Alert__ErrorList">
+                  {%- for field in form.errors -%}
+                    {%- if field == 'form' -%}
+                      <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
+                    {%- else -%}
+                      <li class="Alert__ErrorItem"><strong>{{ form.errors.translated_fields[field] }}</strong> {{ form.errors.messages[field] }}</li>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+
+            {%- if request.locale.iso_code == 'ja' -%}
+              <div class="Form__Item">
+                <input type="text" class="Form__Input" name="customer[last_name]" aria-label="{{ 'customer.register.last_name' | t }}" placeholder="{{ 'customer.register.last_name' | t }}">
+                <label class="Form__FloatingLabel">{{ 'customer.register.last_name' | t }}</label>
+              </div>
+
+              <div class="Form__Item">
+                <input type="text" class="Form__Input" name="customer[first_name]" aria-label="{{ 'customer.register.first_name' | t }}" placeholder="{{ 'customer.register.first_name' | t }}" autofocus>
+                <label class="Form__FloatingLabel">{{ 'customer.register.first_name' | t }}</label>
+              </div>
+            {%- else -%}
+              <div class="Form__Item">
+                <input type="text" class="Form__Input" name="customer[first_name]" aria-label="{{ 'customer.register.first_name' | t }}" placeholder="{{ 'customer.register.first_name' | t }}" autofocus>
+                <label class="Form__FloatingLabel">{{ 'customer.register.first_name' | t }}</label>
+              </div>
+
+              <div class="Form__Item">
+                <input type="text" class="Form__Input" name="customer[last_name]" aria-label="{{ 'customer.register.last_name' | t }}" placeholder="{{ 'customer.register.last_name' | t }}">
+                <label class="Form__FloatingLabel">{{ 'customer.register.last_name' | t }}</label>
+              </div>
+            {%- endif -%}
+
+            <div class="Form__Item">
+              <input type="email" class="Form__Input" name="customer[email]" aria-label="{{ 'customer.register.email' | t }}" placeholder="{{ 'customer.register.email' | t }}" required="required">
+              <label class="Form__FloatingLabel">{{ 'customer.register.email' | t }}</label>
+            </div>
+
+            <div class="Form__Item">
+              <input type="password" class="Form__Input" name="customer[password]" aria-label="{{ 'customer.register.password' | t }}" placeholder="{{ 'customer.register.password' | t }}" required="required">
+              <label class="Form__FloatingLabel">{{ 'customer.register.password' | t }}</label>
+            </div>
+
+            {% if cart.item_count > 0 %}
+              {% comment %} <input class="js-recharge-input" type="hidden" name="return_to" value="/checkout" /> {% endcomment %}
+              {% comment %} <input class="js-recharge-input" type="hidden" name="return_to" value="/pages/payment-options" /> {% endcomment %}
+              <input type="hidden" name="return_to" class="js-recharge-input" value="/pages/recharge-checkout" />
+              {% comment %} <input type="hidden" name="return_to" value="/cart?is_new=1"> {% endcomment %}
+            {% endif %}
+
+            <button type="submit" class="Button Button__large Button--secondary Button--full">
+              {% if cart.item_count >= 1 %}
+                Checkout
+              {% else %}
+                {{ 'customer.register.submit' | t }}
+              {% endif %}
+            </button>
+          {%- endform -%}
+        </div>
+
+        {% if cart.item_count >= 1 %}
+          <div class="register-cart__cart">
+            {% render 'cart-items-mini' %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+

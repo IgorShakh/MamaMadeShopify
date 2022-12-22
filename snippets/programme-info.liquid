@@ -1,0 +1,27 @@
+
+<div class="GroupPanel">
+    <h2 class="GroupPanel__Title Heading u-h2">Let&rsquo;s build a plan for <br>your child!</h2>
+    <div class="GroupPanel__Inner GroupPanel__Inner--constraint">
+
+        <div class="Form Form--spacingTight">
+
+            <div class="Form__Item">
+                <input type="email" class="Form__Input" name="programme[email]" aria-label="{{ 'programme.form.email' | t }}" placeholder="{{ 'programme.form.email' | t }}" required{% if customer %} value="{{ customer.email }}"{% endif %}>
+                <label class="Form__FloatingLabel">{{ 'programme.form.email' | t }}</label>
+            </div>
+
+            <div class="Form__Item">
+                <input type="text" class="Form__Input" name="programme[name]" aria-label="{{ 'programme.form.name' | t }}" placeholder="{{ 'programme.form.name' | t }}">
+                <label class="Form__FloatingLabel">{{ 'programme.form.name' | t }}</label>
+            </div>
+
+            <div class="Form__Item">
+                <input type="date" class="Form__Input" name="programme[birthday]" aria-label="{{ 'programme.form.birthday' | t }}" placeholder="{{ 'programme.form.birthday' | t }}" max="{{ "now" | date: "%Y-%m-%d" }}" id="ProgrammeDate" required>
+                <label class="Form__FloatingLabel">{{ 'programme.form.birthday' | t }}</label>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

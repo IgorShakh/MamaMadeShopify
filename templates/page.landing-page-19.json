@@ -1,0 +1,413 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "index-slideshow",
+      "blocks": {
+        "5528cf03-f813-4152-ac8f-8dff34a9031f": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "Button Button--secondary",
+            "image_link": "shopify:\/\/collections\/12m",
+            "image": "shopify:\/\/shop_images\/MM-NewMeals-HeroBanners.png",
+            "image_size": "cover",
+            "image_y_alignment": "50%",
+            "image_x_alignment": "50%",
+            "desktop_position_x": "home-slideshow--x-center",
+            "desktop_position_y": "home-slideshow--y-center",
+            "text_alignment": "text-center",
+            "mobile_image": "shopify:\/\/shop_images\/MM-NewMealHeroBanners-Mobile.png",
+            "content_bg_colour": ""
+          }
+        },
+        "33c7f840-a177-477f-b693-5f3b14a4372a": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Header Title",
+            "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "Button Button--secondary",
+            "image_link": "",
+            "image": "shopify:\/\/shop_images\/sophie_laptop_-_desktop.png",
+            "image_size": "cover",
+            "image_y_alignment": "50%",
+            "image_x_alignment": "50%",
+            "desktop_position_x": "home-slideshow--x-start",
+            "desktop_position_y": "home-slideshow--y-center",
+            "text_alignment": "text-left",
+            "content_bg_colour": ""
+          }
+        }
+      },
+      "block_order": [
+        "5528cf03-f813-4152-ac8f-8dff34a9031f",
+        "33c7f840-a177-477f-b693-5f3b14a4372a"
+      ],
+      "settings": {
+        "full-width": true
+      }
+    },
+    "press": {
+      "type": "press",
+      "disabled": true,
+      "blocks": {
+        "a6a22ef6-a200-4ce4-955a-22643b274a69": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-dailymail_600x_41c53d6b-4934-4ac2-8c3b-970b5bc0d105.gif",
+            "quote": ""
+          }
+        },
+        "b2828a11-9f35-4317-be14-9de3c8170e25": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-baby_600x_423cff62-4933-4e19-ad1d-8177bb354100.gif",
+            "quote": ""
+          }
+        },
+        "893cd80f-c01d-46f6-9e12-653de5241b3a": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Screenshot_2022-01-13_at_11.09.39.png",
+            "quote": ""
+          }
+        },
+        "1c0a6d31-445a-4189-985c-e51bccc8b0cd": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Screenshot_2022-01-13_at_11.10.29.png",
+            "quote": ""
+          }
+        },
+        "f8a99f36-560c-46c2-91e8-b9371573d2bc": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Untitled_1000_x_500_px_3.png",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "a6a22ef6-a200-4ce4-955a-22643b274a69",
+        "b2828a11-9f35-4317-be14-9de3c8170e25",
+        "893cd80f-c01d-46f6-9e12-653de5241b3a",
+        "1c0a6d31-445a-4189-985c-e51bccc8b0cd",
+        "f8a99f36-560c-46c2-91e8-b9371573d2bc"
+      ],
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    },
+    "57fc631f-7842-4d85-b223-e1d8e551cacd": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "NEW!",
+        "title": "Bigger flavours, bolder textures, better ingredients",
+        "image": "shopify:\/\/shop_images\/MM-NewMeals4_1.jpg",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Big flavours aren't just for grown ups. We've created five brand new nutritious and irresistably tasty meals that your little ones actually want to eat!<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "e71d835d-1c15-438c-aac3-2c111e04291a": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16716871827670__e71d835d-1c15-438c-aac3-2c111e04291a-16655021252903060b-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-toddler-meal-bundles",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--16716871827670__e71d835d-1c15-438c-aac3-2c111e04291a-16655021252903060b-0"
+      ],
+      "settings": {
+        "title": "New On The Menu",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_loyalty": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "blocks": {
+        "5fa6d810-6bb1-4382-b249-564ab387cd02": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Very grateful for Mamamade and how much easier they make the weaning process. With their nutrient packed meals that are free-from most major allergens, I don’t have to think twice about what to serve Sahi on those days where I’ve not managed to whip up something myself.<\/p>",
+            "cite": "@_kavya_ on Instagram",
+            "image": "shopify:\/\/shop_images\/8_5d774958-3fd6-43c1-88a7-1a5116977a47.png"
+          }
+        },
+        "1f5e6026-4981-4040-8245-c426972a99da": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Trying to feed 3 little mouths is never easy, especially when they all have their own likes and dislikes…we have been using Mamamade to help provide easy, healthy, quick options to our meal times. <\/p>",
+            "cite": "@mummykim_ on Instagram",
+            "image": "shopify:\/\/shop_images\/image0_1.jpg"
+          }
+        },
+        "9e6e352d-c11c-4355-a031-fffb4cd126a2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>They make weekday meals a breeze after long days at work and nursery.<\/p><p>Eva’s working her way through them at the moment. Her favourite so far is the Courgette Lentil Bolognese and Cauliflower Coconut Curry. <\/p>",
+            "cite": "@thelittlelifelately on Instagram",
+            "image": "shopify:\/\/shop_images\/image00017.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "5fa6d810-6bb1-4382-b249-564ab387cd02",
+        "1f5e6026-4981-4040-8245-c426972a99da",
+        "9e6e352d-c11c-4355-a031-fffb4cd126a2"
+      ],
+      "settings": {
+        "heading": "Loved by parents..",
+        "sub-heading": "",
+        "show_images": true,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#fff8f3",
+        "text_color": "#662480"
+      }
+    },
+    "text-with-image": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Hi, I'm Sophie!",
+        "image": "shopify:\/\/shop_images\/Mamamade_Founder_Sophie_Baron.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Mamamade came to life when I was introducing solids to my daughter in 2018. I wanted her to have the very best ‑ everything home‑cooked, organic, plant‑based, flavourful and healthy. But in reality, that’s easier said than done, not just for me but for most modern-day parents.<\/p><p>I was desperate for a bit of support; the juggling act of parenting can be challenging. Most days, I was out of time, overworked and lacked creativity during mealtimes, but I wasn't willing to compromise on my daughter's health or development. So, I set out to create a product for parents like me! And that's how Mamamade was born...<\/p>",
+        "link_text": "READ MY JOURNEY",
+        "link_url": "https:\/\/mamamadefood.com\/pages\/about"
+      }
+    },
+    "aa34ddbb-438e-48ce-a024-c3f60848abf3": {
+      "type": "custom-html",
+      "settings": {
+        "background_colour": "#f7d25d",
+        "subheading": "",
+        "subtitle_colour": "#662480",
+        "title": "Feed the Future!",
+        "title_colour": "#662480",
+        "content": "From vitamin-packed veg penne to super-healthy sweet potato + pinto bean chilli, our new range for ages 1-5 combines huge flavour with toddler-acceptable textures. Meals that little ones will love - without even realising how nutritionally-dense they are",
+        "text_colour": "#662480",
+        "html": ""
+      }
+    },
+    "e0017f86-1976-46d1-96e0-936ca2713ab1": {
+      "type": "text-with-image-programme-header",
+      "settings": {
+        "subheading": "",
+        "title": "Cauliflower + Coconut Curry",
+        "color_bg": "#abe8b5",
+        "image": "shopify:\/\/shop_images\/MM-NewMeals-PaidAd2.png",
+        "image_remove_padding": true,
+        "image_position": "left",
+        "content": "<p>They say variety is the spice of life, and we couldn’t agree more! Our Cauliflower + Coconut curry may be mildly spiced for little palates but there is nothing mild about these ingredients.<\/p>",
+        "link_text": "Spice, Spice baby",
+        "link_url": "shopify:\/\/products\/cauliflower-coconut-curry",
+        "show_social": false
+      }
+    },
+    "56a4ed54-7ee3-4b1d-b027-a376a0290c64": {
+      "type": "text-with-image-join",
+      "settings": {
+        "subheading": "",
+        "title": "Mac + 'cheese'",
+        "color_bg": "#a887d3",
+        "image": "shopify:\/\/shop_images\/MM-NewMeals-PaidAd4.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>A healthy take on the indulgent American classic, a nod to our founder’s roots! Dairy-free and CMPA-friendly!<br\/><em>Contains gluten.<\/em><\/p>",
+        "link_text": "Show me the mac!",
+        "link_url": "shopify:\/\/products\/mac-cheese",
+        "show_social": false
+      }
+    },
+    "4d9d21df-d6e1-4ccb-83d1-349908366608": {
+      "type": "text-with-image-join",
+      "settings": {
+        "subheading": "",
+        "title": "7 Veg Penne",
+        "color_bg": "#92a4ec",
+        "image": "shopify:\/\/shop_images\/MM-NewMeals-PaidAd3.png",
+        "image_remove_padding": true,
+        "image_position": "left",
+        "content": "<p>Our newest pasta dish contains all of the veg, but none of the negative energy from fussy eaters. 7 different veggies are hidden so masterfully a chameleon would be jealous.<br\/><em>Contains gluten.<\/em><\/p>",
+        "link_text": "Lucky Penne",
+        "link_url": "shopify:\/\/products\/7-veg-penne",
+        "show_social": false
+      }
+    },
+    "8cb6b41a-acbe-4895-aa97-84c386398eb7": {
+      "type": "text-with-image-programme-header",
+      "settings": {
+        "subheading": "",
+        "title": "Courgette + Lentil Bolognese",
+        "color_bg": "#f88cc4",
+        "image": "shopify:\/\/shop_images\/MM-NewMeals-PaidAd.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Ciao… little foodies! This is not your average bolognese! Our veggie adaptation of this family classic is packed full of iron, Vitamin A and Vitamin C.<br\/><em>Contains gluten.<\/em><\/p>",
+        "link_text": "Say Ciao!",
+        "link_url": "shopify:\/\/products\/courgette-lentil-bolognese",
+        "show_social": false
+      }
+    },
+    "186ff18d-fe80-4e4f-b240-520ee6d4a927": {
+      "type": "text-with-image-programme",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Sweet Potato + Pinto Bean Chilli",
+        "color_bg": "#f7d25d",
+        "image": "shopify:\/\/shop_images\/MM-NewMeals-PaidAd5.png",
+        "image_remove_padding": true,
+        "image_position": "left",
+        "content": "<p>Beans, beans… this Sweet Potato + Pinto Bean Chilli is good for way more than just your little one’s heart. <\/p>",
+        "link_text": "Feed the future!",
+        "link_url": "shopify:\/\/products\/sweet-potato-pinto-bean-chilli",
+        "show_social": false
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Delivered Frozen to Your Door.",
+        "image": "shopify:\/\/shop_images\/Mamamade_box_delivery.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>A parent's checklist is long enough. This is why we're here to support you and your family with nutritious, organic and plant-based (naturally free from most major allergens!) meals and snacks delivered frozen to your door. <\/p><p>We handle the rest; all you have to do is pop the meals straight in your freezer, and heat them up when needed. Mealtime ready in minutes!<\/p><p><\/p><p><\/p>",
+        "link_text": "SHOP toddler meals",
+        "link_url": "shopify:\/\/collections\/12m"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "blocks": {
+        "354f9c69-5e43-4a7e-91bd-947b0adc659e": {
+          "type": "article",
+          "settings": {
+            "article_1": "mamamadeblog\/how-to-cut-foods-safely-for-baby-led-weaning",
+            "article_2": "mamamadeblog\/snack-round-up-how-many-snacks-are-too-many-snacks",
+            "article_3": "mamamadeblog\/lets-talk-picky-eaters"
+          }
+        }
+      },
+      "block_order": [
+        "354f9c69-5e43-4a7e-91bd-947b0adc659e"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "The Mamamade Blog.",
+        "copy": "We're breaking down barriers and exploring the ins and outs of parenting...",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#a887d3"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "2547ce52-9176-49cd-bd63-56c2d5fa9d1a": {
+          "type": "Question",
+          "settings": {
+            "title": "How will mamamade food be delivered?",
+            "answer": "<p>Our meals are delivered in temperature-controlled boxes. We use liners made of wool and keep everything frozen with dry ice.  Our insulation is designed to keep your food frozen for up to 30 hours in transit, so don't worry if you're not at home to receive your box. Once it arrives, you can return, compost or recycle all of our materials — all of our packaging is widely accepted by councils across the country.<\/p>"
+          }
+        },
+        "f8e6fec1-a1d1-4e43-9ad2-4daa930d5b51": {
+          "type": "Question",
+          "settings": {
+            "title": "CAN I TRY AS A ONE-OFF WITHOUT SUBSCRIBING?",
+            "answer": "<p>Yes, of course! You can skip any subscription delivery, or pause or cancel your plan at any time by logging into Your Account.<\/p>"
+          }
+        },
+        "371b2184-fc30-44cb-9f99-84a47d294d80": {
+          "type": "Question",
+          "settings": {
+            "title": "DO YOU CATER TO ALLERGIES?",
+            "answer": "<p><strong>Yes!<\/strong> Since the earliest days of Mamamade, we've worked so hard to offer families a wide range of meals that would suit the full spectrum of preferences and dietary requirements.<\/p><p>Today, <strong>all of our meals are made in a dedicated facility that is completely free from the big-8 allergens<\/strong>; milk, eggs, peanuts, tree nuts, fish, shellfish, wheat and soya.<\/p><p>Please be aware that our kitchen currently handles a spice mix that contains <strong>mustard <\/strong>- this spice mix is only used in our Veggie Millet Bites. Although our chefs take great care when preparing all of our meals, we don't have separate areas in our kitchen, so there is still a small risk of cross-contamination with this allergen.<\/p><p>We are updating all Mamamade packaging to reflect the above, however, if you have a meal with old packaging, please rest assured that our meals have always been produced in a facility that is free from the main eight allergens listed above.<\/p>"
+          }
+        },
+        "a2a260dc-6454-45ca-a3fc-ee7cd406202a": {
+          "type": "Question",
+          "settings": {
+            "title": "WHERE DO YOU DELIVER?",
+            "answer": "<p>We currently deliver across mainland UK - although unfortunately there are some postcodes in Scotland that we aren't quite able to reach (we're working on it!). Have a look at our shipping policy for the full list of excluded postcodes.<\/p>"
+          }
+        },
+        "97357780-dbe1-417e-8824-0d13453a8022": {
+          "type": "Question",
+          "settings": {
+            "title": "HOW LONG DO THE MEALS LAST?",
+            "answer": "<p>Our meals stay fresh in your freezer for up to 4 months. By flash-freezing all meals, we're able to keep your food fresh, safe and nutrient-dense.<\/p>"
+          }
+        },
+        "987516f9-2da9-4f30-ba4c-8c471e65f8a6": {
+          "type": "Question",
+          "settings": {
+            "title": "WHAT IF MY LITTLE ONE DOESN'T LIKE THE FOOD?",
+            "answer": "<p>Babies aren't going to like everything you give them, and that's totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. So whilst we encourage repeated exposure and a bit of patience, if there's something your baby truly doesn't like, we can change it up whilst keeping things interesting for both of you! <\/p>"
+          }
+        },
+        "7fe211b3-ce25-423e-a227-e014bb125e5d": {
+          "type": "Question",
+          "settings": {
+            "title": "Do you cater for allergies?",
+            "answer": "<p>Yes! Since the earliest days of Mamamade, we've worked so hard to offer families a wide range of meals that would suit the full spectrum of preferences and dietary requirements.<\/p><p>Today, our meals are made in a dedicated facility that is completely free from <strong>milk, eggs, peanuts, tree nuts, fish, shellfish, and soya.<\/strong><\/p><p>Please be aware that we have introduced <strong>gluten<\/strong> into a select number of our toddler meals to offer parents more choice. Our kitchen currently handles a spice mix that contains <strong>mustard <\/strong>- this spice mix is only used in our<strong> <\/strong>Veggie Millet Bites. We also use <strong>celery<\/strong> in some of our meals. Although our chefs take great care when preparing all of our meals, we don't have separate areas in our kitchen, so there is still a small risk of cross-contamination with these allergens.<br\/>You can find out more about our <a href=\"\/pages\/gluten-information\" title=\"Gluten Information\">gluten inclusion here.<\/a><\/p><p>We are updating all Mamamade packaging to reflect the above, however, if you have a meal with old packaging, please rest assured that our meals have always been produced in a facility that is free from the allergens listed above.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2547ce52-9176-49cd-bd63-56c2d5fa9d1a",
+        "f8e6fec1-a1d1-4e43-9ad2-4daa930d5b51",
+        "371b2184-fc30-44cb-9f99-84a47d294d80",
+        "a2a260dc-6454-45ca-a3fc-ee7cd406202a",
+        "97357780-dbe1-417e-8824-0d13453a8022",
+        "987516f9-2da9-4f30-ba4c-8c471e65f8a6",
+        "7fe211b3-ce25-423e-a227-e014bb125e5d"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow",
+    "press",
+    "57fc631f-7842-4d85-b223-e1d8e551cacd",
+    "e71d835d-1c15-438c-aac3-2c111e04291a",
+    "product-testimonials",
+    "text-with-image",
+    "aa34ddbb-438e-48ce-a024-c3f60848abf3",
+    "e0017f86-1976-46d1-96e0-936ca2713ab1",
+    "56a4ed54-7ee3-4b1d-b027-a376a0290c64",
+    "4d9d21df-d6e1-4ccb-83d1-349908366608",
+    "8cb6b41a-acbe-4895-aa97-84c386398eb7",
+    "186ff18d-fe80-4e4f-b240-520ee6d4a927",
+    "text-with-image-two",
+    "blog-posts",
+    "faq"
+  ]
+}

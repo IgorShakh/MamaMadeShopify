@@ -1,0 +1,76 @@
+<section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
+  {%- capture section_content -%}
+    <div class="FeatureText__ContentWrapper">
+      <div class="FeatureText__Content">
+        {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+          <header class="SectionHeader">
+            {%- if section.settings.subheading != blank -%}
+              <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+            {%- endif -%}
+
+            {%- if section.settings.title != blank -%}
+              <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape | newline_to_br }}</h2>
+            {%- endif -%}
+
+            {%- if section.settings.content != blank -%}
+              <div class="SectionHeader__Description Rte">
+                {{ section.settings.content | newline_to_br }}
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.link_text != blank -%}
+            <div class="SectionHeader__ButtonWrapper">
+              <a href="{{ section.settings.link_url }}" class="Button Button--icon">{{ section.settings.link_text | escape }} {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_accent, stroke: '#fff' -%}</a>
+            </div>
+            {%- endif -%}
+
+            {%- if section.settings.show_social -%}
+              {% render 'social-media', class: 'Page__Social', spacing: 'loose' %}
+            {%- endif -%}
+          </header>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endcapture -%}
+
+  {%- capture section_image -%}
+    {%- if section.settings.image != blank -%}
+      <div class="FeatureText__ImageWrapper{% if section.settings.image_remove_padding %} FeatureText__ImageWrapper--nopadding{% endif %}">
+        {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image -%}{%- endcapture -%}
+
+        <div class="AspectRatio" style="max-width: {{ section.settings.image.width }}px; --aspect-ratio: {{ section.settings.image.aspect_ratio }}">
+          {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img loading="lazy"class="Image--lazyLoad Image--slide{% if section.settings.image_position != blank %}{{ section.settings.image_position | capitalize }}{% else %}Bottom{% endif %}" data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ section.settings.image.alt | escape }}">
+
+          <noscript>
+            <img loading="lazy"src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
+          </noscript>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endcapture -%}
+
+  <div class="FeatureText{% if section.settings.reverse %} FeatureText--reverse{% endif %}{% if section.settings.stacked %} FeatureText--stacked{% endif %}{% if section.settings.image != blank %} FeatureText--withImage FeatureText--image{{ section.settings.image_position | capitalize }}{% endif %}">
+    {%- if section.settings.image_position == 'left' -%}
+      {{- section_image -}}
+      {{- section_content -}}
+    {%- else -%}
+      {{- section_content -}}
+      {{- section_image -}}
+    {%- endif -%}
+
+    {%- if section.settings.show_quote -%}
+      <div class="about-us-blockquote-container blockquote-single text-center" role="blockquote">
+          <blockquote class="about-us-blockquote Heading u-h1">&ldquo;{{ section.settings.quote_text }}&rdquo;</blockquote>
+          <h6 class="about-us-quote-author">{{ section.settings.quote_author }}</h6>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.color_bg | default: '#fff' }}
+  }
+</style>

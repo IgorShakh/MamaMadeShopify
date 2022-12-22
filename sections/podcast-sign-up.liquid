@@ -1,0 +1,113 @@
+<div class="podcast-signUp-container" style="background-color: {{ section.settings.bgColor }};">
+  <div class="podcast-signUp-wrapper">
+    <div>
+      {%- if section.settings.title != blank -%}
+        <h2 class="NewsletterPodcast__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="NewsletterPodcast__Heading Heading u-h3">{{ section.settings.subtitle | escape }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.leftColContent != blank -%}
+        <div class="NewsletterPodcast__Content">
+          {{ section.settings.leftColContent }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.show_newsletter -%}
+        <div class="klaviyo-form-RxPxSG"></div>
+      {%- endif -%}
+    </div>
+
+    <div>
+      {%- if section.settings.rightColContent != blank -%}
+        <div class="NewsletterPodcast__Content">
+          {{ section.settings.rightColContent }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Podcast Sign Up",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Podcast Sign Up: General"
+    },
+    {
+      "type": "select",
+      "id": "bgColor",
+      "label": "Background Colour",
+      "options": [
+        {
+          "value": "#92a4ed",
+          "label": "Blue"
+        },
+        {
+          "value": "#f88cc4",
+          "label": "Pink"
+        },
+        {
+          "value": "#662480",
+          "label": "Purple"
+        },
+        {
+          "value": "#a887d3",
+          "label": "Lilac"
+        },
+        {
+          "value": "#FFF7EC",
+          "label": "Beige"
+        },
+        {
+          "value": "#ffffff",
+          "label": "White"
+        }
+      ],
+      "default": "#FFF7EC"
+    },
+    {
+      "type": "header",
+      "content": "Podcast Sign Up: Left Column"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "leftColContent",
+      "label": "Text",
+      "default": "<p>You can use this textarea to display some useful information to your podcast listeners and encourage them to sign up.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter",
+      "label": "Show newsletter form",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Podcast Sign Up: Right Column"
+    },
+    {
+      "type": "richtext",
+      "id": "rightColContent",
+      "label": "Text",
+      "default": "<p>You can use this textarea to display some useful information to your podcast listeners and encourage them to sign up.</p>"
+    }
+  ]
+}
+{% endschema %}

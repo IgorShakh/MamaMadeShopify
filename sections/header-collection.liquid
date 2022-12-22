@@ -1,0 +1,98 @@
+{%- render 'header-page', the_page: 'collection' -%}
+
+{% schema %}
+{
+  "name": "Collection header",
+  "class": "shopify-section--header-page",
+  "max_blocks": 25,
+  "settings": [
+  ],
+  "blocks": [
+    {
+    "type": "header",
+    "name": "Collection header",
+    "settings": [
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+        },
+        {
+            "type": "color",
+            "id": "header_background",
+            "label": "Header background",
+            "default": "#e380af"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_curve",
+            "label": "Show curve",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Tell your story"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Sub-heading",
+            "default": "Lorem ipsum et el dor"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Link"
+        },
+        {
+            "type": "header",
+            "content": "Button colours"
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text",
+            "default": "#662480"
+        },
+        {
+            "type": "color",
+            "id": "button_color",
+            "label": "Button text",
+            "default": "#ffffff"
+        },
+        {
+            "type": "color",
+            "id": "button_background",
+            "label": "Button background",
+            "default": "#662480"
+        },
+        {
+            "type": "color",
+            "id": "button_background_hover",
+            "label": "Button background hover",
+            "default": "#9380BE"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Header",
+      "name": "Collection header",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "header"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

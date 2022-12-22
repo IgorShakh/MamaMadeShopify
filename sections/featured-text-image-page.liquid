@@ -1,0 +1,100 @@
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="featured-text-image">
+    {%- for block in section.blocks -%}
+
+    {%- assign block_settings = block.settings -%}
+
+    {% if block_settings.page == page.handle %}
+
+        {%- assign heading = block_settings.heading -%}
+        {%- assign text = block_settings.text -%}
+        {%- assign button_link = block_settings.button_link -%}
+        {%- assign button_text = block_settings.button_text -%}
+        {%- assign image = block_settings.image -%}
+        {%- assign color_bg = block_settings.color_bg -%}
+
+    {%- endif -%}
+
+    {%- endfor -%}
+
+    <div class="container">
+        <div class="row row--stretch">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 SpacingSmall row__text">
+                <h2 class="Heading Heading__h2">{{ heading | newline_to_br }}</h2>
+                <p>{{ text }}</p>
+                {%- if button_link != blank -%}
+                <a href="{{ button_link }}" class="Button Button--icon">{{ button_text }} {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_accent, stroke: '#fff' -%}</a>
+                {%- endif -%}
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-8 row__image">
+                {%- if image != blank -%}
+                    <img loading="lazy"src="{{ image | img_url: '1200x' }}" alt="{{ heading }}" width="100%" />
+                {%- else -%}
+                    {{ 'image' | placeholder_svg_tag }}
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ color_bg | default: '#96d3a0' }};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Our mission",
+	"class": "shopify-section--featured",
+    "settings": [],
+    "blocks": [
+        {
+        "type": "featured-text-with-image",
+        "name": "Featured text with image",
+        "settings": [
+            {
+                "type": "page",
+                "id": "page",
+                "label": "Page"
+            },
+            {
+                "type": "textarea",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "textarea",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button text"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button link"
+            },
+            {
+                "type": "color",
+                "id": "color_bg",
+                "label": "Background colour"
+            }
+        ]
+        }
+    ],
+	"presets": [
+    {
+      "category": "Text",
+      "name": "Our mission",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

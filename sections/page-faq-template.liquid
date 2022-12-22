@@ -1,0 +1,233 @@
+{%- assign has_section_separator = false -%}
+
+{%- for block in section.blocks -%}
+  {%- if block.type == 'separator' -%}
+    {%- assign has_section_separator = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- capture faq_content -%}
+  <div class="Faq">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'separator' -%}
+          <h1 class="Faq__Section Heading u-h1" {{ block.shopify_attributes }}>
+            <span class="Anchor" id="block-{{ block.id }}"></span>
+            {{- block.settings.title | escape -}}
+          </h1>
+
+        {%- when 'question' -%}
+          <div class="Faq__Item {% if section.blocks[forloop.index].type == 'separator' or forloop.last %}Faq__Item--lastOfSection{% endif %}" aria-expanded="false" {{ block.shopify_attributes }}>
+            <span class="Faq__Icon">{% render 'icon' with 'select-arrow-right' %}</span>
+
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question">{{ block.settings.title | escape }}</button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+{%- endcapture -%}
+
+<section data-section-type="faq" data-section-id="{{ section.id }}">
+  <div class="Container">
+    <div class="PageContent {% unless has_section_separator %}PageContent--narrow{% endunless %}">
+      {%- if has_section_separator -%}
+        <div class="PageLayout">
+          <div class="PageLayout__Section PageLayout__Section--secondary PageLayout__Section--sticky hidden-phone">
+            <ol class="FaqSummary">
+              {%- assign faq_separator_count = 0 -%}
+
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'separator' -%}
+                  <li class="FaqSummary__Item {% if faq_separator_count == 0 %}is-active{% endif %}">
+                    <a href="#block-{{ block.id }}" class="FaqSummary__Link" data-offset="80">
+                      <span class="FaqSummary__LinkLabel">{{ block.settings.title | escape }}</span>
+                    </a>
+                  </li>
+
+                  {%- assign faq_separator_count = faq_separator_count | plus: 1 -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </ol>
+          </div>
+
+          <div class="PageLayout__Section">
+            {{- faq_content -}}
+          </div>
+        </div>
+      {%- else -%}
+        {{- faq_content -}}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "separator",
+      "name": "Section separator",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Default"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "separator",
+        "settings": {
+          "title": "General"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "Who is Mamamade?",
+"answer": "<p>mamamade delivers pre-portioned and measure-yourself pouches of organically-sourced, flash-frozen ingredients that are chock-full of nutrients, straight to your door.</p><p>Our combinations are designed to give parents the flexibility to prepare meals in minutes while still determining what and how much their babies are eating. More importantly, our format allows babies to see and touch the foods they are eating, which is crucial for development.</p><p>Puree our mixes, mash them, or serve them whole - no one knows your baby as well as you do!</p>"
+        }
+      },
+	  {
+        "type": "question",
+        "settings": {
+          "title": "How does it work?",
+"answer": "<p>We deliver flash-frozen ingredients to be used by you to craft beautiful meals for baby meals, conveniently packaged in resealable sachets. Choose from our range of mixes and rest easy knowing a daily dose of good is coming straight your way!</p>"
+        }
+      },
+      {
+        "type": "separator",
+        "settings": {
+          "title": "Products"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "Who develops your recipes?",
+          "answer": "<p>Our founder, Sophie Baron, has developed all recipes alongside London-based nutritionists, ensuring that great taste is perfectly combined with maximum nutritional value for growing babies. Each ingredient is chosen for a reason and brings extra benefits to your little ones. </p>"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "Why frozen? Surely it's not fresh?",
+"answer": "<p>To the contrary! Our flash-freezing process ensures we can lock in all the goodness and nutrients present in the beautiful ingredients selected for our meals. By freezing, we can also ensure we don't have to add any nasties or additives to keep the meals fresh - nothing artificial or unnecessary here!!</p><p>As parents, we know that the weaning process creates way too much waste. Now, gone are the days of throwing out half an uneaten sweet potato or not knowing what to do with all that puree you made ahead of time when one day baby suddenly refuses a spoon.</p><p>Get your mamamade sachet out of the freezer and measure out what you please, prepare it the way baby likes, then stick the rest back in - it's not going anywhere, and won't go off for about six months (!)</p>"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "Are your products vegan?",
+          "answer": "<p>They're definitely vegan-friendly, and no matter how the line develops, we are committed to ensuring we always provide a wide range of vegan-friendly options.</p>"
+        }
+      },
+	  {
+        "type": "question",
+        "settings": {
+          "title": "Are these products organic?",
+          "answer": "<p>All ingredients are organically sourced.</p>"
+        }
+      },
+	  {
+        "type": "separator",
+        "settings": {
+          "title": "Your Baby"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "My baby has severe allergies. Can she eat your product?",
+          "answer": "<p>The majority of ingredients we use are naturally free from the top-8 allergens including milk, eggs, fish, shellfish, tree nuts, peanuts, wheat and soya. Our facility, however, handles nuts, wheat and other common allergens, meaning we cannot guarantee there will be no traces, even in products that may not directly contain them. We therefore advise an abundance of caution if your child has any allergies and to avoid altogether if there is any doubt at all. </p>"
+        }
+      },
+	  {
+        "type": "separator",
+        "settings": {
+          "title": "Delivery"
+        }
+      },
+	  {
+        "type": "question",
+        "settings": {
+          "title": "When will you deliver?",
+          "answer": "<p>We currently deliver one day a week. You are able to choose your preferred date at checkout.  </p>"
+        }
+      },
+	  {
+        "type": "question",
+        "settings": {
+          "title": "Where do you deliver?",
+          "answer": "<p>We currently deliver across mainland UK only. If you live elsewhere but would like to give us a try, please don't hesitate to contact us and we will do our best to arrange something special!</p>"
+        }
+      },
+	  {
+        "type": "question",
+        "settings": {
+          "title": "What if I'm not home to recieve my box?",
+          "answer": "<p>Don't worry!! When you place your order, we will ask you to add instructions about delivery in case you're not home. We will also text you with an hour delivery window on the morning of your delivery. If you're not going to be in, you can simply reply to the message confirming the safest place to leave it. </p>"
+        }
+      },
+	  {
+        "type": "question",
+        "settings": {
+          "title": "But it's a frozen product - won't it defrost?",
+"answer": "<p>Our packaging has been designed to keep your product frozen for as long as possible and until you can put it in your home freezer. We insulate the products with fully recyclable materials, and we use specially engineered cold packs to keep everything frozen as frozen can be. </p><p>If the cold packs have defrosted by the time you get to your package, not to worry - as long as the product is still 'refrigerator cold' when you touch it, you can stick it safely back in your freezer.</p>"
+        }
+      },
+	  {
+        "type": "question",
+        "settings": {
+          "title": "I'm sick and tired of plastic. What is your packaging made of?",
+"answer": "<p>We hear you!! Here at mamamade we know we can't feed our babies without thanking Mama Earth! That's why we are committed to always using sustainable packaging. </p><p>Our delivery packaging is made of fully recyclable cardboard box and insulation. Please indicate at checkout if you require vegan packaging. Our pouches are made of recyclable and reusable plastic.</p>"
+        }
+      },
+      {
+        "type": "separator",
+        "settings": {
+          "title": "Other"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "I have so many more questions.",
+"answer": "<p>No worries! We're here for you! each out to us through our <a href='https://mamamadefood.com/pages/contact' title='contact page'>contact page</a> and we'll answer as best we can!</p>"
+        }
+      }
+    ]
+  }
+}
+{% endschema %}

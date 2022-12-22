@@ -1,0 +1,51 @@
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+TEMPLATE USED FOR AJAX REQUEST FOR BUILD A BOX & PROGRAMME SCHEME
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- capture section_settings -%}
+{
+  "collectionUrl": {{ collection.url | default: '/collections/all' | json }}
+}
+{%- endcapture -%}
+
+<section data-section-id="{{ section.id }}" data-section-type="collection" data-section-settings='{{ section_settings }}'>
+
+  {%- if collection.all_products_count > 0 -%}
+
+    {%- comment -%}
+    --------------------------------------------------------------------------------------------------------------------
+    COLLECTION PRODUCTS
+    --------------------------------------------------------------------------------------------------------------------
+    {%- endcomment -%}
+
+    <div class="CollectionMain">
+      <div class="CollectionInner">
+        <div class="CollectionInner__Products">
+          <div class="ProductListWrapper">
+              <div class="ProductList ProductList--grid Grid" data-mobile-count="2" data-desktop-count="4">
+                  {%- for product in collection.products -%}
+                  <div class="Grid__Cell 1/2--phone 1/3--tablet-and-up 1/4--lap-and-up">
+                      {%- render 'product-item', product: product, show_product_info: true, build_a_box: false, upsells: true, hide_button: true, show_vendor: false, show_loyalty: section.settings.show_loyalty, show_color_swatch: false, show_labels: true -%}
+                  </div>
+                  {%- endfor -%}
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="GroupCta">
+      <button type="submit" class="Button Button--icon Button--tertiary Button--full" data-stage="confirm">{{ 'programme.form.confirm' | t }}</button>
+      <button type="submit" class="Button Button--icon Button--primary hidden" data-restart data-stage="info">{{ 'programme.form.restart' | t }} {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: settings.button_accent, stroke: '#fff' -%}</button>
+    </div>
+  {%- else -%}
+    <div class="EmptyState">
+      <div class="Container">
+        <h3 class="EmptyState__Title Heading Heading__h4">{{ 'collection.general.empty' | t: collection_title: collection.title }}</h3>
+        <a href="{{ routes.root_url }}" class="EmptyState__Action Button Button--primary">{{ 'collection.general.empty_button' | t }}</a>
+      </div>
+    </div>
+  {%- endif -%}
+</section>

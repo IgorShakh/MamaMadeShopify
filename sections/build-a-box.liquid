@@ -1,0 +1,226 @@
+<header class="bundle-header">
+  {% render 'breadcrumbs' %}
+
+  <div class="Container">
+    <div class="bundle-header__container">
+      <div class="bundle-header__image">
+        <img src="{{ section.settings.header_image | img_url: "400x" }}" alt="bundle_image">
+      </div>
+      <div class="bundle-header__title">
+        <h1>{{ page.title }}</h1>
+        <div class="bundle-header__content">
+          {{ page.content }}
+        </div>
+      </div>
+      <div class="bundle-header__stage">
+        <ol>
+          <li>Choose your Bundle Size</li>
+          <li>Choose your Meals</li>
+          <li>Choose your Frequency</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="Container">
+  <div class="bundle-wrapper">
+    <div class="">
+      <div class="bundle-stage" data-stage="one">
+        <div class="bundle-title">
+          <h2>{{ section.settings.stage_one_title }}</h2>
+          <p>{{ section.settings.stage_one_text }}</p>
+        </div>
+        <div class="bundle-size-container" data-bundle-size="container">
+          <div class="bundle-size is-active" data-bundle-size="item" data-size="12" data-price="£33.00">
+            <div class="bundle-counter-remove">Remove <span data-counter-remove="container">12</span> items to switch size</div>
+            <div class="bundle-size__image" style="background-image: url('{{ section.settings.image_12 | img_url: "532x" }}')">
+            </div>
+            <div class="bundle-size__text">
+              <h4>12 Meals <span>£33</span></h4>
+              <span>(Price per meal - <strong>£2.75</strong>)</span>
+            </div>
+          </div>
+          <div class="bundle-size" data-bundle-size="item" data-size="24" data-price="£60.00">
+            <div class="bundle-size__image" style="background-image: url('{{ section.settings.image_24 | img_url: "532x" }}')"></div>
+            <div class="bundle-size__text">
+              <h4>24 Meals <span>£60</span></h4>
+              <span>(Price per meal - <strong>£2.50</strong>)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bundle-stage" data-stage="two">
+        <div class="bundle-title">
+          <h2>{{ section.settings.stage_two_title | replace: '%count%', '<span class="bundle-title__underline" data-bundle-size="html">12 meals</span>' }}</h2>
+          <p>{{ section.settings.stage_two_text }}</p>
+        </div>
+        <div class="bundle-container" data-products="container">
+
+          {% paginate collections['build-a-box'].products by 250 %}
+            {%- for product in collections['build-a-box'].products -%}
+              {% assign image = product.featured_image | img_url: '400x' %}
+              {% assign bab_hide = '' %}
+              {% for tag in product.tags %}
+                {%- comment -%}
+                  Use 'is__BAB-hidden' for testing
+                {%- endcomment -%}
+                {% if tag == "is__BAB-hide" %}
+                  {% assign bab_hide = 'bundle-item--is-hidden' %}
+                {% endif %}
+              {% endfor %}
+
+              <div
+                class="bundle-item {{ bab_hide }}"
+                data-product="item"
+                data-product-title="{{product.title}}"
+                data-product-handle="{{product.handle}}"
+                {% for variant in product.variants -%}
+                  {% if variant.title == 'meal [12]' %}
+                    data-product-id="{{variant.id}}"
+                  {% elsif variant.title == 'meal [24]' %}
+                    data-product-id-large="{{variant.id}}"
+                  {% endif %}
+                {% endfor %}
+                data-product-count="0"
+                data-product-thumbnail="{{image}}"
+              >
+                <div class="bundle-item__img" data-quick-view="open" data-quick-view-handle="{{product.handle}}" style="background-image: url({{image}});"></div>
+                <div class="bundle-item__text">
+                  <h4 data-quick-view="open" data-quick-view-handle="{{product.handle}}">{{product.title}}</h4>
+                  <p>{{product.description | strip_html | truncate: 50 }}</p>
+                </div>
+                <div class="quantity-selector">
+                  <div js-quantity-selector="decrement" data-type="main" class="quantity-selector__control quantity-selector__control--minus">-</div>
+                  <input type="number" min="0" js-quantity-selector="input" class="quantity-selector__count" value="0"/>
+                  <div js-quantity-selector="increment" data-type="main" class="quantity-selector__control quantity-selector__control--plus">+</div>
+                </div>
+              </div>
+            {%- endfor -%}
+          {% endpaginate %}
+        </div>
+      </div>
+
+      <div data-stage="three"></div>
+    </div>
+    <div class="bundle-cart-container">
+      <div class="bundle-cart__sticky">
+        <div class="bundle-cart">
+          <div class="bundle-cart__header">
+            <h3>Your Build a Box</h3>
+            <span data-checkout-view="hide"></span>
+          </div>
+
+          <div class="bundle-cart__contianer">
+            <div class="bundle-cart__contianer-scroll" data-mini-cart="container">
+              Please choose your bundle size
+            </div>
+          </div>
+          <div class="bundle-cart__details">
+            <ul>
+              <li>Size <span class="bundle-cart__details-small"><span data-bundle-size="html">12 meals</span></span></li>
+              <li>
+                Delivery Every
+                <select class="bundle-cart__details-small" name="frequency" data-frequency="container">
+                  <option value="1">1 Weeks</option>
+                  <option value="2" selected>2 Weeks</option>
+                  <option value="3">3 Weeks</option>
+                  <option value="4">4 Weeks</option>
+                  <option value="6">6 Weeks</option>
+                </select>
+              </li>
+              <li>Delivery <span class="bundle-cart__details-small">Free</span></li>
+            </ul>
+            <div class="bundle-cart__footer">
+              <div class="bundle-cart__footer-total">
+                <span>Total</span><span data-cart-total="container">£33.00</span>
+              </div>
+              <div class="Button Button--secondary is-disabled" id="bundle-checkout">Checkout</div>
+              <div class="Button Button--secondary" id="bundle-checkout-view">View Bundle</div>
+              <div class="Button Button--secondary is-disabled" id="bundle-recharge">Update Bundle</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="mini-cart-message bundle-counter">Please add <span data-counter="container">12</span> more meals</div>
+        <div class="mini-cart-message recharge-message"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bundle-modal" data-quick-view="container">
+  <div class="bundle-modal__container">
+    <div class="bundle-modal__close" data-quick-view="close"></div>
+    <div class="bundle-modal__content" data-quick-view="content"></div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    window.bundleBuilder().init();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Build a Box",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Header Image"
+    },
+    {
+      "type": "header",
+      "content": "Stage One"
+    },
+    {
+      "type": "text",
+      "id": "stage_one_title",
+      "label": "Stage One Title",
+      "default": "Choose your Bundle Size"
+    },
+    {
+      "type": "text",
+      "id": "stage_one_text",
+      "label": "Stage One Text",
+      "default": "How many meals does my baby need?"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_12",
+      "label": "12 Meals Image",
+      "info": "Default size: 532 * 340"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_24",
+      "label": "24 Meals Image",
+      "info": "Default size: 532 * 340"
+    },
+    {
+      "type": "header",
+      "content": "Stage Two"
+    },
+    {
+      "type": "text",
+      "id": "stage_two_title",
+      "label": "Stage Two Title",
+      "default": "Select your %count% from the collection below",
+      "label": "%count% will be replaced with a dynamic meal choice '12 meals' etc"
+    },
+    {
+      "type": "text",
+      "id": "stage_two_text",
+      "label": "Stage Two Text",
+      "default": "You can update your meal selection within the your account section once you’ve joined the Mamamade community."
+    }
+  ]
+}
+{% endschema%}

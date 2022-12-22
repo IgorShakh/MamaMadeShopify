@@ -1,0 +1,83 @@
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="header-page">
+  {%- if the_page == 'page' -%}
+    {%- assign page_handle = page.handle -%}
+  {%- elsif the_page == 'blog' -%}
+    {%- assign page_handle = blog.handle -%}
+  {%- else -%}
+    {%- assign page_handle = collection.handle -%}
+  {%- endif -%}
+
+  {%- for block in section.blocks -%}
+    {%- assign settings = block.settings -%}
+
+    {%- if the_page == 'page' -%}
+      {%- assign header_handle = settings.page -%}
+    {%- elsif the_page == 'blog' -%}
+      {%- assign header_handle = settings.blog -%}
+    {%- else -%}
+      {%- assign header_handle = settings.collection -%}
+    {%- endif -%}
+
+    {% if header_handle == page_handle %}
+      {%- capture header_content -%}
+        {%- if settings.title != blank -%}
+          <h2 class="HeaderPage__Heading Heading u-h1">{{ settings.title }}</h2>
+        {%- endif -%}
+
+        {%- if settings.subheading != blank -%}
+          <h3 class="HeaderPage__SubHeading Heading Heading__h3 u-h3">{{ settings.subheading }}</h3>
+          {%- endif -%}
+      {%- endcapture -%}
+
+      {%- assign header_background = settings.header_background -%}
+      {%- assign button_color = settings.button_color -%}
+      {%- assign button_background = settings.button_background -%}
+      {%- assign text_color = settings.text_color -%}
+      {%- assign copy = settings.copy -%}
+      {%- assign button_link = settings.button_link -%}
+      {%- assign button_text = settings.button_text -%}
+      {%- assign button_color = settings.button_color -%}
+      {%- assign button_background = settings.button_background -%}
+      {%- assign button_background_hover = settings.button_background_hover -%}
+      {%- assign show_curve = settings.show_curve -%}
+      {%- assign short_header = settings.short_header -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if header_content != blank -%}
+    <div class="HeaderPage{% if button_link != blank %} HeaderPage--hasbutton{% endif %}{% if short_header %} HeaderPage--short{% endif %}{% if template == 'page.about' %} HeaderPage--about{% endif %}">
+      <div class="HeaderPage__Content">
+        {{ header_content }}
+      </div>
+
+      {%- if button_link != blank -%}
+        <div class="ButtonGroup ButtonGroup--spacingSmall">
+          <a href="{{ button_link }}" class="ButtonGroup__Item Button Button--icon">{{ button_text | escape }} {%- render 'icon' with 'button-arrow', classes: 'Button__Icon', fill: button_background_hover, stroke: button_color -%}</a>
+        </div>
+      {%- endif -%}
+
+      {%- if copy != blank -%}
+        <p class="HeaderPage__Copy">{{ copy | escape | newline_to_br }}</p>
+      {%- endif -%}
+
+      {%- if show_curve -%}
+        <div class="HeaderPage__Curve" style="background-color: {{ header_background }}"></div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</section>
+
+<style>
+  #section-{{ section.id }} .HeaderPage {
+    {%- unless show_curve -%}background-color: {{ header_background }};{%- endunless -%}
+    color: {{ text_color }}
+  }
+
+  #section-{{ section.id }} .Button {
+    color: {{ button_color }};
+    background-color: {{ button_background }};
+  }
+  #section-{{ section.id }} .Button:hover{
+    background-color: {{ button_background_hover }};
+  }
+</style>

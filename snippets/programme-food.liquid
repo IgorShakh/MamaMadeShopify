@@ -1,0 +1,75 @@
+<div class="GroupPanel">
+    <h2 class="GroupPanel__Title Heading u-h2">What is the most advanced food your little one is currently eating?</h2>
+    <div class="GroupPanel__Inner GroupPanel__Inner--stacked">
+
+        <div class="GroupPanel__Item">
+            <label class="Radio Radio--stacked" data-programme-radio-food>
+                <span class="Radio__Input">
+                    <span class="Radio__Label">
+                        Breastmilk/<br>
+                        Formula only
+                    </span>
+                    {% render 'icon' with 'bottle', classes: 'GroupPanel__Icon GroupPanel__Icon--tight' %}
+                    <input type="radio" name="programme[food]" value="1" checked>
+                    <span class="Radio__Control"></span>
+                </span>
+            </label>
+        </div>
+
+        <div class="GroupPanel__Item">
+            <label class="Radio Radio--stacked" data-programme-radio-food>
+                <span class="Radio__Input">
+                    <span class="Radio__Label">
+                        Smooth<br>
+                        purees
+                    </span>
+                    {% render 'icon' with 'purees', classes: 'GroupPanel__Icon GroupPanel__Icon--tight' %}
+                    <input type="radio" name="programme[food]" value="2">
+                    <span class="Radio__Control"></span>
+                </span>
+            </label>
+        </div>
+
+        <div class="GroupPanel__Item">
+            <label class="Radio Radio--stacked" data-programme-radio-food>
+                <span class="Radio__Input">
+                    <span class="Radio__Label">
+                        Mashed<br>
+                        foods
+                    </span>
+                    {% render 'icon' with 'mashed', classes: 'GroupPanel__Icon GroupPanel__Icon--tight' %}
+                    <input type="radio" name="programme[food]" value="3">
+                    <span class="Radio__Control"></span>
+                </span>
+            </label>
+        </div>
+
+        <div class="GroupPanel__Item">
+            <label class="Radio Radio--stacked" data-programme-radio-food>
+                <span class="Radio__Input">
+                    <span class="Radio__Label">
+                        Chopped<br>
+                        foods
+                    </span>
+                    {% render 'icon' with 'chopped', classes: 'GroupPanel__Icon GroupPanel__Icon--tight' %}
+                    <input type="radio" name="programme[food]" value="4">
+                    <span class="Radio__Control"></span>
+                </span>
+            </label>
+        </div>
+
+        <div class="GroupPanel__Item">
+            <label class="Radio Radio--stacked" data-programme-radio-food>
+                <span class="Radio__Input">
+                    <span class="Radio__Label">
+                        Finger foods/<br>
+                        Small bites
+                    </span>
+                    {% render 'icon' with 'small-foods', classes: 'GroupPanel__Icon GroupPanel__Icon--tight' %}
+                    <input type="radio" name="programme[food]" value="5">
+                    <span class="Radio__Control"></span>
+                </span>
+            </label>
+        </div>
+    </div>
+</div>

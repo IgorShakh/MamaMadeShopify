@@ -1,0 +1,34 @@
+{%- section 'header-collection' -%}
+
+{%- unless collection.handle == 'build-a-box' or collection.handle == 'merchandise' -%}
+  {%- section 'text-with-image-collection' -%}
+{%- endunless -%}
+
+{%- if collection.handle == 'build-a-box' -%}
+  <script>
+    window.location.replace("/pages/build-a-box");
+  </script>
+  {%- render 'box-banner' -%}
+  {%- render 'box-stages' -%}
+  {%- render 'box-size' -%}
+  {%- render 'box-frequency' -%}
+  {%- render 'box-select' -%}
+{%- endif -%}
+
+{%- section 'collection-template' -%}
+
+{%- if collection.handle == 'build-a-box' -%}
+  <div id="BoxUpsell"></div>
+{%- endif -%}
+
+{%- section 'collection-footer' -%}
+
+{%- if collection.handle == 'build-a-box' -%}
+  {%- section 'faq-build-a-box' -%}
+{%- else -%}
+  {%- section 'faq' -%}
+{%- endif -%}
+
+{%- unless collection.handle == 'build-a-box' -%}
+  {%- section 'testimonials' -%}
+{%- endunless -%}

@@ -1,0 +1,89 @@
+{%- comment -%}
+Those are the option names for which we automatically detect swatch. For the color, we use them to display a swatch, while
+for size, we use it to display a size chart (if applicable)
+{%- endcomment -%}
+
+{%- assign size_chart_page = '' -%}
+{%- assign product_popovers = '' -%}
+
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+
+{%- if size_chart_page != empty -%}
+  {%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper positioning){%- endcomment -%}
+
+  {%- capture product_modals -%}
+    <div id="modal-{{ size_chart_page.handle }}" class="Modal Modal--dark Modal--fullScreen Modal--pageContent" aria-hidden="true" role="dialog" data-scrollable>
+      <header class="Modal__Header">
+        <h2 class="Modal__Title Heading u-h1">{{ size_chart_page.title }}</h2>
+      </header>
+
+      <div class="Modal__Content Rte">
+        <div class="Container Container--extraNarrow">
+          {{- size_chart_page.content -}}
+        </div>
+      </div>
+
+      <button class="Modal__Close RoundButton RoundButton--large" data-animate-bottom data-action="close-modal">{% render 'icon' with 'close' %}</button>
+    </div>
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- if section.settings.show_payment_button and selected_variant.available == false -%}
+  <style>
+    #shopify-section-{{ section.id }} .shopify-payment-button {
+      display: none;
+    }
+  </style>
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+OFF SCREEN ELEMENTS
+
+Implementation note: in the past (with "include") we could accumulate the data and output it outside the snippet
+itself. However with the new "render" tag, everything that is captured inside cannot be used outside the snippet
+itself. As a consequence we are moving them in JavaScript. This allows to make sure that those elements are upper
+in the DOM tree, and do not show below the content
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div class="Product__OffScreen">
+  {{- product_popovers -}}
+  {{- product_modals -}}
+</div>
+
+{% comment %}
+------------------------------------------------------------------------------
+Product Data. This must be outputted for all products (including home page).
+
+IMPORTANT: THIS CODE IS VITAL. DO NOT EDIT IT NOT REMOVE IT. MAKE SURE TO KEEP
+THE EXACT SAME ATTRIBUTES.
+------------------------------------------------------------------------------
+{% endcomment %}
+
+<script type="application/json" data-product-json>
+  {
+    "product": {{ product | json }},
+    "selected_variant_id": {{ selected_variant.id }}
+    {%- if section.settings.show_inventory_quantity -%}
+      ,"inventories": {
+        {%- for variant in product.variants -%}
+          {%- assign inventory_message = '' -%}
+
+          {%- if section.settings.inventory_quantity_threshold == 0 -%}
+            {%- capture inventory_message -%}{{- 'product.form.inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+          {%- else -%}
+            {%- capture inventory_message -%}{{- 'product.form.low_inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+          {%- endif -%}
+
+          "{{ variant.id }}": {
+            "inventory_management": {{ variant.inventory_management | json }},
+            "inventory_policy": {{ variant.inventory_policy | json }},
+            "inventory_quantity": {{ variant.inventory_quantity | json }},
+            "inventory_message": {{ inventory_message | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      }
+    {%- endif -%}
+  }
+</script>

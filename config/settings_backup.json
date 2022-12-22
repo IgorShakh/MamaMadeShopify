@@ -1,0 +1,2845 @@
+{
+  "current": {
+    "color_brand_primary": "#662480",
+    "color_brand_secondary": "#9380be",
+    "color_brand_tertiary": "#f88cc4",
+    "heading_color": "#662480",
+    "text_color": "#662480",
+    "text_light_color": "#662480",
+    "link_color": "#662480",
+    "background": "#ffffff",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#9380be",
+    "button_background": "#662480",
+    "button_text_color": "#ffffff",
+    "button_accent": "#9380be",
+    "button_secondary_background": "#92a4ed",
+    "button_secondary_text_color": "#ffffff",
+    "button_secondary_accent": "#662480",
+    "header_background": "#ffffff",
+    "header_logo_fill": "#662480",
+    "header_heading_color": "#662480",
+    "header_light_color": "#9380be",
+    "footer_background": "#f88cc4",
+    "footer_heading_color": "#662480",
+    "footer_text_color": "#662480",
+    "footer_link_hover": "#9380be",
+    "navigation_background": "#9380be",
+    "navigation_text_color": "#ffffff",
+    "newsletter_popup_background": "#ffffff",
+    "newsletter_popup_text_color": "#662480",
+    "secondary_elements_background": "#1c1b1b",
+    "secondary_elements_text_color": "#ffffff",
+    "color_tag_breakfast": "#f88cc4",
+    "color_tag_lunch": "#f7d25d",
+    "color_tag_dinner": "#abe8b5",
+    "color_stage_1": "#f88cc4",
+    "color_stage_2": "#abe8b5",
+    "color_stage_3": "#f7d25d",
+    "color_all": "#f88cc4",
+    "color_recipes": "#f7d25d",
+    "color_family": "#abe8b5",
+    "color_tier_1": "#abe8b5",
+    "color_tier_3": "#f88cc4",
+    "heading_font": "georgia_pro_n4",
+    "heading_size": "large",
+    "uppercase_heading": false,
+    "text_font": "neue_haas_unica_n4",
+    "base_text_font_size": 16,
+    "currency_conversion_enabled": false,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+    "currency_conversion_money_format": "money_format",
+    "show_page_transition": true,
+    "show_button_transition": true,
+    "show_image_zooming": true,
+    "show_element_staggering": true,
+    "search_mode": "product,article",
+    "product_show_price_on_hover": true,
+    "product_show_secondary_image": false,
+    "product_info_alignment": "center",
+    "product_image_size": "natural",
+    "product_list_horizontal_spacing": "medium",
+    "product_list_vertical_spacing": "extra_small",
+    "cart_type": "drawer",
+    "cart_enable_notes": false,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "cart_message": "Need something \nmore structured?",
+    "cart_button_text": "Create a programme",
+    "cart_button_url": "shopify:\/\/pages\/join-program",
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/hellomamamade",
+    "social_twitter": "",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/www.instagram.com\/hellomamamade\/",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "",
+    "social_linkedin": "",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f5f5f5",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#f37596",
+    "checkout_button_color": "#f37596",
+    "checkout_error_color": "#e32c2b",
+    "favicon": "",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "main-menu",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#9380be",
+          "text_color": "#ffffff",
+          "text_em_color": "#662480",
+          "content": "Get 25% Off Your 1st Box With Code <em>TRY25<\/em>",
+          "icon": "gift-box",
+          "link": "shopify:\/\/pages\/build-a-box"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "use_sticky_header": true,
+          "logo_max_width": 110,
+          "mobile_logo_max_width": 80,
+          "navigation_menu": "main-menu",
+          "navigation_style": "inline",
+          "show_icons": true,
+          "enable_transparent_header": true,
+          "enable_transparent_header_collection": true,
+          "show_transparent_header_border": false,
+          "transparent_text_color": "#662480"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "1580295937228": {
+            "type": "links",
+            "settings": {
+              "menu": "footer-two"
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Sign up to our newsletter",
+              "content": ""
+            }
+          },
+          "1603460040338": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "content": "<p><a href=\"mailto:care@mamamadefood.com\" title=\"mailto:care@mamamadefood.com\">care@mamamadefood.com<\/a><br\/>+44 (0)20 456 1324<\/p>",
+              "show_social_media": true
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "1580295937228",
+          "footer-2",
+          "1603460040338"
+        ],
+        "settings": {
+          "show_payment_methods": false
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1581497264480": {
+            "type": "image",
+            "settings": {
+              "slide_background": "#f88cc4",
+              "image": "shopify:\/\/shop_images\/Product-Shot.png",
+              "title": "Nurture’s in <br> our nature",
+              "subheading": "Healthy, home-made BABY MEALS",
+              "copy": "Plant-based meals packed with a rainbow-bright range of nutritious ingredients. Steam, microwave, mash or purée in moments.",
+              "button_1_text": "Get Started",
+              "button_1_link": "shopify:\/\/products\/variety-bundle",
+              "button_2_text": ""
+            }
+          },
+          "263f4b30-9439-4b51-adc6-03d08e79424f": {
+            "type": "image",
+            "settings": {
+              "slide_background": "#e380af",
+              "image": "shopify:\/\/shop_images\/Product-Shot.png",
+              "title": "Five more minutes",
+              "subheading": "find your peace of mind",
+              "copy": "Our simple, subscription meal plans make mealtimes easier, so there's more time for you. Even if it's not much.",
+              "button_1_text": "tell me more",
+              "button_2_text": ""
+            }
+          },
+          "919f6788-b161-49b4-81d4-4fab71549d2c": {
+            "type": "image",
+            "settings": {
+              "slide_background": "#e380af",
+              "image": "shopify:\/\/shop_images\/temp-square.jpg",
+              "title": "Making parenting easy?",
+              "subheading": "That'll be the day",
+              "copy": "We can’t claim to have solved parenthood. But we do know what it takes to be a parent. In fact, we're full of helpful advice.",
+              "button_1_text": "I'm listening",
+              "button_2_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1581497264480",
+          "263f4b30-9439-4b51-adc6-03d08e79424f",
+          "919f6788-b161-49b4-81d4-4fab71549d2c"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": false,
+          "cycle_speed": 8,
+          "text_color": "#662480",
+          "button_color": "#ffffff",
+          "button_background": "#662480"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": false,
+          "show_collection_image": false,
+          "apply_overlay": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "show_loyalty": false,
+          "collection_image_size": "normal",
+          "show_sort_by": true,
+          "show_layout_switch": false,
+          "toolbar_position": "top",
+          "filter_position": "drawer",
+          "filter_mode": "tag",
+          "show_filter_color_swatch": false,
+          "filter_menu": "",
+          "grid_items_per_page": 16,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": false,
+          "title": "Recently viewed",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_loyalty": false,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": true,
+          "image": "shopify:\/\/shop_images\/temp-build-image.jpg",
+          "text_color": "#ffffff",
+          "apply_overlay": false,
+          "title": "Easy, delicious & nutritious",
+          "subtitle": "create your own meal plan",
+          "button_link": "shopify:\/\/collections\/build-a-box",
+          "button_text": "Get started"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_share_buttons": false,
+          "show_vendor": false,
+          "show_loyalty": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "image_size": "small",
+          "stack_images": false,
+          "show_thumbnails": false,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Users also <br>bought these",
+          "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+          "button_link": "shopify:\/\/collections",
+          "button_text": "View full collection",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "color_bg": "#e8cca8"
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": true,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Newsletter",
+          "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 12
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "United States"
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo-holding.png",
+          "logo_max_width": 260,
+          "mobile_logo_max_width": 130,
+          "text_color": "#ffffff",
+          "heading": "Re-opening soon",
+          "show_newsletter_signup": true,
+          "newsletter_text": "<p>We&#x27;re currently raiding the cupboards and rustling up some amazing new goodies for your babies! Stayed tuned and sign up to hear about our new Build a Box service and Programme Scheme! <\/p>",
+          "show_social_sharing": true,
+          "social_message": "Spread the word"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "collection-mama-box-template": {
+        "type": "collection-mama-box-template",
+        "settings": {
+          "show_collection_info": true,
+          "show_collection_image": false,
+          "apply_overlay": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "normal",
+          "show_sort_by": false,
+          "show_layout_switch": false,
+          "toolbar_position": "top",
+          "filter_position": "sidebar",
+          "filter_mode": "tag",
+          "show_filter_color_swatch": true,
+          "filter_menu": "",
+          "grid_items_per_page": 16,
+          "grid_mobile_items_per_row": "1",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_article_image": true,
+          "show_date": true,
+          "show_category": false,
+          "show_author": true,
+          "show_share_buttons": true
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": false,
+          "show_tags": true,
+          "show_featured_article": true,
+          "show_category": true
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {}
+      },
+      "1591192210733": {
+        "type": "press",
+        "blocks": {
+          "1591192221030": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-dailymail.gif",
+              "quote": ""
+            }
+          },
+          "1591192233423": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-baby.gif",
+              "quote": ""
+            }
+          },
+          "1591192242509": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-mama.gif",
+              "quote": ""
+            }
+          },
+          "30274a16-e588-49fa-8a14-63c29a0ee532": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-techround.gif",
+              "quote": ""
+            }
+          },
+          "37e31f1c-52ca-4329-aa09-e66f19e82204": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-telegraph.gif",
+              "quote": ""
+            }
+          }
+        },
+        "block_order": [
+          "1591192221030",
+          "1591192233423",
+          "1591192242509",
+          "30274a16-e588-49fa-8a14-63c29a0ee532",
+          "37e31f1c-52ca-4329-aa09-e66f19e82204"
+        ],
+        "settings": {
+          "title": "As Seen In",
+          "color_bg": ""
+        }
+      },
+      "1591192336557": {
+        "type": "how-it-works",
+        "blocks": {
+          "1591192342251": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/baby.png",
+              "column-heading": "STEP 1",
+              "column-text": "Tell us a bit about your child. Nothing too personal. Just their age and eating habits"
+            }
+          },
+          "1591192416336": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Fresh_599ea136-5bc3-41b1-a09f-afb47ea4ee95.png",
+              "column-heading": "step 2",
+              "column-text": "Then we can create the ideal meal-plan to suit their ongoing development"
+            }
+          },
+          "1591192431721": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Fresh_1ce54bd0-125a-4c52-a1bb-df53d6a672c9.png",
+              "column-heading": "step 3",
+              "column-text": "Every 2 weeks we’ll deliver your child’s healthy, freshly-frozen meal plan"
+            }
+          }
+        },
+        "block_order": [
+          "1591192342251",
+          "1591192416336",
+          "1591192431721"
+        ],
+        "settings": {
+          "heading": "How it Works",
+          "sub-heading": "right food. right time",
+          "button_text": "Read our story",
+          "color_bg": "#ffffff"
+        }
+      },
+      "1591192456084": {
+        "type": "featured-text-image",
+        "disabled": true,
+        "settings": {
+          "heading": "Right food. \nRight time.",
+          "text": "Packed with a wide variety of nutrient-rich ingredients, our food pouches can be steamed, microwaved, mashed or pureed in moments.",
+          "image": "shopify:\/\/shop_images\/image-box.jpg",
+          "button_text": "Get started",
+          "button_link": "shopify:\/\/collections",
+          "color_bg": "#96d3a0"
+        }
+      },
+      "1591192611433": {
+        "type": "faq",
+        "blocks": {
+          "1591192616754": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I try as a one-off without subscribing?",
+              "answer": "<p>Yes! You&#x27;re in control! You can skip any delivery, or pause or cancel your plan at any time.<\/p>"
+            }
+          },
+          "1591192624546": {
+            "type": "Question",
+            "settings": {
+              "title": "How many meals come in a bundle?",
+              "answer": "<p>We&#x27;ll send out 12 meals curated for your baby from our range of porridges, baby meals and finger foods. <\/p>"
+            }
+          },
+          "1591192631405": {
+            "type": "Question",
+            "settings": {
+              "title": "How do you design your plans?",
+              "answer": "<p>We usually build a box for you, based on your little one&#x27;s age. With each box you&#x27;ll get more variety and more of what your baby likes. <\/p>"
+            }
+          },
+          "1591192638888": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I choose my meals?",
+              "answer": "<p>Absolutely! Once your first order&#x27;s been placed, you&#x27;ll be invited to set a password - then login and set your flavour preferences in the feedback section. <\/p>"
+            }
+          },
+          "1591192645762": {
+            "type": "Question",
+            "settings": {
+              "title": "What if my little one doesn't like the food?",
+              "answer": "<p>Babies aren&#x27;t going to like everything you give them, and that&#x27;s totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. So if there&#x27;s something your baby truly doesn&#x27;t like, we can change it up whilst keeping things interesting for both of you! For more tips on introducing new flavours, be sure to check out our <a href=\"https:\/\/blog.mamamadefood.com\/\" title=\"https:\/\/blog.mamamadefood.com\/\">blog<\/a><\/p>"
+            }
+          },
+          "1591192655590": {
+            "type": "Question",
+            "settings": {
+              "title": "What makes Mamamade different?",
+              "answer": "<p>Our meals are all plant-based and free from the big-8 allergens and are designed to empower you, as the parent, to shape your little one&#x27;s development. You choose the texture that&#x27;s right for your little one with meals that are quick to microwave or steam, mash or puree in moments. <\/p>"
+            }
+          },
+          "1591780817768": {
+            "type": "Question",
+            "settings": {
+              "title": "How much does it cost?",
+              "answer": "<p>Each box of 12 meals is £33 including delivery. We&#x27;ll send a box every 2 or 4 weeks. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1591192616754",
+          "1591192624546",
+          "1591192631405",
+          "1591192638888",
+          "1591192645762",
+          "1591192655590",
+          "1591780817768"
+        ],
+        "settings": {}
+      },
+      "product-bundle-template": {
+        "type": "product-bundle-template",
+        "settings": {
+          "show_share_buttons": false,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "image_size": "large",
+          "stack_images": false,
+          "show_thumbnails": false,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "header-page": {
+        "type": "header-page",
+        "blocks": {
+          "42581c7d-f4c4-4c27-8478-78da528a8361": {
+            "type": "header",
+            "settings": {
+              "page": "about",
+              "header_background": "#ffffff",
+              "short_header": false,
+              "show_curve": false,
+              "title": "Becoming Mamamade",
+              "subheading": "our story",
+              "copy": "",
+              "button_text": "Get started",
+              "button_link": "shopify:\/\/products\/blueberry-lemon-breakfast-bowl",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "13bad675-23e2-46d7-85f3-c8630d317791": {
+            "type": "header",
+            "settings": {
+              "page": "loyalty-scheme",
+              "header_background": "#fdf9f4",
+              "short_header": false,
+              "show_curve": false,
+              "title": "Mama bears club",
+              "subheading": "become a VIP & earn points",
+              "copy": "Whether you're a first time mum or a 'truly seasoned' dad, all are welcome in the Mama Bears club. Here you'll earn loyalty points to spend on special treats like merch', meals and even one-to-one natters with our founders. Welcome to the club that cares about your cubs.",
+              "button_text": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "b17dabf7-fabb-4d3b-b24b-1e4eb9c9ce4b": {
+            "type": "header",
+            "settings": {
+              "page": "rewards",
+              "header_background": "#ffffff",
+              "short_header": false,
+              "show_curve": false,
+              "title": "My rewards",
+              "subheading": "",
+              "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed \ndiam nonummy nibh euismod tincidunt ut laoreet.",
+              "button_text": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "a5a5e8ee-19c3-4523-ac5b-1b385974d9c1": {
+            "type": "header",
+            "settings": {
+              "page": "build-a-box",
+              "header_background": "#ffffff",
+              "short_header": false,
+              "show_curve": false,
+              "title": "Build a box",
+              "subheading": "Lorem ipsum et el dor",
+              "copy": "",
+              "button_text": "OR CREATE A PROGRAMME",
+              "button_link": "shopify:\/\/pages\/join-program",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "ee475d24-068f-4faa-a74b-931d13cca21d": {
+            "type": "header",
+            "settings": {
+              "page": "join-program",
+              "header_background": "#ffffff",
+              "short_header": false,
+              "show_curve": false,
+              "title": "Programme scheme",
+              "subheading": "Lorem ipsum et el dor",
+              "copy": "",
+              "button_text": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "682f1ba8-019b-4fcb-b953-aaab9435ac7c": {
+            "type": "header",
+            "settings": {
+              "page": "get-started",
+              "header_background": "#ffffff",
+              "short_header": true,
+              "show_curve": false,
+              "title": "Programme scheme",
+              "subheading": "Lorem ipsum et el dor",
+              "copy": "",
+              "button_text": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          }
+        },
+        "block_order": [
+          "42581c7d-f4c4-4c27-8478-78da528a8361",
+          "13bad675-23e2-46d7-85f3-c8630d317791",
+          "b17dabf7-fabb-4d3b-b24b-1e4eb9c9ce4b",
+          "a5a5e8ee-19c3-4523-ac5b-1b385974d9c1",
+          "ee475d24-068f-4faa-a74b-931d13cca21d",
+          "682f1ba8-019b-4fcb-b953-aaab9435ac7c"
+        ],
+        "settings": {}
+      },
+      "press": {
+        "type": "press",
+        "blocks": {
+          "f9226539-ff62-4849-a7b2-4d3170fed4e3": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-dailymail.gif",
+              "quote": ""
+            }
+          },
+          "3f032520-cddb-4322-8715-df41476a2b0d": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-baby.gif",
+              "quote": ""
+            }
+          },
+          "70d75f5f-16fe-4faf-b532-aa066f9032ff": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-mama.gif",
+              "quote": ""
+            }
+          },
+          "ac150999-a3cd-4c3d-a4a2-44e81dfbf4a7": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-techround.gif",
+              "quote": ""
+            }
+          },
+          "c894435c-bdd0-4975-b307-f2e5ec5f9c3d": {
+            "type": "Column",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-telegraph.gif",
+              "quote": ""
+            }
+          }
+        },
+        "block_order": [
+          "f9226539-ff62-4849-a7b2-4d3170fed4e3",
+          "3f032520-cddb-4322-8715-df41476a2b0d",
+          "70d75f5f-16fe-4faf-b532-aa066f9032ff",
+          "ac150999-a3cd-4c3d-a4a2-44e81dfbf4a7",
+          "c894435c-bdd0-4975-b307-f2e5ec5f9c3d"
+        ],
+        "settings": {
+          "title": "As seen in",
+          "color_bg": "rgba(0,0,0,0)"
+        }
+      },
+      "how-it-works": {
+        "type": "how-it-works",
+        "blocks": {
+          "5fd9a7d7-871b-42f1-b4e1-92cb7220a8ff": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-1.png",
+              "column-heading": "Made for your baby",
+              "column-text": "Tell us about your baby, we will create the best plan to suit your baby’s needs."
+            }
+          },
+          "545f5123-ac9b-4a11-b593-440d6633820d": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-2.png",
+              "column-heading": "A meal in minutes",
+              "column-text": "Get 12 meals designed to be steamed, microwaved, mashed or pureed in moments"
+            }
+          },
+          "345dfe22-1030-42c0-bae4-a6d76ec66329": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-3.png",
+              "column-heading": "Delivered freshly frozen",
+              "column-text": "Change, pause or cancel your delivery anytime!"
+            }
+          }
+        },
+        "block_order": [
+          "5fd9a7d7-871b-42f1-b4e1-92cb7220a8ff",
+          "545f5123-ac9b-4a11-b593-440d6633820d",
+          "345dfe22-1030-42c0-bae4-a6d76ec66329"
+        ],
+        "settings": {
+          "heading": "Our mission",
+          "sub-heading": "",
+          "button_link": "shopify:\/\/blogs\/news",
+          "button_text": "Read our blog",
+          "color_bg": "#e8cca8"
+        }
+      },
+      "featured-text-image-page": {
+        "type": "featured-text-image-page",
+        "blocks": {
+          "cf4ee4b3-7fc2-4eed-b0f0-9e49d2f5d0ca": {
+            "type": "featured-text-with-image",
+            "settings": {
+              "page": "about",
+              "heading": "Right food.\nRight time.",
+              "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+              "image": "shopify:\/\/shop_images\/image-box.jpg",
+              "button_text": "Get started",
+              "button_link": "shopify:\/\/pages\/build-a-box",
+              "color_bg": "#96d3a0"
+            }
+          }
+        },
+        "block_order": [
+          "cf4ee4b3-7fc2-4eed-b0f0-9e49d2f5d0ca"
+        ],
+        "settings": {}
+      },
+      "maestrooo-instagram": {
+        "type": "maestrooo-instagram",
+        "settings": {
+          "title": "We're all Mamamade",
+          "subheading": "",
+          "button_text": "",
+          "layout": "grid",
+          "image_size": "large",
+          "full_width": true,
+          "add_spacing": true,
+          "rows_count": 1,
+          "show_author": false,
+          "show_caption": false,
+          "show_date": false,
+          "click_action": "open_instagram",
+          "heading_color": "#662480",
+          "subheading_color": "#662480",
+          "button_background": "#662480",
+          "button_color": "#ffffff",
+          "overlay_color": "#9380be",
+          "overlay_text_color": "#ffffff",
+          "overlay_opacity": 65
+        }
+      },
+      "text-with-image-panel1": {
+        "type": "text-with-image-panel1",
+        "settings": {
+          "subheading": "",
+          "title": "\"It all began with my daughter Liba\"",
+          "color_bg": "#ffffff",
+          "image": "shopify:\/\/shop_images\/baby_cooking.png",
+          "image_remove_padding": false,
+          "image_position": "left",
+          "content": "<p>&quot;From the moment I started introducing solids into her diet, I just wanted her to have the very best. Everything home-cooked, organic, plant-based, bursting with flavour and - of course - healthy. <\/p><p>But in reality I was struggling to keep up with the pace of mealtimes on top of milk feeds.&quot;<\/p>",
+          "link_text": "",
+          "show_social": false
+        }
+      },
+      "text-with-image-panel2": {
+        "type": "text-with-image-panel2",
+        "settings": {
+          "subheading": "",
+          "title": "\"I started to feel  desperate\"",
+          "color_bg": "#fdf9f4",
+          "image": "shopify:\/\/shop_images\/Join_the_family.png",
+          "image_remove_padding": false,
+          "image_position": "right",
+          "content": "<p>&quot;Desperate for baby meals that weren’t sugary, store-bought puree. Just a bit of help when I was out of creativity and time, but unwilling to compromise on her health and development.<\/p><p>So I set to work creating a solution that helped parents like me - delicious, healthy, home-made baby meals delivered right to your door -  and so far, the response has been incredible.&quot;<\/p><p><br\/><\/p>",
+          "link_text": "Join the family",
+          "link_url": "shopify:\/\/pages\/loyalty-scheme",
+          "show_social": true
+        }
+      },
+      "header-collection": {
+        "type": "header-collection",
+        "blocks": {
+          "e6642ca7-40b4-4732-84fa-ae07fff523f8": {
+            "type": "header",
+            "settings": {
+              "collection": "our-collection",
+              "header_background": "#ffffff",
+              "show_curve": false,
+              "title": "The collection",
+              "subheading": "Mamamade meals",
+              "button_text": "Get started",
+              "button_link": "shopify:\/\/pages\/build-a-box",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "1de831d5-c7f1-45db-8961-7ab9667b4523": {
+            "type": "header",
+            "settings": {
+              "collection": "merchandise",
+              "header_background": "#e380af",
+              "show_curve": false,
+              "title": "Merchandise",
+              "subheading": "Lorem ipsum et el dor",
+              "button_text": "Get started",
+              "button_link": "shopify:\/\/pages\/build-a-box",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          },
+          "a8efeb5c-7912-4e30-99a1-77ae1f112dec": {
+            "type": "header",
+            "settings": {
+              "collection": "build-a-box",
+              "header_background": "#ffffff",
+              "show_curve": false,
+              "title": "Build-a-box",
+              "subheading": "choose the what, when and how",
+              "button_text": "I'd prefer a meal plan",
+              "button_link": "shopify:\/\/pages\/join-program",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          }
+        },
+        "block_order": [
+          "e6642ca7-40b4-4732-84fa-ae07fff523f8",
+          "1de831d5-c7f1-45db-8961-7ab9667b4523",
+          "a8efeb5c-7912-4e30-99a1-77ae1f112dec"
+        ],
+        "settings": {}
+      },
+      "text-with-image-collection": {
+        "type": "text-with-image-collection",
+        "settings": {
+          "subheading": "",
+          "title": "All kinds of munch for all kinds of munchkins",
+          "image": "shopify:\/\/shop_images\/temp-collection-image.jpg",
+          "image_remove_padding": false,
+          "image_position": "right",
+          "content": "<p>Every meal is freshly frozen the moment it’s ready to keep in all its valuable nutrients. With 24 highly diverse meals available, there’s no better way to get your child a truly varied and vibrant diet. <\/p>",
+          "link_text": ""
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "c8106236-273d-4415-8529-e32db8aaf7f4": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I try as a one-off without subscribing?",
+              "answer": "<p>Yes! You&#x27;re in control! You can skip any delivery, or pause or cancel your plan at any time.<\/p>"
+            }
+          },
+          "d4bf44ef-d9ac-4490-8a15-1f9e42b49113": {
+            "type": "Question",
+            "settings": {
+              "title": "How many meals come in a bundle?",
+              "answer": "<p>We&#x27;ll send out 12 meals curated for your baby from our range of porridges, baby meals and finger foods. <\/p>"
+            }
+          },
+          "e979924f-6e09-40f3-b390-90c9bc39c33b": {
+            "type": "Question",
+            "settings": {
+              "title": "How do you design your plans?",
+              "answer": "<p>We usually build a box for you, based on your little one&#x27;s age. With each box you&#x27;ll get more variety and more of what your baby likes. <\/p>"
+            }
+          },
+          "1d86c614-24b5-4388-b49e-d014dc94116f": {
+            "type": "Question",
+            "settings": {
+              "title": "Can I choose my meals?",
+              "answer": "<p>Absolutely! Once your first order&#x27;s been placed, you&#x27;ll be invited to set a password - then login and set your flavour preferences in the feedback section. <\/p>"
+            }
+          },
+          "0639d0fb-0a9c-466e-a84a-a092f71ad92b": {
+            "type": "Question",
+            "settings": {
+              "title": "What if my little one doesn't like the food?",
+              "answer": "<p>Babies aren&#x27;t going to like everything you give them, and that&#x27;s totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. So if there&#x27;s something your baby truly doesn&#x27;t like, we can change it up whilst keeping things interesting for both of you! For more tips on introducing new flavours, be sure to check out our <a href=\"https:\/\/blog.mamamadefood.com\/\" title=\"https:\/\/blog.mamamadefood.com\/\">blog<\/a><\/p>"
+            }
+          },
+          "2e741257-1e2b-4761-90f6-c06ad77c6057": {
+            "type": "Question",
+            "settings": {
+              "title": "What makes Mamamade different?",
+              "answer": "<p>Our meals are all plant-based and free from the big-8 allergens and are designed to empower you, as the parent, to shape your little one&#x27;s development. You choose the texture that&#x27;s right for your little one with meals that are quick to microwave or steam, mash or puree in moments. <\/p>"
+            }
+          },
+          "d03fe038-6771-45d2-a627-c1f9a8d57853": {
+            "type": "Question",
+            "settings": {
+              "title": "How much does it cost?",
+              "answer": "<p>Each box of 12 meals is £33 including delivery. We&#x27;ll send a box every 2 or 4 weeks. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "c8106236-273d-4415-8529-e32db8aaf7f4",
+          "d4bf44ef-d9ac-4490-8a15-1f9e42b49113",
+          "e979924f-6e09-40f3-b390-90c9bc39c33b",
+          "1d86c614-24b5-4388-b49e-d014dc94116f",
+          "0639d0fb-0a9c-466e-a84a-a092f71ad92b",
+          "2e741257-1e2b-4761-90f6-c06ad77c6057",
+          "d03fe038-6771-45d2-a627-c1f9a8d57853"
+        ],
+        "settings": {}
+      },
+      "loyalty-banner": {
+        "type": "loyalty-banner",
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/temp-loyalty-banner.jpg",
+          "url": "shopify:\/\/pages\/loyalty-scheme"
+        }
+      },
+      "testimonials": {
+        "type": "testimonials",
+        "blocks": {
+          "40f3aed5-0d2b-4b82-82a5-07326d78b80e": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>As a single parent I don’t have time  to cook for my boy. This has given me confidence \u0003that Charlie is eating well without all of the faff.<\/p>",
+              "cite": "Simon - London",
+              "image": "shopify:\/\/shop_images\/lifestyle_2.png"
+            }
+          },
+          "d79563c4-bcb6-41d9-b59f-08bc2489dfcb": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+              "cite": "Nic - London",
+              "image": "shopify:\/\/shop_images\/lifestyle_1.png"
+            }
+          }
+        },
+        "block_order": [
+          "40f3aed5-0d2b-4b82-82a5-07326d78b80e",
+          "d79563c4-bcb6-41d9-b59f-08bc2489dfcb"
+        ],
+        "settings": {
+          "heading": "",
+          "sub-heading": "",
+          "show_images": true,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#92a4ed",
+          "text_color": "#662480"
+        }
+      },
+      "blog-posts": {
+        "type": "blog-posts",
+        "blocks": {
+          "d14ed366-d9cd-4491-89e4-f7043bf71139": {
+            "type": "blog",
+            "settings": {
+              "blog": "news"
+            }
+          }
+        },
+        "block_order": [
+          "d14ed366-d9cd-4491-89e4-f7043bf71139"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "Related blog posts",
+          "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+          "show_category": false,
+          "button_link": "shopify:\/\/blogs\/news",
+          "button_text": "Read our blog",
+          "color_bg": "#ffffff"
+        }
+      },
+      "1604408692f8fbbff2": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/temp-build-image.jpg",
+          "background": "rgba(0,0,0,0)",
+          "text_color": "#ffffff",
+          "block_size": "small",
+          "title": "Easy, delicious & nutritious",
+          "subtitle": "create your own meal plan",
+          "content": "",
+          "button_label": "Get started",
+          "button_link": "shopify:\/\/pages\/build-a-box",
+          "show_parallax": false
+        }
+      },
+      "header-blog": {
+        "type": "header-blog",
+        "blocks": {
+          "4c8e5f13-22b9-44ec-8494-e5bfbc95c51b": {
+            "type": "header",
+            "settings": {
+              "blog": "news",
+              "header_background": "#e380af",
+              "show_curve": false,
+              "title": "From the mouths of mums",
+              "subheading": "ADVICE, TIPS & LIFE HACKS",
+              "button_text": "",
+              "text_color": "#662480",
+              "button_color": "#ffffff",
+              "button_background": "#662480",
+              "button_background_hover": "#9380be"
+            }
+          }
+        },
+        "block_order": [
+          "4c8e5f13-22b9-44ec-8494-e5bfbc95c51b"
+        ],
+        "settings": {}
+      },
+      "image-with-text-block": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/DSC03779_web.jpg",
+          "background": "rgba(0,0,0,0)",
+          "text_color": "#ffffff",
+          "block_size": "large",
+          "title": "Easy, delicious & nutritious",
+          "subtitle": "create your own meal plan",
+          "content": "",
+          "button_label": "Get started",
+          "button_link": "shopify:\/\/pages\/build-a-box",
+          "show_parallax": false
+        }
+      },
+      "featured-text-image-account": {
+        "type": "featured-text-image-account",
+        "settings": {
+          "heading": "Need help?",
+          "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+          "image": "shopify:\/\/shop_images\/temp-loyalty-banner.jpg",
+          "button_text": "Get in touch",
+          "button_link": "shopify:\/\/pages\/contact",
+          "color_bg": "#96d3a0"
+        }
+      },
+      "160445674179f3bc3b": {
+        "type": "aside-with-video",
+        "blocks": {
+          "160445674179f3bc3b-0": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-1.png",
+              "title": "Nutritional advice",
+              "copy": "Guiding your baby’s development with the most up-to-date knowledge. Take it from us, we’ve done our homework."
+            }
+          },
+          "160445674179f3bc3b-1": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-2.png",
+              "title": "1:1 COACHING SESSIONS",
+              "copy": "Life as a new parent can feel daunting and lonely sometimes. We’re here to offer you coaching that’s personal and relevant."
+            }
+          },
+          "160445674179f3bc3b-2": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-3.png",
+              "title": "support group",
+              "copy": "Whether it’s for sharing stories, seeking guidance or making new friends, our facebook group is all yours. Get stuck in."
+            }
+          }
+        },
+        "block_order": [
+          "160445674179f3bc3b-0",
+          "160445674179f3bc3b-1",
+          "160445674179f3bc3b-2"
+        ],
+        "settings": {
+          "heading": "Not another ‘expert’",
+          "copy": "Tired of getting advice from every mum, dad and their dog? Your Mamamade subscription comes with free, clear, impartial support from the people who actually know what’s what – the experts.",
+          "background": "#ffffff",
+          "text_color": "#662480",
+          "image": "shopify:\/\/shop_images\/Sophie_647f5a62-68c9-45cf-b5c1-a4411f4fd350.png",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=TB7mrd9LC04"
+        }
+      },
+      "16044767225b91633f": {
+        "type": "testimonials",
+        "blocks": {
+          "16044767225b91633f-0": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>As a single parent I don’t have time  to cook for my boy. This has given me confidence that Charlie is eating well without all of the faff.<\/p>",
+              "cite": "Simon - London",
+              "image": "shopify:\/\/shop_images\/lifestyle_2.png"
+            }
+          },
+          "16044767225b91633f-1": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+              "cite": "By Name",
+              "image": "shopify:\/\/shop_images\/lifestyle_1.png"
+            }
+          },
+          "16044767225b91633f-2": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+              "cite": "By Name",
+              "image": "shopify:\/\/shop_images\/lifestyle_3.png"
+            }
+          }
+        },
+        "block_order": [
+          "16044767225b91633f-0",
+          "16044767225b91633f-1",
+          "16044767225b91633f-2"
+        ],
+        "settings": {
+          "heading": "",
+          "sub-heading": "",
+          "show_images": true,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#92a4ed",
+          "text_color": "#662480"
+        }
+      },
+      "loyalty-earn": {
+        "type": "loyalty-earn",
+        "blocks": {
+          "4c90e667-6d54-4a2e-a642-d999ae1c848e": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Join_72cd3057-f296-4de6-b9d2-0929a296f66f.png",
+              "title": "Join Mamamade",
+              "copy": "Sign up and immediately get rewarded. This one's easy"
+            }
+          },
+          "542441fc-6e3b-431f-af2e-cd392239cbd4": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Next_stage_9e8ecc5c-a413-4129-a099-1855df69a4a1.png",
+              "title": "Advance to next stage",
+              "copy": ""
+            }
+          },
+          "47a6d548-2e43-4b37-b221-7c12cec29077": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/facebook_f0eb6817-2b00-4bca-9f5d-b36964d22558.png",
+              "title": "Join FB community",
+              "copy": "Actual rewards for going on facebook. If only life were this simple"
+            }
+          },
+          "7795c557-c2bd-4eef-9fbc-4251db48a104": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Refer_3862ad98-9aad-4798-b9a8-4937cd835ca0.png",
+              "title": "Refer a friend",
+              "copy": "Get stuff in exchange for being popular - like high school"
+            }
+          },
+          "24f44c0b-ff33-4ce6-ae1f-9506153bea6a": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Birthday_f3f3050e-352c-4fb6-a095-ed41c22e8bea.png",
+              "title": "Celebrate birthday",
+              "copy": "Getting older has to be good for  something, right?"
+            }
+          },
+          "712187a0-0d9e-4f12-8a97-29a57ebdf002": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Share_42b43b77-cbb1-4420-80af-ccf8c51fb942.png",
+              "title": "Share on social",
+              "copy": "Talk about us online & we'll shower you with goodies"
+            }
+          }
+        },
+        "block_order": [
+          "4c90e667-6d54-4a2e-a642-d999ae1c848e",
+          "542441fc-6e3b-431f-af2e-cd392239cbd4",
+          "47a6d548-2e43-4b37-b221-7c12cec29077",
+          "7795c557-c2bd-4eef-9fbc-4251db48a104",
+          "24f44c0b-ff33-4ce6-ae1f-9506153bea6a",
+          "712187a0-0d9e-4f12-8a97-29a57ebdf002"
+        ],
+        "settings": {
+          "title": "Ways to earn",
+          "color_bg": "rgba(0,0,0,0)"
+        }
+      },
+      "loyalty-spend": {
+        "type": "loyalty-spend",
+        "blocks": {
+          "d11c24b7-a2b7-4709-b8df-9ffd5abf15e7": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/merch_be023aa9-4d52-4364-917f-9de4e6e4d6d3.png",
+              "title": "Merchandise",
+              "points": "X"
+            }
+          },
+          "4e9a27fa-3238-40d1-b38f-5a028e03561b": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/discount_c4e83635-cbdd-4310-856f-474502f00429.png",
+              "title": "Discounts",
+              "points": "X"
+            }
+          },
+          "5220980c-5457-4643-988a-1508d1435004": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cooking.png",
+              "title": "Create your own flavour",
+              "points": "X"
+            }
+          },
+          "c44470e3-87b0-4da4-9e2c-1db120f9be1b": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/founders.png",
+              "title": "1:1 chat with founders",
+              "points": "X"
+            }
+          },
+          "cd8d03db-8382-4f91-b0b6-21b8db264181": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/join_now.png",
+              "title": "Join now to see more",
+              "points": "X"
+            }
+          }
+        },
+        "block_order": [
+          "d11c24b7-a2b7-4709-b8df-9ffd5abf15e7",
+          "4e9a27fa-3238-40d1-b38f-5a028e03561b",
+          "5220980c-5457-4643-988a-1508d1435004",
+          "c44470e3-87b0-4da4-9e2c-1db120f9be1b",
+          "cd8d03db-8382-4f91-b0b6-21b8db264181"
+        ],
+        "settings": {
+          "title": "Ways to spend",
+          "color_bg": "#fdf9f4"
+        }
+      },
+      "loyalty-tiers": {
+        "type": "loyalty-tiers",
+        "blocks": {
+          "ab6ec2ad-eb5c-4541-935f-c017a5ccac2d": {
+            "type": "line",
+            "settings": {
+              "line_item": "Line item 1",
+              "tier_1": true,
+              "tier_2": true,
+              "tier_3": true
+            }
+          },
+          "699c1ee2-ec0a-412d-8acf-89b2b3f3e8ad": {
+            "type": "line",
+            "settings": {
+              "line_item": "Line item 2",
+              "tier_1": true,
+              "tier_2": true,
+              "tier_3": true
+            }
+          },
+          "a21d9971-f622-4668-a575-97c56faf004a": {
+            "type": "line",
+            "settings": {
+              "line_item": "Line item 3",
+              "tier_1": false,
+              "tier_2": true,
+              "tier_3": true
+            }
+          },
+          "166fa870-a96c-4788-a7e3-7d7cd7ccd843": {
+            "type": "line",
+            "settings": {
+              "line_item": "Line item 4",
+              "tier_1": false,
+              "tier_2": true,
+              "tier_3": true
+            }
+          },
+          "ce92b288-58c3-4d58-bed7-87ecdd35a10e": {
+            "type": "line",
+            "settings": {
+              "line_item": "Line item 5",
+              "tier_1": false,
+              "tier_2": false,
+              "tier_3": true
+            }
+          },
+          "ff9fb5d4-5f0d-4938-8c76-944c99e4f6fa": {
+            "type": "line",
+            "settings": {
+              "line_item": "Line item 6",
+              "tier_1": false,
+              "tier_2": false,
+              "tier_3": true
+            }
+          }
+        },
+        "block_order": [
+          "ab6ec2ad-eb5c-4541-935f-c017a5ccac2d",
+          "699c1ee2-ec0a-412d-8acf-89b2b3f3e8ad",
+          "a21d9971-f622-4668-a575-97c56faf004a",
+          "166fa870-a96c-4788-a7e3-7d7cd7ccd843",
+          "ce92b288-58c3-4d58-bed7-87ecdd35a10e",
+          "ff9fb5d4-5f0d-4938-8c76-944c99e4f6fa"
+        ],
+        "settings": {
+          "title": "Tiered Spending",
+          "color_bg": "#fdf9f4"
+        }
+      },
+      "1604666164822f1be5": {
+        "type": "text-with-products",
+        "blocks": {
+          "22cbfba4-7320-4ac4-8231-086905f1936d": {
+            "type": "product",
+            "settings": {
+              "product": "blueberry-lemon-breakfast-bowl"
+            }
+          },
+          "ff203078-355b-41a1-99f4-8016266d8bd1": {
+            "type": "product",
+            "settings": {
+              "product": "carrot-apple-ginger"
+            }
+          },
+          "3e57ee66-fc30-4f6b-ba38-a1e3069c984a": {
+            "type": "product",
+            "settings": {
+              "product": "copy-of-carrot-apple-ginger"
+            }
+          },
+          "8884c5f1-2892-4c20-889d-08f95e5d8957": {
+            "type": "product",
+            "settings": {
+              "product": "carrot-mango-turmeric"
+            }
+          },
+          "43c6be7b-808c-4b49-8fc4-938092275081": {
+            "type": "product",
+            "settings": {
+              "product": "chickpea-panisse"
+            }
+          }
+        },
+        "block_order": [
+          "22cbfba4-7320-4ac4-8231-086905f1936d",
+          "ff203078-355b-41a1-99f4-8016266d8bd1",
+          "3e57ee66-fc30-4f6b-ba38-a1e3069c984a",
+          "8884c5f1-2892-4c20-889d-08f95e5d8957",
+          "43c6be7b-808c-4b49-8fc4-938092275081"
+        ],
+        "settings": {
+          "heading": "Get 'em hooked young",
+          "copy": "For parents who want their kids to  grow up demanding more from meals. Keep their health in your hands with a variety of 24 nutrient-rich mixes, fabulous finger foods and mega breakfast bowls",
+          "button_link": "shopify:\/\/pages\/build-a-box",
+          "button_text": "Get started",
+          "color_bg": "#96d3a0"
+        }
+      },
+      "text-with-image-intro": {
+        "type": "text-with-image-intro",
+        "settings": {
+          "subheading": "",
+          "title": "Let’s raise a healthier generation",
+          "color_bg": "#ffffff",
+          "image": "shopify:\/\/shop_images\/about_us.png",
+          "image_remove_padding": false,
+          "reverse": true,
+          "stacked": true,
+          "content": "<p>“Since the beginning it’s been our mission to give parents back the time, ease and confidence to cook well for their children. We do that by giving you the ingredients and tools to focus your energy where it matters: taking care of your little ones.” <br\/><\/p><p>- Sophie, founder<\/p><p><br\/><\/p>",
+          "link_text": "",
+          "show_quote": true,
+          "quote_text": "Let’s raise a healthier generation",
+          "quote_author": "Sophie - Founder"
+        }
+      },
+      "text-with-products": {
+        "type": "text-with-products",
+        "blocks": {
+          "e71a2b7c-cff7-4490-af38-ae26aa4beb27": {
+            "type": "product",
+            "settings": {
+              "product": "carrot-mango-turmeric"
+            }
+          },
+          "cc5a0173-3a78-450a-a343-7197abd54379": {
+            "type": "product",
+            "settings": {
+              "product": "copy-of-carrot-apple-ginger"
+            }
+          },
+          "47b25eed-9d95-4456-910d-34c8c83d9dc7": {
+            "type": "product",
+            "settings": {
+              "product": "blueberry-lemon-breakfast-bowl"
+            }
+          },
+          "a5c9474d-366f-403f-8e89-1ff8b5538680": {
+            "type": "product",
+            "settings": {
+              "product": "carrot-apple-ginger"
+            }
+          },
+          "e051e41d-6c11-460b-884e-c23da68e4560": {
+            "type": "product",
+            "settings": {
+              "product": "chickpea-panisse"
+            }
+          }
+        },
+        "block_order": [
+          "e71a2b7c-cff7-4490-af38-ae26aa4beb27",
+          "cc5a0173-3a78-450a-a343-7197abd54379",
+          "47b25eed-9d95-4456-910d-34c8c83d9dc7",
+          "a5c9474d-366f-403f-8e89-1ff8b5538680",
+          "e051e41d-6c11-460b-884e-c23da68e4560"
+        ],
+        "settings": {
+          "heading": "Right food. Right time.",
+          "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+          "button_link": "shopify:\/\/pages\/build-a-box",
+          "button_text": "Get started",
+          "color_bg": "#96d3a0"
+        }
+      },
+      "text-with-image-programme": {
+        "type": "text-with-image-programme",
+        "settings": {
+          "subheading": "",
+          "title": "Need help?",
+          "color_bg": "#92a4ed",
+          "image": "shopify:\/\/shop_images\/image-box.jpg",
+          "image_remove_padding": true,
+          "image_position": "right",
+          "content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.<\/p>",
+          "link_text": "Get in touch",
+          "link_url": "shopify:\/\/pages\/contact",
+          "show_social": false
+        }
+      },
+      "text-with-image-programme-header": {
+        "type": "text-with-image-programme-header",
+        "settings": {
+          "subheading": "",
+          "title": "Lorem ipsum del et or frescre",
+          "color_bg": "#ffffff",
+          "image": "shopify:\/\/shop_images\/temp-collection-image.jpg",
+          "image_remove_padding": false,
+          "image_position": "right",
+          "content": "<p>They say it takes a village to raise a child. But in a world where people don’t know their neighbour’s name, we need to build a new village. Let’s share the experience of parenting, the good and the bad. Our plant-based meal programs lighten the load and take the stress out of feeding the next generation.<br\/><br\/><\/p>",
+          "link_text": "",
+          "show_social": false
+        }
+      },
+      "how-it-works-programme": {
+        "type": "how-it-works-programme",
+        "blocks": {
+          "ddb419c0-ef55-455e-956a-caf951361922": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-1.png",
+              "column-heading": "Step 1",
+              "column-text": "Lorem ipsum dolor sit amet, consectet adipiscing elit, sed diam nonummy nibh euismod tincidun."
+            }
+          },
+          "cea470d5-e38d-4886-be94-cb31327f938f": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-2.png",
+              "column-heading": "Step 2",
+              "column-text": "Lorem ipsum dolor sit amet, consectet adipiscing elit, sed diam nonummy nibh euismod tincidun."
+            }
+          },
+          "5e16f70e-d174-487d-b401-71136019688c": {
+            "type": "Column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image-col-3.png",
+              "column-heading": "Step 3",
+              "column-text": "Lorem ipsum dolor sit amet, consectet adipiscing elit, sed diam nonummy nibh euismod tincidun."
+            }
+          }
+        },
+        "block_order": [
+          "ddb419c0-ef55-455e-956a-caf951361922",
+          "cea470d5-e38d-4886-be94-cb31327f938f",
+          "5e16f70e-d174-487d-b401-71136019688c"
+        ],
+        "settings": {
+          "heading": "How it works",
+          "sub-heading": "Subheading goes here",
+          "button_link": "shopify:\/\/pages\/get-started",
+          "button_text": "Get started",
+          "color_bg": "#ffffff"
+        }
+      },
+      "text-with-image-join": {
+        "type": "text-with-image-join",
+        "settings": {
+          "subheading": "",
+          "title": "Let’s be BFF’s",
+          "color_bg": "#fdf9f4",
+          "image": "shopify:\/\/shop_images\/Join_the_family.png",
+          "image_remove_padding": false,
+          "image_position": "right",
+          "content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.<br\/><\/p>",
+          "link_text": "Join the family",
+          "link_url": "shopify:\/\/pages\/loyalty-scheme",
+          "show_social": true
+        }
+      },
+      "programme-scheme": {
+        "type": "programme-scheme",
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "1591192210733",
+      "1591192336557",
+      "1604666164822f1be5",
+      "1591192456084",
+      "160445674179f3bc3b",
+      "16044767225b91633f",
+      "1604408692f8fbbff2",
+      "1591192611433"
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Vogue": {
+      "heading_color": "#454545",
+      "text_color": "#454545",
+      "text_light_color": "#9d9d9d",
+      "link_color": "#a17c5e",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#c2a284",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#454545",
+      "header_light_color": "#9d9d9d",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#454545",
+      "footer_text_color": "#9d9d9d",
+      "newsletter_popup_background": "#454545",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#f1e4d8",
+      "secondary_elements_text_color": "#373737",
+      "navigation_background": "#454545",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    }
+  }
+}

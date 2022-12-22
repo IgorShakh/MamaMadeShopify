@@ -1,0 +1,83 @@
+{% if collections['merchandise'].products.size > 0 %}
+
+<h2 class="SectionHeader__Heading Heading u-h2" style="text-align:center;margin-top:2rem;">Make parenting easier</h2>
+<div class="cart__upsell Grid Grid--m Grid--center">
+
+{% for product in collections['merchandise'].products %}
+
+    <div class="Grid__Cell 1/2--phone 1/3--tablet 1/3--lap-and-up">
+      <div class="ProductItem ProductItem--adjust">
+        <div class="ProductItem__Wrapper">
+          {%- comment -%}
+          We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally LazySizes uses srcset, we need to make
+          sure that the image sizes we offer is not larger than the max size uploaded by the merchants.
+          {%- endcomment -%}
+
+          {%- if settings.product_image_size == 'natural' or use_horizontal -%}
+            {%- assign use_natural_size = true -%}
+          {%- else -%}
+            {%- assign use_natural_size = false -%}
+          {%- endif -%}
+
+          {%- if settings.product_show_secondary_image and product.images[1] != blank and use_horizontal != true -%}
+            {%- assign has_alternate_image = true -%}
+          {%- else -%}
+            {%- assign has_alternate_image = false -%}
+          {%- endif -%}
+
+          <a href="{{ product.url | within: collection }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+            {%- if use_horizontal -%}
+              {%- assign max_width = 125 -%}
+            {%- else -%}
+              {%- assign max_width = product.featured_image.width -%}
+            {%- endif -%}
+
+            <div class="AspectRatio AspectRatio--{% if use_natural_size %}withFallback{% else %}{{ settings.product_image_size }}{% endif %}" style="max-width: {{ max_width }}px; {% if use_natural_size %}padding-bottom: {{ 100.0 | divided_by: product.featured_image.aspect_ratio }}%;{% endif %} --aspect-ratio: {{ product.featured_image.aspect_ratio }}">
+              {%- comment -%}
+              IMPLEMENTATION NOTE: The alternate image (not visible by default) should be the first in the DOM, as the spinner (Image__Loader element) is
+              displayed based on the immediately previously shown image.
+              {%- endcomment -%}
+
+              {%- if has_alternate_image -%}
+                {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,800,900,1000,1200', image: product.images[1] -%}{%- endcapture -%}
+
+                {%- assign image_url = product.images[1] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                <img class="ProductItem__Image ProductItem__Image--alternate Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.images[1].alt | escape }}" data-image-id="{{ product.images[1].id }}">
+              {%- endif -%}
+
+              {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: product.featured_image -%}{%- endcapture -%}
+              {%- assign image_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+              <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_image.alt | escape }}" data-image-id="{{ product.featured_image.id }}">
+              <span class="Image__Loader"></span>
+
+              <noscript>
+                <img class="ProductItem__Image ProductItem__Image--alternate" src="{{ product.images[1] | img_url: '600x' }}" alt="{{ product.images[1].alt | escape }}">
+                <img class="ProductItem__Image" src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.featured_image.alt | escape }}">
+              </noscript>
+            </div>
+          </a>
+
+            <div class="ProductItem__Info">
+              <h2 class="ProductItem__Title Heading">
+                <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+              </h2>
+
+              <span class="ProductItem__Price Price Text--subdued" data-money-convertible>{{ product.price | money_without_trailing_zeros }}</span>
+
+              <form method="post" action="/cart/add">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+          <!-- <input min="1" type="number" id="quantity" name="quantity" value="1"/> -->
+                <button type="submit" class="Button Button--dark">
+                <span>Add to cart</span></button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endfor %}
+</div>
+{% endif %}

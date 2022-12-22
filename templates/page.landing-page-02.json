@@ -1,0 +1,195 @@
+{
+  "sections": {
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "text-with-image": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sign up to the Mamamade newsletter today!",
+        "title": "Win £500 to spend at Mamamade",
+        "image": "shopify:\/\/shop_images\/Mamamade_organic_baby_and_toddler_food_delivered_50b4de32-a010-44e7-81c7-c0deb504f018.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Subscribe to our weekly newsletter today and you could <strong>win a £500<\/strong> voucher to use on our meals. Plus:<\/p><p>💜 Recieve 10% off your first order when you sign up <\/p><p>💜 Be the first to hear about our exclusive offers and competitions <\/p><p>💜 Receive our weekly Mamazine packed full of content from the world of Mamamade<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1656426659c4f7e5cb": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "Be in with a chance of winning £500 to spend at Mamamade",
+        "title": "Enter your email below",
+        "html": "<div class=\"klaviyo-form-RdphmA\"><\/div>"
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Hi, I'm Sophie!",
+        "image": "shopify:\/\/shop_images\/Mamamade_Weaning_Call.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Mamamade came to life when I was introducing solids to my daughter in 2018. I wanted her to have the very best ‑ everything home‑cooked, organic, plant‑based, flavourful and healthy. But in reality, that’s easier said than done, not just for me but for most modern-day parents.<\/p><p>I was desperate for a bit of support; the juggling act of parenting can be challenging. Most days, I was out of time, overworked and lacked creativity during mealtimes, but I wasn't willing to compromise on my daughter's health or development. So, I set out to create a product for parents like me! And that's how Mamamade was born...<\/p>",
+        "link_text": "My story",
+        "link_url": "shopify:\/\/pages\/about"
+      }
+    },
+    "165642931165f2a8b3": {
+      "type": "featured-collections",
+      "blocks": {
+        "16564293114f756cff-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "fam-favourite-bundles",
+            "title": "Our fam-fave bundles",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "16564293114f756cff-0"
+      ],
+      "settings": {
+        "title": "Ready to try Mamamade?",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_loyalty": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "text-with-products": {
+      "type": "text-with-products",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "image-with-text-overlay-two": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "press": {
+      "type": "press",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    },
+    "featured-video": {
+      "type": "aside-with-video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "link_text": "Read our story",
+        "link_url": "",
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b",
+        "video_url": "",
+        "heading_icons": "",
+        "link_text_icons": "Get started",
+        "link_url_icons": ""
+      }
+    },
+    "how-it-works-programme": {
+      "type": "how-it-works-programme",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "show_images": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": ""
+      }
+    }
+  },
+  "order": [
+    "image-with-text-overlay",
+    "text-with-image",
+    "1656426659c4f7e5cb",
+    "text-with-image-two",
+    "165642931165f2a8b3",
+    "text-with-products",
+    "how-it-works",
+    "image-with-text-overlay-two",
+    "press",
+    "featured-video",
+    "how-it-works-programme",
+    "product-testimonials",
+    "faq",
+    "blog-posts"
+  ]
+}

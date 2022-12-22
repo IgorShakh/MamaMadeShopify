@@ -1,0 +1,42 @@
+{% comment %}
+----------------------------------------------------------------------------
+  Template: Product quick-view
+  - Rendered when viewing the quick-view of a product.
+----------------------------------------------------------------------------
+{% endcomment %}
+{% layout none %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+
+<div class="quick-view__container">
+  <div class="quick-view__header">
+    <h2>{{ product.title }}</h2>
+  </div>
+  <div class="quick-view__gallery">
+    <div class="quick-view__gallery-slider">
+      {% for image in product.images %}
+        {% if image.alt != 'Label' %}
+          {% assign productImage = image.src | img_url: '900x'  %}
+          <div class="quick-view__gallery-item" style="background-image: url({{ productImage }})"></div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="quick-view__aside">
+    <h2>{{ product.title }}</h2>
+    <div class="quick-view__content">
+      <div>{{ product.description }}</div>
+
+      {% comment %}
+        {% for image in product.images %}
+          {% if image.alt == 'Label' %}
+            {% assign productImage = image.src | img_url: '900x'  %}
+            <img src="{{ productImage }})"/>
+          {% endif %}
+        {% endfor %}
+      {% endcomment %}
+    </div>
+  </div>
+</div>

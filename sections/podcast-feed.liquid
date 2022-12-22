@@ -1,0 +1,64 @@
+<div class="podcast-container">
+  <div class="podcast-wrapper">
+    <ul id="podcast-feed" class="podcast-feed"></ul>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    var $content = $('#podcast-feed');
+    var data = {
+      rss_url: 'https://anchor.fm/s/6b5b514c/podcast/rss'
+    };
+    $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+      console.log(response);
+      if (response.status == 'ok') {
+        var output = '';
+          {response.items.map(post => {
+            const title = post.title;
+            const content = post.content.replace(/(<([^>]+)>)/gi, "");
+            const image = post.thumbnail;
+            const source = post.enclosure.link;
+
+            return (
+              output += `<li>
+                <article class="post-item">
+                  <div class="post-item__image" style="background-image: url(${image})"></div>
+                  <section class="post-item__content">
+                    <h2>${title}</h2>
+                    <p>${content}</p>
+                    <audio controls>
+                      <source src=${source} type="audio/ogg"/>
+                      <source src=${source} type="audio/mpeg"/>
+                      <track default
+                        kind="captions" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </section>
+
+                </article>
+              </li>`
+            )
+          })}
+
+        $content.html(output).hide();
+        $content.fadeIn('slow');
+      }
+    });
+  });
+
+</script>
+
+
+
+{% schema %}
+{
+  "name": "Postcast Feed",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Podcast Feed"
+    }
+  ]
+}
+{% endschema %}

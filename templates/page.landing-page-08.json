@@ -1,0 +1,221 @@
+{
+  "sections": {
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "text-with-image": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Thanks for signing up!",
+        "image": "shopify:\/\/shop_images\/Artboard_1_copy_2.png",
+        "image_remove_padding": true,
+        "image_position": "right",
+        "content": "<p>Check your email for confirmation and we'll be in touch soon if you're a winner!<\/p>",
+        "link_text": "Shop Mamamade",
+        "link_url": ""
+      }
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "text-with-products": {
+      "type": "text-with-products",
+      "blocks": {
+        "fda70394-6a69-4d63-a4b4-b95ed4765618": {
+          "type": "product",
+          "settings": {
+            "product": "getting-started-with-blw-bundle-6m"
+          }
+        },
+        "10457b48-5459-4113-9877-f76db904e577": {
+          "type": "product",
+          "settings": {
+            "product": "the-im-a-total-pro-variety-bundle-9-12m"
+          }
+        },
+        "3413b182-5f45-4d31-8e3c-634556977414": {
+          "type": "product",
+          "settings": {
+            "product": "bestsellers-bundle"
+          }
+        },
+        "05f5c67c-5bda-48a1-b836-6d94f16238ef": {
+          "type": "product",
+          "settings": {
+            "product": "pancakes-only-bundle-6m"
+          }
+        },
+        "77e2de05-1f2e-49be-b99b-e2d6a6283064": {
+          "type": "product",
+          "settings": {
+            "product": "everything-you-need-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "fda70394-6a69-4d63-a4b4-b95ed4765618",
+        "10457b48-5459-4113-9877-f76db904e577",
+        "3413b182-5f45-4d31-8e3c-634556977414",
+        "05f5c67c-5bda-48a1-b836-6d94f16238ef",
+        "77e2de05-1f2e-49be-b99b-e2d6a6283064"
+      ],
+      "settings": {
+        "heading": "Stress-free mealtimes",
+        "copy": "Take the stress out of prepping. Organic food for babies and toddlers, ready in minutes.",
+        "button_link": "shopify:\/\/collections\/fam-favourite-bundles",
+        "button_text": "Get started",
+        "color_bg": "#a887d3"
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "image-with-text-overlay-two": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "press": {
+      "type": "press",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    },
+    "featured-video": {
+      "type": "aside-with-video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "link_text": "Read our story",
+        "link_url": "",
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b",
+        "video_url": "",
+        "heading_icons": "",
+        "link_text_icons": "Get started",
+        "link_url_icons": ""
+      }
+    },
+    "how-it-works-programme": {
+      "type": "how-it-works-programme",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "disabled": true,
+      "blocks": {
+        "d77135e4-619f-449c-b90a-149f4167fc70": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+            "cite": "By Name"
+          }
+        }
+      },
+      "block_order": [
+        "d77135e4-619f-449c-b90a-149f4167fc70"
+      ],
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "show_images": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "copy": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles",
+        "color_bg": ""
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "16336954242727934a": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "section_size": "small",
+        "text_color": "#ffffff",
+        "button_color": "#000000",
+        "subheading": "Keep updated",
+        "title": "Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+      }
+    }
+  },
+  "order": [
+    "image-with-text-overlay",
+    "text-with-image",
+    "text-with-image-two",
+    "text-with-products",
+    "how-it-works",
+    "image-with-text-overlay-two",
+    "press",
+    "featured-video",
+    "how-it-works-programme",
+    "product-testimonials",
+    "blog-posts",
+    "faq",
+    "16336954242727934a"
+  ]
+}

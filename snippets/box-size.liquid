@@ -1,0 +1,61 @@
+{% assign box_product = collections['build-a-box'].products.first %}
+
+{% for variant in box_product.variants %}
+  {% if variant.title contains "[12]" %}
+    {% assign price_12 = variant.price %}
+    {% assign box_price_12 = price_12 | times: 12 %}
+  {% endif %}
+  {% if variant.title contains "[24]" %}
+    {% assign price_24 = variant.price %}
+    {% assign box_price_24 = price_24 | times: 24 %}
+  {% endif %}
+{% endfor %}
+
+{% assign box_price = price_12 %}
+{% if box_max == 24 %}
+  {% assign box_price = price_24 %}
+{% endif %}
+
+<div class="GroupPanel">
+  <h2 class="GroupPanel__Title Heading u-h2">Choose your box size</h2>
+
+  <div class="GroupPanel__Inner">
+    <div class="GroupPanel__Item">
+      <label class="Radio Radio--stacked" data-box-radio-size>
+        <span class="GroupPanel__Label">12 meals</span>
+
+        {% render 'icon' with 'box', classes: 'GroupPanel__Icon', fill: settings.color_brand_primary %}
+
+        <span class="Radio__Input">
+          <span class="Radio__Label"><span data-cost-12>{{ box_price_12 | money }}</span></span>
+          <input type="radio" name="BoxSize" value="12" checked>
+          <span class="Radio__Control"></span>
+        </span>
+      </label>
+
+      <p class="GroupPanel__Text">
+        (Price per meal - <strong>{{ settings.12_items_box_price }}</strong>)
+        {% comment %} <strong data-box-price-per>{{ box_price | money }}</strong> {% endcomment %}
+      </p>
+    </div>
+
+    <div class="GroupPanel__Item">
+      <label class="Radio Radio--stacked" data-box-radio-size>
+        <span class="GroupPanel__Label">24 meals</span>
+
+        {% render 'icon' with 'box', classes: 'GroupPanel__Icon GroupPanel__Icon--large', fill: settings.color_brand_primary %}
+
+        <span class="Radio__Input">
+          <span class="Radio__Label"><span data-cost-24>{{ box_price_24 | money }}</span></span>
+          <input type="radio" name="BoxSize" value="24">
+          <span class="Radio__Control"></span>
+        </span>
+      </label>
+
+      <p class="GroupPanel__Text">
+        (Price per meal - <strong>{{ settings.24_items_box_price }}</strong>)
+        {% comment %} <strong data-box-price-per>{{ box_price | money }}</strong> {% endcomment %}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,393 @@
+{
+  "sections": {
+    "text-with-image": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Right Food, Right Time",
+        "title": "First Tastes Start Here",
+        "image": "shopify:\/\/shop_images\/Screenshot_2021-10-01_at_14.29.54.png",
+        "image_remove_padding": false,
+        "image_position": "left",
+        "content": "<p>Our expert nutritionists have crafted the perfect combinations and single-veg purees to help get you started on your weaning journey. With over 80 organic ingredients used across a menu of 45 meals from, Mamamade is here to share the load and the love of introducing solids to your baby.<\/p>",
+        "link_text": "Learn More",
+        "link_url": "shopify:\/\/products\/first-tastes-bundle"
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "blocks": {
+        "228ca5d6-eaaa-4b21-88a4-a1cfa3c442e3": {
+          "type": "Column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/baby_600x_c10a5912-0f8d-42a6-8aca-304a516fe3a7.png",
+            "column-heading": "Choose",
+            "column-text": "Select the bundle that best suits your little one's preferences and stage of development"
+          }
+        },
+        "1e8b1e40-6f54-4a7f-b877-f6b65eca830f": {
+          "type": "Column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fresh_600x_971e8b85-6384-44be-b0c9-327666ff83c0.png",
+            "column-heading": "Create",
+            "column-text": "Once you've selected your bundle, our chefs will prep your meals and build your box."
+          }
+        },
+        "91b51de2-a075-4851-aa61-ed594aa2cc63": {
+          "type": "Column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fresh_600x_7a0b4d0d-1fcd-4f11-8c75-f3bbd202a015.png",
+            "column-heading": "Enjoy",
+            "column-text": "Yay - your box of fresh frozen meals is delivered! Change or pause your subscription at any time."
+          }
+        }
+      },
+      "block_order": [
+        "228ca5d6-eaaa-4b21-88a4-a1cfa3c442e3",
+        "1e8b1e40-6f54-4a7f-b877-f6b65eca830f",
+        "91b51de2-a075-4851-aa61-ed594aa2cc63"
+      ],
+      "settings": {
+        "heading": "How It Works",
+        "sub-heading": "",
+        "button_link": "shopify:\/\/products\/first-tastes-bundle",
+        "button_text": "Get Started",
+        "color_bg": "#ffffff"
+      }
+    },
+    "text-with-products": {
+      "type": "text-with-products",
+      "blocks": {
+        "9ef6c878-be99-412e-b098-e2fdd9a68b9d": {
+          "type": "product",
+          "settings": {
+            "product": "butternut-squash-puree"
+          }
+        },
+        "3736ed64-af6a-46bc-a59d-33748bcb16b4": {
+          "type": "product",
+          "settings": {
+            "product": "raspberry-puree-1"
+          }
+        },
+        "4e938e33-d5fb-43e3-9ab5-ad300b7fc2c5": {
+          "type": "product",
+          "settings": {
+            "product": "sweet-potato-red-pepper-apple-puree"
+          }
+        },
+        "eafef608-09d3-4c2e-a70f-112d3313ec3e": {
+          "type": "product",
+          "settings": {
+            "product": "beetroot-banana-mango-puree"
+          }
+        },
+        "94d138e4-7a66-4cf6-bcb8-794166c6d97d": {
+          "type": "product",
+          "settings": {
+            "product": "sweet-potato-broccoli-pea-puree"
+          }
+        }
+      },
+      "block_order": [
+        "9ef6c878-be99-412e-b098-e2fdd9a68b9d",
+        "3736ed64-af6a-46bc-a59d-33748bcb16b4",
+        "4e938e33-d5fb-43e3-9ab5-ad300b7fc2c5",
+        "eafef608-09d3-4c2e-a70f-112d3313ec3e",
+        "94d138e4-7a66-4cf6-bcb8-794166c6d97d"
+      ],
+      "settings": {
+        "heading": "First Taste Purees",
+        "copy": "Our nutritionists and chefs have crafted the perfect combinations of organic fruit and veg to see you and your little one through the weaning journey. These handy pots arrive flash-frozen, ready to defrost and serve - so you can be sure that weaning is easier than ever.",
+        "button_link": "shopify:\/\/products\/first-tastes-bundle",
+        "button_text": "LEARN MORE",
+        "color_bg": "#fff8f3"
+      }
+    },
+    "press": {
+      "type": "press",
+      "blocks": {
+        "5c7cb3bf-8fa0-4713-a803-5a4075582864": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-dailymail_600x_f2e4b69e-f90f-472a-a984-a53439d8a219.gif",
+            "quote": ""
+          }
+        },
+        "cda92976-f117-4846-b547-d067713314dd": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-baby_600x_b9af9a21-cf25-4aae-8819-f0ac57a63b55.gif",
+            "quote": ""
+          }
+        },
+        "80403f77-f243-4607-8bd4-cb777ccc232e": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/mama_6cc72662-05d8-49a4-b345-99388ec92a60.png",
+            "quote": ""
+          }
+        },
+        "16d68f9a-1655-40ae-a781-b9885b7649c0": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-techround_600x_76fb5355-7751-49b7-b27a-944fe274348f.gif",
+            "quote": ""
+          }
+        },
+        "cf6b1446-fd98-433f-b814-e0a1a3a9b972": {
+          "type": "Column",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/tele_86011b47-32c9-476e-92dd-439cb7ed9b57.png",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c7cb3bf-8fa0-4713-a803-5a4075582864",
+        "cda92976-f117-4846-b547-d067713314dd",
+        "80403f77-f243-4607-8bd4-cb777ccc232e",
+        "16d68f9a-1655-40ae-a781-b9885b7649c0",
+        "cf6b1446-fd98-433f-b814-e0a1a3a9b972"
+      ],
+      "settings": {
+        "title": "",
+        "color_bg": ""
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "blocks": {
+        "3297a103-c5e3-4e68-8ef8-eb73dda9c7df": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Being able to start the weaning journey with my daughter and with mamamade has made everything so much easier. I feel great she is eating organic foods, foods I wouldn’t have considered before and it’s all pretty much ready to go. Saving me so much stress prepping everything in a mad rush. The range of foods is fantastic and the support on social media is incredible.<\/p>",
+            "cite": "Kim Sergeant"
+          }
+        },
+        "44d2181b-80d4-4802-8005-1a10a9e74073": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>I love the meals. I'm back at work now after maternity leave and it is a weight off my mind knowing that I have healthy, nutritional food for my daughter that doesn't take an age to prepare. It's so convenient! The customer service is excellent too, always happy to help with a speedy response.<\/p>",
+            "cite": "Louise Downey"
+          }
+        }
+      },
+      "block_order": [
+        "3297a103-c5e3-4e68-8ef8-eb73dda9c7df",
+        "44d2181b-80d4-4802-8005-1a10a9e74073"
+      ],
+      "settings": {
+        "heading": "Don't Just Take Our Word For It",
+        "sub-heading": "",
+        "show_images": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#fff8f3",
+        "text_color": "#662480"
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/texture.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "featured-video": {
+      "type": "aside-with-video",
+      "blocks": {
+        "3c8b3bd9-ead8-4628-8fea-31a5fb10db77": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_340x_b15b952e-b96d-4fee-9aaf-e48473dafee3.png",
+            "title": "BESPOKE NUTRITION",
+            "copy": "Supporting your child's development at every stage with customised nutritional advice from leading experts."
+          }
+        },
+        "a5e7b756-c011-4d84-8d1b-da9108bc0955": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/speech_340x_37446c39-d1e7-475a-817e-acbc68b11a64.png",
+            "title": "1:1 COACHING SESSIONS",
+            "copy": "Life as a new parent can feel daunting and lonely sometimes. We’re here to offer you coaching that’s personal and relevant."
+          }
+        },
+        "797b769c-5475-4ecb-92b5-067c6ed5de7a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2020-12-16_at_17.35.53_340x_2d4e4cfa-7a1a-4c68-9540-bba0b2d03ec5.png",
+            "title": "MAMAMADE COMMUNITY",
+            "copy": "A safe space to share stories and recipes, seek guidance, and connect with over 40K+ like-minded parents."
+          }
+        }
+      },
+      "block_order": [
+        "3c8b3bd9-ead8-4628-8fea-31a5fb10db77",
+        "a5e7b756-c011-4d84-8d1b-da9108bc0955",
+        "797b769c-5475-4ecb-92b5-067c6ed5de7a"
+      ],
+      "settings": {
+        "heading": "Peace Of Mind In A Box",
+        "copy": "It's never been about the food alone.\n\nWhen you join the Mamamade community, we provide a judgement-free zone filled with helpful resources. Access information from top nutritionists, parenting experts, wellbeing professionals and your very own weaning coach.",
+        "link_text": "Read our story",
+        "link_url": "shopify:\/\/pages\/about",
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b",
+        "image": "shopify:\/\/shop_images\/Sophie_700x_0e2dfb86-80d7-41f5-8023-f4ad0e0927b8.png",
+        "video_url": "vimeo.com\/491711113",
+        "heading_icons": "",
+        "link_text_icons": "Get started",
+        "link_url_icons": "shopify:\/\/collections\/pre-made-bundles"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "blocks": {
+        "49e4035d-81e2-4435-8bef-5f7fa1b38d6c": {
+          "type": "article",
+          "settings": {
+            "article_1": "mamamadeblog\/your-basic-guide-to-healthy-purees-and-finger-food",
+            "article_2": "mamamadeblog\/my-baby-isnt-eating-the-weaning-journey",
+            "article_3": "mamamadeblog\/your-babys-tingling-taste-buds-how-to-help-them-start-tasting-foods"
+          }
+        }
+      },
+      "block_order": [
+        "49e4035d-81e2-4435-8bef-5f7fa1b38d6c"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "What Happens Next?",
+        "copy": "Don't be a hero. We're here with all the resources you need to know you are heard, understood and supported! Have a look through our blog and join the conversation",
+        "show_category": false,
+        "button_link": "shopify:\/\/blogs\/mamamadeblog",
+        "button_text": "Read More",
+        "color_bg": ""
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "d8b72b98-0641-44ae-97b3-48d725794f7c": {
+          "type": "Question",
+          "settings": {
+            "title": "WHAT ARE THE BENEFITS OF SUBSCRIBING?",
+            "answer": "<p>We've got a fully flexible subscription model which lets you cancel whenever you want or need. It's as easy as that, no fuss, no hassle, just a simple click of a button! When you subscribe with Mamamade, you'll get your very own exclusive weaning coach (yes, an actual person who can help you no matter what stage your little ones at) - You can easily book a 1:1 call and ask any questions you have about your baby and child's feeding journey. As a special thank you, we'll treat you to free DPD delivery every time you purchase! 🥳 <\/p>"
+          }
+        },
+        "20317f76-47c9-4e53-b072-2ae0f30fc803": {
+          "type": "Question",
+          "settings": {
+            "title": "CAN I SELECT DIFFERENT MEALS FOR EACH DELIVERY?",
+            "answer": "<p>Yes, In fact, we encourage it! We’ve got over 40 flavours that consist of 80+ ingredients - So, trust us when we say you’ll want to work your way through our entire menu 💜 You can pick new bundles each time you order through your account section. Keep in mind that all changes must be made 48 hours before your delivery day; because we at Mamamade work like to work fast! So, after 48 hours, your order would already be in process and unfortunately cannot be changed.<\/p>"
+          }
+        },
+        "6b5fb761-16b0-4f8e-8d36-4fd051db2d16": {
+          "type": "Question",
+          "settings": {
+            "title": "HOW LONG DO THE MEALS LAST?",
+            "answer": "<p>Our meals stay fresh in your freezer for up to 4 months. By flash-freezing all meals, we're able to keep your food fresh, safe and nutrient-dense.<\/p>"
+          }
+        },
+        "3ddc572e-dcc0-49ca-b8a1-a40060a19947": {
+          "type": "Question",
+          "settings": {
+            "title": "WHAT DO THE DIFFERENT STAGES MEAN?",
+            "answer": "<p>We know every baby is ready for different textures at different times, so these are simply guidelines - to make it easier for you to decide what's right for your child.<\/p><p>All of our meals are suitable from 6 months, and offering your baby a later stage meal is not unsafe for them if your child doesn't struggle with the texture.<\/p><p><strong>Stage 1:<\/strong> Smooth single and multi-ingredient purees. These are great for little ones just getting started with solids (4+ months)<\/p><p><strong>Stage 2: <\/strong>Textured<strong> <\/strong>mixes designed to be pureed, mashed or left whole (6+ months)<\/p><p><strong>Stage 3: <\/strong>Chunkier, more complex<strong> <\/strong>mixes designed to be pureed, mashed or left whole (7+ months)<\/p><p><strong>Finger Foods: <\/strong>Nutrient-dense bites and sticks (7+ months) <\/p><p><strong>Stage 4\/Toddler<\/strong>: Meals that have been designed for babies 12 months and older.<\/p>"
+          }
+        },
+        "6e235335-ec01-49c6-8174-e92a7cbd668d": {
+          "type": "Question",
+          "settings": {
+            "title": "WHERE DO YOU DELIVER?",
+            "answer": "<p>We currently deliver across mainland UK - although unfortunately there are some postcodes in Scotland that we aren't quite able to reach (we're working on it!). Have a look at our shipping policy for the full list of excluded postcodes.<\/p>"
+          }
+        },
+        "75f8b61c-e73c-4d59-a33d-b03570e58ced": {
+          "type": "Question",
+          "settings": {
+            "title": "HOW WILL THE FOOD BE DELIVERED?",
+            "answer": "<p>Our meals are delivered in temperature-controlled boxes. We use liners made of wool and keep everything frozen with dry ice.  Our insulation is designed to keep your food frozen for up to 30 hours in transit, so don't worry if you're not at home to receive your box. Once it arrives, you can return, compost or recycle all of our materials — all of our packaging is widely accepted by councils across the country.<\/p>"
+          }
+        },
+        "458870a4-c262-4efe-b201-bf00d4315981": {
+          "type": "Question",
+          "settings": {
+            "title": "WHAT IF MY LITTLE ONE DOESN'T LIKE THE FOOD?",
+            "answer": "<p>Babies aren't going to like everything you give them, and that's totally normal (and totally frustrating!). In fact, it can take up to 20 tries of something before a baby learns a new taste. Mamamade has the most variety of any baby food delivery service, and our chefs are constantly working to release more. So if there's something your baby truly doesn't like, we can change it up whilst keeping things interesting for both of you! For more tips on introducing new flavours, be sure to check out our <a href=\"\/blogs\/mamamadeblog\" title=\"Mamamade Blog: What Happens Next?\">blog<\/a><\/p>"
+          }
+        },
+        "f7d25fe1-94f7-4de7-8566-6e02ebcdee74": {
+          "type": "Question",
+          "settings": {
+            "title": "WHAT KIND OF SUPPORT CAN I EXPECT?",
+            "answer": "<p>By signing up to a Mamamade subscription, you'll gain complimentary and regular access to our weaning coaches, guides with each delivery, and of course access to our Facebook Community, where you can share questions and concerns with other parents in the same boat.<\/p>"
+          }
+        },
+        "06b17bf8-5b61-45d1-9b35-279a8f8dce2e": {
+          "type": "Question",
+          "settings": {
+            "title": "DO YOU CATER FOR ALLERGIES?",
+            "answer": "<p>Absolutely. We know how difficult it can be when a little one has an allergy, which is why all of our meals are free from the big-8 allergens (milk, eggs, peanuts, tree nuts, fish, shellfish, wheat and soya).<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d8b72b98-0641-44ae-97b3-48d725794f7c",
+        "20317f76-47c9-4e53-b072-2ae0f30fc803",
+        "6b5fb761-16b0-4f8e-8d36-4fd051db2d16",
+        "3ddc572e-dcc0-49ca-b8a1-a40060a19947",
+        "6e235335-ec01-49c6-8174-e92a7cbd668d",
+        "75f8b61c-e73c-4d59-a33d-b03570e58ced",
+        "458870a4-c262-4efe-b201-bf00d4315981",
+        "f7d25fe1-94f7-4de7-8566-6e02ebcdee74",
+        "06b17bf8-5b61-45d1-9b35-279a8f8dce2e"
+      ],
+      "settings": {}
+    },
+    "text-with-image-two": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image_remove_padding": false,
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "how-it-works-programme": {
+      "type": "how-it-works-programme",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "sub-heading": "",
+        "button_link": "",
+        "button_text": "",
+        "color_bg": "#e8cca8"
+      }
+    }
+  },
+  "order": [
+    "text-with-image",
+    "how-it-works",
+    "text-with-products",
+    "press",
+    "product-testimonials",
+    "image-with-text-overlay",
+    "featured-video",
+    "blog-posts",
+    "faq",
+    "text-with-image-two",
+    "how-it-works-programme"
+  ]
+}

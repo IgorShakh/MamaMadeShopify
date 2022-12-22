@@ -1,0 +1,84 @@
+{% layout none %}
+
+{% assign metafield = collection.metafields.charle %}
+{% assign list = metafield.list %}
+{% assign list_split = list | newline_to_br | split: '<br />' %}
+
+<div class="Container text-center">
+  <h2 class="GroupPanel__Title Heading u-h2">Here is your programme!</h2>
+</div>
+
+<div class="ProgrammeStage__inner">
+
+  <div class="Container">
+
+    <section class="Section {% unless metafield.image %}Section--spacingNormal{% endunless %}">
+      {%- capture section_content -%}
+        <div class="FeatureText__ContentWrapper">
+          <div class="FeatureText__Content">
+            {%- if metafield.subtitle != blank or metafield.title != blank -%}
+              <header class="SectionHeader">
+
+                {%- if metafield.title != blank -%}
+                  <h2 class="SectionHeader__Heading Heading u-h1">{{ metafield.title | escape | newline_to_br }}</h2>
+                {%- endif -%}
+
+                {%- if metafield.subtitle != blank -%}
+                  <h3 class="SectionHeader__SubHeading Heading u-h5 u-sans-serif u-uppercase">{{ metafield.subtitle | escape }}</h3>
+                {%- endif -%}
+
+                {%- if metafield.copy != blank -%}
+                  <div class="SectionHeader__Description Rte">
+                    <p>{{ metafield.copy | strip }}</p>
+                  </div>
+                {%- endif -%}
+
+                {% if list != blank %}
+                <ul class="List">
+                {% for item in list_split %}
+                  <li class="List__Item">{%- render 'icon' with 'tick', classes: 'List__Icon', fill: settings.color_brand_primary, fill_tick: settings.color_brand_primary, fill_alt: 'transparent' -%} {{ item | strip }}</li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+
+              </header>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endcapture -%}
+
+      {%- capture section_image -%}
+        {%- if metafield.image != blank -%}
+          <div class="FeatureText__ImageWrapper">
+            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: metafield.image -%}{%- endcapture -%}
+
+            <div class="AspectRatio" style="max-width: {{ product.featured_image.width }}px; --aspect-ratio: 2.025641026">
+              <img loading="lazy"class="Image--lazyLoad Image--slideRight" data-src="{{ metafield.image }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ metafield.image.alt | escape }}">
+
+              <noscript>
+                <img loading="lazy"src="{{ metafield.image }}" alt="{{ metafield.image.alt | escape }}">
+              </noscript>
+            </div>
+
+            {%- if metafield.copy != blank -%}
+            <div class="FeatureText__Copy Rte">
+                <p>{{ metafield.copy_image | strip }}</p>
+            </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endcapture -%}
+
+      <div class="FeatureText{% if metafield.image != blank %} FeatureText--withImage FeatureText--imageRight{% endif %}">
+
+        {{- section_content -}}
+        {{- section_image -}}
+
+      </div>
+    </section>
+
+    {% section 'collection-programme' %}
+
+  </div>
+
+</div>

@@ -1,0 +1,62 @@
+<div class="GroupPanel">
+  <h2 class="GroupPanel__Title Heading u-h2">Payment options</h2>
+  <p>With all of our payment plans you’ll receive 2 boxes per month, each containing 12 organic meals</p>
+
+  <div class="GroupPanel__Inner">
+    <input type="hidden" name="programme[charge_interval_unit_type]" id="charge_interval_unit_type" value="week">
+
+    <div class="GroupPanel__Item">
+      <label class="Radio Radio--stacked" data-box-radio-charge>
+        <span class="Radio__Input">
+          <span class="Radio__Label">
+            Pay as you go
+            {% if settings.charge_no_discount != blank %}<br><span class="Radio__Note">{{ settings.charge_no_discount }}</span>{% endif %}
+          </span>
+          <input type="radio" name="programme[charge_interval_frequency]" checked value="0">
+          <span class="Radio__Control"></span>
+        </span>
+      </label>
+    </div>
+
+    <div class="GroupPanel__Item">
+      <label class="Radio Radio--stacked" data-box-radio-charge>
+        <span class="Radio__Input">
+          <span class="Radio__Label">
+            {{ settings.charge_first_frequency }}
+            {% if settings.charge_first_discount != blank %}<br><span class="Radio__Note">{{ settings.charge_first_discount }}</span>{% endif %}
+          </span>
+          <input type="radio" name="programme[charge_interval_frequency]" value="{{ settings.charge_first }}">
+          <span class="Radio__Control"></span>
+        </span>
+      </label>
+    </div>
+
+    <div class="GroupPanel__Item">
+      <label class="Radio Radio--stacked" data-box-radio-charge>
+        <span class="Radio__Input">
+          <span class="Radio__Label">
+            {{ settings.charge_second_frequency }}
+            {% if settings.charge_second_discount != blank %}<br><span class="Radio__Note">{{ settings.charge_second_discount }}</span>{% endif %}
+          </span>
+          <input type="radio" name="programme[charge_interval_frequency]" value="{{ settings.charge_second }}">
+          <span class="Radio__Control"></span>
+        </span>
+      </label>
+    </div>
+
+    {% if settings.charge_third_enabled %}
+      <div class="GroupPanel__Item">
+        <label class="Radio Radio--stacked" data-box-radio-charge>
+          <span class="Radio__Input">
+            <span class="Radio__Label">
+              {{ settings.charge_third_frequency }}
+              {% if settings.charge_third_discount != blank %}<br><span class="Radio__Note">{{ settings.charge_third_discount }}</span>{% endif %}
+            </span>
+            <input type="radio" name="programme[charge_interval_frequency]" value="{{ settings.charge_third }}">
+            <span class="Radio__Control"></span>
+          </span>
+        </label>
+      </div>
+    {% endif %}
+  </div>
+</div>
