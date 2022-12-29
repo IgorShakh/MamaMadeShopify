@@ -1,0 +1,12 @@
+<span class="data-subscriptions" style="display: none !important">
+  [
+  {% for selling_plan in product.selling_plan_groups[0].selling_plans %}
+      {
+        "id":"{{ selling_plan.id }}",
+        "name":"{{ selling_plan.name }}",
+        "value":"{{ selling_plan.options[0].value }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ]
+  </span>

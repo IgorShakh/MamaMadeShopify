@@ -11,7 +11,9 @@ for size, we use it to display a size chart (if applicable)
 {%- assign show_option_label = false -%}
 
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
-
+{% comment%}
+  Next  code for recharge checkout
+{% endcomment%}
 {%- form 'product', product, data-productid: product.id, class: 'ProductForm' -%}
 <!-- Begin ReCharge code -->
 {% if product.available %}{% render 'subscription-product' %}{% endif %}
@@ -203,7 +205,9 @@ for size, we use it to display a size chart (if applicable)
       <div class="no-js ProductForm__Option">
         <div class="Select Select--primary">
           {%- render 'icon' with 'select-arrow' -%}
-
+          {% comment%}
+          Next code "data-productid="{{product.id}}" added  for recharge checkout 
+        {% endcomment%}
           <select id="product-select-{{ product.id }}" name="id" data-productid="{{ product.id }}" title="Variant">
             {%- for variant in product.variants -%}
               <option {% if variant == selected_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}" data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money }}</option>
@@ -212,6 +216,9 @@ for size, we use it to display a size chart (if applicable)
         </div>
       </div>
     {%- else -%}
+    {% comment%}
+    Next code "data-productid="{{product.id}}" added  for recharge checkout 
+  {% endcomment%}
       <input type="hidden" name="id" data-productid="{{ product.id }}" data-sku="{{ selected_variant.sku }}" value="{{ selected_variant.id }}">
     {%- endunless -%}
 

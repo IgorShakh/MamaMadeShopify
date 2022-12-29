@@ -13,7 +13,7 @@
 		{% endif %}
 	{% endfor %}
 {% endfor %}
-{% if has_subscriptions %}
+{% if has_subscriptions == nil%}
 	<!-- Subscriptions Powered by ReCharge Payments: CSS -->
 	<style>
 		form[action^="/cart"] [type="submit"] {

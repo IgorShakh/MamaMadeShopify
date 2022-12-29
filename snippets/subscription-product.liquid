@@ -111,6 +111,7 @@
 		{% else %}
 			{% capture poweredby_url %}http://rechargepayments.com/subscribe-with-recharge?utm_source=shopify%20store&utm_medium=customer%20link&utm_campaign=Shopify%20store%20back%20link&shop_name={{ shop.name | url_param_escape }}&shop={{ shop.permanent_domain }}{% endcapture %}
 		{% endif %}
+    {% assign sellingPlansList = product.selling_plan_groups[0].selling_plans%}
 	<!-- Subscriptions Powered by ReCharge Payments: CSS -->
 	<link href="//static.rechargecdn.com/static/css/rcWidget.css" rel="stylesheet" type="text/css">
 	<style>
@@ -218,7 +219,9 @@
 						{% endif %}
 						<select name="" id="rc_shipping_interval_frequency" class="rc_select rc_select__frequency styled replaced" {% if shipping_interval_frequency.size == 1 %}style="display: none;"{% endif %}>
 							{% for frequency in shipping_interval_frequency %}
-								<option value="{{ frequency }}">
+              {% assign sellingPlanIndex = forloop.index| minus: 1 %}
+								<!-- <option value="{{ frequency }}" data-index="{{sellingPlanIndex}}"> -->
+								<option value="{{ sellingPlansList[sellingPlanIndex].id }}" data-index="{{sellingPlanIndex}}">
 									{{ frequency }}
 									{% if frequency == "1" and label_unit_type == 'Months' or label_unit_type == 'Weeks' %}
 										{{ label_unit_type | remove: 's' }}

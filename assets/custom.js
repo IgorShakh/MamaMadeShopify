@@ -235,7 +235,7 @@ function quickAdd(item) {
   };
 
   var reload = item.dataset.reload;
-
+  
   fetch('/cart/add.js', {
     method: 'POST',
     headers: {

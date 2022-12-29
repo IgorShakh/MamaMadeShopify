@@ -688,7 +688,6 @@
           };
           cart.push(item);
         });
-
         return cart;
       },
       processToCart: function processToCart(items) {
@@ -1338,7 +1337,6 @@
       function addToCart() {
         return _addToCart.apply(this, arguments);
       }
-
       return addToCart;
     }(),
     loadExtras: function loadExtras() {
@@ -1597,9 +1595,9 @@
       var checkoutURL = buildCheckoutUrl();
       var cartDrawerForm = document.getElementById('CartDrawer');
 
-      if (!cartDrawerForm) { return }
+      // if (!cartDrawerForm) { return }
 
-      cartDrawerForm.action = checkoutURL;
+      // cartDrawerForm.action = checkoutURL;
     },
     cartButtonSwitch: function cartButtonSwitch(cart) {
       // console.log(`🧘 No Account 🟥 and Sub in cart`)

@@ -2357,15 +2357,16 @@
           }
 
           event.preventDefault(); // Prevent form to be submitted
-
+          
           var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'); // First, we switch the status of the button
-
+          
           addToCartButton.setAttribute('disabled', 'disabled');
           document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
-
+          
           var formElement = this.element.querySelector('form[action*="/cart/add"]');
+          const productData = __WEBPACK_IMPORTED_MODULE_2__helper_Form__["default"].serialize(formElement);
           fetch(window.theme.localeRootUrl + '/cart/add.js', {
-            body: JSON.stringify(__WEBPACK_IMPORTED_MODULE_2__helper_Form__["default"].serialize(formElement)),
+            body: JSON.stringify({...productData, selling_plan: getSellingPlan()}),
             credentials: 'same-origin',
             method: 'POST',
             headers: {
@@ -8787,3 +8788,7 @@
   );
 
 }());
+const getSellingPlan = () => {
+  const selectsList = document.querySelectorAll('.rc_select__frequency');
+  return selectsList && selectsList[1].value;
+};

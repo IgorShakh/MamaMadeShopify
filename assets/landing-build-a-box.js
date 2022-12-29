@@ -118,14 +118,18 @@ function bundleBuilder() {
       const productTitle = item.dataset.productTitle;
       const productCount = parseInt(item.dataset.productCount);
       const itemIndex = index + 1;
-
+      const productSellingPlansElement = item.querySelector(".data-subscriptions");
+      const productSellingPlansElementFromRow = item.querySelector(".cellingPlanData");
+      const clickedElement = productSellingPlansElement ? productSellingPlansElement : productSellingPlansElementFromRow
+      const productSellingPlansData = clickedElement && JSON.parse(clickedElement.textContent);
       bundleItems['product-'+itemIndex ] = {
         'thumbnail': productThumbnail,
         'id': productId,
         'id24': product24Id,
         'handle': productHandle,
         'title': productTitle,
-        'count': productCount
+        'count': productCount,
+        productSellingPlansData
       };
     });
 
@@ -164,13 +168,15 @@ function bundleBuilder() {
    * Build HTML for each line item in the cart
    */
   function getLineItemTemplate(item) {
-    const thumbnail = item.thumbnail;
-    const title = item.title;
-    const handle = item.handle;
-    const count = item.count;
-    const id = item.id;
-    const id24 = item.id24;
-
+    const {
+      thumbnail,
+      title,
+      handle,
+      count,
+      id,
+      id24,
+      productSellingPlansData
+    } = item
     if (count == '0' || count == 0) {return}
 
     const cartRow = `
@@ -184,6 +190,7 @@ function bundleBuilder() {
           data-product-count="${count}"
           data-product-thumbnail="${thumbnail}"
         >
+        <span class="cellingPlanData" style="display: none">${JSON.stringify(productSellingPlansData)}</span>
           <img style="display: none" src="${thumbnail}" alt="${title}"/>
           <h5>${title}</h5>
 
@@ -453,17 +460,22 @@ function bundleBuilder() {
       const productId = item.dataset.productId;
       const productIdLarge = item.dataset.productIdLarge;
       const productCount = parseInt(item.dataset.productCount);
-
+      const productSellingPlansElement = item.querySelector(".cellingPlanData");
+      const productSellingPlansList = productSellingPlansElement &&  JSON.parse(productSellingPlansElement.textContent);
+      
+    const selectedParentElementSellingPlanName = document.querySelector("select.bundle-cart__details-small").value;
+    const productSellingPlanId =  getBundleItemSellingPlan(selectedParentElementSellingPlanName, productSellingPlansList)
       const getProductVar = returnProductVar(productId, productIdLarge, boxSize);
 
       const itemTemp = {
         'id': getProductVar,
         'quantity': productCount,
+       'selling_plan':productSellingPlanId,
         "properties": {
           "box_id": boxID,
-          "subscription_id": 'bundle_box',
-          "shipping_interval_unit_type": "week",
-          "shipping_interval_frequency": shippingInterval
+          // "subscription_id": 'bundle_box',
+          // "shipping_interval_unit_type": "week",
+          // "shipping_interval_frequency": shippingInterval
         }
       }
 
@@ -713,3 +725,8 @@ function bundleBuilder() {
 }
 
 window.bundleBuilder();
+
+const getBundleItemSellingPlan = (parentSellingPlanName, itemSellingPlansList)=>{
+const chosenSellingPlan = itemSellingPlansList.find(({value})=>value ===parentSellingPlanName)
+  return chosenSellingPlan?.id
+}

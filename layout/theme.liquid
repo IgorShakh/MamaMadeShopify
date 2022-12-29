@@ -197,7 +197,7 @@
 <body class="prestige--v4 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
   {% render 'elevar-body-end' %}
 
-  <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
+    <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
 
   <span class="LoadingBar"></span>
   <div class="PageOverlay"></div>
@@ -227,8 +227,9 @@
 
     {% section 'footer' %}
   </div>
-
-
+  {% comment%}
+      Next code added  for recharge checkout 
+    {% endcomment%}
   <!-- Begin ReCharge code -->
   {% render 'subscription-theme-footer' %}
   <!-- End ReCharge code -->

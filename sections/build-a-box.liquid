@@ -1,6 +1,8 @@
+{% assign sellingPlanIDProduct = product.selling_plan_groups[0].selling_plans[0].id %}
+{% assign sellingPlanOptionsList = product.selling_plan_groups[0].options[0].values%}
+
 <header class="bundle-header">
   {% render 'breadcrumbs' %}
-
   <div class="Container">
     <div class="bundle-header__container">
       <div class="bundle-header__image">
@@ -85,7 +87,11 @@
                 {% endfor %}
                 data-product-count="0"
                 data-product-thumbnail="{{image}}"
+                {% comment %}
+                data-selling-plans = "{{product.selling_plan_groups[0].selling_plans}}"
+                {% endcomment %}
               >
+              {% render 'box-item-sellingplan' product:product%}
                 <div class="bundle-item__img" data-quick-view="open" data-quick-view-handle="{{product.handle}}" style="background-image: url({{image}});"></div>
                 <div class="bundle-item__text">
                   <h4 data-quick-view="open" data-quick-view-handle="{{product.handle}}">{{product.title}}</h4>
@@ -123,11 +129,16 @@
               <li>
                 Delivery Every
                 <select class="bundle-cart__details-small" name="frequency" data-frequency="container">
-                  <option value="1">1 Weeks</option>
-                  <option value="2" selected>2 Weeks</option>
-                  <option value="3">3 Weeks</option>
-                  <option value="4">4 Weeks</option>
-                  <option value="6">6 Weeks</option>
+                  <!-- <option value="45 Day(s)">1 Weeks</option>
+                  <option value="45 Day(s)" selected>2 Weeks</option>
+                  <option value="45 Day(s)">3 Weeks</option>
+                  <option value="45 Day(s)">4 Weeks</option>
+                  <option value="45 Day(s)">6 Weeks</option> -->
+                  <option value="{{sellingPlanOptionsList[0]}}">1 Weeks</option>
+                  <option value="{{sellingPlanOptionsList[1]}}" selected>2 Weeks</option>
+                  <option value="{{sellingPlanOptionsList[2]}}">3 Weeks</option>
+                  <option value="{{sellingPlanOptionsList[3]}}">4 Weeks</option>
+                  <option value="{{sellingPlanOptionsList[4]}}">6 Weeks</option>
                 </select>
               </li>
               <li>Delivery <span class="bundle-cart__details-small">Free</span></li>
